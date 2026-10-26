@@ -1,0 +1,4 @@
+version,lut,ff,bram_tiles,dsp,slices,wns_ns,whs_ns,scope
+mixed_hls_rtl_0_9,26986,37324,131.0,133,11692,,,whole_routed_soc_not_isolated_cnn
+unified_rtl_scalar_1_0,27563,36329,128.0,123,11506,0.18,0.012,whole_routed_soc_not_isolated_cnn
+unified_rtl_conv3_four_lane,27921,36726,128.5,123,11884,0.119,0.011,whole_routed_soc_not_isolated_cnn

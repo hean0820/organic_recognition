@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; connect-src 'self'; object-src 'none'; base-uri 'none'">
+  <title>分子观察台 · 有机物空间结构</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="vendor/3dmol-min.js"></script>
+  <script defer src="models-data.js"></script>
+  <script defer src="app.js"></script>
+  <script defer src="network-link.js"></script>
+</head>
+<body>
+  <main class="app-shell">
+    <header class="page-header">
+      <div>
+        <p class="eyebrow">有机物识别 / 分子空间结构</p>
+        <h1>分子观察台<span class="title-dot" aria-hidden="true">·</span></h1>
+        <p class="intro">转动一个分子，看清它的空间结构。</p>
+      </div>
+      <span class="local-badge"><span aria-hidden="true"></span>本地模型，可离线观察</span>
+    </header>
+
+    <div class="workspace">
+      <aside class="molecule-panel" aria-label="分子选择">
+        <div class="panel-heading"><h2>选择分子</h2><span>22 种</span></div>
+        <div id="modelList" class="model-list"></div>
+        <div class="selection-help">
+          <p>双键、三键、官能团和环</p>
+          <span>连接后，选择会同时更新开发板与电脑。</span>
+        </div>
+        <button id="clearButton" class="clear-button" type="button">清除模型</button>
+        <p class="mode-note">未连接时可手动观察。鼠标视角与开发板独立。</p>
+      </aside>
+
+      <section class="observation-panel" aria-label="分子观察">
+        <div class="connection-bar">
+          <div class="connection-actions">
+            <button id="connectButton" class="secondary-button" type="button">连接开发板</button>
+            <button id="disconnectButton" class="secondary-button" type="button" disabled>断开</button>
+            <button id="modeButton" class="secondary-button" type="button" disabled>切换识别模式</button>
+            <button id="recognizeButton" class="primary-button" type="button" disabled>开始识别</button>
+            <button id="cancelButton" class="secondary-button" type="button" disabled>取消识别</button>
+          </div>
+          <span id="connectionStatus" role="status" aria-live="polite">未连接，可手动观察。</span>
+        </div>
+        <section class="voice-panel" aria-label="识别模式和语音文字">
+          <div class="voice-heading"><strong id="recognitionMode">模式未同步</strong><span id="voiceStatus" role="status" aria-live="polite">连接开发板后可切换摄像头或语音模式。</span></div>
+          <p id="recognizedText" class="recognized-text" aria-live="polite">尚未识别</p>
+          <p id="computeTiming" class="compute-timing" aria-live="polite">计算耗时：—</p>
+          <div class="voice-settings"><label for="audioInput">音频输入</label><select id="audioInput" disabled><option value="mic">板载麦克风</option><option value="linein">LINE_IN 外接输入</option></select><span>按一次开始，读一个名称，结束后返回一次结果。</span></div>
+        </section>
+        <header class="model-heading">
+          <div><p id="modelEnglish" class="model-english">准备模型</p><h2 id="modelName">乙烯</h2></div>
+          <div id="modelFormula" class="model-formula" aria-label="分子式">C₂H₄</div>
+        </header>
+        <div class="viewer-wrap">
+          <div id="viewer" tabindex="0" role="region" aria-label="分子三维视图，左键拖动旋转，滚轮缩放，Ctrl加左键拖动平移"></div>
+          <span class="view-caption">球棍模型 / 正交视图</span>
+          <div id="emptyState" class="empty-state" hidden>
+            <span class="empty-symbol" aria-hidden="true">○</span>
+            <h3 id="emptyTitle">等待选择分子</h3>
+            <p id="emptyDetail">从左侧选择一个分子，开始观察。</p>
+          </div>
+          <div class="element-legend" aria-label="元素颜色">
+            <span><i class="carbon"></i>C</span><span><i class="hydrogen"></i>H</span><span><i class="oxygen"></i>O</span><span><i class="nitrogen"></i>N</span><span><i class="chlorine"></i>Cl</span><span><i class="bromine"></i>Br</span><span><i class="iodine"></i>I</span>
+          </div>
+        </div>
+        <div class="view-controls">
+          <div class="primary-controls">
+            <button id="rotationButton" class="primary-button" type="button" aria-pressed="true">暂停旋转</button>
+            <button id="resetButton" class="secondary-button" type="button">复位视角</button>
+          </div>
+          <label class="speed-control" for="rotationSpeed"><span>旋转速度</span><input id="rotationSpeed" type="range" min="6" max="72" step="6" value="36"><output id="speedValue" for="rotationSpeed">36°/秒</output></label>
+        </div>
+        <div class="status-line"><span id="statusText" role="status" aria-live="polite">正在准备本地模型…</span><span id="modelCounts"></span></div>
+        <div class="gesture-guide"><span><kbd>左键拖动</kbd>旋转</span><span><kbd>滚轮</kbd>缩放</span><span><kbd>Ctrl＋左键拖动</kbd>平移</span><span class="gesture-note">操作后暂停旋转，点击按钮恢复。</span></div>
+      </section>
+    </div>
+    <footer class="page-footer"><span>模型来源：PubChem · 原子与化学键已核对</span><span>上位机视角独立，可自由观察。</span></footer>
+  </main>
+  <noscript>请使用启用JavaScript和WebGL的浏览器打开此页面。</noscript>
+</body>
+</html>

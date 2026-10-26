@@ -1,0 +1,208 @@
+{
+  "catalog_version": "psv7-22-v1",
+  "status": "trained_bootstrap_mapping_unchanged",
+  "source_path": "C:\\Users\\24875\\Desktop\\Qsan\\PSv7\\vitis\\ov5640_hdmi\\src\\chem_db.c",
+  "source_sha256": "f71e8169e53187eba4779dbbd71753dab6a1367287df46010ee0b1edfa2ae9b3",
+  "class_count": 22,
+  "classes": [
+    {
+      "class_id": 0,
+      "label": "yixi",
+      "name": "乙烯",
+      "english_name": "Ethylene",
+      "formula": "C2H4",
+      "structure": "CH2=CH2",
+      "model_key": "yixi"
+    },
+    {
+      "class_id": 1,
+      "label": "bingxi",
+      "name": "丙烯",
+      "english_name": "Propylene",
+      "formula": "C3H6",
+      "structure": "CH2=CH-CH3",
+      "model_key": "bingxi"
+    },
+    {
+      "class_id": 2,
+      "label": "yique",
+      "name": "乙炔",
+      "english_name": "Acetylene",
+      "formula": "C2H2",
+      "structure": "HC≡CH",
+      "model_key": "yique"
+    },
+    {
+      "class_id": 3,
+      "label": "bingque",
+      "name": "丙炔",
+      "english_name": "Propyne",
+      "formula": "C3H4",
+      "structure": "CH3-C≡CH",
+      "model_key": "bingque"
+    },
+    {
+      "class_id": 4,
+      "label": "yichun",
+      "name": "乙醇",
+      "english_name": "Ethanol",
+      "formula": "C2H6O",
+      "structure": "CH3CH2OH",
+      "model_key": "yichun"
+    },
+    {
+      "class_id": 5,
+      "label": "yierchun",
+      "name": "乙二醇",
+      "english_name": "Ethylene glycol",
+      "formula": "C2H6O2",
+      "structure": "HOCH2CH2OH",
+      "model_key": "yierchun"
+    },
+    {
+      "class_id": 6,
+      "label": "bingsanchun",
+      "name": "丙三醇",
+      "english_name": "Glycerol",
+      "formula": "C3H8O3",
+      "structure": "HOCH2CH(OH)CH2OH",
+      "model_key": "bingsanchun"
+    },
+    {
+      "class_id": 7,
+      "label": "benfen",
+      "name": "苯酚",
+      "english_name": "Phenol",
+      "formula": "C6H6O",
+      "structure": "C6H5OH",
+      "model_key": "benfen"
+    },
+    {
+      "class_id": 8,
+      "label": "yisuan",
+      "name": "乙酸",
+      "english_name": "Acetic acid",
+      "formula": "C2H4O2",
+      "structure": "CH3COOH",
+      "model_key": "yisuan"
+    },
+    {
+      "class_id": 9,
+      "label": "jiaquan",
+      "name": "甲醛",
+      "english_name": "Formaldehyde",
+      "formula": "CH2O",
+      "structure": "HCHO",
+      "model_key": "jiaquan"
+    },
+    {
+      "class_id": 10,
+      "label": "yiquan",
+      "name": "乙醛",
+      "english_name": "Acetaldehyde",
+      "formula": "C2H4O",
+      "structure": "CH3CHO",
+      "model_key": "yiquan"
+    },
+    {
+      "class_id": 11,
+      "label": "bingtong",
+      "name": "丙酮",
+      "english_name": "Acetone",
+      "formula": "C3H6O",
+      "structure": "CH3COCH3",
+      "model_key": "bingtong"
+    },
+    {
+      "class_id": 12,
+      "label": "ysyz",
+      "name": "乙酸乙酯",
+      "english_name": "Ethyl acetate",
+      "formula": "C4H8O2",
+      "structure": "CH3COOCH2CH3",
+      "model_key": "ysyz"
+    },
+    {
+      "class_id": 13,
+      "label": "slht",
+      "name": "四氯化碳",
+      "english_name": "Carbon tetrachloride",
+      "formula": "CCl4",
+      "structure": "CCl4",
+      "model_key": "slht"
+    },
+    {
+      "class_id": 14,
+      "label": "xyw",
+      "name": "溴乙烷",
+      "english_name": "Bromoethane",
+      "formula": "C2H5Br",
+      "structure": "CH3CH2Br",
+      "model_key": "xyw"
+    },
+    {
+      "class_id": 15,
+      "label": "djw",
+      "name": "碘甲烷",
+      "english_name": "Iodomethane",
+      "formula": "CH3I",
+      "structure": "CH3I",
+      "model_key": "djw"
+    },
+    {
+      "class_id": 16,
+      "label": "sljw",
+      "name": "三氯甲烷",
+      "english_name": "Chloroform",
+      "formula": "CHCl3",
+      "structure": "CHCl3",
+      "model_key": "sljw"
+    },
+    {
+      "class_id": 17,
+      "label": "yljw",
+      "name": "一氯甲烷",
+      "english_name": "Chloromethane",
+      "formula": "CH3Cl",
+      "structure": "CH3Cl",
+      "model_key": "yljw"
+    },
+    {
+      "class_id": 18,
+      "label": "yimi",
+      "name": "乙醚",
+      "english_name": "Diethyl ether",
+      "formula": "C4H10O",
+      "structure": "CH3CH2OCH2CH3",
+      "model_key": "yimi"
+    },
+    {
+      "class_id": 19,
+      "label": "jyimi",
+      "name": "甲乙醚",
+      "english_name": "Methoxyethane",
+      "formula": "C3H8O",
+      "structure": "CH3OCH2CH3",
+      "model_key": "jyimi"
+    },
+    {
+      "class_id": 20,
+      "label": "yian",
+      "name": "乙胺",
+      "english_name": "Ethylamine",
+      "formula": "C2H7N",
+      "structure": "CH3CH2NH2",
+      "model_key": "yian"
+    },
+    {
+      "class_id": 21,
+      "label": "ben",
+      "name": "苯",
+      "english_name": "Benzene",
+      "formula": "C6H6",
+      "structure": "C6H6",
+      "model_key": "ben"
+    }
+  ],
+  "model_version": "chem22_synthetic_bootstrap_v1"
+}

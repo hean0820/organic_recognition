@@ -1,0 +1,21 @@
+{
+  "resource_sources": [
+    "build/reports/comparison/unified_resource_audit.json",
+    "build/reports/reproduction/utilization.rpt",
+    "build/reports/reproduction/timing_summary.rpt",
+    "src/ps/psv7_pynq/project.json"
+  ],
+  "performance_sources": [
+    "board/results/baseline/board_result.json",
+    "board/results/current/board_result.json"
+  ],
+  "scalar_to_four_lane_ratio": 2.4946503052484634,
+  "separate_historical_sessions": true,
+  "board_realtime_clock_verified": false,
+  "archive_date": "2026-10-20",
+  "timing_uses_monotonic_counter": true,
+  "baseline_resource_timing_not_rederived_here": true,
+  "new_independent_accuracy_or_preview_fps_claimed": false,
+  "cpu_scope": "single_thread_complete_integer_c_gcc_o3_neon_auto_vectorization_flags_not_fully_handwritten_neon",
+  "resource_scope": "whole_system_not_incremental_cnn"
+}

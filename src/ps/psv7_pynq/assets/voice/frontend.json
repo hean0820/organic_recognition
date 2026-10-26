@@ -1,0 +1,21 @@
+{
+  "version": "chem_logmel_v1",
+  "rate": 16000,
+  "frame": 400,
+  "hop": 160,
+  "fft": 512,
+  "mel_bins": 40,
+  "frequency_hz": [
+    60,
+    3800
+  ],
+  "time_steps": 96,
+  "trim_rms_relative": 0.12,
+  "trim_floor": 0.0001,
+  "trim_padding_samples": 1280,
+  "preemphasis": 0.97,
+  "normalization": "utterance global mean/std, std floor 1, clamp [-4,4]",
+  "time_alignment": "linear interpolation of log mel to 96 frames",
+  "layout": "NCHW 1x40x96",
+  "max_samples": 48000
+}

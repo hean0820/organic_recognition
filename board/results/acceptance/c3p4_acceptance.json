@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "version": "1.1.0-c3p4-board-candidate",
+  "recorded_at": "2026-10-20T22:57:29.338416+08:00",
+  "performance_independently_audited": true,
+  "performance_audit": "C:\\Users\\chen\\Desktop\\Qsian\\7020\\final\\docs\\嵌赛技术文档\\07_四路优化后实板性能\\2026-10-20\\原始数据独立核验.json",
+  "performance_audit_sha256": "818257c59aed6c0143d009b22c092ed06e57247ac248d6c89934bdf169c0961b",
+  "functional_user_reported_pass": true,
+  "functional_user_statement": "两项回放、全部功能和正常停止均通过",
+  "functional_scope": [
+    "two replays",
+    "camera",
+    "voice",
+    "HDMI/3D",
+    "web interaction",
+    "normal stop"
+  ],
+  "functional_raw_logs_attached": false,
+  "board_tested": true,
+  "board_access_by_auditor": false
+}

@@ -1,0 +1,305 @@
+{
+  "passed": true,
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "hardware_accessed": false,
+  "new_synthesis_executed": false,
+  "parameter_identity": {
+    "passed": true,
+    "checks": [
+      "conv1_weight_bank_0",
+      "conv1_weight_bank_1",
+      "conv1_weight_bank_2",
+      "conv1_bias",
+      "conv2_weight_bank_0",
+      "conv2_weight_bank_1",
+      "conv2_weight_bank_2",
+      "conv2_bias",
+      "cnn_model_weights.bin",
+      "cnn_model_bias.bin"
+    ],
+    "source_model_sha256": "b91cb580e6026d79eb00f66c4344bd0a9bb2690bbbf92b3525cf82855abf7303",
+    "channels": [
+      1,
+      24,
+      48,
+      48
+    ],
+    "fc_shape": [
+      3072,
+      48,
+      22
+    ],
+    "canonical_cnn_sources_mapped_to_build_ip": true,
+    "hardware_accessed": false
+  },
+  "integer_reference": {
+    "passed": true,
+    "package": "D:\\qiansai\\stage6\\42754\\data\\model\\final_parameters",
+    "hashed_files": 292,
+    "golden_samples_recomputed": 59,
+    "golden_layer_arrays_compared": 767,
+    "golden_kinds": {
+      "validation": 44,
+      "synthetic": 10,
+      "known_ethanol_diagnostic": 5
+    },
+    "validation_class_coverage": 22,
+    "fc_asset_matches_bins": true,
+    "int32_acc_and_int64_product_bounds_safe": true,
+    "full_910_validation_recomputed_in_this_verifier": false,
+    "hardware_accessed": false,
+    "independent_field_tested": false,
+    "accuracy_is_recorded_software_validation": {
+      "correct": 826,
+      "total": 910,
+      "accuracy": 0.9076923076923077,
+      "per_class": [
+        {
+          "id": 0,
+          "name": "yixi",
+          "correct": 40,
+          "total": 44,
+          "recall": 0.9090909090909091
+        },
+        {
+          "id": 1,
+          "name": "bingxi",
+          "correct": 35,
+          "total": 37,
+          "recall": 0.9459459459459459
+        },
+        {
+          "id": 2,
+          "name": "yique",
+          "correct": 45,
+          "total": 46,
+          "recall": 0.9782608695652174
+        },
+        {
+          "id": 3,
+          "name": "bingque",
+          "correct": 39,
+          "total": 47,
+          "recall": 0.8297872340425532
+        },
+        {
+          "id": 4,
+          "name": "yichun",
+          "correct": 44,
+          "total": 50,
+          "recall": 0.88
+        },
+        {
+          "id": 5,
+          "name": "yierchun",
+          "correct": 33,
+          "total": 35,
+          "recall": 0.9428571428571428
+        },
+        {
+          "id": 6,
+          "name": "bingsanchun",
+          "correct": 43,
+          "total": 49,
+          "recall": 0.8775510204081632
+        },
+        {
+          "id": 7,
+          "name": "benfen",
+          "correct": 38,
+          "total": 44,
+          "recall": 0.8636363636363636
+        },
+        {
+          "id": 8,
+          "name": "yisuan",
+          "correct": 33,
+          "total": 34,
+          "recall": 0.9705882352941176
+        },
+        {
+          "id": 9,
+          "name": "jiaquan",
+          "correct": 36,
+          "total": 48,
+          "recall": 0.75
+        },
+        {
+          "id": 10,
+          "name": "yiquan",
+          "correct": 37,
+          "total": 44,
+          "recall": 0.8409090909090909
+        },
+        {
+          "id": 11,
+          "name": "bingtong",
+          "correct": 25,
+          "total": 34,
+          "recall": 0.7352941176470589
+        },
+        {
+          "id": 12,
+          "name": "ysyz",
+          "correct": 21,
+          "total": 22,
+          "recall": 0.9545454545454546
+        },
+        {
+          "id": 13,
+          "name": "slht",
+          "correct": 30,
+          "total": 33,
+          "recall": 0.9090909090909091
+        },
+        {
+          "id": 14,
+          "name": "xyw",
+          "correct": 36,
+          "total": 36,
+          "recall": 1.0
+        },
+        {
+          "id": 15,
+          "name": "djw",
+          "correct": 44,
+          "total": 46,
+          "recall": 0.9565217391304348
+        },
+        {
+          "id": 16,
+          "name": "sljw",
+          "correct": 29,
+          "total": 35,
+          "recall": 0.8285714285714286
+        },
+        {
+          "id": 17,
+          "name": "yljw",
+          "correct": 49,
+          "total": 50,
+          "recall": 0.98
+        },
+        {
+          "id": 18,
+          "name": "yimi",
+          "correct": 47,
+          "total": 48,
+          "recall": 0.9791666666666666
+        },
+        {
+          "id": 19,
+          "name": "jyimi",
+          "correct": 35,
+          "total": 37,
+          "recall": 0.9459459459459459
+        },
+        {
+          "id": 20,
+          "name": "yian",
+          "correct": 44,
+          "total": 46,
+          "recall": 0.9565217391304348
+        },
+        {
+          "id": 21,
+          "name": "ben",
+          "correct": 43,
+          "total": 45,
+          "recall": 0.9555555555555556
+        }
+      ],
+      "ethanol_to_acid": 0,
+      "acid_to_ethanol": 0
+    }
+  },
+  "saved_board_audit": {
+    "passed": true,
+    "saved_sessions": {
+      "current": {
+        "ps_software": {
+          "count": 132,
+          "mean_ms": 48.93262604545612,
+          "median_ms": 48.816256500003874,
+          "p95_ms": 49.24139085000547,
+          "min_ms": 48.705942000026425,
+          "max_ms": 55.55641899996999
+        },
+        "rtl_call": {
+          "count": 132,
+          "mean_ms": 26.680458128784796,
+          "median_ms": 26.621305000020357,
+          "p95_ms": 26.819470500018383,
+          "min_ms": 26.481758999977956,
+          "max_ms": 31.71861399999898
+        },
+        "speedup_ratio_of_means": 1.8340249559906951,
+        "latency_reduction_percent": 45.47511489777823,
+        "measured_pairs": 132,
+        "all_22_logits_exact": true
+      }
+    },
+    "current_ps_to_rtl_ratio": 1.8340249559906951,
+    "scope": "Audit of supplied current four-lane board measurements only; not a new board run",
+    "hardware_accessed": false
+  },
+  "ps_package": {
+    "package_files_checked": 112,
+    "editable_notebooks_checked": 2,
+    "version": "1.1.3-preview-delivery",
+    "hardware_accessed": false,
+    "formal_board_acceptance": "scoped_user_observed_preview_improvement_and_stop_passed; quantitative_fps_unavailable",
+    "speed_hwh_registers_checked": 14,
+    "python38_modules_checked": 37,
+    "hwh_ip_addresses_checked": 6
+  },
+  "overlay_profile": {
+    "passed": true,
+    "kind": "files_and_hwh_only",
+    "profile": "current_1_1_3_c3p4_camera_audio",
+    "sha256": {
+      "bit": "1e1c25d70cae092f743aa75ffb59483c4af93ba78adc2135cba398417e9420f4",
+      "hwh": "2676b8594071ee9da33fbbc47fe17dcae95009de9eb8120378cf0814c980971e"
+    },
+    "ip_count": 6,
+    "hardware_accessed": false
+  },
+  "cpu_reference": {
+    "passed": true,
+    "hardware_accessed": false,
+    "cases": 79,
+    "arrays_checked": 808,
+    "array_values_checked": 21522538,
+    "quantization_boundary_checks": 117,
+    "scope": "CPU baseline correctness only; no board performance or new accuracy claim",
+    "build": {
+      "compiler": "D:\\BaiduNetdiskDownload\\x86_64-8.1.0-release-win32-seh-rt_v6-rev0(这个就是minGW64)\\mingw64\\bin\\gcc.EXE",
+      "version": "gcc.EXE (x86_64-win32-seh-rev0, Built by MinGW-W64 project) 8.1.0",
+      "target": "x86_64-w64-mingw32",
+      "flags": [
+        "-O3",
+        "-std=c99",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-shared"
+      ],
+      "command": [
+        "D:\\BaiduNetdiskDownload\\x86_64-8.1.0-release-win32-seh-rt_v6-rev0(这个就是minGW64)\\mingw64\\bin\\gcc.EXE",
+        "-O3",
+        "-std=c99",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-shared",
+        "D:\\qiansai\\stage6_guide\\latest_checks_42754_20261023_02\\cpu_reference\\ps_cnn.c",
+        "-o",
+        "D:\\qiansai\\stage6_guide\\latest_checks_42754_20261023_02\\cpu_reference\\results\\build\\ps_cnn_0d9b12a512b20aa2.dll"
+      ],
+      "library_sha256": "75e1a1b2d7d8bc25f3f5778ae98f2abb57ab47e3536a6ce3dfba549ff8502576",
+      "baseline_threads": 1,
+      "source_sha256": "5901b1e9a1ec1f4ca480bf377aacb748ce54d81283eddd4ae9ffbff9d3147b8b"
+    }
+  }
+}

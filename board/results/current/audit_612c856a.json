@@ -1,0 +1,80 @@
+{
+  "passed": true,
+  "audited_at": "2026-10-20T22:57:29.333936+08:00",
+  "source_zip_sha256": "95449009d074c78c001c96a8a7eea1ad9bf74276e4d01d5bd0ecbf5908d79ba3",
+  "received_members": [
+    {
+      "name": "对比表与报告段落.md",
+      "bytes": 1067
+    },
+    {
+      "name": "board_result.json",
+      "bytes": 91510
+    }
+  ],
+  "raw_json_sha256": "a35d3d209edfb0b9ae5d892b6c82996a184077de37c7e41bd8dd59fddf6b9506",
+  "raw_markdown_sha256": "cec13cd25da18fda587a027b262bb87882bd6a51a38b3d7fc8788d1ebab934d3",
+  "exact_delivered_benchmark_manifest_match": true,
+  "benchmark_manifest_sha256": "df2f7c9f14fc20ec61414627231f2322861a2cb2723a751441873d694aed222d",
+  "paired_runtime_sha256": {
+    "drivers/unified_cnn.py": "8a08aa18a6ef008d479c73fadd584c8a2bf8134b70f7a09caef9a9fb688c5056",
+    "drivers/cnn_native_io.py": "5c5c1533b2c6c8c7c0b76e9886396eb51f8e5b884d62bb52f53281d81d841824",
+    "assets/cnn_rtl_contract.json": "213cbd61df5df0ffd8e005602412f3d4b67e3d04c5d63f562295756071480b4e",
+    "assets/cnn_model_weights.bin": "d6e0ae05b19c78141ffe686802228de8ce608a36984ffc508fc3a108f9edcaea",
+    "assets/cnn_model_bias.bin": "07d0ca6aa788894e020e76859a25cfa4e29af542f87666d57402a4dffdd09d04",
+    "overlay/psv7.bit": "1e1c25d70cae092f743aa75ffb59483c4af93ba78adc2135cba398417e9420f4",
+    "overlay/psv7.hwh": "2676b8594071ee9da33fbbc47fe17dcae95009de9eb8120378cf0814c980971e"
+  },
+  "model_sha256": "b91cb580e6026d79eb00f66c4344bd0a9bb2690bbbf92b3525cf82855abf7303",
+  "cpu_c_source_sha256": "5901b1e9a1ec1f4ca480bf377aacb748ce54d81283eddd4ae9ffbff9d3147b8b",
+  "summary_recomputed": {
+    "ps_software": {
+      "count": 132,
+      "mean_ms": 48.93262604545612,
+      "median_ms": 48.816256500003874,
+      "p95_ms": 49.24139085000547,
+      "min_ms": 48.705942000026425,
+      "max_ms": 55.55641899996999
+    },
+    "rtl_call": {
+      "count": 132,
+      "mean_ms": 26.680458128784796,
+      "median_ms": 26.621305000020357,
+      "p95_ms": 26.819470500018383,
+      "min_ms": 26.481758999977956,
+      "max_ms": 31.71861399999898
+    },
+    "speedup_ratio_of_means": 1.8340249559906951,
+    "latency_reduction_percent": 45.47511489777823,
+    "measured_pairs": 132,
+    "all_22_logits_exact": true
+  },
+  "measured_pairs": 132,
+  "unique_inputs": 44,
+  "classes": 22,
+  "logit_values_independently_checked": 2904,
+  "all_logits_match_frozen_reference": true,
+  "balanced_order_and_rounds": true,
+  "rtl_sequence_first": 27,
+  "rtl_sequence_last": 158,
+  "all_132_pairs_rtl_faster": true,
+  "clocks_mhz": {
+    "cpu_mhz": 766.666659,
+    "fclk0_mhz": 99.999999,
+    "fclk1_mhz": 99.999999
+  },
+  "mean_rtl_cycles": 2417601.121212121,
+  "mean_hardware_activity_ms": 24.176011453881326,
+  "mean_api_minus_hardware_ms": 2.5044466749034693,
+  "historical_same_board_scalar_rtl": {
+    "mean_ms": 66.55841301514184,
+    "new_mean_ms": 26.680458128784796,
+    "speedup_ratio": 2.4946503052484634,
+    "latency_reduction_percent": 59.91422132809105,
+    "scope": "Separate sessions with the same model/CPU source/flags/clock/protocol, not old/new interleaved pairs"
+  },
+  "request_and_memory_unchanged": true,
+  "board_calendar_verified": false,
+  "board_calendar_note": "Board reports 2021; receipt/archive uses host date. Latency uses perf_counter.",
+  "board_access_by_auditor": false
+}

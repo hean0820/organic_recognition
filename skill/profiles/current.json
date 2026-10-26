@@ -1,0 +1,21 @@
+{
+  "name": "current_1_1_3_c3p4_camera_audio",
+  "files": {
+    "bit": {
+      "path": "overlay/psv7.bit",
+      "sha256": "1e1c25d70cae092f743aa75ffb59483c4af93ba78adc2135cba398417e9420f4"
+    },
+    "hwh": {
+      "path": "overlay/psv7.hwh",
+      "sha256": "2676b8594071ee9da33fbbc47fe17dcae95009de9eb8120378cf0814c980971e"
+    }
+  },
+  "ips": {
+    "axi_vdma_0": 1124073472,
+    "cnn_ps_if_0": 1136656384,
+    "prep_accel_0": 1136787456,
+    "v_tc_0": 1136721920,
+    "camera_bridge_ctrl": 1092616192,
+    "audio_axi_0": 1136852992
+  }
+}

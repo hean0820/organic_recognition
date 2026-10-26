@@ -1,0 +1,57 @@
+{
+  "torch_numpy_logits_equal_all_910": true,
+  "numpy_compared_samples": 910,
+  "golden_count": 59,
+  "golden_layer_arrays_compared": 767,
+  "golden_categories": {
+    "validation": 44,
+    "synthetic": 10,
+    "known_diagnostic": 5
+  },
+  "q30_boundary_tests": [
+    {
+      "multiplier": 0,
+      "cases": 11,
+      "passed": true
+    },
+    {
+      "multiplier": 1,
+      "cases": 11,
+      "passed": true
+    },
+    {
+      "multiplier": 536870912,
+      "cases": 11,
+      "passed": true
+    },
+    {
+      "multiplier": 2147483647,
+      "cases": 11,
+      "passed": true
+    },
+    {
+      "multiplier": 3561711,
+      "cases": 11,
+      "passed": true
+    },
+    {
+      "multiplier": 3526514,
+      "cases": 11,
+      "passed": true
+    },
+    {
+      "multiplier": 6503432,
+      "cases": 11,
+      "passed": true
+    },
+    {
+      "multiplier": 3488065,
+      "cases": 11,
+      "passed": true
+    }
+  ],
+  "parameter_roundtrip_passed": true,
+  "fp64_integer_sum_max_fractional_residual": 0.0,
+  "hardware_tested": false,
+  "independent_field_tested": false
+}

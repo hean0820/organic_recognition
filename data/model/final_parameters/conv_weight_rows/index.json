@@ -1,0 +1,107 @@
+{
+  "conv1": {
+    "shape": [
+      24,
+      1,
+      3,
+      3
+    ],
+    "element_bits": 8,
+    "elements_per_text_row": 9,
+    "row_address": "oc * IC + ic",
+    "chunks": [
+      {
+        "file": "conv1_weight_rows_0.coe",
+        "oc_start": 0,
+        "oc_stop_exclusive": 8,
+        "row_start": 0,
+        "row_stop_exclusive": 8
+      },
+      {
+        "file": "conv1_weight_rows_1.coe",
+        "oc_start": 8,
+        "oc_stop_exclusive": 16,
+        "row_start": 8,
+        "row_stop_exclusive": 16
+      },
+      {
+        "file": "conv1_weight_rows_2.coe",
+        "oc_start": 16,
+        "oc_stop_exclusive": 24,
+        "row_start": 16,
+        "row_stop_exclusive": 24
+      }
+    ],
+    "roundtrip_passed": true
+  },
+  "conv2": {
+    "shape": [
+      48,
+      24,
+      3,
+      3
+    ],
+    "element_bits": 8,
+    "elements_per_text_row": 9,
+    "row_address": "oc * IC + ic",
+    "chunks": [
+      {
+        "file": "conv2_weight_rows_0.coe",
+        "oc_start": 0,
+        "oc_stop_exclusive": 16,
+        "row_start": 0,
+        "row_stop_exclusive": 384
+      },
+      {
+        "file": "conv2_weight_rows_1.coe",
+        "oc_start": 16,
+        "oc_stop_exclusive": 32,
+        "row_start": 384,
+        "row_stop_exclusive": 768
+      },
+      {
+        "file": "conv2_weight_rows_2.coe",
+        "oc_start": 32,
+        "oc_stop_exclusive": 48,
+        "row_start": 768,
+        "row_stop_exclusive": 1152
+      }
+    ],
+    "roundtrip_passed": true
+  },
+  "conv3": {
+    "shape": [
+      48,
+      48,
+      3,
+      3
+    ],
+    "element_bits": 8,
+    "elements_per_text_row": 9,
+    "row_address": "oc * IC + ic",
+    "chunks": [
+      {
+        "file": "conv3_weight_rows_0.coe",
+        "oc_start": 0,
+        "oc_stop_exclusive": 16,
+        "row_start": 0,
+        "row_stop_exclusive": 768
+      },
+      {
+        "file": "conv3_weight_rows_1.coe",
+        "oc_start": 16,
+        "oc_stop_exclusive": 32,
+        "row_start": 768,
+        "row_stop_exclusive": 1536
+      },
+      {
+        "file": "conv3_weight_rows_2.coe",
+        "oc_start": 32,
+        "oc_stop_exclusive": 48,
+        "row_start": 1536,
+        "row_stop_exclusive": 2304
+      }
+    ],
+    "roundtrip_passed": true
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "model_version": "chem22_real4_v1_candidate",
+  "source": "C:\\Users\\24875\\Desktop\\Qsan\\VOICE_CNN_REAL22",
+  "files": [
+    {
+      "path": "vitis\\ov5640_hdmi\\src\\chem22.c",
+      "sha256": "b54ce67f189880d0163768e20c2e7e66fa0edd0475c95c31b9564074c792c357"
+    },
+    {
+      "path": "vitis\\ov5640_hdmi\\src\\chem22.h",
+      "sha256": "a580684a106abbe85f026a6308083778f5de92f4d89a6064a08b9872743d6201"
+    },
+    {
+      "path": "vitis\\ov5640_hdmi\\src\\chem22_weights.h",
+      "sha256": "f1d7c5140ee2bfe12dde9bc5cc4df8b55bf532d7463c67e5e7c47d824b56dece"
+    }
+  ],
+  "selftest": "640-sample deterministic triangle -> frontend and all CNN logits, absolute tolerance 0.02; silence rejection",
+  "expected_logits": [
+    -4.175948143005371,
+    3.0324673652648926,
+    -5.546738147735596,
+    2.858553886413574,
+    -1.2796916961669922,
+    0.99617600440979,
+    3.1681323051452637,
+    -0.3606083393096924,
+    1.3868666887283325,
+    -2.9093501567840576,
+    -2.9840638637542725,
+    2.6338601112365723,
+    -0.09733784198760986,
+    1.7545292377471924,
+    3.8460803031921387,
+    -1.3520609140396118,
+    2.2329046726226807,
+    0.9893032908439636,
+    -0.02448582649230957,
+    0.14660930633544922,
+    -2.1268668174743652,
+    2.8758397102355957,
+    -0.08013701438903809,
+    6.848410129547119
+  ],
+  "threshold": 0.25,
+  "margin": 0.025,
+  "board_verified": false,
+  "independent_accuracy": "Four outer speaker folds: 65/89 correct accept, 11/89 wrong accept, 13/89 reject; final all-person candidate has no new-session test"
+}

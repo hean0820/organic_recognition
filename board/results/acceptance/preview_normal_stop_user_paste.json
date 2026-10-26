@@ -1,0 +1,17 @@
+{
+  "errors": [],
+  "retained_buffers": 0,
+  "dma_owned": false,
+  "owned_gpio": [],
+  "preview_thread_alive": false,
+  "voice_worker_alive": false,
+  "request_controller_closed": true,
+  "memory": {"active_bos": 0, "active_bytes": 0, "allocated_bos": 13, "released_bos": 13, "roles": {}},
+  "model3d": {"active": false, "closed": true},
+  "cma_before": {"CmaTotal": 131072, "CmaFree": 2128},
+  "cma_after": {"CmaTotal": 131072, "CmaFree": 19696},
+  "driver_before": {"num_buffers": 0, "mem_used": 0},
+  "driver_after": {"num_buffers": 0, "mem_used": 0},
+  "host": {"host_running": false, "http_thread_alive": false, "command_thread_alive": false, "server_id": "c79b20cdaba94213956e56b9e22c4843"},
+  "audio": {"control": 8, "status": 259, "count": 89, "dropped": 0, "total": 48575}
+}

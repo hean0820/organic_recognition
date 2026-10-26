@@ -1,0 +1,36 @@
+{
+  "conv1": {
+    "max_absolute_accumulator_bound": 146294,
+    "int32_safe": true,
+    "input_max": 255,
+    "method": "input_max * sum(abs(weight)) + abs(bias), per output channel",
+    "max_absolute_q30_product_bound": 521056949034
+  },
+  "conv2": {
+    "max_absolute_accumulator_bound": 659253,
+    "int32_safe": true,
+    "input_max": 127,
+    "method": "input_max * sum(abs(weight)) + abs(bias), per output channel",
+    "max_absolute_q30_product_bound": 2324864934042
+  },
+  "conv3": {
+    "max_absolute_accumulator_bound": 1178120,
+    "int32_safe": true,
+    "input_max": 127,
+    "method": "input_max * sum(abs(weight)) + abs(bias), per output channel",
+    "max_absolute_q30_product_bound": 7661823307840
+  },
+  "fc1": {
+    "max_absolute_accumulator_bound": 6598262,
+    "int32_safe": true,
+    "input_max": 127,
+    "method": "input_max * sum(abs(weight)) + abs(bias), per output channel",
+    "max_absolute_q30_product_bound": 23015166743030
+  },
+  "fc2": {
+    "max_absolute_accumulator_bound": 267933,
+    "int32_safe": true,
+    "input_max": 127,
+    "method": "input_max * sum(abs(weight)) + abs(bias), per output channel"
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "passed": true,
+  "date": "2026-10-22",
+  "tool": "Vivado 2020.2 SW3064766 IP3064653",
+  "mode": "Fresh project from normalized submission with restored vendor names",
+  "source_workspace": "D:\\qiansai\\stage6_guide\\rebuild_42754_20261022_02\\sources",
+  "build_output": "D:\\qiansai\\stage6_guide\\rebuild_42754_20261022_02\\run\\output",
+  "parameters_verified_before_build": true,
+  "new_synthesis_executed": true,
+  "new_implementation_executed": true,
+  "bit_hwh_xsa_exported": true,
+  "hardware_accessed": false,
+  "board_tested": false,
+  "resource_scope": "whole_reconstructed_soc",
+  "timing": {
+    "timing_passed": true,
+    "wns_ns": 0.119,
+    "whs_ns": 0.011,
+    "drc_error_or_critical_count": 0,
+    "internal_clock_and_constraint_checks": "passed",
+    "board_verified": false
+  },
+  "resources": {
+    "lut": 27921.0,
+    "ff": 36726.0,
+    "bram_tiles": 128.5,
+    "dsp": 123.0,
+    "slices": 11884.0
+  },
+  "runtime_package": {
+    "passed": true,
+    "archive": "D:\\qiansai\\stage6\\42754\\board\\deliveries\\psv7_rebuilt_runtime.zip",
+    "sha256": "8a097ddacadce2c5f43e7e50ee8ad33949f8633c56714ad537e5e5d48af9e1aa",
+    "members": 121,
+    "project_check": {
+      "package_files_checked": 112,
+      "editable_notebooks_checked": 2,
+      "version": "1.1.3-preview-delivery",
+      "hardware_accessed": false,
+      "formal_board_acceptance": "scoped_user_observed_preview_improvement_and_stop_passed; quantitative_fps_unavailable",
+      "speed_hwh_registers_checked": 14,
+      "python38_modules_checked": 37,
+      "hwh_ip_addresses_checked": 6
+    },
+    "rebuilt_pair_used": true,
+    "board_accessed": false
+  },
+  "artifact_sha256": {
+    "camera_audio.xsa": "52c70618e2854180439b2ebf377f57cf9daf2007f7ace0fd1969d5f25a51a155",
+    "psv7_camera_audio.bit": "7f1ed07a3e14fac04e993e1992fad8e69f18774ee06d0d6834bd988a53f549cd",
+    "psv7_camera_audio.hwh": "af3f27c5be90758c95a377ce6582c9c6a469fcf57dad1056e0e3bd97e6ccd161",
+    "system_routed.dcp": "2abdff6175f8624686fca01c0d006c20e6a54aa05ab63767a1c54051391138f5"
+  },
+  "inherited_clock_io_warning_scope": "camera/audio clock dedicated routing overrides and original external CDC/IO scope retained; see full DRC/CDC logs",
+  "historical_board_measurements_apply_to": "the supplied reference Overlay, not automatically this newly built pair",
+  "bit_configuration_payload_comparison": {
+    "equal": true,
+    "reference_sha256": "07ea20bbd124af53ee28515f65bf582eee986db63eb3dc6b8b5cc1b1a9a9cb4b",
+    "rebuilt_sha256": "07ea20bbd124af53ee28515f65bf582eee986db63eb3dc6b8b5cc1b1a9a9cb4b",
+    "excludes": "bit file design/date/time header fields",
+    "board_accessed": false
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "result": "PASS",
+  "original_connections_checked": 13,
+  "controlled_reset_enable_connections": 3,
+  "ila_probes": 8,
+  "bridge_status_control": "PASS"
+}

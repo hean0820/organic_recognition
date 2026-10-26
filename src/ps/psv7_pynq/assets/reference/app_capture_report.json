@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "outcome": "RESULT",
+  "cnn": {
+    "predicted": 0
+  },
+  "validation_kind": "offline_expected_for_saved_frame",
+  "scope": "Original camera frame and input64 retained; CNN arrays recomputed by QAT NumPy integer reference. Not a new board result.",
+  "original_report_sha256": "a460578732d8d762533268d244fa87377890f9768b0a4df7bfc9e7f9298d7879"
+}

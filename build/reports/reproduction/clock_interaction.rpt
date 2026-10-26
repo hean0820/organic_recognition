@@ -1,0 +1,43 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Thu Oct 22 23:24:05 2026
+| Host         : LAPTOP-R6A4SUDB running 64-bit major release  (build 9200)
+| Command      : report_clock_interaction -file D:/qiansai/stage6_guide/rebuild_42754_20261022_02/run/output/clock_interaction.rpt
+| Design       : system_wrapper
+| Device       : 7z020-clg400
+| Speed File   : -2  PRODUCTION 1.12 2019-11-22
+-----------------------------------------------------------------------------------------------------------------------------------
+
+Clock Interaction Report
+
+Clock Interaction Table
+-----------------------
+
+                                                                                                                                                                                        WNS                            TNS Failing  TNS Total    WNS Path         Clock-Pair           Inter-Clock              
+From Clock                                                                                  To Clock                                                                                    Clock Edges  WNS(ns)  TNS(ns)    Endpoints    Endpoints  Requirement(ns)  Classification       Constraints              
+------------------------------------------------------------------------------------------  ------------------------------------------------------------------------------------------  -----------  -------  -------  -----------  -----------  ---------------  -------------------  -----------------------  
+aud_bclk                                                                                    aud_bclk                                                                                    rise - rise    22.09     0.00            0          154            80.00  Clean                Timed                    
+aud_bclk                                                                                    clk_fpga_0                                                                                                                           0           17                   Ignored              Asynchronous Groups      
+cam_pclk                                                                                    cam_pclk                                                                                    rise - rise     6.58     0.00            0          460            13.89  Clean                Timed                    
+cam_pclk                                                                                    clk_fpga_0                                                                                  rise - rise    12.76     0.00            0           20            13.89  Ignored              Max Delay Datapath Only  
+clk_fpga_0                                                                                  aud_bclk                                                                                                                             0            2                   Ignored              Asynchronous Groups      
+clk_fpga_0                                                                                  cam_pclk                                                                                    rise - rise     8.92     0.00            0           13            10.00  Ignored              Max Delay Datapath Only  
+clk_fpga_0                                                                                  clk_fpga_0                                                                                  rise - rise     0.12     0.00            0        86199            10.00  Clean                Partial False Path       
+clk_fpga_0                                                                                  clk_fpga_1                                                                                  rise - rise     8.91     0.00            0          201       Unexpanded  Ignored              Max Delay Datapath Only  
+clk_fpga_0                                                                                  clk_out1_system_clk_wiz_0_0                                                                 rise - rise     8.73     0.00            0           42            10.00  Ignored              Max Delay Datapath Only  
+clk_fpga_0                                                                                  codec_i2c                                                                                   rise - rise     4.02     0.00            0           70            10.00  Clean                Timed                    
+clk_fpga_0                                                                                  dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_inst/SERIES7_BSCAN.bscan_inst/TCK  rise - rise     8.97     0.00            0          102            10.00  Ignored              Max Delay Datapath Only  
+clk_fpga_1                                                                                  clk_fpga_0                                                                                  rise - rise     5.56     0.00            0           71       Unexpanded  Ignored              Max Delay Datapath Only  
+clk_fpga_1                                                                                  clk_fpga_1                                                                                  rise - rise     0.74     0.00            0         7450             6.67  Clean                Partial False Path       
+clk_fpga_1                                                                                  clk_out1_system_clk_wiz_0_0                                                                 rise - rise     5.30     0.00            0           22       Unexpanded  Ignored              Max Delay Datapath Only  
+clk_out1_system_clk_wiz_0_0                                                                 clk_fpga_0                                                                                  rise - rise    11.77     0.00            0           34            13.47  Ignored              Max Delay Datapath Only  
+clk_out1_system_clk_wiz_0_0                                                                 clk_fpga_1                                                                                  rise - rise    12.40     0.00            0           11       Unexpanded  Ignored              Max Delay Datapath Only  
+clk_out1_system_clk_wiz_0_0                                                                 clk_out1_system_clk_wiz_0_0                                                                 rise - rise     4.14     0.00            0         5283            13.47  Clean                Timed                    
+codec_i2c                                                                                   aud_bclk                                                                                    rise - rise    36.46     0.00            0            1            40.00  No Common Clock      Timed (unsafe)           
+codec_i2c                                                                                   clk_fpga_0                                                                                  rise - rise     4.70     0.00            0            3            10.00  Clean                Timed                    
+codec_i2c                                                                                   codec_i2c                                                                                   rise - rise   994.96     0.00            0          107          1000.00  Clean                Timed                    
+dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_inst/SERIES7_BSCAN.bscan_inst/TCK  clk_fpga_0                                                                                  rise - rise    31.98     0.00            0           86            33.00  Ignored              Max Delay Datapath Only  
+dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_inst/SERIES7_BSCAN.bscan_inst/TCK  dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_inst/SERIES7_BSCAN.bscan_inst/TCK  rise - rise    27.53     0.00            0         1028            33.00  Clean                Timed                    
+
+

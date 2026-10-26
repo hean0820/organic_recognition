@@ -1,0 +1,133 @@
+[
+  {
+    "tensor": "conv1_weight",
+    "shape": [
+      24,
+      1,
+      3,
+      3
+    ],
+    "formats": [
+      "bin",
+      "hex",
+      "coe"
+    ],
+    "passed": true
+  },
+  {
+    "tensor": "conv1_bias",
+    "shape": [
+      24
+    ],
+    "formats": [
+      "bin",
+      "hex",
+      "coe"
+    ],
+    "passed": true
+  },
+  {
+    "tensor": "conv2_weight",
+    "shape": [
+      48,
+      24,
+      3,
+      3
+    ],
+    "formats": [
+      "bin",
+      "hex",
+      "coe"
+    ],
+    "passed": true
+  },
+  {
+    "tensor": "conv2_bias",
+    "shape": [
+      48
+    ],
+    "formats": [
+      "bin",
+      "hex",
+      "coe"
+    ],
+    "passed": true
+  },
+  {
+    "tensor": "conv3_weight",
+    "shape": [
+      48,
+      48,
+      3,
+      3
+    ],
+    "formats": [
+      "bin",
+      "hex",
+      "coe"
+    ],
+    "passed": true
+  },
+  {
+    "tensor": "conv3_bias",
+    "shape": [
+      48
+    ],
+    "formats": [
+      "bin",
+      "hex",
+      "coe"
+    ],
+    "passed": true
+  },
+  {
+    "tensor": "fc1_weight",
+    "shape": [
+      48,
+      3072
+    ],
+    "formats": [
+      "bin",
+      "hex",
+      "coe"
+    ],
+    "passed": true
+  },
+  {
+    "tensor": "fc1_bias",
+    "shape": [
+      48
+    ],
+    "formats": [
+      "bin",
+      "hex",
+      "coe"
+    ],
+    "passed": true
+  },
+  {
+    "tensor": "fc2_weight",
+    "shape": [
+      22,
+      48
+    ],
+    "formats": [
+      "bin",
+      "hex",
+      "coe"
+    ],
+    "passed": true
+  },
+  {
+    "tensor": "fc2_bias",
+    "shape": [
+      22
+    ],
+    "formats": [
+      "bin",
+      "hex",
+      "coe"
+    ],
+    "passed": true
+  }
+]

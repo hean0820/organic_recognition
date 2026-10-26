@@ -1,0 +1,53 @@
+{
+  "passed": true,
+  "source_files_sha256": {
+    "board_result.json": "8fc7ae833c8cbc518b4e191770794553c70e42627fa628211043e4bcf1752085",
+    "对比表与报告段落.md": "722e7859aef699bdbebe8bc956196aaf5b56b5f2bcf1cb8654a1eb88aa509de2"
+  },
+  "verified_logit_values": 2904,
+  "unique_inputs": 44,
+  "classes": 22,
+  "rounds": 3,
+  "all_logits_match_frozen_reference": true,
+  "balanced_order_and_full_rounds": true,
+  "hardware_sequences_contiguous": true,
+  "stats_recomputed": {
+    "ps_software": {
+      "count": 132,
+      "mean_ms": 49.39380985606442,
+      "median_ms": 49.10145599990301,
+      "p95_ms": 50.37731390003728,
+      "min_ms": 48.99357899989809,
+      "max_ms": 59.0885880001224
+    },
+    "rtl_call": {
+      "count": 132,
+      "mean_ms": 66.55841301514184,
+      "median_ms": 66.50528949990075,
+      "p95_ms": 66.90192964996413,
+      "min_ms": 66.3045900000725,
+      "max_ms": 68.52543700006208
+    },
+    "speedup_ratio_of_means": 0.74211219316223,
+    "latency_reduction_percent": -34.75051470841339,
+    "measured_pairs": 132,
+    "all_22_logits_exact": true
+  },
+  "cpu_clock_mhz": 766.666659,
+  "rtl_clock_mhz": 99.999999,
+  "mean_rtl_cycles": 6402709.757575758,
+  "mean_hardware_active_ms": 64.02709821602856,
+  "min_hardware_active_ms": 64.02242064022421,
+  "max_hardware_active_ms": 64.05876064058761,
+  "mean_wall_minus_hardware_ms": 2.531314799113281,
+  "hardware_fraction_of_wall_percent": 96.1968522318322,
+  "current_conv3_static_bound": {
+    "conv3_single_lane_issue_terms": 5308416,
+    "conv3_issue_lower_bound_ms": 53.08416053084161,
+    "scope": "Static current RTL single-term/cycle schedule lower bound; not a measured stage duration"
+  },
+  "date": "Received and reviewed on 2026-10-20; board calendar is unverified and shows 2021",
+  "conclusion": "Numerically correct, but current RTL API is slower than optimized single-thread C software",
+  "board_access_by_auditor": false,
+  "benchmark_manifest_note": "Received benchmark manifest SHA belongs to user hotfixed earlier bundle; exact manifest file not attached. Model, C source, vectors, logits, counts and statistics independently checked."
+}

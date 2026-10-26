@@ -1,0 +1,2126 @@
+{
+  "schema": 1,
+  "purpose": "Assemble the current hardware from canonical src files and build IP metadata; restore vendor names outside submission",
+  "entries": [
+    {
+      "source": "build/hls/build_prep_only.tcl",
+      "destination": "hls/prep_only/build_prep_only.tcl",
+      "sha256": "4152e887dbe1d3e119f1942d3874a1d2a77a8c9afacd2f02a7e5a3936f4d20d8"
+    },
+    {
+      "source": "src/hls/prep_only/prep_accel.cpp",
+      "destination": "hls/prep_only/prep_accel.cpp",
+      "sha256": "1fcdacd0784441d89767eba9cd83a245fd1dbcd30195589a2a7bdf07c436d717"
+    },
+    {
+      "source": "src/hls/prep_only/prep_accel.h",
+      "destination": "hls/prep_only/prep_accel.h",
+      "sha256": "304ee43b08aa0071c353b17af848df914fd46f0e44e1f8de115c261ac2e3f6ea"
+    },
+    {
+      "source": "src/rtl/platform/audio/audio.xdc",
+      "destination": "vivado/hardware/audio/audio.xdc",
+      "sha256": "69ee85fce40609a29900b46a5fb20015fd7c257ecf8538e173291c045ea70092"
+    },
+    {
+      "source": "src/rtl/platform/audio/audio_axi.v",
+      "destination": "vivado/hardware/audio/audio_axi.v",
+      "sha256": "c052a34f86e343aee3b4cf33bfcbcffdbb200b9f370607d7ef2774b3e3afb611"
+    },
+    {
+      "source": "src/rtl/platform/audio/audio_pcm_core.v",
+      "destination": "vivado/hardware/audio/audio_pcm_core.v",
+      "sha256": "819458f82c95b9b0d844df546bffa535f9db91a971c36a3d6b55b5346784dc15"
+    },
+    {
+      "source": "src/rtl/platform/audio/audio_receive.v",
+      "destination": "vivado/hardware/audio/audio_receive.v",
+      "sha256": "38a540e3e201694b950bcf6308643c83166c5a239e3ced02f2837df2e1ba7fc7"
+    },
+    {
+      "source": "src/rtl/platform/audio/audio_send.v",
+      "destination": "vivado/hardware/audio/audio_send.v",
+      "sha256": "d93b1a2b8e3fdb4f6e3cc716e231fed543a4cc334326c150bea711f734a54f92"
+    },
+    {
+      "source": "src/rtl/platform/audio/fir_coefficients.vh",
+      "destination": "vivado/hardware/audio/fir_coefficients.vh",
+      "sha256": "9e452f96f1432fff8013f89af2708aa982bc0e2e5d942ed89603df8839151436"
+    },
+    {
+      "source": "src/rtl/platform/audio/fir_decimate3.v",
+      "destination": "vivado/hardware/audio/fir_decimate3.v",
+      "sha256": "3013969615a909f366870fead1ef7ff3fc3a123b4a058852b4cf8128ca987ef8"
+    },
+    {
+      "source": "src/rtl/platform/audio/i2c_dri.v",
+      "destination": "vivado/hardware/audio/i2c_dri.v",
+      "sha256": "e0f7770c486b71018657f0aabc51f518d50ef008ccf06d94fa1f0ea959bbe6f7"
+    },
+    {
+      "source": "src/rtl/platform/audio/i2c_reg_cfg.v",
+      "destination": "vivado/hardware/audio/i2c_reg_cfg.v",
+      "sha256": "843caa1691bcbb7013e6073273ac159e7a1850f42f676c8cc274594f67de59f0"
+    },
+    {
+      "source": "src/rtl/platform/audio/wm8960_config.v",
+      "destination": "vivado/hardware/audio/wm8960_config.v",
+      "sha256": "7505c101393ecc45748010ea29e16be66227f9efaaf3ffd444802581fc043165"
+    },
+    {
+      "source": "build/vivado/hardware/audit.py",
+      "destination": "vivado/hardware/audit.py",
+      "sha256": "6944a4b1415430bb7deeff531dacfed75fd26ec1785821ac4490be1de782a53e"
+    },
+    {
+      "source": "build/vivado/hardware/audit_s7_netlist.tcl",
+      "destination": "vivado/hardware/audit_s7_netlist.tcl",
+      "sha256": "6a6877dc8ecdc38bfc4df3a7394c04bab8f005411e9dabcad66c8a4b75c09f04"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/cnn_accel_gen/sources_1/ip/cnn_input_bram/cnn_input_bram.xml",
+      "destination": "vivado/hardware/baseline/cnn_accel.gen/sources_1/ip/cnn_input_bram/cnn_input_bram.xml",
+      "sha256": "2223659ca90d4bc453fb8cbde2a847d0c01b7aea8d67c4fb1e01ef8d744cac1e"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/cnn_accel_gen/sources_1/ip/cnn_input_bram/sim/cnn_input_bram.v",
+      "destination": "vivado/hardware/baseline/cnn_accel.gen/sources_1/ip/cnn_input_bram/sim/cnn_input_bram.v",
+      "sha256": "d5d604668eaa25c0d0615403d4c127ea8726532f995ea1183b4e9c885211bcb4"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/cnn_accel_gen/sources_1/ip/cnn_input_bram/simulation/blk_mem_gen_v8_4.v",
+      "destination": "vivado/hardware/baseline/cnn_accel.gen/sources_1/ip/cnn_input_bram/simulation/blk_mem_gen_v8_4.v",
+      "sha256": "1383029133f9f0aa8737978716a0d9a091966dc0ce9fdefac7d046297dd6a8b1"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/cnn_accel_gen/sources_1/ip/cnn_output_bram/cnn_output_bram.xml",
+      "destination": "vivado/hardware/baseline/cnn_accel.gen/sources_1/ip/cnn_output_bram/cnn_output_bram.xml",
+      "sha256": "9e0b155affbaf31f13bd8d4136d2680d748c386a901655d0c728752763c09e50"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/cnn_accel_gen/sources_1/ip/cnn_output_bram/sim/cnn_output_bram.v",
+      "destination": "vivado/hardware/baseline/cnn_accel.gen/sources_1/ip/cnn_output_bram/sim/cnn_output_bram.v",
+      "sha256": "9c11613c1a34adab160441e1f5deccc5a7c282cc7f5e7e190f3928eafa78a493"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/cnn_accel_gen/sources_1/ip/cnn_output_bram/simulation/blk_mem_gen_v8_4.v",
+      "destination": "vivado/hardware/baseline/cnn_accel.gen/sources_1/ip/cnn_output_bram/simulation/blk_mem_gen_v8_4.v",
+      "sha256": "1383029133f9f0aa8737978716a0d9a091966dc0ce9fdefac7d046297dd6a8b1"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/cnn_accel_gen/sources_1/ip/conv_rslt_reg/conv_rslt_reg.xml",
+      "destination": "vivado/hardware/baseline/cnn_accel.gen/sources_1/ip/conv_rslt_reg/conv_rslt_reg.xml",
+      "sha256": "4d0a9a30350a784828accfced38e7bbab4005aa93d563c4f8f6a8bda731f8602"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/cnn_accel_gen/sources_1/ip/conv_rslt_reg/sim/conv_rslt_reg.v",
+      "destination": "vivado/hardware/baseline/cnn_accel.gen/sources_1/ip/conv_rslt_reg/sim/conv_rslt_reg.v",
+      "sha256": "322a4bbe21a37c6abfce20004da360fcd32cd437015431dae674e18b25d046cd"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/cnn_accel_gen/sources_1/ip/conv_rslt_reg/simulation/blk_mem_gen_v8_4.v",
+      "destination": "vivado/hardware/baseline/cnn_accel.gen/sources_1/ip/conv_rslt_reg/simulation/blk_mem_gen_v8_4.v",
+      "sha256": "1383029133f9f0aa8737978716a0d9a091966dc0ce9fdefac7d046297dd6a8b1"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/cnn_accel_gen/sources_1/ip/fifo_generator_0/fifo_generator_0.xml",
+      "destination": "vivado/hardware/baseline/cnn_accel.gen/sources_1/ip/fifo_generator_0/fifo_generator_0.xml",
+      "sha256": "354f056c89742a1de18e0b984c76ccca95295ed4d2275108bdc3cb37d334df68"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/cnn_accel_gen/sources_1/ip/fifo_generator_0/hdl/fifo_generator_v13_2_rfs.v",
+      "destination": "vivado/hardware/baseline/cnn_accel.gen/sources_1/ip/fifo_generator_0/hdl/fifo_generator_v13_2_rfs.v",
+      "sha256": "ba8dab3a1b5bb344ecfced7d1f7440ed04bd534af28a8bd42996ddd0eff69e05"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/cnn_accel_gen/sources_1/ip/fifo_generator_0/hdl/fifo_generator_v13_2_rfs.vhd",
+      "destination": "vivado/hardware/baseline/cnn_accel.gen/sources_1/ip/fifo_generator_0/hdl/fifo_generator_v13_2_rfs.vhd",
+      "sha256": "1555c381bd0ffacfce2363d9924406f44bb4e8fd482d8ebcb10fed0945f31a96"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/cnn_accel_gen/sources_1/ip/fifo_generator_0/sim/fifo_generator_0.v",
+      "destination": "vivado/hardware/baseline/cnn_accel.gen/sources_1/ip/fifo_generator_0/sim/fifo_generator_0.v",
+      "sha256": "89b7290b6491f2f47b688f74d807be2b8fb3cd799904fbd3a2e8f9f69cd884c5"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/cnn_accel_gen/sources_1/ip/fifo_generator_0/simulation/fifo_generator_vlog_beh.v",
+      "destination": "vivado/hardware/baseline/cnn_accel.gen/sources_1/ip/fifo_generator_0/simulation/fifo_generator_vlog_beh.v",
+      "sha256": "f6b1a9940c954bb0c00c51653cedd582ff060fed9c6b395afb4f32f8b310d2f8"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/cnn_accel_gen/sources_1/ip/image_data_ram/image_data_ram.xml",
+      "destination": "vivado/hardware/baseline/cnn_accel.gen/sources_1/ip/image_data_ram/image_data_ram.xml",
+      "sha256": "c1f243121012433200be86cd77886711ffedd002c58445aac0fd50877caeab6e"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/cnn_accel_gen/sources_1/ip/image_data_ram/sim/image_data_ram.v",
+      "destination": "vivado/hardware/baseline/cnn_accel.gen/sources_1/ip/image_data_ram/sim/image_data_ram.v",
+      "sha256": "be5cba3db39310fa47dc6d4aa3f5b44f692e99e05c805deb365217e6e15eb116"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/cnn_accel_gen/sources_1/ip/image_data_ram/simulation/blk_mem_gen_v8_4.v",
+      "destination": "vivado/hardware/baseline/cnn_accel.gen/sources_1/ip/image_data_ram/simulation/blk_mem_gen_v8_4.v",
+      "sha256": "1383029133f9f0aa8737978716a0d9a091966dc0ce9fdefac7d046297dd6a8b1"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/cnn_accel_gen/sources_1/ip/mult_gen/hdl/mult_gen_v12_0_vh_rfs.vhd",
+      "destination": "vivado/hardware/baseline/cnn_accel.gen/sources_1/ip/mult_gen/hdl/mult_gen_v12_0_vh_rfs.vhd",
+      "sha256": "278b8cccda601bc08eb4a32b21beef3dafffbd91d9cbb6e749715d63e11e1cfd"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/cnn_accel_gen/sources_1/ip/mult_gen/hdl/xbip_bram18k_v3_0_vh_rfs.vhd",
+      "destination": "vivado/hardware/baseline/cnn_accel.gen/sources_1/ip/mult_gen/hdl/xbip_bram18k_v3_0_vh_rfs.vhd",
+      "sha256": "d6c427ac5f10666387badc9e08a5f969fa92ebd0766c259beb3756f6e66800d4"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/cnn_accel_gen/sources_1/ip/mult_gen/hdl/xbip_pipe_v3_0_vh_rfs.vhd",
+      "destination": "vivado/hardware/baseline/cnn_accel.gen/sources_1/ip/mult_gen/hdl/xbip_pipe_v3_0_vh_rfs.vhd",
+      "sha256": "ad8b6c3304933b1a569de3cd3c21aef47844bcc7df9f588b28906530d02061e2"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/cnn_accel_gen/sources_1/ip/mult_gen/hdl/xbip_utils_v3_0_vh_rfs.vhd",
+      "destination": "vivado/hardware/baseline/cnn_accel.gen/sources_1/ip/mult_gen/hdl/xbip_utils_v3_0_vh_rfs.vhd",
+      "sha256": "6c53c400292a2d507803a618f43379ec73a1e295734cbe7a1e402a87e96e07e0"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/cnn_accel_gen/sources_1/ip/mult_gen/mult_gen.xml",
+      "destination": "vivado/hardware/baseline/cnn_accel.gen/sources_1/ip/mult_gen/mult_gen.xml",
+      "sha256": "ab56a920f3f217f2dfd81411c5439f1082515807b7b2edd42d40ca69a7a290fe"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/cnn_accel_gen/sources_1/ip/mult_gen/sim/mult_gen.vhd",
+      "destination": "vivado/hardware/baseline/cnn_accel.gen/sources_1/ip/mult_gen/sim/mult_gen.vhd",
+      "sha256": "b395d50f91127a0a40bc1a39a82bf71fbe39c87efeb4ce2ff1195cc4bb20d920"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/cnn_accel_gen/sources_1/ip/rom_b_ip/rom_b_ip.mif",
+      "destination": "vivado/hardware/baseline/cnn_accel.gen/sources_1/ip/rom_b_ip/rom_b_ip.mif",
+      "sha256": "ea66b1e8fe88377edd517b4cf012d8bdc70f269f4f69c13b09c913da814ddd8e"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/cnn_accel_gen/sources_1/ip/rom_b_ip/rom_b_ip.xml",
+      "destination": "vivado/hardware/baseline/cnn_accel.gen/sources_1/ip/rom_b_ip/rom_b_ip.xml",
+      "sha256": "a95ac92763babe1aba1233cce0ad183d286337bdedebfab915c12b92b7d762b2"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/cnn_accel_gen/sources_1/ip/rom_b_ip/sim/rom_b_ip.v",
+      "destination": "vivado/hardware/baseline/cnn_accel.gen/sources_1/ip/rom_b_ip/sim/rom_b_ip.v",
+      "sha256": "ea34ff747ad514a494d3ed46f7f5ed0792d43a78a625eae6867d181e197d1afe"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/cnn_accel_gen/sources_1/ip/rom_b_ip/simulation/blk_mem_gen_v8_4.v",
+      "destination": "vivado/hardware/baseline/cnn_accel.gen/sources_1/ip/rom_b_ip/simulation/blk_mem_gen_v8_4.v",
+      "sha256": "1383029133f9f0aa8737978716a0d9a091966dc0ce9fdefac7d046297dd6a8b1"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/cnn_accel_gen/sources_1/ip/rom_b_layer2_ip/rom_b_layer2_ip.mif",
+      "destination": "vivado/hardware/baseline/cnn_accel.gen/sources_1/ip/rom_b_layer2_ip/rom_b_layer2_ip.mif",
+      "sha256": "3700a91028100b62e7837e7ed8a79fa062150ef5a78e8579d89c81182e656c70"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/cnn_accel_gen/sources_1/ip/rom_b_layer2_ip/rom_b_layer2_ip.xml",
+      "destination": "vivado/hardware/baseline/cnn_accel.gen/sources_1/ip/rom_b_layer2_ip/rom_b_layer2_ip.xml",
+      "sha256": "452c3607ef1f73d41652be006c94ec580958e2eabd9ef40cde688886bcbd0c21"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/cnn_accel_gen/sources_1/ip/rom_b_layer2_ip/sim/rom_b_layer2_ip.v",
+      "destination": "vivado/hardware/baseline/cnn_accel.gen/sources_1/ip/rom_b_layer2_ip/sim/rom_b_layer2_ip.v",
+      "sha256": "169a5763d8202829c12a8083ff067b118614f3e78860e0e6a4d80ca61b6d231d"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/cnn_accel_gen/sources_1/ip/rom_b_layer2_ip/simulation/blk_mem_gen_v8_4.v",
+      "destination": "vivado/hardware/baseline/cnn_accel.gen/sources_1/ip/rom_b_layer2_ip/simulation/blk_mem_gen_v8_4.v",
+      "sha256": "1383029133f9f0aa8737978716a0d9a091966dc0ce9fdefac7d046297dd6a8b1"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/cnn_accel_gen/sources_1/ip/rom_w0_ip/rom_w0_ip.mif",
+      "destination": "vivado/hardware/baseline/cnn_accel.gen/sources_1/ip/rom_w0_ip/rom_w0_ip.mif",
+      "sha256": "f21ba00f26fbd809f9b48b55941f2581efbf1505a7e203f9d3e319f2acb773be"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/cnn_accel_gen/sources_1/ip/rom_w0_ip/rom_w0_ip.xml",
+      "destination": "vivado/hardware/baseline/cnn_accel.gen/sources_1/ip/rom_w0_ip/rom_w0_ip.xml",
+      "sha256": "bf10c8162a360fe4c0a1af1483626a2d333b045e7e64827be5806d16d9b2bb11"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/cnn_accel_gen/sources_1/ip/rom_w0_ip/sim/rom_w0_ip.v",
+      "destination": "vivado/hardware/baseline/cnn_accel.gen/sources_1/ip/rom_w0_ip/sim/rom_w0_ip.v",
+      "sha256": "064498eebbd02c6c7236825047fc17fc594991cba358a10feb8f2543d9194eac"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/cnn_accel_gen/sources_1/ip/rom_w0_ip/simulation/blk_mem_gen_v8_4.v",
+      "destination": "vivado/hardware/baseline/cnn_accel.gen/sources_1/ip/rom_w0_ip/simulation/blk_mem_gen_v8_4.v",
+      "sha256": "1383029133f9f0aa8737978716a0d9a091966dc0ce9fdefac7d046297dd6a8b1"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/cnn_accel_gen/sources_1/ip/rom_w0_layer2_ip/rom_w0_layer2_ip.mif",
+      "destination": "vivado/hardware/baseline/cnn_accel.gen/sources_1/ip/rom_w0_layer2_ip/rom_w0_layer2_ip.mif",
+      "sha256": "b517bf3e7ab337f5b458e603c5f05bf9f093c08d915a4fb887e209a8248e0b7c"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/cnn_accel_gen/sources_1/ip/rom_w0_layer2_ip/rom_w0_layer2_ip.xml",
+      "destination": "vivado/hardware/baseline/cnn_accel.gen/sources_1/ip/rom_w0_layer2_ip/rom_w0_layer2_ip.xml",
+      "sha256": "fe40da37a7d2279ed55ee02c3003704f0a250cd737d09eb4c080262fc0fe928c"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/cnn_accel_gen/sources_1/ip/rom_w0_layer2_ip/sim/rom_w0_layer2_ip.v",
+      "destination": "vivado/hardware/baseline/cnn_accel.gen/sources_1/ip/rom_w0_layer2_ip/sim/rom_w0_layer2_ip.v",
+      "sha256": "3a8c58d996f34e3624b70673baf319fd0e8b91a187b1f508e3276edca42320f5"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/cnn_accel_gen/sources_1/ip/rom_w0_layer2_ip/simulation/blk_mem_gen_v8_4.v",
+      "destination": "vivado/hardware/baseline/cnn_accel.gen/sources_1/ip/rom_w0_layer2_ip/simulation/blk_mem_gen_v8_4.v",
+      "sha256": "1383029133f9f0aa8737978716a0d9a091966dc0ce9fdefac7d046297dd6a8b1"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/cnn_accel_gen/sources_1/ip/rom_w1_ip/rom_w1_ip.mif",
+      "destination": "vivado/hardware/baseline/cnn_accel.gen/sources_1/ip/rom_w1_ip/rom_w1_ip.mif",
+      "sha256": "078fe5afd65a2841cd2ef992a54bffefcd1d1e859d09fbc3638050ab8763ccbd"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/cnn_accel_gen/sources_1/ip/rom_w1_ip/rom_w1_ip.xml",
+      "destination": "vivado/hardware/baseline/cnn_accel.gen/sources_1/ip/rom_w1_ip/rom_w1_ip.xml",
+      "sha256": "9aee574073492324521424510c3f720b17e950cba8fa43807135a1fcfd260f78"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/cnn_accel_gen/sources_1/ip/rom_w1_ip/sim/rom_w1_ip.v",
+      "destination": "vivado/hardware/baseline/cnn_accel.gen/sources_1/ip/rom_w1_ip/sim/rom_w1_ip.v",
+      "sha256": "784ba4ddeb56657c172e1fca27078f25ff4eeb68da98c713bb38547a8620843c"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/cnn_accel_gen/sources_1/ip/rom_w1_ip/simulation/blk_mem_gen_v8_4.v",
+      "destination": "vivado/hardware/baseline/cnn_accel.gen/sources_1/ip/rom_w1_ip/simulation/blk_mem_gen_v8_4.v",
+      "sha256": "1383029133f9f0aa8737978716a0d9a091966dc0ce9fdefac7d046297dd6a8b1"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/cnn_accel_gen/sources_1/ip/rom_w1_layer2_ip/rom_w1_layer2_ip.mif",
+      "destination": "vivado/hardware/baseline/cnn_accel.gen/sources_1/ip/rom_w1_layer2_ip/rom_w1_layer2_ip.mif",
+      "sha256": "8bdf05b4b5368cd2f92ce06fc0d7a6352f5f22618741fd6796e0051492db133a"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/cnn_accel_gen/sources_1/ip/rom_w1_layer2_ip/rom_w1_layer2_ip.xml",
+      "destination": "vivado/hardware/baseline/cnn_accel.gen/sources_1/ip/rom_w1_layer2_ip/rom_w1_layer2_ip.xml",
+      "sha256": "b322ac00b3cfa840d13850c4b95ec5f860eda1d3aad6568ba126f574e95047ae"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/cnn_accel_gen/sources_1/ip/rom_w1_layer2_ip/sim/rom_w1_layer2_ip.v",
+      "destination": "vivado/hardware/baseline/cnn_accel.gen/sources_1/ip/rom_w1_layer2_ip/sim/rom_w1_layer2_ip.v",
+      "sha256": "db3d97f2f3a43c906d7cd806a6ab544bc195c9f7e44076ff6ad547ac7dfabd83"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/cnn_accel_gen/sources_1/ip/rom_w1_layer2_ip/simulation/blk_mem_gen_v8_4.v",
+      "destination": "vivado/hardware/baseline/cnn_accel.gen/sources_1/ip/rom_w1_layer2_ip/simulation/blk_mem_gen_v8_4.v",
+      "sha256": "1383029133f9f0aa8737978716a0d9a091966dc0ce9fdefac7d046297dd6a8b1"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/cnn_accel_gen/sources_1/ip/rom_w2_ip/rom_w2_ip.mif",
+      "destination": "vivado/hardware/baseline/cnn_accel.gen/sources_1/ip/rom_w2_ip/rom_w2_ip.mif",
+      "sha256": "6a277f4678529eeb3f68577aa71117a0ee1daf15ee08ae3f97b1b7b3ac792a26"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/cnn_accel_gen/sources_1/ip/rom_w2_ip/rom_w2_ip.xml",
+      "destination": "vivado/hardware/baseline/cnn_accel.gen/sources_1/ip/rom_w2_ip/rom_w2_ip.xml",
+      "sha256": "06c497929077eaf1c54815a25c163b8d0beee6138fbdfa41742623506b5126a6"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/cnn_accel_gen/sources_1/ip/rom_w2_ip/sim/rom_w2_ip.v",
+      "destination": "vivado/hardware/baseline/cnn_accel.gen/sources_1/ip/rom_w2_ip/sim/rom_w2_ip.v",
+      "sha256": "7359d4f4c57d2d48383bc418793b6515d146f1ef34bc1e4b0fa20295244cd6c5"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/cnn_accel_gen/sources_1/ip/rom_w2_ip/simulation/blk_mem_gen_v8_4.v",
+      "destination": "vivado/hardware/baseline/cnn_accel.gen/sources_1/ip/rom_w2_ip/simulation/blk_mem_gen_v8_4.v",
+      "sha256": "1383029133f9f0aa8737978716a0d9a091966dc0ce9fdefac7d046297dd6a8b1"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/cnn_accel_gen/sources_1/ip/rom_w2_layer2_ip/rom_w2_layer2_ip.mif",
+      "destination": "vivado/hardware/baseline/cnn_accel.gen/sources_1/ip/rom_w2_layer2_ip/rom_w2_layer2_ip.mif",
+      "sha256": "7fd773b2818800e3ed0151dfc6f1435eac6b12f3f6da52050fb99ab9f196bd88"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/cnn_accel_gen/sources_1/ip/rom_w2_layer2_ip/rom_w2_layer2_ip.xml",
+      "destination": "vivado/hardware/baseline/cnn_accel.gen/sources_1/ip/rom_w2_layer2_ip/rom_w2_layer2_ip.xml",
+      "sha256": "53cc19fdd2597f6f13cd0939e49558e275be33c5a03a9980395dd45fe1001e86"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/cnn_accel_gen/sources_1/ip/rom_w2_layer2_ip/sim/rom_w2_layer2_ip.v",
+      "destination": "vivado/hardware/baseline/cnn_accel.gen/sources_1/ip/rom_w2_layer2_ip/sim/rom_w2_layer2_ip.v",
+      "sha256": "3a075deecab25bd3f9632c9e72ba3d2b78d02bd761ab1b3bccafe4132abc1ac1"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/cnn_accel_gen/sources_1/ip/rom_w2_layer2_ip/simulation/blk_mem_gen_v8_4.v",
+      "destination": "vivado/hardware/baseline/cnn_accel.gen/sources_1/ip/rom_w2_layer2_ip/simulation/blk_mem_gen_v8_4.v",
+      "sha256": "1383029133f9f0aa8737978716a0d9a091966dc0ce9fdefac7d046297dd6a8b1"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/design/ov5640_lcd.xdc",
+      "destination": "vivado/hardware/baseline/design/ov5640_lcd.xdc",
+      "sha256": "6f3bb1aeff01616b47638ad5781326bb31f522c916196a8500bcef82a9f1b6b5"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/ip_repo/cnn_ps_if_sync/component.xml",
+      "destination": "vivado/hardware/baseline/ip_repo/CNN_PS_IF_SYNC/component.xml",
+      "sha256": "71c6b9af9b53c830ea08e87acbf72efb5d04819d5c33f7d66a89ae880ff92756"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/ip_repo/cnn_ps_if_sync/src/cnn_axi_buffer.v",
+      "destination": "vivado/hardware/baseline/ip_repo/CNN_PS_IF_SYNC/src/cnn_axi_buffer.v",
+      "sha256": "47a2c9ec8871840ac69bd0cda9dbde47bb354269b4022fa421a74472b9e41a30"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/ip_repo/cnn_ps_if_sync/src/cnn_input_bram/cnn_input_bram.xci",
+      "destination": "vivado/hardware/baseline/ip_repo/CNN_PS_IF_SYNC/src/cnn_input_bram/cnn_input_bram.xci",
+      "sha256": "6253bb7e4551183f6110a7c25fb3a98b707f669c821e94fabeb81d74318306d8"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/ip_repo/cnn_ps_if_sync/src/cnn_output_bram/cnn_output_bram.xci",
+      "destination": "vivado/hardware/baseline/ip_repo/CNN_PS_IF_SYNC/src/cnn_output_bram/cnn_output_bram.xci",
+      "sha256": "f8efcac6290d391789b46f0993a9c6250d1b47d883844e48cb9e591c5ba440df"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/ip_repo/cnn_ps_if_sync/src/cnn_ps_if.v",
+      "destination": "vivado/hardware/baseline/ip_repo/CNN_PS_IF_SYNC/src/cnn_ps_if.v",
+      "sha256": "4e8d14857310d14a20d2e9d1f4ec184c085703d63751d8c0bfcb32a1e5e3fe7d"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/ip_repo/cnn_ps_if_sync/src/cnn_top.v",
+      "destination": "vivado/hardware/baseline/ip_repo/CNN_PS_IF_SYNC/src/cnn_top.v",
+      "sha256": "43e5b3e135daa7e3f366eaa8993759c3846c7cb01af57a9a88f7c1103e446442"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/ip_repo/cnn_ps_if_sync/src/conv1_bias_int32.coe",
+      "destination": "vivado/hardware/baseline/ip_repo/CNN_PS_IF_SYNC/src/conv1_bias_int32.coe",
+      "sha256": "05a7fdfe1bea96b32c5ee99b6bda463f0872cfe554eb1fe8c419066c1791c7e4"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/ip_repo/cnn_ps_if_sync/src/conv1_weight_r0.coe",
+      "destination": "vivado/hardware/baseline/ip_repo/CNN_PS_IF_SYNC/src/conv1_weight_r0.coe",
+      "sha256": "c79824cc48df22335ecac1afd7902cc31fe6dc899893e16d92633be34f80ca03"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/ip_repo/cnn_ps_if_sync/src/conv1_weight_r1.coe",
+      "destination": "vivado/hardware/baseline/ip_repo/CNN_PS_IF_SYNC/src/conv1_weight_r1.coe",
+      "sha256": "6e9c51532a00d21dd5f270c6359809e5ee0db6d35aa4e1025f001ad36669d518"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/ip_repo/cnn_ps_if_sync/src/conv1_weight_r2.coe",
+      "destination": "vivado/hardware/baseline/ip_repo/CNN_PS_IF_SYNC/src/conv1_weight_r2.coe",
+      "sha256": "3d7d4af99a4847a8eba4fa6b559e740986d7563f1dbcb7f3cccf841cc53a06b7"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/ip_repo/cnn_ps_if_sync/src/conv2_bias_int32.coe",
+      "destination": "vivado/hardware/baseline/ip_repo/CNN_PS_IF_SYNC/src/conv2_bias_int32.coe",
+      "sha256": "bab4d3148e1163a164eacccf46c7be99b2a1aaaa49371d159090a6b0a0b0c716"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/ip_repo/cnn_ps_if_sync/src/conv2_weight_r0.coe",
+      "destination": "vivado/hardware/baseline/ip_repo/CNN_PS_IF_SYNC/src/conv2_weight_r0.coe",
+      "sha256": "84468f63b680ed9fec0940b507a0e8620e43c30420175f148edd25072834c8b9"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/ip_repo/cnn_ps_if_sync/src/conv2_weight_r1.coe",
+      "destination": "vivado/hardware/baseline/ip_repo/CNN_PS_IF_SYNC/src/conv2_weight_r1.coe",
+      "sha256": "52161dc32b2729f2e7f4795aaa2230c02b752e3dcdf6061b6acde5800f72ddb8"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/ip_repo/cnn_ps_if_sync/src/conv2_weight_r2.coe",
+      "destination": "vivado/hardware/baseline/ip_repo/CNN_PS_IF_SYNC/src/conv2_weight_r2.coe",
+      "sha256": "c3021cf2149b05ec51d9f48c6bbfffda0d7970b929b0aa8396705988f102804f"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/ip_repo/cnn_ps_if_sync/src/conv_cal.v",
+      "destination": "vivado/hardware/baseline/ip_repo/CNN_PS_IF_SYNC/src/conv_cal.v",
+      "sha256": "865d7af4131c60cbec14f5ca608e6b4190d9051577c9a96071c06e798b5a421a"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/ip_repo/cnn_ps_if_sync/src/conv_rslt_reg/conv_rslt_reg.xci",
+      "destination": "vivado/hardware/baseline/ip_repo/CNN_PS_IF_SYNC/src/conv_rslt_reg/conv_rslt_reg.xci",
+      "sha256": "698e3636a4c69ec7d09350a823ba0c61bf0a80a3b0d87208dc5e747c95a3411b"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/ip_repo/cnn_ps_if_sync/src/data_ram.v",
+      "destination": "vivado/hardware/baseline/ip_repo/CNN_PS_IF_SYNC/src/data_ram.v",
+      "sha256": "620228a4122af7f311423821343a8ee74926b87811e0c32528989b2ee4b151e3"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/ip_repo/cnn_ps_if_sync/src/fifo_generator_0/fifo_generator_0.xci",
+      "destination": "vivado/hardware/baseline/ip_repo/CNN_PS_IF_SYNC/src/fifo_generator_0/fifo_generator_0.xci",
+      "sha256": "0ad3b6ffe44eaa9457b5ed357df89254563fda946e233223ca4be6f44bbd0e13"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/ip_repo/cnn_ps_if_sync/src/image_data_ram/image_data_ram.xci",
+      "destination": "vivado/hardware/baseline/ip_repo/CNN_PS_IF_SYNC/src/image_data_ram/image_data_ram.xci",
+      "sha256": "e75e6133440117b0d3e276be8bde897c615fb8e2f63898ba57eeab04ccc1feba"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/ip_repo/cnn_ps_if_sync/src/mult_gen/mult_gen.xci",
+      "destination": "vivado/hardware/baseline/ip_repo/CNN_PS_IF_SYNC/src/mult_gen/mult_gen.xci",
+      "sha256": "6fe66743833d8c6b1189468dc4e18981879acf61dfe275f35ad98030d80b7956"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/ip_repo/cnn_ps_if_sync/src/pool_layer.v",
+      "destination": "vivado/hardware/baseline/ip_repo/CNN_PS_IF_SYNC/src/pool_layer.v",
+      "sha256": "96633457919c4461a90dbd1326c209158bf8ad56f716bfbe7903e4329d0425b2"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/ip_repo/cnn_ps_if_sync/src/requant_relu.v",
+      "destination": "vivado/hardware/baseline/ip_repo/CNN_PS_IF_SYNC/src/requant_relu.v",
+      "sha256": "80e0aa474730372be75405f476d974c193c5aeebbeb862e63bfaba6cae8d8476"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/ip_repo/cnn_ps_if_sync/src/rom_b_ip/rom_b_ip.xci",
+      "destination": "vivado/hardware/baseline/ip_repo/CNN_PS_IF_SYNC/src/rom_b_ip/rom_b_ip.xci",
+      "sha256": "643b609084eefeb9e2f11fd2654fad6cb765880f3b077f6e4808a2bd62a3598f"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/ip_repo/cnn_ps_if_sync/src/rom_b_layer2_ip/rom_b_layer2_ip.xci",
+      "destination": "vivado/hardware/baseline/ip_repo/CNN_PS_IF_SYNC/src/rom_b_layer2_ip/rom_b_layer2_ip.xci",
+      "sha256": "0b6b884de5ac8ba1ac05ec4facaf145c0e6a433ec78f43a9689275e18f6d9d0f"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/ip_repo/cnn_ps_if_sync/src/rom_w0_ip/rom_w0_ip.xci",
+      "destination": "vivado/hardware/baseline/ip_repo/CNN_PS_IF_SYNC/src/rom_w0_ip/rom_w0_ip.xci",
+      "sha256": "b01c265b99c0583b5fd9b1949e1f3fd8c20d702738217838f330ed0cadc32fdf"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/ip_repo/cnn_ps_if_sync/src/rom_w0_layer2_ip/rom_w0_layer2_ip.xci",
+      "destination": "vivado/hardware/baseline/ip_repo/CNN_PS_IF_SYNC/src/rom_w0_layer2_ip/rom_w0_layer2_ip.xci",
+      "sha256": "7c82b17b06d3ec974ccc93ffb8092eb2cb982008d9ef8e14090895fd4a7225b7"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/ip_repo/cnn_ps_if_sync/src/rom_w1_ip/rom_w1_ip.xci",
+      "destination": "vivado/hardware/baseline/ip_repo/CNN_PS_IF_SYNC/src/rom_w1_ip/rom_w1_ip.xci",
+      "sha256": "c2186e00b70627ab69b4ad0dabf51284cfc8ad61d9333ba4aecaf1df54ab940c"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/ip_repo/cnn_ps_if_sync/src/rom_w1_layer2_ip/rom_w1_layer2_ip.xci",
+      "destination": "vivado/hardware/baseline/ip_repo/CNN_PS_IF_SYNC/src/rom_w1_layer2_ip/rom_w1_layer2_ip.xci",
+      "sha256": "f5d329e490597bdad4bcd65e5cf5f5a03a9f34eeb9d656ab2bd6f3d556c33c81"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/ip_repo/cnn_ps_if_sync/src/rom_w2_ip/rom_w2_ip.xci",
+      "destination": "vivado/hardware/baseline/ip_repo/CNN_PS_IF_SYNC/src/rom_w2_ip/rom_w2_ip.xci",
+      "sha256": "21e78fa8212f96d8a6f93319c152637bae763a726fbe829b9559cc557349b9ab"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/ip_repo/cnn_ps_if_sync/src/rom_w2_layer2_ip/rom_w2_layer2_ip.xci",
+      "destination": "vivado/hardware/baseline/ip_repo/CNN_PS_IF_SYNC/src/rom_w2_layer2_ip/rom_w2_layer2_ip.xci",
+      "sha256": "553f82cbcd0cf70d2cb3e33ef30b75905593dde53b77e3f9b235bc2302e39b83"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/ip_repo/cnn_ps_if_sync/src/tb_cached_parallel.sv",
+      "destination": "vivado/hardware/baseline/ip_repo/CNN_PS_IF_SYNC/src/tb_cached_parallel.sv",
+      "sha256": "22d1ae843e4d5684c3339d14926b612d28191efe2d35bc2d65fa394a61b60818"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/ip_repo/cnn_ps_if_sync/src/tb_cnn_axi.sv",
+      "destination": "vivado/hardware/baseline/ip_repo/CNN_PS_IF_SYNC/src/tb_cnn_axi.sv",
+      "sha256": "dce9fd315bdd459c7e3ba99c1cc0101c658b40eb6f058401c74f9eaefe1f4488"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/ip_repo/cnn_ps_if_sync/xgui/cnn_ps_if_v1_0.tcl",
+      "destination": "vivado/hardware/baseline/ip_repo/CNN_PS_IF_SYNC/xgui/cnn_ps_if_v1_0.tcl",
+      "sha256": "e0725b60cdc4cd625ee059e557ee3f5569fcd085edf601849e69e4d438080d96"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/ip_repo/cnn_ps_if_sync/xgui/cnn_ps_if_v1_1.tcl",
+      "destination": "vivado/hardware/baseline/ip_repo/CNN_PS_IF_SYNC/xgui/cnn_ps_if_v1_1.tcl",
+      "sha256": "e0725b60cdc4cd625ee059e557ee3f5569fcd085edf601849e69e4d438080d96"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/ip_repo/dvi_tx_phase1/if/tmds.xml",
+      "destination": "vivado/hardware/baseline/ip_repo/DVI_TX_PHASE1/if/TMDS.xml",
+      "sha256": "f583b7d66684134835d1fb8b2f31d7f8c2603c36b96cb2a1bf0e3b5038453a6a"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/ip_repo/dvi_tx_phase1/if/tmds_rtl.xml",
+      "destination": "vivado/hardware/baseline/ip_repo/DVI_TX_PHASE1/if/TMDS_rtl.xml",
+      "sha256": "42ff815b6b9fac0cbab79cbd34036d4b050296dc93a8a642312440e9523436bc"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/ip_repo/dvi_tx_phase1/ip/component.xml",
+      "destination": "vivado/hardware/baseline/ip_repo/DVI_TX_PHASE1/ip/component.xml",
+      "sha256": "fee54ad2ccf0ec9a9ee02c97ee3a5e8b13d3d13516d7457a1f7200d81d8045d0"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/ip_repo/dvi_tx_phase1/ip/src/asyn_rst_syn.v",
+      "destination": "vivado/hardware/baseline/ip_repo/DVI_TX_PHASE1/ip/src/asyn_rst_syn.v",
+      "sha256": "7f2ac9686a8b525077b701ac84f909ebed1d6c5ba65bb29d1f220042f5eafb53"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/ip_repo/dvi_tx_phase1/ip/src/dvi_encoder.v",
+      "destination": "vivado/hardware/baseline/ip_repo/DVI_TX_PHASE1/ip/src/dvi_encoder.v",
+      "sha256": "8734138c12ecec60dd0a252a701fb5c7fd0b76e79b9d190d149ab6fa4cc50490"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/ip_repo/dvi_tx_phase1/ip/src/dvi_transmitter_top.v",
+      "destination": "vivado/hardware/baseline/ip_repo/DVI_TX_PHASE1/ip/src/dvi_transmitter_top.v",
+      "sha256": "a2d23719dddb5f9746fcb464ca03d6e5ebac670d0aab021ac3f5907b5a18e8fd"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/ip_repo/dvi_tx_phase1/ip/src/hdmi_roi_overlay.v",
+      "destination": "vivado/hardware/baseline/ip_repo/DVI_TX_PHASE1/ip/src/hdmi_roi_overlay.v",
+      "sha256": "e352a7a831b28715f39d3fa49fd221c3c0bd937e6893d11fdb219b70b285c876"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/ip_repo/dvi_tx_phase1/ip/src/serializer_10_to_1.v",
+      "destination": "vivado/hardware/baseline/ip_repo/DVI_TX_PHASE1/ip/src/serializer_10_to_1.v",
+      "sha256": "bb6b2a217a9061bb25a9f70e3f34d52dfe2d2855c1a8fcfb25f8a042868f63cd"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/ip_repo/dvi_tx_phase1/ip/xgui/dvi_transmitter_v1_0.tcl",
+      "destination": "vivado/hardware/baseline/ip_repo/DVI_TX_PHASE1/ip/xgui/DVI_Transmitter_v1_0.tcl",
+      "sha256": "e0725b60cdc4cd625ee059e557ee3f5569fcd085edf601849e69e4d438080d96"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/ip_repo/dvi_tx_phase1/ip/xgui/dvi_transmitter_v1_1.tcl",
+      "destination": "vivado/hardware/baseline/ip_repo/DVI_TX_PHASE1/ip/xgui/DVI_Transmitter_v1_1.tcl",
+      "sha256": "e0725b60cdc4cd625ee059e557ee3f5569fcd085edf601849e69e4d438080d96"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/ip_repo/dvi_tx_phase1/ip/xgui/dvi_transmitter_v1_2.tcl",
+      "destination": "vivado/hardware/baseline/ip_repo/DVI_TX_PHASE1/ip/xgui/DVI_Transmitter_v1_2.tcl",
+      "sha256": "e0725b60cdc4cd625ee059e557ee3f5569fcd085edf601849e69e4d438080d96"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/ip_repo/ov5640_cap_data/component.xml",
+      "destination": "vivado/hardware/baseline/ip_repo/ov5640_cap_data/component.xml",
+      "sha256": "253d6f2a3ec5524a003373da620ae3db815146fd0dab63e2340e98190cfabadd"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/ip_repo/ov5640_cap_data/src/ov5640_capture_data.v",
+      "destination": "vivado/hardware/baseline/ip_repo/ov5640_cap_data/SRC/ov5640_capture_data.v",
+      "sha256": "2e641e3ed04afb9bac898af50a986ac714110c87bd92eb2e9ee17a1781e28ffe"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/ip_repo/ov5640_cap_data/xgui/ov5640_capture_data_v1_0.tcl",
+      "destination": "vivado/hardware/baseline/ip_repo/ov5640_cap_data/xgui/ov5640_capture_data_v1_0.tcl",
+      "sha256": "e0725b60cdc4cd625ee059e557ee3f5569fcd085edf601849e69e4d438080d96"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/ip_repo/prep_accel/auxiliary.xml",
+      "destination": "vivado/hardware/baseline/ip_repo/PREP_ACCEL/auxiliary.xml",
+      "sha256": "ae03219bd4b6dcf935a21a6ed855cca65f97ae6d7875aa90635dadf9be485de0"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/ip_repo/prep_accel/component.xml",
+      "destination": "vivado/hardware/baseline/ip_repo/PREP_ACCEL/component.xml",
+      "sha256": "55d9af91bb937ab6f055a846e127c7718cd3f0af759f99f0f915d42ecb1358f4"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/ip_repo/prep_accel/constraints/prep_accel_ooc.xdc",
+      "destination": "vivado/hardware/baseline/ip_repo/PREP_ACCEL/constraints/prep_accel_ooc.xdc",
+      "sha256": "71cb29437c55f5e99a23ea084731ce22178a7debd81b3c0b30983822cbb7e281"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/ip_repo/prep_accel/doc/releasenotes.txt",
+      "destination": "vivado/hardware/baseline/ip_repo/PREP_ACCEL/doc/ReleaseNotes.txt",
+      "sha256": "7325eb38ce18dcf478a6ba4d7feb009ef101d3d4addd8a6f97ed850f70ec70c8"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/ip_repo/prep_accel/drivers/prep_accel_v1_0/data/prep_accel.mdd",
+      "destination": "vivado/hardware/baseline/ip_repo/PREP_ACCEL/drivers/prep_accel_v1_0/data/prep_accel.mdd",
+      "sha256": "876c6e17416128cb42278ab62fd604d6aa12c8162e06025c9ab8d1bb92594526"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/ip_repo/prep_accel/drivers/prep_accel_v1_0/data/prep_accel.tcl",
+      "destination": "vivado/hardware/baseline/ip_repo/PREP_ACCEL/drivers/prep_accel_v1_0/data/prep_accel.tcl",
+      "sha256": "060112f87303a9105507c51854531a0ad99d5993549a4a3ce542d4d22ca58829"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/ip_repo/prep_accel/drivers/prep_accel_v1_0/src/makefile",
+      "destination": "vivado/hardware/baseline/ip_repo/PREP_ACCEL/drivers/prep_accel_v1_0/src/Makefile",
+      "sha256": "e16cfbf9e37d2f2fd14d5146fbded629aff71c19aa58ab6e955ceaf72d8c0ed4"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/ip_repo/prep_accel/drivers/prep_accel_v1_0/src/xprep_accel.c",
+      "destination": "vivado/hardware/baseline/ip_repo/PREP_ACCEL/drivers/prep_accel_v1_0/src/xprep_accel.c",
+      "sha256": "f2483872ac78d6a42b8f5c812433494e84fc4c236398ea4bb5da790caf1f2fd3"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/ip_repo/prep_accel/drivers/prep_accel_v1_0/src/xprep_accel.h",
+      "destination": "vivado/hardware/baseline/ip_repo/PREP_ACCEL/drivers/prep_accel_v1_0/src/xprep_accel.h",
+      "sha256": "5f7066bcac09b2c7a36950a641a9a493f345e19bf50cbded51bd49e5e73f47c6"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/ip_repo/prep_accel/drivers/prep_accel_v1_0/src/xprep_accel_hw.h",
+      "destination": "vivado/hardware/baseline/ip_repo/PREP_ACCEL/drivers/prep_accel_v1_0/src/xprep_accel_hw.h",
+      "sha256": "b9418426ba90c24f2474c3e9dae0d12e7bd349c65f18a91b0786c63a344319f2"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/ip_repo/prep_accel/drivers/prep_accel_v1_0/src/xprep_accel_linux.c",
+      "destination": "vivado/hardware/baseline/ip_repo/PREP_ACCEL/drivers/prep_accel_v1_0/src/xprep_accel_linux.c",
+      "sha256": "86fdc79462fa59351396fae643f6ad03b4510fe0d89313efe96621b6a3bc1431"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/ip_repo/prep_accel/drivers/prep_accel_v1_0/src/xprep_accel_sinit.c",
+      "destination": "vivado/hardware/baseline/ip_repo/PREP_ACCEL/drivers/prep_accel_v1_0/src/xprep_accel_sinit.c",
+      "sha256": "4814bc1acc8fe1ab8e151afc1d941f20306e4bbe29f0660d927f7eb7541a5977"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/ip_repo/prep_accel/example/ipi_example.tcl",
+      "destination": "vivado/hardware/baseline/ip_repo/PREP_ACCEL/example/ipi_example.tcl",
+      "sha256": "7b369a156bd7f2279c034ff639d8a606be4c1bde6a00d3c3bb7d49cde63edf42"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/ip_repo/prep_accel/hdl/verilog/prep_accel.v",
+      "destination": "vivado/hardware/baseline/ip_repo/PREP_ACCEL/hdl/verilog/prep_accel.v",
+      "sha256": "710d89b748306d930e8b59ff7fd02e6d0691ff5dfeb496efda9c7c6994926433"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/ip_repo/prep_accel/hdl/verilog/prep_accel_control_s_axi.v",
+      "destination": "vivado/hardware/baseline/ip_repo/PREP_ACCEL/hdl/verilog/prep_accel_control_s_axi.v",
+      "sha256": "18c259c0c31bd8a1dc06886b90a72da48e58fa9d998f5097dce40a64bcf1f64e"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/ip_repo/prep_accel/hdl/verilog/prep_accel_gmem_m_axi.v",
+      "destination": "vivado/hardware/baseline/ip_repo/PREP_ACCEL/hdl/verilog/prep_accel_gmem_m_axi.v",
+      "sha256": "06a7355cbfeff862d06c830051983370bb646b52c77154d5b0c5f83354ee2bfa"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/ip_repo/prep_accel/hdl/verilog/prep_accel_mac_muladd_16ns_5ns_21ns_22_4_1.v",
+      "destination": "vivado/hardware/baseline/ip_repo/PREP_ACCEL/hdl/verilog/prep_accel_mac_muladd_16ns_5ns_21ns_22_4_1.v",
+      "sha256": "c89648df710d33538d16a4dd11d9a0fe96c2daec3f5030ad8f8074aa84929d40"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/ip_repo/prep_accel/hdl/verilog/prep_accel_mac_muladd_16ns_5ns_22ns_23_4_1.v",
+      "destination": "vivado/hardware/baseline/ip_repo/PREP_ACCEL/hdl/verilog/prep_accel_mac_muladd_16ns_5ns_22ns_23_4_1.v",
+      "sha256": "a0b51cef545b8bb5e7c24cbc2b0a5ecabf97cc1f7d016c32bf5d86ac01d9853b"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/ip_repo/prep_accel/hdl/verilog/prep_accel_mac_muladd_16ns_5ns_23ns_23_4_1.v",
+      "destination": "vivado/hardware/baseline/ip_repo/PREP_ACCEL/hdl/verilog/prep_accel_mac_muladd_16ns_5ns_23ns_23_4_1.v",
+      "sha256": "ad749dee1858fcd7b6252f714afd4ebca72d6c19dd40134fde304a11bcca67e1"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/ip_repo/prep_accel/hdl/verilog/prep_accel_mac_muladd_16ns_5ns_23ns_24_4_1.v",
+      "destination": "vivado/hardware/baseline/ip_repo/PREP_ACCEL/hdl/verilog/prep_accel_mac_muladd_16ns_5ns_23ns_24_4_1.v",
+      "sha256": "240d29b058d9043e03ab8eb6104df13675f87841840af14d8ae622a93635c337"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/ip_repo/prep_accel/hdl/verilog/prep_accel_mac_muladd_16ns_5ns_24ns_24_4_1.v",
+      "destination": "vivado/hardware/baseline/ip_repo/PREP_ACCEL/hdl/verilog/prep_accel_mac_muladd_16ns_5ns_24ns_24_4_1.v",
+      "sha256": "44e73e3d5ed5cf7ce5275f31ec1a05a381086f72d9b262d41464fa1cc623e111"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/ip_repo/prep_accel/hdl/verilog/prep_accel_mac_muladd_16ns_5ns_24ns_25_4_1.v",
+      "destination": "vivado/hardware/baseline/ip_repo/PREP_ACCEL/hdl/verilog/prep_accel_mac_muladd_16ns_5ns_24ns_25_4_1.v",
+      "sha256": "55b53bb6bcc2a948d19d6d4e28c1952f611ea45e537d45d1f3185d798cd03018"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/ip_repo/prep_accel/hdl/verilog/prep_accel_mac_muladd_16ns_5ns_25ns_25_4_1.v",
+      "destination": "vivado/hardware/baseline/ip_repo/PREP_ACCEL/hdl/verilog/prep_accel_mac_muladd_16ns_5ns_25ns_25_4_1.v",
+      "sha256": "c4f215aa9b84b7ac40dee7241ca55a1a021d869082e1c6895adfa17136d09fe9"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/ip_repo/prep_accel/hdl/verilog/prep_accel_mac_muladd_16ns_5ns_25ns_26_4_1.v",
+      "destination": "vivado/hardware/baseline/ip_repo/PREP_ACCEL/hdl/verilog/prep_accel_mac_muladd_16ns_5ns_25ns_26_4_1.v",
+      "sha256": "974c2db26ab134868e5b22f14c4f1257832727fe4ea81671d55afb6fdd0082ba"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/ip_repo/prep_accel/hdl/verilog/prep_accel_mac_muladd_16ns_5ns_26ns_26_4_1.v",
+      "destination": "vivado/hardware/baseline/ip_repo/PREP_ACCEL/hdl/verilog/prep_accel_mac_muladd_16ns_5ns_26ns_26_4_1.v",
+      "sha256": "119cc94a21ac43fd61db97d6b3e12449e2c76a39885052185131ee6aaab9dddc"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/ip_repo/prep_accel/hdl/verilog/prep_accel_mac_muladd_16ns_5ns_26ns_27_4_1.v",
+      "destination": "vivado/hardware/baseline/ip_repo/PREP_ACCEL/hdl/verilog/prep_accel_mac_muladd_16ns_5ns_26ns_27_4_1.v",
+      "sha256": "65b88d5bc039d25f56b05daddc19f2263c61850f28275054a6ff9c6ba58392d0"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/ip_repo/prep_accel/hdl/verilog/prep_accel_mac_muladd_16ns_5ns_27ns_27_4_1.v",
+      "destination": "vivado/hardware/baseline/ip_repo/PREP_ACCEL/hdl/verilog/prep_accel_mac_muladd_16ns_5ns_27ns_27_4_1.v",
+      "sha256": "27ea33dddd7c996a3e5d9c2c68429b5ba0a457150287e4fe6aac23cf4ff10cf4"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/ip_repo/prep_accel/hdl/verilog/prep_accel_mac_muladd_16ns_5ns_27ns_28_4_1.v",
+      "destination": "vivado/hardware/baseline/ip_repo/PREP_ACCEL/hdl/verilog/prep_accel_mac_muladd_16ns_5ns_27ns_28_4_1.v",
+      "sha256": "61065335be0fa1c251a5633a10e3d9878c34c879f5e12a732a51c9ecefb9dcb7"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/ip_repo/prep_accel/hdl/verilog/prep_accel_mac_muladd_8ns_12ns_21ns_21_4_1.v",
+      "destination": "vivado/hardware/baseline/ip_repo/PREP_ACCEL/hdl/verilog/prep_accel_mac_muladd_8ns_12ns_21ns_21_4_1.v",
+      "sha256": "0c8adc79674bf7359860d5e17b57766fc0b855667341f6e0b926d9107d9c5b0f"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/ip_repo/prep_accel/hdl/verilog/prep_accel_mac_muladd_8ns_15ns_15ns_22_4_1.v",
+      "destination": "vivado/hardware/baseline/ip_repo/PREP_ACCEL/hdl/verilog/prep_accel_mac_muladd_8ns_15ns_15ns_22_4_1.v",
+      "sha256": "a2e4af2809698df416db536ae4cb191ff2a9e636d34f02bdaf16328f6e823e9e"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/ip_repo/prep_accel/hdl/verilog/prep_accel_mac_muladd_8ns_8s_16s_17_4_1.v",
+      "destination": "vivado/hardware/baseline/ip_repo/PREP_ACCEL/hdl/verilog/prep_accel_mac_muladd_8ns_8s_16s_17_4_1.v",
+      "sha256": "c0e2e7ed57261b3d55ff44575113dcd9747b9c7ac55b376108606a2abb3035ba"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/ip_repo/prep_accel/hdl/verilog/prep_accel_make_detection.v",
+      "destination": "vivado/hardware/baseline/ip_repo/PREP_ACCEL/hdl/verilog/prep_accel_make_detection.v",
+      "sha256": "e648950574e68367addaa6a7ea816b5271f79256e9d97be231801c10e74a122c"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/ip_repo/prep_accel/hdl/verilog/prep_accel_make_detection_packed_row.v",
+      "destination": "vivado/hardware/baseline/ip_repo/PREP_ACCEL/hdl/verilog/prep_accel_make_detection_packed_row.v",
+      "sha256": "651b1f645455a960a04d69a736054c015ac5b1bbbf6bc4398c07978222081292"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/ip_repo/prep_accel/hdl/verilog/prep_accel_make_detection_rows_0_0.v",
+      "destination": "vivado/hardware/baseline/ip_repo/PREP_ACCEL/hdl/verilog/prep_accel_make_detection_rows_0_0.v",
+      "sha256": "161064aa32dd47a0a49a01d29cf1ab0bcce6e0efe3e21bb7946d78562281c8cf"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/ip_repo/prep_accel/hdl/verilog/prep_accel_make_gray.v",
+      "destination": "vivado/hardware/baseline/ip_repo/PREP_ACCEL/hdl/verilog/prep_accel_make_gray.v",
+      "sha256": "ce81d9e7353f0f4c8e4e4881f069469a6f8d70c5faca7ad624cc6a23da1dfb0e"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/ip_repo/prep_accel/hdl/verilog/prep_accel_make_gray_rows_0_0.v",
+      "destination": "vivado/hardware/baseline/ip_repo/PREP_ACCEL/hdl/verilog/prep_accel_make_gray_rows_0_0.v",
+      "sha256": "20b3c6ec7a7385aa2c0669c6cf337717bd6bcc712ec92e0b94c89b03595ae360"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/ip_repo/prep_accel/hdl/verilog/prep_accel_make_horizontal.v",
+      "destination": "vivado/hardware/baseline/ip_repo/PREP_ACCEL/hdl/verilog/prep_accel_make_horizontal.v",
+      "sha256": "5fc8349389342089fc0beae41d1950879ee2885a9704f40518487bbaeec14bd4"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/ip_repo/prep_accel/hdl/verilog/prep_accel_make_horizontal_row_0.v",
+      "destination": "vivado/hardware/baseline/ip_repo/PREP_ACCEL/hdl/verilog/prep_accel_make_horizontal_row_0.v",
+      "sha256": "18c241dc93647f3a0b6cf3e49a9daa4202be4d50ff060e904970e07fbb32a25c"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/ip_repo/prep_accel/hdl/verilog/prep_accel_make_ink.v",
+      "destination": "vivado/hardware/baseline/ip_repo/PREP_ACCEL/hdl/verilog/prep_accel_make_ink.v",
+      "sha256": "5cf5f0fe8eaf6332490567cd39b5a03f66274ae91345d3c7977a5d7a2315a358"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/ip_repo/prep_accel/hdl/verilog/prep_accel_make_ink_kernel.v",
+      "destination": "vivado/hardware/baseline/ip_repo/PREP_ACCEL/hdl/verilog/prep_accel_make_ink_kernel.v",
+      "sha256": "06ed51221a116f73d184166bdbe5cbccf79e4622c0bdbf606dbb283236c05fec"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/ip_repo/prep_accel/hdl/verilog/prep_accel_make_ink_kernel_rom.dat",
+      "destination": "vivado/hardware/baseline/ip_repo/PREP_ACCEL/hdl/verilog/prep_accel_make_ink_kernel_rom.dat",
+      "sha256": "7c7b953ec2d667c9dbae676f5bcdef5f769a965b29f284cfa220594afa84f222"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/ip_repo/prep_accel/hdl/verilog/prep_accel_make_ink_ring_0.v",
+      "destination": "vivado/hardware/baseline/ip_repo/PREP_ACCEL/hdl/verilog/prep_accel_make_ink_ring_0.v",
+      "sha256": "88b9ba9334db0d8b68a44250596008088a8467d50b0f43f1eef9edb7cfbd958e"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/ip_repo/prep_accel/hdl/verilog/prep_accel_make_ink_rowgray.v",
+      "destination": "vivado/hardware/baseline/ip_repo/PREP_ACCEL/hdl/verilog/prep_accel_make_ink_rowgray.v",
+      "sha256": "cba621a668e915eeb344c91881eafdfc6250734e21d276b8492543c9294977ce"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/ip_repo/prep_accel/hdl/verilog/prep_accel_make_ink_tags_0.v",
+      "destination": "vivado/hardware/baseline/ip_repo/PREP_ACCEL/hdl/verilog/prep_accel_make_ink_tags_0.v",
+      "sha256": "97680c2a461e93cee255928020af8b4f9daf10cb9b8c32376ef9dc5a434d81d3"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/ip_repo/prep_accel/hdl/verilog/prep_accel_make_ink_weights_v_0.v",
+      "destination": "vivado/hardware/baseline/ip_repo/PREP_ACCEL/hdl/verilog/prep_accel_make_ink_weights_V_0.v",
+      "sha256": "e5ab9bd9f51bc046461a5ccb90264da50d0cea1dbadf8013e1b3241d10a0f6f3"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/ip_repo/prep_accel/hdl/verilog/prep_accel_mul_10ns_32s_32_1_1.v",
+      "destination": "vivado/hardware/baseline/ip_repo/PREP_ACCEL/hdl/verilog/prep_accel_mul_10ns_32s_32_1_1.v",
+      "sha256": "e1a48e13c0213112bd686bf61172a0f3873a702245fdbdc18107f77044d3054e"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/ip_repo/prep_accel/hdl/verilog/prep_accel_mul_32ns_34ns_65_1_1.v",
+      "destination": "vivado/hardware/baseline/ip_repo/PREP_ACCEL/hdl/verilog/prep_accel_mul_32ns_34ns_65_1_1.v",
+      "sha256": "dc67cdf064a5b50cb9d297da2a9af020321ef3e29f50c1c9d70003d26e99b185"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/ip_repo/prep_accel/hdl/verilog/prep_accel_mul_32s_18s_32_1_1.v",
+      "destination": "vivado/hardware/baseline/ip_repo/PREP_ACCEL/hdl/verilog/prep_accel_mul_32s_18s_32_1_1.v",
+      "sha256": "94e76d29fea7e22db29df31bd55ef2bda13319e3c0475de7d9268fac9335c36e"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/ip_repo/prep_accel/hdl/verilog/prep_accel_mul_32s_8ns_32_1_1.v",
+      "destination": "vivado/hardware/baseline/ip_repo/PREP_ACCEL/hdl/verilog/prep_accel_mul_32s_8ns_32_1_1.v",
+      "sha256": "00fb46c38885d120392e20e05eda1cfede7088170406bfec9d2bb50bd1b87a4b"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/ip_repo/prep_accel/hdl/verilog/prep_accel_mul_33s_32ns_64_1_1.v",
+      "destination": "vivado/hardware/baseline/ip_repo/PREP_ACCEL/hdl/verilog/prep_accel_mul_33s_32ns_64_1_1.v",
+      "sha256": "12c719d6b1818570f5d3208d622928dcabd87f4bee7dc85e4907028c0b08f6ba"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/ip_repo/prep_accel/hdl/verilog/prep_accel_mul_4ns_11ns_13_1_1.v",
+      "destination": "vivado/hardware/baseline/ip_repo/PREP_ACCEL/hdl/verilog/prep_accel_mul_4ns_11ns_13_1_1.v",
+      "sha256": "3563dc6423e6ffb07398757fee12efb7c040cdd1c8657319ab58710d2d4fea22"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/ip_repo/prep_accel/hdl/verilog/prep_accel_mul_64s_12ns_64_5_1.v",
+      "destination": "vivado/hardware/baseline/ip_repo/PREP_ACCEL/hdl/verilog/prep_accel_mul_64s_12ns_64_5_1.v",
+      "sha256": "ca9b389f88872c1d56f570fa0a0b1407823b3af9b394c3d17d7d0e2a990d3d43"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/ip_repo/prep_accel/hdl/verilog/prep_accel_mul_8ns_8s_16_1_1.v",
+      "destination": "vivado/hardware/baseline/ip_repo/PREP_ACCEL/hdl/verilog/prep_accel_mul_8ns_8s_16_1_1.v",
+      "sha256": "e384f1fb44ec76cf4d89b4ff5b5dca1035d9e5661c3c7a1968c36741e5bf20c4"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/ip_repo/prep_accel/hdl/verilog/prep_accel_mul_9ns_10ns_17_1_1.v",
+      "destination": "vivado/hardware/baseline/ip_repo/PREP_ACCEL/hdl/verilog/prep_accel_mul_9ns_10ns_17_1_1.v",
+      "sha256": "fb2ce4b1c532d9e37ebbbaca91a9d896487c1f9f8fad4450a155eb07f078509c"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/ip_repo/prep_accel/hdl/verilog/prep_accel_mul_9ns_10ns_18_1_1.v",
+      "destination": "vivado/hardware/baseline/ip_repo/PREP_ACCEL/hdl/verilog/prep_accel_mul_9ns_10ns_18_1_1.v",
+      "sha256": "ddc82e120a6d95928aa17f325a856a35b32f07aa2fba29b6c6edaf426e492850"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/ip_repo/prep_accel/hdl/verilog/prep_accel_mul_mul_16ns_5ns_21_4_1.v",
+      "destination": "vivado/hardware/baseline/ip_repo/PREP_ACCEL/hdl/verilog/prep_accel_mul_mul_16ns_5ns_21_4_1.v",
+      "sha256": "fb3cdd1690fe01d124e7c84f3e1ed6b32d57eb261a6ebca6864a3dfab77bf55a"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/ip_repo/prep_accel/hdl/verilog/prep_accel_mul_mul_17ns_19ns_35_4_1.v",
+      "destination": "vivado/hardware/baseline/ip_repo/PREP_ACCEL/hdl/verilog/prep_accel_mul_mul_17ns_19ns_35_4_1.v",
+      "sha256": "c00f1bc275e57c8108c33957e4c76d1b91a8f11bb8450d3249ba6d667ad8b5d5"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/ip_repo/prep_accel/hdl/verilog/prep_accel_mul_mul_8ns_14ns_21_4_1.v",
+      "destination": "vivado/hardware/baseline/ip_repo/PREP_ACCEL/hdl/verilog/prep_accel_mul_mul_8ns_14ns_21_4_1.v",
+      "sha256": "02e3923b60514a8b91dd1dbcb3ea708baf943d33429a23434476e2898b0b6230"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/ip_repo/prep_accel/hdl/verilog/prep_accel_mux_124_32_1_1.v",
+      "destination": "vivado/hardware/baseline/ip_repo/PREP_ACCEL/hdl/verilog/prep_accel_mux_124_32_1_1.v",
+      "sha256": "23a384024d6014d08a15d3f9130f0a1ca161b3702a0fe22587b89cdb425f044f"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/ip_repo/prep_accel/hdl/verilog/prep_accel_mux_124_8_1_1.v",
+      "destination": "vivado/hardware/baseline/ip_repo/PREP_ACCEL/hdl/verilog/prep_accel_mux_124_8_1_1.v",
+      "sha256": "04e6bd69997895b9d644dd6002d39dc923208adbe7ff49f1028538d56d546a1a"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/ip_repo/prep_accel/hdl/verilog/prep_accel_mux_32_32_1_1.v",
+      "destination": "vivado/hardware/baseline/ip_repo/PREP_ACCEL/hdl/verilog/prep_accel_mux_32_32_1_1.v",
+      "sha256": "3e7a9a2a93b7d01c2546be2c1dd966ed1688a7def7768f7720c8f6e710ec313b"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/ip_repo/prep_accel/hdl/verilog/prep_accel_mux_432_8_1_1.v",
+      "destination": "vivado/hardware/baseline/ip_repo/PREP_ACCEL/hdl/verilog/prep_accel_mux_432_8_1_1.v",
+      "sha256": "4bac3cc982b2701ef02d3d6949cdf7620b94ac500f6591baf4ee8127efb7f52a"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/ip_repo/prep_accel/hdl/verilog/prep_accel_mux_63_8_1_1.v",
+      "destination": "vivado/hardware/baseline/ip_repo/PREP_ACCEL/hdl/verilog/prep_accel_mux_63_8_1_1.v",
+      "sha256": "980b407fb167bec225484aef803a6b663f8a9569637dc5f69a265b8c2f834b5c"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/ip_repo/prep_accel/hdl/verilog/prep_accel_mux_677_32_1_1.v",
+      "destination": "vivado/hardware/baseline/ip_repo/PREP_ACCEL/hdl/verilog/prep_accel_mux_677_32_1_1.v",
+      "sha256": "aec0e77e18d12c2d685ce7a891d53c789ceba404464b0015710e5f4a719db7bc"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/ip_repo/prep_accel/hdl/verilog/prep_accel_mux_677_8_1_1.v",
+      "destination": "vivado/hardware/baseline/ip_repo/PREP_ACCEL/hdl/verilog/prep_accel_mux_677_8_1_1.v",
+      "sha256": "8a268e32b595e167de7d8fbb91c2b34c89fefb876e0f539754bcdb264993606f"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/ip_repo/prep_accel/hdl/verilog/prep_accel_mux_83_8_1_1.v",
+      "destination": "vivado/hardware/baseline/ip_repo/PREP_ACCEL/hdl/verilog/prep_accel_mux_83_8_1_1.v",
+      "sha256": "7bfbd94ebb7d0ceb5cdec77faab78e8f211f0019098df42bae79de628fbdc64a"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/ip_repo/prep_accel/hdl/verilog/prep_accel_speed_fc_kernel.v",
+      "destination": "vivado/hardware/baseline/ip_repo/PREP_ACCEL/hdl/verilog/prep_accel_speed_fc_kernel.v",
+      "sha256": "ea12ec502645b120db4b9d78e314dc1ee79d5f5dcde412ef749c542571ba7502"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/ip_repo/prep_accel/hdl/verilog/prep_accel_speed_fc_kernel_input.v",
+      "destination": "vivado/hardware/baseline/ip_repo/PREP_ACCEL/hdl/verilog/prep_accel_speed_fc_kernel_input.v",
+      "sha256": "55c7f0d98345b249337a064d220e7f34f21ed737cca70a557c28138ff1e280e3"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/ip_repo/prep_accel/hdl/verilog/prep_accel_srem_9ns_3ns_2_13_seq_1.v",
+      "destination": "vivado/hardware/baseline/ip_repo/PREP_ACCEL/hdl/verilog/prep_accel_srem_9ns_3ns_2_13_seq_1.v",
+      "sha256": "b73c0bb8679c36630b9a1b7705e6fc8a2edfcf2be0221a1b655766b657fa2aca"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/ip_repo/prep_accel/hdl/verilog/prep_accel_urem_32ns_8ns_32_36_seq_1.v",
+      "destination": "vivado/hardware/baseline/ip_repo/PREP_ACCEL/hdl/verilog/prep_accel_urem_32ns_8ns_32_36_seq_1.v",
+      "sha256": "7a8befeff67c13372563247ea55f658ad456d56fb384c20635f17f7e5817c484"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/ip_repo/prep_accel/hdl/verilog/prep_accel_urem_32ns_8ns_7_36_seq_1.v",
+      "destination": "vivado/hardware/baseline/ip_repo/PREP_ACCEL/hdl/verilog/prep_accel_urem_32ns_8ns_7_36_seq_1.v",
+      "sha256": "551b30b7bf0b058824fbd540de28801c4e2b60a33fe0930d87eb8638a9bc82d3"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/ip_repo/prep_accel/hdl/verilog/prep_accel_urem_32s_3ns_2_36_seq_1.v",
+      "destination": "vivado/hardware/baseline/ip_repo/PREP_ACCEL/hdl/verilog/prep_accel_urem_32s_3ns_2_36_seq_1.v",
+      "sha256": "d80b2b6da40747116afabfc08307ad43e9ea68e879d638c1554497e737fea5b7"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/ip_repo/prep_accel/hdl/verilog/prep_accel_urem_8ns_3ns_2_12_seq_1.v",
+      "destination": "vivado/hardware/baseline/ip_repo/PREP_ACCEL/hdl/verilog/prep_accel_urem_8ns_3ns_2_12_seq_1.v",
+      "sha256": "1275d9fdd1ab1e4f5f89b81c68d37572f99d14a224ca5dfaf78eecf5b6868ebb"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/ip_repo/prep_accel/hdl/verilog/prep_accel_urem_9ns_3ns_2_13_1.v",
+      "destination": "vivado/hardware/baseline/ip_repo/PREP_ACCEL/hdl/verilog/prep_accel_urem_9ns_3ns_2_13_1.v",
+      "sha256": "9068c5a2361b647822e67cf2283b486bf5c1ec5fcb69507f80c6d8b8ab18a88f"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/ip_repo/prep_accel/hdl/verilog/prep_accel_urem_9ns_3ns_2_13_seq_1.v",
+      "destination": "vivado/hardware/baseline/ip_repo/PREP_ACCEL/hdl/verilog/prep_accel_urem_9ns_3ns_2_13_seq_1.v",
+      "sha256": "c356969d85e2aaf5f445b39026aa4d06326507a0c92512568420f617ba2b45ef"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/ip_repo/prep_accel/hdl/vhdl/prep_accel.vhd",
+      "destination": "vivado/hardware/baseline/ip_repo/PREP_ACCEL/hdl/vhdl/prep_accel.vhd",
+      "sha256": "27a480ee14d368b87d5e265a3673fba93d5e36cae454a25e6b64cb10c4ba7d97"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/ip_repo/prep_accel/hdl/vhdl/prep_accel_control_s_axi.vhd",
+      "destination": "vivado/hardware/baseline/ip_repo/PREP_ACCEL/hdl/vhdl/prep_accel_control_s_axi.vhd",
+      "sha256": "93d392961529976b8a342df43e3b0b6b8c9997946f0f363e52bc812edb913837"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/ip_repo/prep_accel/hdl/vhdl/prep_accel_gmem_m_axi.vhd",
+      "destination": "vivado/hardware/baseline/ip_repo/PREP_ACCEL/hdl/vhdl/prep_accel_gmem_m_axi.vhd",
+      "sha256": "257d2b2555fa5c425a4a554119c9a4ae9dc97ecbbd1458835facdfbbf66d992f"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/ip_repo/prep_accel/hdl/vhdl/prep_accel_mac_muladd_16ns_5ns_21ns_22_4_1.vhd",
+      "destination": "vivado/hardware/baseline/ip_repo/PREP_ACCEL/hdl/vhdl/prep_accel_mac_muladd_16ns_5ns_21ns_22_4_1.vhd",
+      "sha256": "c3ad0a118ef23af992c8e01bfba3b0a22b6e3511590ef949f0c23f2d870647e9"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/ip_repo/prep_accel/hdl/vhdl/prep_accel_mac_muladd_16ns_5ns_22ns_23_4_1.vhd",
+      "destination": "vivado/hardware/baseline/ip_repo/PREP_ACCEL/hdl/vhdl/prep_accel_mac_muladd_16ns_5ns_22ns_23_4_1.vhd",
+      "sha256": "9f742f534d730eddc1381c7a47af3dfb05f37064acab771ba4b679af61b071e3"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/ip_repo/prep_accel/hdl/vhdl/prep_accel_mac_muladd_16ns_5ns_23ns_23_4_1.vhd",
+      "destination": "vivado/hardware/baseline/ip_repo/PREP_ACCEL/hdl/vhdl/prep_accel_mac_muladd_16ns_5ns_23ns_23_4_1.vhd",
+      "sha256": "ef41492dbd315c0240ef63c5df02a6046a0270e60fac5c4a1c91eb2ce68898cf"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/ip_repo/prep_accel/hdl/vhdl/prep_accel_mac_muladd_16ns_5ns_23ns_24_4_1.vhd",
+      "destination": "vivado/hardware/baseline/ip_repo/PREP_ACCEL/hdl/vhdl/prep_accel_mac_muladd_16ns_5ns_23ns_24_4_1.vhd",
+      "sha256": "b0988b77b0d28ef57d7e1271140cd696ec87f2b2bc4c8503fa56bbe72405ecd5"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/ip_repo/prep_accel/hdl/vhdl/prep_accel_mac_muladd_16ns_5ns_24ns_24_4_1.vhd",
+      "destination": "vivado/hardware/baseline/ip_repo/PREP_ACCEL/hdl/vhdl/prep_accel_mac_muladd_16ns_5ns_24ns_24_4_1.vhd",
+      "sha256": "8778bff69bc84f43f13ba585da0f2e30906fea841cd8a376336a8de4051fcd3a"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/ip_repo/prep_accel/hdl/vhdl/prep_accel_mac_muladd_16ns_5ns_24ns_25_4_1.vhd",
+      "destination": "vivado/hardware/baseline/ip_repo/PREP_ACCEL/hdl/vhdl/prep_accel_mac_muladd_16ns_5ns_24ns_25_4_1.vhd",
+      "sha256": "3174be9e8e87b2a2bc87c0de31d24cf2930e1f1be1da53e700977b17ef6cff76"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/ip_repo/prep_accel/hdl/vhdl/prep_accel_mac_muladd_16ns_5ns_25ns_25_4_1.vhd",
+      "destination": "vivado/hardware/baseline/ip_repo/PREP_ACCEL/hdl/vhdl/prep_accel_mac_muladd_16ns_5ns_25ns_25_4_1.vhd",
+      "sha256": "3ede53a9b821fee3f9f0211eefff92e29bd72bf4d829ff8a3bcc15d240a489fe"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/ip_repo/prep_accel/hdl/vhdl/prep_accel_mac_muladd_16ns_5ns_25ns_26_4_1.vhd",
+      "destination": "vivado/hardware/baseline/ip_repo/PREP_ACCEL/hdl/vhdl/prep_accel_mac_muladd_16ns_5ns_25ns_26_4_1.vhd",
+      "sha256": "558de7e40854e90c68ffe72e3a112317defdb83f13305805e98868a782145c5f"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/ip_repo/prep_accel/hdl/vhdl/prep_accel_mac_muladd_16ns_5ns_26ns_26_4_1.vhd",
+      "destination": "vivado/hardware/baseline/ip_repo/PREP_ACCEL/hdl/vhdl/prep_accel_mac_muladd_16ns_5ns_26ns_26_4_1.vhd",
+      "sha256": "114126ca8407cd0c8d7ab8d0fd837915129d7733338619a244409e0bedea31c7"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/ip_repo/prep_accel/hdl/vhdl/prep_accel_mac_muladd_16ns_5ns_26ns_27_4_1.vhd",
+      "destination": "vivado/hardware/baseline/ip_repo/PREP_ACCEL/hdl/vhdl/prep_accel_mac_muladd_16ns_5ns_26ns_27_4_1.vhd",
+      "sha256": "5573cb7892285369de928d91edc747dde95ead92a113ab3c46b21527ca70b48c"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/ip_repo/prep_accel/hdl/vhdl/prep_accel_mac_muladd_16ns_5ns_27ns_27_4_1.vhd",
+      "destination": "vivado/hardware/baseline/ip_repo/PREP_ACCEL/hdl/vhdl/prep_accel_mac_muladd_16ns_5ns_27ns_27_4_1.vhd",
+      "sha256": "2b0bd3bfd1e94c498729150c7b815403821afaf0155e787ef51e0663b200e329"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/ip_repo/prep_accel/hdl/vhdl/prep_accel_mac_muladd_16ns_5ns_27ns_28_4_1.vhd",
+      "destination": "vivado/hardware/baseline/ip_repo/PREP_ACCEL/hdl/vhdl/prep_accel_mac_muladd_16ns_5ns_27ns_28_4_1.vhd",
+      "sha256": "e5f3fa742d23f96fff478928e2df8edbb730fbee5c490ff3b9aa80029e743bc9"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/ip_repo/prep_accel/hdl/vhdl/prep_accel_mac_muladd_8ns_12ns_21ns_21_4_1.vhd",
+      "destination": "vivado/hardware/baseline/ip_repo/PREP_ACCEL/hdl/vhdl/prep_accel_mac_muladd_8ns_12ns_21ns_21_4_1.vhd",
+      "sha256": "ca93b230e403e7793239026cdb09c1d86e0a1b3ad4579fe347d9ab20c9caed95"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/ip_repo/prep_accel/hdl/vhdl/prep_accel_mac_muladd_8ns_15ns_15ns_22_4_1.vhd",
+      "destination": "vivado/hardware/baseline/ip_repo/PREP_ACCEL/hdl/vhdl/prep_accel_mac_muladd_8ns_15ns_15ns_22_4_1.vhd",
+      "sha256": "0680d220efeef1d99eecc18a487f0e27fbd625b1435b630758318530005d4cd9"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/ip_repo/prep_accel/hdl/vhdl/prep_accel_mac_muladd_8ns_8s_16s_17_4_1.vhd",
+      "destination": "vivado/hardware/baseline/ip_repo/PREP_ACCEL/hdl/vhdl/prep_accel_mac_muladd_8ns_8s_16s_17_4_1.vhd",
+      "sha256": "ae576fe23ac69a2043d1f32c431b44f31fcb65de79be4669d0aeca4fd5bad063"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/ip_repo/prep_accel/hdl/vhdl/prep_accel_make_detection.vhd",
+      "destination": "vivado/hardware/baseline/ip_repo/PREP_ACCEL/hdl/vhdl/prep_accel_make_detection.vhd",
+      "sha256": "f3f69d9cff7e918e09e899fc44f9c9d9ca76a2767398d7cca8c55a899623cd9e"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/ip_repo/prep_accel/hdl/vhdl/prep_accel_make_detection_packed_row.vhd",
+      "destination": "vivado/hardware/baseline/ip_repo/PREP_ACCEL/hdl/vhdl/prep_accel_make_detection_packed_row.vhd",
+      "sha256": "8386fdcdc0f5fd12cfe2b1c814badb169f00297ab924f86a7f6e22168f1ae0ae"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/ip_repo/prep_accel/hdl/vhdl/prep_accel_make_detection_rows_0_0.vhd",
+      "destination": "vivado/hardware/baseline/ip_repo/PREP_ACCEL/hdl/vhdl/prep_accel_make_detection_rows_0_0.vhd",
+      "sha256": "0dd66f5a7577cff01e63b2f44d6133267e23d3bdd0307ae17eaeac39cdf010cc"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/ip_repo/prep_accel/hdl/vhdl/prep_accel_make_gray.vhd",
+      "destination": "vivado/hardware/baseline/ip_repo/PREP_ACCEL/hdl/vhdl/prep_accel_make_gray.vhd",
+      "sha256": "ff5fff0b2cdde04499d19489f1a8fc705580183f3b11abfe543ee9baf40e0500"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/ip_repo/prep_accel/hdl/vhdl/prep_accel_make_gray_rows_0_0.vhd",
+      "destination": "vivado/hardware/baseline/ip_repo/PREP_ACCEL/hdl/vhdl/prep_accel_make_gray_rows_0_0.vhd",
+      "sha256": "8aff4980bc0fe7ffc6e64342d3b0fd4a0a2baaa454e79b474d976188f70cd02e"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/ip_repo/prep_accel/hdl/vhdl/prep_accel_make_horizontal.vhd",
+      "destination": "vivado/hardware/baseline/ip_repo/PREP_ACCEL/hdl/vhdl/prep_accel_make_horizontal.vhd",
+      "sha256": "fd2869f3feae0fcbfba564626991b79b18f0b2a32f292fc877a56beea083d2eb"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/ip_repo/prep_accel/hdl/vhdl/prep_accel_make_horizontal_row_0.vhd",
+      "destination": "vivado/hardware/baseline/ip_repo/PREP_ACCEL/hdl/vhdl/prep_accel_make_horizontal_row_0.vhd",
+      "sha256": "d8001ffa3d9b5f188d45f88a45116f935edd779bd216741d9129eaf0a459edfe"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/ip_repo/prep_accel/hdl/vhdl/prep_accel_make_ink.vhd",
+      "destination": "vivado/hardware/baseline/ip_repo/PREP_ACCEL/hdl/vhdl/prep_accel_make_ink.vhd",
+      "sha256": "b041b523475e793d055f19f38154dde04069c7b664deddbd4849c1d58bd816c8"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/ip_repo/prep_accel/hdl/vhdl/prep_accel_make_ink_kernel.vhd",
+      "destination": "vivado/hardware/baseline/ip_repo/PREP_ACCEL/hdl/vhdl/prep_accel_make_ink_kernel.vhd",
+      "sha256": "6b9d66fa246c09d21e9c2b192a301ab1334e40828b2d13b7820611895b3005ff"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/ip_repo/prep_accel/hdl/vhdl/prep_accel_make_ink_ring_0.vhd",
+      "destination": "vivado/hardware/baseline/ip_repo/PREP_ACCEL/hdl/vhdl/prep_accel_make_ink_ring_0.vhd",
+      "sha256": "587f66532de144fdd7ade8972921dec49c90071958f900d2d639329016cd5270"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/ip_repo/prep_accel/hdl/vhdl/prep_accel_make_ink_rowgray.vhd",
+      "destination": "vivado/hardware/baseline/ip_repo/PREP_ACCEL/hdl/vhdl/prep_accel_make_ink_rowgray.vhd",
+      "sha256": "1d586f7c607c8a48d5b52ab2c0ebfd6d501c1679791913f8b191d8bb53e63de8"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/ip_repo/prep_accel/hdl/vhdl/prep_accel_make_ink_tags_0.vhd",
+      "destination": "vivado/hardware/baseline/ip_repo/PREP_ACCEL/hdl/vhdl/prep_accel_make_ink_tags_0.vhd",
+      "sha256": "287898c4a5f13fa8dcc557f17a5aefaf4f21c6c9185201c4e1bc31121f52722b"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/ip_repo/prep_accel/hdl/vhdl/prep_accel_make_ink_weights_v_0.vhd",
+      "destination": "vivado/hardware/baseline/ip_repo/PREP_ACCEL/hdl/vhdl/prep_accel_make_ink_weights_V_0.vhd",
+      "sha256": "2973af81cff614e80734754ac72f476ccc15ed88e64a8f88ba86e91a91a11f2b"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/ip_repo/prep_accel/hdl/vhdl/prep_accel_mul_10ns_32s_32_1_1.vhd",
+      "destination": "vivado/hardware/baseline/ip_repo/PREP_ACCEL/hdl/vhdl/prep_accel_mul_10ns_32s_32_1_1.vhd",
+      "sha256": "697982a55cb8c05f517a16fc87428193019fdc7b4aeabe4ae78e905731d69e4b"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/ip_repo/prep_accel/hdl/vhdl/prep_accel_mul_32ns_34ns_65_1_1.vhd",
+      "destination": "vivado/hardware/baseline/ip_repo/PREP_ACCEL/hdl/vhdl/prep_accel_mul_32ns_34ns_65_1_1.vhd",
+      "sha256": "d7bf2263dd7a1f349581d4f4d42a1335360a7994c27d2e68a5d2cf873f3030a9"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/ip_repo/prep_accel/hdl/vhdl/prep_accel_mul_32s_18s_32_1_1.vhd",
+      "destination": "vivado/hardware/baseline/ip_repo/PREP_ACCEL/hdl/vhdl/prep_accel_mul_32s_18s_32_1_1.vhd",
+      "sha256": "cbf980fe2388d826930c4cfab068fb7879b618b5ea606190d4ffc5425f7c2a34"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/ip_repo/prep_accel/hdl/vhdl/prep_accel_mul_32s_8ns_32_1_1.vhd",
+      "destination": "vivado/hardware/baseline/ip_repo/PREP_ACCEL/hdl/vhdl/prep_accel_mul_32s_8ns_32_1_1.vhd",
+      "sha256": "0bdb4d2c53fcc23302cfd2fcbc58cbe811f94a531d47ef86a7e327bed5549bff"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/ip_repo/prep_accel/hdl/vhdl/prep_accel_mul_33s_32ns_64_1_1.vhd",
+      "destination": "vivado/hardware/baseline/ip_repo/PREP_ACCEL/hdl/vhdl/prep_accel_mul_33s_32ns_64_1_1.vhd",
+      "sha256": "2b62fe8095a3109b1f5df0dced7bc1c4b390cb58fa1d6297cbe87669c80b5344"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/ip_repo/prep_accel/hdl/vhdl/prep_accel_mul_4ns_11ns_13_1_1.vhd",
+      "destination": "vivado/hardware/baseline/ip_repo/PREP_ACCEL/hdl/vhdl/prep_accel_mul_4ns_11ns_13_1_1.vhd",
+      "sha256": "96be54d333f4197adcf78020e8d60ae2b9497af3b185fd584568c65b83802a5c"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/ip_repo/prep_accel/hdl/vhdl/prep_accel_mul_64s_12ns_64_5_1.vhd",
+      "destination": "vivado/hardware/baseline/ip_repo/PREP_ACCEL/hdl/vhdl/prep_accel_mul_64s_12ns_64_5_1.vhd",
+      "sha256": "aa455c40e9677360167d5bddf79eb530d927928d4cca08f70d50773899d5981c"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/ip_repo/prep_accel/hdl/vhdl/prep_accel_mul_8ns_8s_16_1_1.vhd",
+      "destination": "vivado/hardware/baseline/ip_repo/PREP_ACCEL/hdl/vhdl/prep_accel_mul_8ns_8s_16_1_1.vhd",
+      "sha256": "148670a991c7a3691bc6c04a8ad4639f9739a7917e43f2b669e8dcdd5da22e74"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/ip_repo/prep_accel/hdl/vhdl/prep_accel_mul_9ns_10ns_17_1_1.vhd",
+      "destination": "vivado/hardware/baseline/ip_repo/PREP_ACCEL/hdl/vhdl/prep_accel_mul_9ns_10ns_17_1_1.vhd",
+      "sha256": "478c4f89c101eeb532b16d7c735090d0462d0c72eddb8596a6e0f0d6ebf098dc"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/ip_repo/prep_accel/hdl/vhdl/prep_accel_mul_9ns_10ns_18_1_1.vhd",
+      "destination": "vivado/hardware/baseline/ip_repo/PREP_ACCEL/hdl/vhdl/prep_accel_mul_9ns_10ns_18_1_1.vhd",
+      "sha256": "a04bdf5d324a02c542678ddb067ccf2e969a9ccfa4fc6bc049fc801a974b4a69"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/ip_repo/prep_accel/hdl/vhdl/prep_accel_mul_mul_16ns_5ns_21_4_1.vhd",
+      "destination": "vivado/hardware/baseline/ip_repo/PREP_ACCEL/hdl/vhdl/prep_accel_mul_mul_16ns_5ns_21_4_1.vhd",
+      "sha256": "0ea64f503c2c8e2099552c723155453bdbb658e21602a61490d52b195fb13c20"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/ip_repo/prep_accel/hdl/vhdl/prep_accel_mul_mul_17ns_19ns_35_4_1.vhd",
+      "destination": "vivado/hardware/baseline/ip_repo/PREP_ACCEL/hdl/vhdl/prep_accel_mul_mul_17ns_19ns_35_4_1.vhd",
+      "sha256": "189b768868fa6b7cae934e6f2c1913030e2bdec378bf02d3560a4d0f1eef4b28"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/ip_repo/prep_accel/hdl/vhdl/prep_accel_mul_mul_8ns_14ns_21_4_1.vhd",
+      "destination": "vivado/hardware/baseline/ip_repo/PREP_ACCEL/hdl/vhdl/prep_accel_mul_mul_8ns_14ns_21_4_1.vhd",
+      "sha256": "cf83b995eeb47116b4143d611d7babbc1a8b97a9b423dd8faf7de05522280122"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/ip_repo/prep_accel/hdl/vhdl/prep_accel_mux_124_32_1_1.vhd",
+      "destination": "vivado/hardware/baseline/ip_repo/PREP_ACCEL/hdl/vhdl/prep_accel_mux_124_32_1_1.vhd",
+      "sha256": "513521813cc1baa98fbbc2881abb9b955b82aaa22342c1643d4cde3bb8a1e637"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/ip_repo/prep_accel/hdl/vhdl/prep_accel_mux_124_8_1_1.vhd",
+      "destination": "vivado/hardware/baseline/ip_repo/PREP_ACCEL/hdl/vhdl/prep_accel_mux_124_8_1_1.vhd",
+      "sha256": "fd0ec5f0b85580847955213c9cf792ab9908d28166d243547cad5937c8063762"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/ip_repo/prep_accel/hdl/vhdl/prep_accel_mux_32_32_1_1.vhd",
+      "destination": "vivado/hardware/baseline/ip_repo/PREP_ACCEL/hdl/vhdl/prep_accel_mux_32_32_1_1.vhd",
+      "sha256": "0b6fe4398b63fc30a60945fb51453e5043ffc30d330983ebddb4f45e39c84ced"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/ip_repo/prep_accel/hdl/vhdl/prep_accel_mux_432_8_1_1.vhd",
+      "destination": "vivado/hardware/baseline/ip_repo/PREP_ACCEL/hdl/vhdl/prep_accel_mux_432_8_1_1.vhd",
+      "sha256": "f23fa01bd4aa405fbd367bd6b5796534c41822608a6582e9aa98372ed17f258e"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/ip_repo/prep_accel/hdl/vhdl/prep_accel_mux_63_8_1_1.vhd",
+      "destination": "vivado/hardware/baseline/ip_repo/PREP_ACCEL/hdl/vhdl/prep_accel_mux_63_8_1_1.vhd",
+      "sha256": "0176c593e1783fdae9cd5f338ee83bacd3a16cb586855bc3c2e630d8a4e58836"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/ip_repo/prep_accel/hdl/vhdl/prep_accel_mux_677_32_1_1.vhd",
+      "destination": "vivado/hardware/baseline/ip_repo/PREP_ACCEL/hdl/vhdl/prep_accel_mux_677_32_1_1.vhd",
+      "sha256": "31f1dbb67f1635946b7c309fefce539997ec6835a10950292e7439a6e1317742"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/ip_repo/prep_accel/hdl/vhdl/prep_accel_mux_677_8_1_1.vhd",
+      "destination": "vivado/hardware/baseline/ip_repo/PREP_ACCEL/hdl/vhdl/prep_accel_mux_677_8_1_1.vhd",
+      "sha256": "a88816a99bec7ab06c3dd98a469eae89c2dc427542ec87e2e6fb52333d12bacf"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/ip_repo/prep_accel/hdl/vhdl/prep_accel_mux_83_8_1_1.vhd",
+      "destination": "vivado/hardware/baseline/ip_repo/PREP_ACCEL/hdl/vhdl/prep_accel_mux_83_8_1_1.vhd",
+      "sha256": "80c5af34691e1e74967acd8efad3ab131a867d71a7cf7e31624bf458fbbdca99"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/ip_repo/prep_accel/hdl/vhdl/prep_accel_speed_fc_kernel.vhd",
+      "destination": "vivado/hardware/baseline/ip_repo/PREP_ACCEL/hdl/vhdl/prep_accel_speed_fc_kernel.vhd",
+      "sha256": "1bb4039323f8a1d082c88b049ededd01420af4501f4903938746ab9956574dac"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/ip_repo/prep_accel/hdl/vhdl/prep_accel_speed_fc_kernel_input.vhd",
+      "destination": "vivado/hardware/baseline/ip_repo/PREP_ACCEL/hdl/vhdl/prep_accel_speed_fc_kernel_input.vhd",
+      "sha256": "44f57e81ceccafcc44d275507146eb9f3b053a8087b42c95eccdbe3fa455bdf0"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/ip_repo/prep_accel/hdl/vhdl/prep_accel_srem_9ns_3ns_2_13_seq_1.vhd",
+      "destination": "vivado/hardware/baseline/ip_repo/PREP_ACCEL/hdl/vhdl/prep_accel_srem_9ns_3ns_2_13_seq_1.vhd",
+      "sha256": "62cc291a543831d7456e30bd28ee7ef6ce5cd7a44d4f5f940705cbe587b5a78f"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/ip_repo/prep_accel/hdl/vhdl/prep_accel_urem_32ns_8ns_32_36_seq_1.vhd",
+      "destination": "vivado/hardware/baseline/ip_repo/PREP_ACCEL/hdl/vhdl/prep_accel_urem_32ns_8ns_32_36_seq_1.vhd",
+      "sha256": "ca194923cb8ea8c1e1819e0b9e4cf7ce43c0311d7be73dc5c22b04b6c44f33a8"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/ip_repo/prep_accel/hdl/vhdl/prep_accel_urem_32ns_8ns_7_36_seq_1.vhd",
+      "destination": "vivado/hardware/baseline/ip_repo/PREP_ACCEL/hdl/vhdl/prep_accel_urem_32ns_8ns_7_36_seq_1.vhd",
+      "sha256": "8a1e58aea237d3cf4e3d9f8d45b9094335f1ca50210d273aab9096f8100517cd"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/ip_repo/prep_accel/hdl/vhdl/prep_accel_urem_32s_3ns_2_36_seq_1.vhd",
+      "destination": "vivado/hardware/baseline/ip_repo/PREP_ACCEL/hdl/vhdl/prep_accel_urem_32s_3ns_2_36_seq_1.vhd",
+      "sha256": "cef91b320df3068be64aa96ef83ef9afbac4e30db38773a5664f824117df0195"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/ip_repo/prep_accel/hdl/vhdl/prep_accel_urem_8ns_3ns_2_12_seq_1.vhd",
+      "destination": "vivado/hardware/baseline/ip_repo/PREP_ACCEL/hdl/vhdl/prep_accel_urem_8ns_3ns_2_12_seq_1.vhd",
+      "sha256": "8066d079cc96eae71ffc4ebd31c125419ece7a20dc3d8624a383df740d183258"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/ip_repo/prep_accel/hdl/vhdl/prep_accel_urem_9ns_3ns_2_13_1.vhd",
+      "destination": "vivado/hardware/baseline/ip_repo/PREP_ACCEL/hdl/vhdl/prep_accel_urem_9ns_3ns_2_13_1.vhd",
+      "sha256": "a982fcd4a9ba356e287103b556b22014d1ab06b935ce85df0ce899070ecb662d"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/ip_repo/prep_accel/hdl/vhdl/prep_accel_urem_9ns_3ns_2_13_seq_1.vhd",
+      "destination": "vivado/hardware/baseline/ip_repo/PREP_ACCEL/hdl/vhdl/prep_accel_urem_9ns_3ns_2_13_seq_1.vhd",
+      "sha256": "8f917e76347c68f1fa31c31c4fa97d8efe331a888537177d61d371da511f27a6"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/ip_repo/prep_accel/misc/logo.png",
+      "destination": "vivado/hardware/baseline/ip_repo/PREP_ACCEL/misc/logo.png",
+      "sha256": "4d978370b877dccf3f3bfaf7a8fdb3554e936ee2d2d3356bdaa64c0c4e30c9af"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/ip_repo/prep_accel/prep_accel_info.xml",
+      "destination": "vivado/hardware/baseline/ip_repo/PREP_ACCEL/prep_accel_info.xml",
+      "sha256": "d6897690be8d797d44fdbd34fa58aaf6e8b7a372003ec792a0343722ba916053"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/ip_repo/prep_accel/sysgen_info.xml",
+      "destination": "vivado/hardware/baseline/ip_repo/PREP_ACCEL/sysgen_info.xml",
+      "sha256": "8cc854c22f7babbe94c66b21d12dd948d580eec2b910d22c1485c0e8c275e68f"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/ip_repo/prep_accel/xgui/prep_accel_v1_0.tcl",
+      "destination": "vivado/hardware/baseline/ip_repo/PREP_ACCEL/xgui/prep_accel_v1_0.tcl",
+      "sha256": "4885b97723e8f89bd187c006e73c2a839313858738ec25d95037c13558a82f32"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/ov5640_hdmi_srcs/sources_1/bd/system/system.bd",
+      "destination": "vivado/hardware/baseline/ov5640_hdmi.srcs/sources_1/bd/system/system.bd",
+      "sha256": "9758bc9cf6689f0b63a95c8f5a573042bdac5e320cf407a41cc51665e4fa3be5"
+    },
+    {
+      "source": "build/vivado/hardware/platform_base/system_reference.v",
+      "destination": "vivado/hardware/baseline/system_reference.v",
+      "sha256": "788fd80b1b40dd2bcc895268b86c1fb7379f93a176ef1019c279f9f259731165"
+    },
+    {
+      "source": "build/vivado/hardware/build_optimized.tcl",
+      "destination": "vivado/hardware/build_optimized.tcl",
+      "sha256": "97cd207014f244a67371e9debe1b1b1fc7fc5e051037b7e8181854dd42bf33b1"
+    },
+    {
+      "source": "src/rtl/platform/camera_bridge_control.v",
+      "destination": "vivado/hardware/camera_bridge_control.v",
+      "sha256": "32263fac7e16e70d9eddc7aee287b4f5f2642118d68f46f04854a5292ad475be"
+    },
+    {
+      "source": "src/rtl/platform/camera_signal_monitor.v",
+      "destination": "vivado/hardware/camera_signal_monitor.v",
+      "sha256": "f102c09fe4cc0c544d45d19ce2528b3144141258d34d22ca1c604d0bd6990b8c"
+    },
+    {
+      "source": "build/vivado/hardware/check_hardware.tcl",
+      "destination": "vivado/hardware/check_hardware.tcl",
+      "sha256": "63e91870f79162485419110a68064f9fddc0ed6a72a89f5d6928527b43f86220"
+    },
+    {
+      "source": "src/rtl/platform/debug_cdc.xdc",
+      "destination": "vivado/hardware/debug_cdc.xdc",
+      "sha256": "db9c0a695d0c2a81421d68e0aafdfd6665897b1110574d94a756d59687d691e4"
+    },
+    {
+      "source": "build/vivado/hardware/integrate_unified.tcl",
+      "destination": "vivado/hardware/integrate_unified.tcl",
+      "sha256": "a078a379c8e87934f0461222c0e68e693506728d960bb839ccfd87e8d31f4736"
+    },
+    {
+      "source": "build/vivado/hardware/merge_audio.tcl",
+      "destination": "vivado/hardware/merge_audio.tcl",
+      "sha256": "abe45e88c25d9633f3fac8fb984decbface9513dc23f1f4c726a90d8c3c752c5"
+    },
+    {
+      "source": "build/vivado/hardware/package_prep_only.tcl",
+      "destination": "vivado/hardware/package_prep_only.tcl",
+      "sha256": "ef9f13c93457877f1e7011cc4c1157c7168b9e5ccc3a076ca39333c2e1538a89"
+    },
+    {
+      "source": "build/vivado/hardware/python_command.tcl",
+      "destination": "vivado/hardware/python_command.tcl",
+      "sha256": "462838ea6e9b158d9a2cd01625179e8f5257c3ca4a4309dd52be7f44006b19db"
+    },
+    {
+      "source": "build/ip_repo/cnn_rtl_unified/component.xml",
+      "destination": "vivado/ip_repo/cnn_rtl_unified/component.xml",
+      "sha256": "d0a548370dc3d55208b662450f8fdfd3a67dc3c185f1523ee6a084032548214b"
+    },
+    {
+      "source": "src/rtl/cnn/common/cnn_axi_ro_reader.sv",
+      "destination": "vivado/ip_repo/cnn_rtl_unified/rtl/common/cnn_axi_ro_reader.sv",
+      "sha256": "c84ce735e30d2a5223fdd1fbeb7dcfe1accd1ddae4c410a5f8a14a0caed80afa"
+    },
+    {
+      "source": "src/rtl/cnn/common/cnn_axil_control.sv",
+      "destination": "vivado/ip_repo/cnn_rtl_unified/rtl/common/cnn_axil_control.sv",
+      "sha256": "5c52cf78512dd991f9ad9e9d732950ed31053da973a9402539b9ea594d740218"
+    },
+    {
+      "source": "src/rtl/cnn/common/cnn_control_ro_cases.vh",
+      "destination": "vivado/ip_repo/cnn_rtl_unified/rtl/common/cnn_control_ro_cases.vh",
+      "sha256": "e3e55bdb59503ab90e0862704b35c37284f400a9481ee9bad9fe4febc3b0a53b"
+    },
+    {
+      "source": "src/rtl/cnn/common/cnn_input_store.sv",
+      "destination": "vivado/ip_repo/cnn_rtl_unified/rtl/common/cnn_input_store.sv",
+      "sha256": "96664b0fb1cdab014ed6fbee6f5b5595315d78e204bddd66e4af824d7a2695b7"
+    },
+    {
+      "source": "src/rtl/cnn/common/cnn_mac.sv",
+      "destination": "vivado/ip_repo/cnn_rtl_unified/rtl/common/cnn_mac.sv",
+      "sha256": "29bd4ddfb2bac92e21f7db03f5d8cc8fc9a463c70cc4787d63008c1c3749b2f1"
+    },
+    {
+      "source": "src/rtl/cnn/common/cnn_model_cache.sv",
+      "destination": "vivado/ip_repo/cnn_rtl_unified/rtl/common/cnn_model_cache.sv",
+      "sha256": "762cdba50cfd7580f353a5ac514f8c1b0f8e1909c0d611ae58e1c120106191ac"
+    },
+    {
+      "source": "src/rtl/cnn/common/cnn_model_loader.sv",
+      "destination": "vivado/ip_repo/cnn_rtl_unified/rtl/common/cnn_model_loader.sv",
+      "sha256": "81185393fd69122a1af12c2bbdbb66b852abfd8f77ef15a0219f193ffa6255a6"
+    },
+    {
+      "source": "src/rtl/cnn/common/cnn_quantize.sv",
+      "destination": "vivado/ip_repo/cnn_rtl_unified/rtl/common/cnn_quantize.sv",
+      "sha256": "6e484c5186961be8f1aa966812cc32fab42a4b9dc5728b6e90fb5a180f0b7fc4"
+    },
+    {
+      "source": "src/rtl/cnn/conv3/cnn_conv3_pool3.sv",
+      "destination": "vivado/ip_repo/cnn_rtl_unified/rtl/conv3/cnn_conv3_pool3.sv",
+      "sha256": "f2aa75abd634503860dff7eb78d24afcc9d627f2a8724eb5bfeffe00239f92a6"
+    },
+    {
+      "source": "src/rtl/cnn/conv3/cnn_feature_store.sv",
+      "destination": "vivado/ip_repo/cnn_rtl_unified/rtl/conv3/cnn_feature_store.sv",
+      "sha256": "f51e8cd353c136947dcf907659067fff68d97bb0ae8147484b1a6b07fcb730bb"
+    },
+    {
+      "source": "src/rtl/cnn/fc/cnn_fc.sv",
+      "destination": "vivado/ip_repo/cnn_rtl_unified/rtl/fc/cnn_fc.sv",
+      "sha256": "61d30ff2b512b70616fb39f5eb22ce4a55e89840b7dc7f63a6300845bd6c12e9"
+    },
+    {
+      "source": "src/rtl/cnn/frontend/cnn_top.v",
+      "destination": "vivado/ip_repo/cnn_rtl_unified/rtl/frontend/cnn_top.v",
+      "sha256": "cb1ee196185653d4930523682d1063e71244e8942614a3f04a31ed95726a414a"
+    },
+    {
+      "source": "src/rtl/cnn/frontend/conv1_bias_int32.coe",
+      "destination": "vivado/ip_repo/cnn_rtl_unified/rtl/frontend/conv1_bias_int32.coe",
+      "sha256": "05a7fdfe1bea96b32c5ee99b6bda463f0872cfe554eb1fe8c419066c1791c7e4"
+    },
+    {
+      "source": "src/rtl/cnn/frontend/conv1_weight_r0.coe",
+      "destination": "vivado/ip_repo/cnn_rtl_unified/rtl/frontend/conv1_weight_r0.coe",
+      "sha256": "c79824cc48df22335ecac1afd7902cc31fe6dc899893e16d92633be34f80ca03"
+    },
+    {
+      "source": "src/rtl/cnn/frontend/conv1_weight_r1.coe",
+      "destination": "vivado/ip_repo/cnn_rtl_unified/rtl/frontend/conv1_weight_r1.coe",
+      "sha256": "6e9c51532a00d21dd5f270c6359809e5ee0db6d35aa4e1025f001ad36669d518"
+    },
+    {
+      "source": "src/rtl/cnn/frontend/conv1_weight_r2.coe",
+      "destination": "vivado/ip_repo/cnn_rtl_unified/rtl/frontend/conv1_weight_r2.coe",
+      "sha256": "3d7d4af99a4847a8eba4fa6b559e740986d7563f1dbcb7f3cccf841cc53a06b7"
+    },
+    {
+      "source": "src/rtl/cnn/frontend/conv2_bias_int32.coe",
+      "destination": "vivado/ip_repo/cnn_rtl_unified/rtl/frontend/conv2_bias_int32.coe",
+      "sha256": "bab4d3148e1163a164eacccf46c7be99b2a1aaaa49371d159090a6b0a0b0c716"
+    },
+    {
+      "source": "src/rtl/cnn/frontend/conv2_weight_r0.coe",
+      "destination": "vivado/ip_repo/cnn_rtl_unified/rtl/frontend/conv2_weight_r0.coe",
+      "sha256": "84468f63b680ed9fec0940b507a0e8620e43c30420175f148edd25072834c8b9"
+    },
+    {
+      "source": "src/rtl/cnn/frontend/conv2_weight_r1.coe",
+      "destination": "vivado/ip_repo/cnn_rtl_unified/rtl/frontend/conv2_weight_r1.coe",
+      "sha256": "52161dc32b2729f2e7f4795aaa2230c02b752e3dcdf6061b6acde5800f72ddb8"
+    },
+    {
+      "source": "src/rtl/cnn/frontend/conv2_weight_r2.coe",
+      "destination": "vivado/ip_repo/cnn_rtl_unified/rtl/frontend/conv2_weight_r2.coe",
+      "sha256": "c3021cf2149b05ec51d9f48c6bbfffda0d7970b929b0aa8396705988f102804f"
+    },
+    {
+      "source": "src/rtl/cnn/frontend/conv_cal.v",
+      "destination": "vivado/ip_repo/cnn_rtl_unified/rtl/frontend/conv_cal.v",
+      "sha256": "f604f99dfafcb86e70cd9225dca63d6385d282c4ca202d93082aee96b61d5866"
+    },
+    {
+      "source": "src/rtl/cnn/frontend/conv_rslt_reg/conv_rslt_reg.xci",
+      "destination": "vivado/ip_repo/cnn_rtl_unified/rtl/frontend/conv_rslt_reg/conv_rslt_reg.xci",
+      "sha256": "698e3636a4c69ec7d09350a823ba0c61bf0a80a3b0d87208dc5e747c95a3411b"
+    },
+    {
+      "source": "src/rtl/cnn/frontend/data_ram.v",
+      "destination": "vivado/ip_repo/cnn_rtl_unified/rtl/frontend/data_ram.v",
+      "sha256": "70ea6cc91c6d5f1854449873fdaaa6184413752e7115710929427f499cb2d444"
+    },
+    {
+      "source": "src/rtl/cnn/frontend/fifo_generator_0/fifo_generator_0.xci",
+      "destination": "vivado/ip_repo/cnn_rtl_unified/rtl/frontend/fifo_generator_0/fifo_generator_0.xci",
+      "sha256": "0ad3b6ffe44eaa9457b5ed357df89254563fda946e233223ca4be6f44bbd0e13"
+    },
+    {
+      "source": "src/rtl/cnn/frontend/image_data_ram/image_data_ram.xci",
+      "destination": "vivado/ip_repo/cnn_rtl_unified/rtl/frontend/image_data_ram/image_data_ram.xci",
+      "sha256": "e75e6133440117b0d3e276be8bde897c615fb8e2f63898ba57eeab04ccc1feba"
+    },
+    {
+      "source": "src/rtl/cnn/frontend/mult_gen/mult_gen.xci",
+      "destination": "vivado/ip_repo/cnn_rtl_unified/rtl/frontend/mult_gen/mult_gen.xci",
+      "sha256": "6fe66743833d8c6b1189468dc4e18981879acf61dfe275f35ad98030d80b7956"
+    },
+    {
+      "source": "src/rtl/cnn/frontend/pool_layer.v",
+      "destination": "vivado/ip_repo/cnn_rtl_unified/rtl/frontend/pool_layer.v",
+      "sha256": "286bb3f8dc4be04fa81282d251769dd073474e98598210ba1a8374993b55a094"
+    },
+    {
+      "source": "src/rtl/cnn/frontend/requant_relu.v",
+      "destination": "vivado/ip_repo/cnn_rtl_unified/rtl/frontend/requant_relu.v",
+      "sha256": "1ad152f321965d98722b02f458c48ddf616414767920940535095c776e85dee9"
+    },
+    {
+      "source": "src/rtl/cnn/frontend/rom_b_ip/rom_b_ip.xci",
+      "destination": "vivado/ip_repo/cnn_rtl_unified/rtl/frontend/rom_b_ip/rom_b_ip.xci",
+      "sha256": "643b609084eefeb9e2f11fd2654fad6cb765880f3b077f6e4808a2bd62a3598f"
+    },
+    {
+      "source": "src/rtl/cnn/frontend/rom_b_layer2_ip/rom_b_layer2_ip.xci",
+      "destination": "vivado/ip_repo/cnn_rtl_unified/rtl/frontend/rom_b_layer2_ip/rom_b_layer2_ip.xci",
+      "sha256": "0b6b884de5ac8ba1ac05ec4facaf145c0e6a433ec78f43a9689275e18f6d9d0f"
+    },
+    {
+      "source": "src/rtl/cnn/frontend/rom_w0_ip/rom_w0_ip.xci",
+      "destination": "vivado/ip_repo/cnn_rtl_unified/rtl/frontend/rom_w0_ip/rom_w0_ip.xci",
+      "sha256": "b01c265b99c0583b5fd9b1949e1f3fd8c20d702738217838f330ed0cadc32fdf"
+    },
+    {
+      "source": "src/rtl/cnn/frontend/rom_w0_layer2_ip/rom_w0_layer2_ip.xci",
+      "destination": "vivado/ip_repo/cnn_rtl_unified/rtl/frontend/rom_w0_layer2_ip/rom_w0_layer2_ip.xci",
+      "sha256": "7c82b17b06d3ec974ccc93ffb8092eb2cb982008d9ef8e14090895fd4a7225b7"
+    },
+    {
+      "source": "src/rtl/cnn/frontend/rom_w1_ip/rom_w1_ip.xci",
+      "destination": "vivado/ip_repo/cnn_rtl_unified/rtl/frontend/rom_w1_ip/rom_w1_ip.xci",
+      "sha256": "c2186e00b70627ab69b4ad0dabf51284cfc8ad61d9333ba4aecaf1df54ab940c"
+    },
+    {
+      "source": "src/rtl/cnn/frontend/rom_w1_layer2_ip/rom_w1_layer2_ip.xci",
+      "destination": "vivado/ip_repo/cnn_rtl_unified/rtl/frontend/rom_w1_layer2_ip/rom_w1_layer2_ip.xci",
+      "sha256": "f5d329e490597bdad4bcd65e5cf5f5a03a9f34eeb9d656ab2bd6f3d556c33c81"
+    },
+    {
+      "source": "src/rtl/cnn/frontend/rom_w2_ip/rom_w2_ip.xci",
+      "destination": "vivado/ip_repo/cnn_rtl_unified/rtl/frontend/rom_w2_ip/rom_w2_ip.xci",
+      "sha256": "21e78fa8212f96d8a6f93319c152637bae763a726fbe829b9559cc557349b9ab"
+    },
+    {
+      "source": "src/rtl/cnn/frontend/rom_w2_layer2_ip/rom_w2_layer2_ip.xci",
+      "destination": "vivado/ip_repo/cnn_rtl_unified/rtl/frontend/rom_w2_layer2_ip/rom_w2_layer2_ip.xci",
+      "sha256": "553f82cbcd0cf70d2cb3e33ef30b75905593dde53b77e3f9b235bc2302e39b83"
+    },
+    {
+      "source": "src/rtl/cnn/interfaces/cnn_unified_contract.vh",
+      "destination": "vivado/ip_repo/cnn_rtl_unified/rtl/interfaces/cnn_unified_contract.vh",
+      "sha256": "f9a0119d404322049b844ea7d388fbd8d7f0147ea1bd04a4c35980e64918988c"
+    },
+    {
+      "source": "src/rtl/cnn/unified/cnn_rtl_unified.sv",
+      "destination": "vivado/ip_repo/cnn_rtl_unified/rtl/unified/cnn_rtl_unified.sv",
+      "sha256": "8244c7fbde3047057169b6e538c13767d73162c432c55c25446fa0332bf7b8fd"
+    },
+    {
+      "source": "src/rtl/cnn/unified/cnn_unified_core.sv",
+      "destination": "vivado/ip_repo/cnn_rtl_unified/rtl/unified/cnn_unified_core.sv",
+      "sha256": "be95415bb649f1445ce45b17a06a3a0cdf5ce6c1ad4c92cb23239bb400f4e8d1"
+    },
+    {
+      "source": "build/ip_repo/cnn_rtl_unified/xgui/cnn_rtl_unified_v1_0.tcl",
+      "destination": "vivado/ip_repo/cnn_rtl_unified/xgui/cnn_rtl_unified_v1_0.tcl",
+      "sha256": "e0725b60cdc4cd625ee059e557ee3f5569fcd085edf601849e69e4d438080d96"
+    },
+    {
+      "source": "build/ip_repo/prep_only_accel/auxiliary.xml",
+      "destination": "vivado/ip_repo/prep_only_accel/auxiliary.xml",
+      "sha256": "63c65eda2c8154b575a3a5d05f1509590adee95e39a877e6b0498e73831ee5d3"
+    },
+    {
+      "source": "build/ip_repo/prep_only_accel/component.xml",
+      "destination": "vivado/ip_repo/prep_only_accel/component.xml",
+      "sha256": "70ff5b3c0156d66d5b6dc46c28a868810b46064ef369284dcad97d911b153b69"
+    },
+    {
+      "source": "build/ip_repo/prep_only_accel/constraints/prep_only_accel_ooc.xdc",
+      "destination": "vivado/ip_repo/prep_only_accel/constraints/prep_only_accel_ooc.xdc",
+      "sha256": "71cb29437c55f5e99a23ea084731ce22178a7debd81b3c0b30983822cbb7e281"
+    },
+    {
+      "source": "build/ip_repo/prep_only_accel/doc/releasenotes.txt",
+      "destination": "vivado/ip_repo/prep_only_accel/doc/ReleaseNotes.txt",
+      "sha256": "7325eb38ce18dcf478a6ba4d7feb009ef101d3d4addd8a6f97ed850f70ec70c8"
+    },
+    {
+      "source": "build/ip_repo/prep_only_accel/drivers/prep_only_accel_v1_0/data/prep_only_accel.mdd",
+      "destination": "vivado/ip_repo/prep_only_accel/drivers/prep_only_accel_v1_0/data/prep_only_accel.mdd",
+      "sha256": "f83ab74bed743cfddb84e80514563b0fa8f2d3f89d7f90c1f6ca3102d070e101"
+    },
+    {
+      "source": "build/ip_repo/prep_only_accel/drivers/prep_only_accel_v1_0/data/prep_only_accel.tcl",
+      "destination": "vivado/ip_repo/prep_only_accel/drivers/prep_only_accel_v1_0/data/prep_only_accel.tcl",
+      "sha256": "b01738574d1e823e589998ef71a2f40e89d6d15ecad29dc10eb6711e46178ddd"
+    },
+    {
+      "source": "build/ip_repo/prep_only_accel/drivers/prep_only_accel_v1_0/src/makefile",
+      "destination": "vivado/ip_repo/prep_only_accel/drivers/prep_only_accel_v1_0/src/Makefile",
+      "sha256": "1dd782dc6012fd34e40605245ba62acb6e8b60136a98d314a06991c595b2cc46"
+    },
+    {
+      "source": "build/ip_repo/prep_only_accel/drivers/prep_only_accel_v1_0/src/xprep_only_accel.c",
+      "destination": "vivado/ip_repo/prep_only_accel/drivers/prep_only_accel_v1_0/src/xprep_only_accel.c",
+      "sha256": "6528998c9acbdd25f678ec1a59e107783f6c0b210e564067a12b170e316db355"
+    },
+    {
+      "source": "build/ip_repo/prep_only_accel/drivers/prep_only_accel_v1_0/src/xprep_only_accel.h",
+      "destination": "vivado/ip_repo/prep_only_accel/drivers/prep_only_accel_v1_0/src/xprep_only_accel.h",
+      "sha256": "9c0092f90740bbacc6f0d16d8ed62dd8abd57d24b8d5f11fd2874668ba97f7fa"
+    },
+    {
+      "source": "build/ip_repo/prep_only_accel/drivers/prep_only_accel_v1_0/src/xprep_only_accel_hw.h",
+      "destination": "vivado/ip_repo/prep_only_accel/drivers/prep_only_accel_v1_0/src/xprep_only_accel_hw.h",
+      "sha256": "3b6c84dfdf86b768205e458d62c0aa8e9ec9bf1b48ffdceab84acae19cc9c82e"
+    },
+    {
+      "source": "build/ip_repo/prep_only_accel/drivers/prep_only_accel_v1_0/src/xprep_only_accel_linux.c",
+      "destination": "vivado/ip_repo/prep_only_accel/drivers/prep_only_accel_v1_0/src/xprep_only_accel_linux.c",
+      "sha256": "2dc18309ecc84c6c23699a847fbbeb3bfe833e2fc72e3948de77f92eeb108dd8"
+    },
+    {
+      "source": "build/ip_repo/prep_only_accel/drivers/prep_only_accel_v1_0/src/xprep_only_accel_sinit.c",
+      "destination": "vivado/ip_repo/prep_only_accel/drivers/prep_only_accel_v1_0/src/xprep_only_accel_sinit.c",
+      "sha256": "b53fcb0050056b3d7ddbc3dc928ed6dc8d5f0f514f7f94c773c554998059de77"
+    },
+    {
+      "source": "build/ip_repo/prep_only_accel/example/ipi_example.tcl",
+      "destination": "vivado/ip_repo/prep_only_accel/example/ipi_example.tcl",
+      "sha256": "7b369a156bd7f2279c034ff639d8a606be4c1bde6a00d3c3bb7d49cde63edf42"
+    },
+    {
+      "source": "build/ip_repo/prep_only_accel/hdl/verilog/prep_only_accel.v",
+      "destination": "vivado/ip_repo/prep_only_accel/hdl/verilog/prep_only_accel.v",
+      "sha256": "55f1016b098ba881ae718be4e31287a913efa06b2692155afb3c7d4e0f295b00"
+    },
+    {
+      "source": "build/ip_repo/prep_only_accel/hdl/verilog/prep_only_accel_control_s_axi.v",
+      "destination": "vivado/ip_repo/prep_only_accel/hdl/verilog/prep_only_accel_control_s_axi.v",
+      "sha256": "792304b244bf0d430567f40b7bc19e30f2baa55758494b6b074e7fb5473c7827"
+    },
+    {
+      "source": "build/ip_repo/prep_only_accel/hdl/verilog/prep_only_accel_gmem_m_axi.v",
+      "destination": "vivado/ip_repo/prep_only_accel/hdl/verilog/prep_only_accel_gmem_m_axi.v",
+      "sha256": "f5e5abcbf33c9f4e0175c0a628cbf2126d9e8d7f1c8d00a997f1a657a6b59d39"
+    },
+    {
+      "source": "build/ip_repo/prep_only_accel/hdl/verilog/prep_only_accel_mac_muladd_16ns_5ns_21ns_22_4_1.v",
+      "destination": "vivado/ip_repo/prep_only_accel/hdl/verilog/prep_only_accel_mac_muladd_16ns_5ns_21ns_22_4_1.v",
+      "sha256": "f263e0ebe58adeeb671e9e487d0e3fa944fc41a13b411188d7a6cc9f41a0f0ed"
+    },
+    {
+      "source": "build/ip_repo/prep_only_accel/hdl/verilog/prep_only_accel_mac_muladd_16ns_5ns_22ns_23_4_1.v",
+      "destination": "vivado/ip_repo/prep_only_accel/hdl/verilog/prep_only_accel_mac_muladd_16ns_5ns_22ns_23_4_1.v",
+      "sha256": "9ec241dde102ed2b50a4ac29d22e521cd005b5e737687392e8673b382892f14a"
+    },
+    {
+      "source": "build/ip_repo/prep_only_accel/hdl/verilog/prep_only_accel_mac_muladd_16ns_5ns_23ns_23_4_1.v",
+      "destination": "vivado/ip_repo/prep_only_accel/hdl/verilog/prep_only_accel_mac_muladd_16ns_5ns_23ns_23_4_1.v",
+      "sha256": "3b87b3c47659ba983e46e158dbea7e5496a3302a72c6b346976d4e312712792e"
+    },
+    {
+      "source": "build/ip_repo/prep_only_accel/hdl/verilog/prep_only_accel_mac_muladd_16ns_5ns_23ns_24_4_1.v",
+      "destination": "vivado/ip_repo/prep_only_accel/hdl/verilog/prep_only_accel_mac_muladd_16ns_5ns_23ns_24_4_1.v",
+      "sha256": "93f3e14f808c59d16b083d89b2b790fbb46276a3792c677b06f0f7f15b69bbb2"
+    },
+    {
+      "source": "build/ip_repo/prep_only_accel/hdl/verilog/prep_only_accel_mac_muladd_16ns_5ns_24ns_24_4_1.v",
+      "destination": "vivado/ip_repo/prep_only_accel/hdl/verilog/prep_only_accel_mac_muladd_16ns_5ns_24ns_24_4_1.v",
+      "sha256": "55089829d07249fb4603ce79b2bd95c4b0cd279a5f47669243cf1afa59913480"
+    },
+    {
+      "source": "build/ip_repo/prep_only_accel/hdl/verilog/prep_only_accel_mac_muladd_16ns_5ns_24ns_25_4_1.v",
+      "destination": "vivado/ip_repo/prep_only_accel/hdl/verilog/prep_only_accel_mac_muladd_16ns_5ns_24ns_25_4_1.v",
+      "sha256": "54151dca6d5f0286b3ac45670279b1b0296236aa72182ee1bd48b5bca7c814e5"
+    },
+    {
+      "source": "build/ip_repo/prep_only_accel/hdl/verilog/prep_only_accel_mac_muladd_16ns_5ns_25ns_25_4_1.v",
+      "destination": "vivado/ip_repo/prep_only_accel/hdl/verilog/prep_only_accel_mac_muladd_16ns_5ns_25ns_25_4_1.v",
+      "sha256": "7b2b8c2e235089dadf45b90acd67af7ba8b6f90ba0cf55097464d87c217cf571"
+    },
+    {
+      "source": "build/ip_repo/prep_only_accel/hdl/verilog/prep_only_accel_mac_muladd_16ns_5ns_25ns_26_4_1.v",
+      "destination": "vivado/ip_repo/prep_only_accel/hdl/verilog/prep_only_accel_mac_muladd_16ns_5ns_25ns_26_4_1.v",
+      "sha256": "dcd9a2d1d2fc97b699bcfa19256a0c8338c1c06a227a53d938a17a432ea5369d"
+    },
+    {
+      "source": "build/ip_repo/prep_only_accel/hdl/verilog/prep_only_accel_mac_muladd_16ns_5ns_26ns_26_4_1.v",
+      "destination": "vivado/ip_repo/prep_only_accel/hdl/verilog/prep_only_accel_mac_muladd_16ns_5ns_26ns_26_4_1.v",
+      "sha256": "a768c1d99a7fac9f2c0a176b73f047e5470a877cdb69242f183afc0205981322"
+    },
+    {
+      "source": "build/ip_repo/prep_only_accel/hdl/verilog/prep_only_accel_mac_muladd_16ns_5ns_26ns_27_4_1.v",
+      "destination": "vivado/ip_repo/prep_only_accel/hdl/verilog/prep_only_accel_mac_muladd_16ns_5ns_26ns_27_4_1.v",
+      "sha256": "e855e4155ed6fa6dd101d7212545c09c0547dad56531611c28456e76a4f4e4e9"
+    },
+    {
+      "source": "build/ip_repo/prep_only_accel/hdl/verilog/prep_only_accel_mac_muladd_16ns_5ns_27ns_27_4_1.v",
+      "destination": "vivado/ip_repo/prep_only_accel/hdl/verilog/prep_only_accel_mac_muladd_16ns_5ns_27ns_27_4_1.v",
+      "sha256": "f640e538e52fdfe5a585b27bfb3665c39e3bacd837cd3d552db0db790cd387b5"
+    },
+    {
+      "source": "build/ip_repo/prep_only_accel/hdl/verilog/prep_only_accel_mac_muladd_16ns_5ns_27ns_28_4_1.v",
+      "destination": "vivado/ip_repo/prep_only_accel/hdl/verilog/prep_only_accel_mac_muladd_16ns_5ns_27ns_28_4_1.v",
+      "sha256": "e416fda21e6cf6df9396db234abdc6a08dab92310857aae11a6873d7e4b275c6"
+    },
+    {
+      "source": "build/ip_repo/prep_only_accel/hdl/verilog/prep_only_accel_mac_muladd_8ns_12ns_21ns_21_4_1.v",
+      "destination": "vivado/ip_repo/prep_only_accel/hdl/verilog/prep_only_accel_mac_muladd_8ns_12ns_21ns_21_4_1.v",
+      "sha256": "e750f549b6db36cd09fcf0be0f83e929a048b1c44395720fddca27bbbbc24eca"
+    },
+    {
+      "source": "build/ip_repo/prep_only_accel/hdl/verilog/prep_only_accel_mac_muladd_8ns_15ns_15ns_22_4_1.v",
+      "destination": "vivado/ip_repo/prep_only_accel/hdl/verilog/prep_only_accel_mac_muladd_8ns_15ns_15ns_22_4_1.v",
+      "sha256": "d59dcb81572fced02b20c5316defa42e606340ed33b82a1eb1d961b8d466d1db"
+    },
+    {
+      "source": "build/ip_repo/prep_only_accel/hdl/verilog/prep_only_accel_make_detection.v",
+      "destination": "vivado/ip_repo/prep_only_accel/hdl/verilog/prep_only_accel_make_detection.v",
+      "sha256": "b8d5319db894f5f55c62744a6f5449951c9af82875f0d33ff35730187975cbff"
+    },
+    {
+      "source": "build/ip_repo/prep_only_accel/hdl/verilog/prep_only_accel_make_detection_packed_row.v",
+      "destination": "vivado/ip_repo/prep_only_accel/hdl/verilog/prep_only_accel_make_detection_packed_row.v",
+      "sha256": "08c1b0b25bebd1023c86cf6cdd4fffba6b9eb73cecb742afb85dbad8b218994a"
+    },
+    {
+      "source": "build/ip_repo/prep_only_accel/hdl/verilog/prep_only_accel_make_detection_rows_0_0.v",
+      "destination": "vivado/ip_repo/prep_only_accel/hdl/verilog/prep_only_accel_make_detection_rows_0_0.v",
+      "sha256": "8545cb33cd4ec5077dd50d4e466bca247b8592d31b87c8690311eded6c477c9c"
+    },
+    {
+      "source": "build/ip_repo/prep_only_accel/hdl/verilog/prep_only_accel_make_gray.v",
+      "destination": "vivado/ip_repo/prep_only_accel/hdl/verilog/prep_only_accel_make_gray.v",
+      "sha256": "99eb2bd0c7e85720d60a0b62de0aeb7bbbfcaf953ac31c5cf7e64bad23ea7754"
+    },
+    {
+      "source": "build/ip_repo/prep_only_accel/hdl/verilog/prep_only_accel_make_gray_rows_0_0.v",
+      "destination": "vivado/ip_repo/prep_only_accel/hdl/verilog/prep_only_accel_make_gray_rows_0_0.v",
+      "sha256": "6bb362d7b3595210c5ab0b31f14efbf09bef89464a227c8f1b5402f85348c636"
+    },
+    {
+      "source": "build/ip_repo/prep_only_accel/hdl/verilog/prep_only_accel_make_horizontal.v",
+      "destination": "vivado/ip_repo/prep_only_accel/hdl/verilog/prep_only_accel_make_horizontal.v",
+      "sha256": "dbf8cf2732f0b73557a237f4b90d110c9ed112da8cc2cb29042b33a238b67ba3"
+    },
+    {
+      "source": "build/ip_repo/prep_only_accel/hdl/verilog/prep_only_accel_make_horizontal_row_0.v",
+      "destination": "vivado/ip_repo/prep_only_accel/hdl/verilog/prep_only_accel_make_horizontal_row_0.v",
+      "sha256": "739631461c82b0937b5c7a011317e33f826b95e159dceea1a76465e04adb50f3"
+    },
+    {
+      "source": "build/ip_repo/prep_only_accel/hdl/verilog/prep_only_accel_make_ink.v",
+      "destination": "vivado/ip_repo/prep_only_accel/hdl/verilog/prep_only_accel_make_ink.v",
+      "sha256": "eaf55fd23bb9dfbbd94c6fd03356d45e5d8fd61609ff496cc373757004c0f788"
+    },
+    {
+      "source": "build/ip_repo/prep_only_accel/hdl/verilog/prep_only_accel_make_ink_kernel.v",
+      "destination": "vivado/ip_repo/prep_only_accel/hdl/verilog/prep_only_accel_make_ink_kernel.v",
+      "sha256": "f91f82fc6fc910360088c549ea9f0987066fc895e006eaead16502c160c9c13d"
+    },
+    {
+      "source": "build/ip_repo/prep_only_accel/hdl/verilog/prep_only_accel_make_ink_kernel_rom.dat",
+      "destination": "vivado/ip_repo/prep_only_accel/hdl/verilog/prep_only_accel_make_ink_kernel_rom.dat",
+      "sha256": "7c7b953ec2d667c9dbae676f5bcdef5f769a965b29f284cfa220594afa84f222"
+    },
+    {
+      "source": "build/ip_repo/prep_only_accel/hdl/verilog/prep_only_accel_make_ink_ring_0.v",
+      "destination": "vivado/ip_repo/prep_only_accel/hdl/verilog/prep_only_accel_make_ink_ring_0.v",
+      "sha256": "adbd6c321a6b481168a38898810f39833fd6de2c9b93dd9cbe6651b4935af35f"
+    },
+    {
+      "source": "build/ip_repo/prep_only_accel/hdl/verilog/prep_only_accel_make_ink_rowgray.v",
+      "destination": "vivado/ip_repo/prep_only_accel/hdl/verilog/prep_only_accel_make_ink_rowgray.v",
+      "sha256": "aa15857eb2af95e2dcbbf39d3abb67d8a8ca7e7734dfc7fbb0dbff5bcc12fd04"
+    },
+    {
+      "source": "build/ip_repo/prep_only_accel/hdl/verilog/prep_only_accel_mul_10ns_32s_32_1_1.v",
+      "destination": "vivado/ip_repo/prep_only_accel/hdl/verilog/prep_only_accel_mul_10ns_32s_32_1_1.v",
+      "sha256": "64cb7446f8fa3d22868ddeaec8336bbb4f6a5d93073b03fb68b2b90c62824e42"
+    },
+    {
+      "source": "build/ip_repo/prep_only_accel/hdl/verilog/prep_only_accel_mul_32ns_34ns_65_1_1.v",
+      "destination": "vivado/ip_repo/prep_only_accel/hdl/verilog/prep_only_accel_mul_32ns_34ns_65_1_1.v",
+      "sha256": "ac3e3d919048742f32903be62abe5c004767cc7c466691c5280a1a1e5c54d2aa"
+    },
+    {
+      "source": "build/ip_repo/prep_only_accel/hdl/verilog/prep_only_accel_mul_32s_18s_32_1_1.v",
+      "destination": "vivado/ip_repo/prep_only_accel/hdl/verilog/prep_only_accel_mul_32s_18s_32_1_1.v",
+      "sha256": "1205581ccef634b187dabd3e1f760f8fc99ec8c05e49eb8d2dbc2a752863197e"
+    },
+    {
+      "source": "build/ip_repo/prep_only_accel/hdl/verilog/prep_only_accel_mul_32s_8ns_32_1_1.v",
+      "destination": "vivado/ip_repo/prep_only_accel/hdl/verilog/prep_only_accel_mul_32s_8ns_32_1_1.v",
+      "sha256": "30f7eebdd23f28215c53fb311924e6986b4edeab35e101d149db29fd576f8a11"
+    },
+    {
+      "source": "build/ip_repo/prep_only_accel/hdl/verilog/prep_only_accel_mul_64s_12ns_64_5_1.v",
+      "destination": "vivado/ip_repo/prep_only_accel/hdl/verilog/prep_only_accel_mul_64s_12ns_64_5_1.v",
+      "sha256": "2243edccd7c5ac10cb1f0e46a8c87bd3099dd6854f63d78998011fdcc2426767"
+    },
+    {
+      "source": "build/ip_repo/prep_only_accel/hdl/verilog/prep_only_accel_mul_9ns_10ns_17_1_1.v",
+      "destination": "vivado/ip_repo/prep_only_accel/hdl/verilog/prep_only_accel_mul_9ns_10ns_17_1_1.v",
+      "sha256": "8b4d4ed96f1bba1b2b3102b3387bf28c5f1d0cbcd8b6906ba4d3cad03b0a4d80"
+    },
+    {
+      "source": "build/ip_repo/prep_only_accel/hdl/verilog/prep_only_accel_mul_9ns_10ns_18_1_1.v",
+      "destination": "vivado/ip_repo/prep_only_accel/hdl/verilog/prep_only_accel_mul_9ns_10ns_18_1_1.v",
+      "sha256": "60aa8e60aa79b1625250ef1d039bb93e3e5e8b4ca9f1703840d72012df8656db"
+    },
+    {
+      "source": "build/ip_repo/prep_only_accel/hdl/verilog/prep_only_accel_mul_mul_16ns_5ns_21_4_1.v",
+      "destination": "vivado/ip_repo/prep_only_accel/hdl/verilog/prep_only_accel_mul_mul_16ns_5ns_21_4_1.v",
+      "sha256": "7c9ac29ae9aaf9b80939e370ee78aba0292acdf4770a554bb03f69d2ba04b8d7"
+    },
+    {
+      "source": "build/ip_repo/prep_only_accel/hdl/verilog/prep_only_accel_mul_mul_17ns_19ns_35_4_1.v",
+      "destination": "vivado/ip_repo/prep_only_accel/hdl/verilog/prep_only_accel_mul_mul_17ns_19ns_35_4_1.v",
+      "sha256": "e38675d0a9c3516f697de1a16136a36c7f3088cd09c544c29b5e5214054b3ef0"
+    },
+    {
+      "source": "build/ip_repo/prep_only_accel/hdl/verilog/prep_only_accel_mul_mul_8ns_14ns_21_4_1.v",
+      "destination": "vivado/ip_repo/prep_only_accel/hdl/verilog/prep_only_accel_mul_mul_8ns_14ns_21_4_1.v",
+      "sha256": "749e4299f1d3c75fc3b688c9f0dc833edd694ccde8968fe29ef834b14bafddcd"
+    },
+    {
+      "source": "build/ip_repo/prep_only_accel/hdl/verilog/prep_only_accel_mux_124_8_1_1.v",
+      "destination": "vivado/ip_repo/prep_only_accel/hdl/verilog/prep_only_accel_mux_124_8_1_1.v",
+      "sha256": "f312972f80ceefe6cf666098d93bcfd027ae17ece2bc75819a27eee3e96f99c6"
+    },
+    {
+      "source": "build/ip_repo/prep_only_accel/hdl/verilog/prep_only_accel_mux_32_32_1_1.v",
+      "destination": "vivado/ip_repo/prep_only_accel/hdl/verilog/prep_only_accel_mux_32_32_1_1.v",
+      "sha256": "a712c931a9b658468be0be2003b88a3d6ddcbbbe7fbb07cd7198a665b976c54e"
+    },
+    {
+      "source": "build/ip_repo/prep_only_accel/hdl/verilog/prep_only_accel_mux_432_8_1_1.v",
+      "destination": "vivado/ip_repo/prep_only_accel/hdl/verilog/prep_only_accel_mux_432_8_1_1.v",
+      "sha256": "563c1070ed57615b895d7f06d07627369d4d9440fd681c1f904059569346481e"
+    },
+    {
+      "source": "build/ip_repo/prep_only_accel/hdl/verilog/prep_only_accel_mux_63_8_1_1.v",
+      "destination": "vivado/ip_repo/prep_only_accel/hdl/verilog/prep_only_accel_mux_63_8_1_1.v",
+      "sha256": "c77bfed75346971c8ca1cf86a0af66c042967a52d34c0f50df05521b8d3e3732"
+    },
+    {
+      "source": "build/ip_repo/prep_only_accel/hdl/verilog/prep_only_accel_mux_677_8_1_1.v",
+      "destination": "vivado/ip_repo/prep_only_accel/hdl/verilog/prep_only_accel_mux_677_8_1_1.v",
+      "sha256": "49a91a8032e87ca2f1f2e5c49fd0bd9eaca7a087639b5f91b0ca81dd83284e63"
+    },
+    {
+      "source": "build/ip_repo/prep_only_accel/hdl/verilog/prep_only_accel_srem_9ns_3ns_2_13_seq_1.v",
+      "destination": "vivado/ip_repo/prep_only_accel/hdl/verilog/prep_only_accel_srem_9ns_3ns_2_13_seq_1.v",
+      "sha256": "4ac57e4ef53d85de2166f3cc764770ed994d56191bc7cc0c59760fc1991bf472"
+    },
+    {
+      "source": "build/ip_repo/prep_only_accel/hdl/verilog/prep_only_accel_urem_32s_3ns_2_36_seq_1.v",
+      "destination": "vivado/ip_repo/prep_only_accel/hdl/verilog/prep_only_accel_urem_32s_3ns_2_36_seq_1.v",
+      "sha256": "13b48cca90f7f54324278879f98b7b9b9182f11a3253532f2e40e911278dad99"
+    },
+    {
+      "source": "build/ip_repo/prep_only_accel/hdl/verilog/prep_only_accel_urem_8ns_3ns_2_12_seq_1.v",
+      "destination": "vivado/ip_repo/prep_only_accel/hdl/verilog/prep_only_accel_urem_8ns_3ns_2_12_seq_1.v",
+      "sha256": "df52c0e2220f9ac36208cd74ad0857cb87ebab4656792998fbec1f4fece07501"
+    },
+    {
+      "source": "build/ip_repo/prep_only_accel/hdl/verilog/prep_only_accel_urem_9ns_3ns_2_13_seq_1.v",
+      "destination": "vivado/ip_repo/prep_only_accel/hdl/verilog/prep_only_accel_urem_9ns_3ns_2_13_seq_1.v",
+      "sha256": "465fab97e271457a733b29918f177db5560970e990acef40c19f144f3f3bcbb2"
+    },
+    {
+      "source": "build/ip_repo/prep_only_accel/hdl/vhdl/prep_only_accel.vhd",
+      "destination": "vivado/ip_repo/prep_only_accel/hdl/vhdl/prep_only_accel.vhd",
+      "sha256": "4f28b36db7cf754ea26f51e16fbea3b9c2fd4837f98c9b128e4dbbd8fc08acb7"
+    },
+    {
+      "source": "build/ip_repo/prep_only_accel/hdl/vhdl/prep_only_accel_control_s_axi.vhd",
+      "destination": "vivado/ip_repo/prep_only_accel/hdl/vhdl/prep_only_accel_control_s_axi.vhd",
+      "sha256": "cf0dea3de5fed2609575ab46c495adf2d80c7384f8a22834203952d65565044e"
+    },
+    {
+      "source": "build/ip_repo/prep_only_accel/hdl/vhdl/prep_only_accel_gmem_m_axi.vhd",
+      "destination": "vivado/ip_repo/prep_only_accel/hdl/vhdl/prep_only_accel_gmem_m_axi.vhd",
+      "sha256": "9bdf7cb6670b6bd8cc3808da1cbe02e92e175654f22eb3cd1ba139db75528d36"
+    },
+    {
+      "source": "build/ip_repo/prep_only_accel/hdl/vhdl/prep_only_accel_mac_muladd_16ns_5ns_21ns_22_4_1.vhd",
+      "destination": "vivado/ip_repo/prep_only_accel/hdl/vhdl/prep_only_accel_mac_muladd_16ns_5ns_21ns_22_4_1.vhd",
+      "sha256": "48cb9bfd38773e1302767db2ccddae31c0dd4b28f8174045d593cf3cb34b5009"
+    },
+    {
+      "source": "build/ip_repo/prep_only_accel/hdl/vhdl/prep_only_accel_mac_muladd_16ns_5ns_22ns_23_4_1.vhd",
+      "destination": "vivado/ip_repo/prep_only_accel/hdl/vhdl/prep_only_accel_mac_muladd_16ns_5ns_22ns_23_4_1.vhd",
+      "sha256": "194092860630263402c642664174acdd60635e123c35605af375f9442c7e0d4e"
+    },
+    {
+      "source": "build/ip_repo/prep_only_accel/hdl/vhdl/prep_only_accel_mac_muladd_16ns_5ns_23ns_23_4_1.vhd",
+      "destination": "vivado/ip_repo/prep_only_accel/hdl/vhdl/prep_only_accel_mac_muladd_16ns_5ns_23ns_23_4_1.vhd",
+      "sha256": "28938dda012a4a862ce95153b779ec58ba5ab931be5d0c4771c3fefaa432202c"
+    },
+    {
+      "source": "build/ip_repo/prep_only_accel/hdl/vhdl/prep_only_accel_mac_muladd_16ns_5ns_23ns_24_4_1.vhd",
+      "destination": "vivado/ip_repo/prep_only_accel/hdl/vhdl/prep_only_accel_mac_muladd_16ns_5ns_23ns_24_4_1.vhd",
+      "sha256": "824414346546c8147d8a7f585ef606de59232b15632d14bf75362a0079756bb1"
+    },
+    {
+      "source": "build/ip_repo/prep_only_accel/hdl/vhdl/prep_only_accel_mac_muladd_16ns_5ns_24ns_24_4_1.vhd",
+      "destination": "vivado/ip_repo/prep_only_accel/hdl/vhdl/prep_only_accel_mac_muladd_16ns_5ns_24ns_24_4_1.vhd",
+      "sha256": "de5e541a3749c517e92a2adc9758b103e588742380c0a484398d974e3d87b55a"
+    },
+    {
+      "source": "build/ip_repo/prep_only_accel/hdl/vhdl/prep_only_accel_mac_muladd_16ns_5ns_24ns_25_4_1.vhd",
+      "destination": "vivado/ip_repo/prep_only_accel/hdl/vhdl/prep_only_accel_mac_muladd_16ns_5ns_24ns_25_4_1.vhd",
+      "sha256": "cdaca55660e0739583e2947f59c3831c767aa14fcc7dc1af0e285fc424eae7a2"
+    },
+    {
+      "source": "build/ip_repo/prep_only_accel/hdl/vhdl/prep_only_accel_mac_muladd_16ns_5ns_25ns_25_4_1.vhd",
+      "destination": "vivado/ip_repo/prep_only_accel/hdl/vhdl/prep_only_accel_mac_muladd_16ns_5ns_25ns_25_4_1.vhd",
+      "sha256": "2bf2bcb307259476b3742b4d9da530a73c1da1a5e8874ec25000764057512ac2"
+    },
+    {
+      "source": "build/ip_repo/prep_only_accel/hdl/vhdl/prep_only_accel_mac_muladd_16ns_5ns_25ns_26_4_1.vhd",
+      "destination": "vivado/ip_repo/prep_only_accel/hdl/vhdl/prep_only_accel_mac_muladd_16ns_5ns_25ns_26_4_1.vhd",
+      "sha256": "a44ba06d3ae25401bcc06be367a52e27a2ccbfb35e1e66c618f0e6b90ee9401c"
+    },
+    {
+      "source": "build/ip_repo/prep_only_accel/hdl/vhdl/prep_only_accel_mac_muladd_16ns_5ns_26ns_26_4_1.vhd",
+      "destination": "vivado/ip_repo/prep_only_accel/hdl/vhdl/prep_only_accel_mac_muladd_16ns_5ns_26ns_26_4_1.vhd",
+      "sha256": "4b3886651e112a9b9d0287c653e37ea65ec501f8c221a63b0afd328516f88467"
+    },
+    {
+      "source": "build/ip_repo/prep_only_accel/hdl/vhdl/prep_only_accel_mac_muladd_16ns_5ns_26ns_27_4_1.vhd",
+      "destination": "vivado/ip_repo/prep_only_accel/hdl/vhdl/prep_only_accel_mac_muladd_16ns_5ns_26ns_27_4_1.vhd",
+      "sha256": "9de40a019ae4e718944e8e3e7ec9abc627ca896cac9283e588ca40525bf7618a"
+    },
+    {
+      "source": "build/ip_repo/prep_only_accel/hdl/vhdl/prep_only_accel_mac_muladd_16ns_5ns_27ns_27_4_1.vhd",
+      "destination": "vivado/ip_repo/prep_only_accel/hdl/vhdl/prep_only_accel_mac_muladd_16ns_5ns_27ns_27_4_1.vhd",
+      "sha256": "df5b3fc7243bf700cba0c25e4f1436e0eb698c4109a7f0f7ddf79516820f13fd"
+    },
+    {
+      "source": "build/ip_repo/prep_only_accel/hdl/vhdl/prep_only_accel_mac_muladd_16ns_5ns_27ns_28_4_1.vhd",
+      "destination": "vivado/ip_repo/prep_only_accel/hdl/vhdl/prep_only_accel_mac_muladd_16ns_5ns_27ns_28_4_1.vhd",
+      "sha256": "d0e0bacbeb535321d85bd4bcd256bbdeabd788f4eab89f3b26bda64a76acccd8"
+    },
+    {
+      "source": "build/ip_repo/prep_only_accel/hdl/vhdl/prep_only_accel_mac_muladd_8ns_12ns_21ns_21_4_1.vhd",
+      "destination": "vivado/ip_repo/prep_only_accel/hdl/vhdl/prep_only_accel_mac_muladd_8ns_12ns_21ns_21_4_1.vhd",
+      "sha256": "76a8d0354522b10e76e087c2461ed02d113ad6ba3843ea28f40759c45aa8ccb5"
+    },
+    {
+      "source": "build/ip_repo/prep_only_accel/hdl/vhdl/prep_only_accel_mac_muladd_8ns_15ns_15ns_22_4_1.vhd",
+      "destination": "vivado/ip_repo/prep_only_accel/hdl/vhdl/prep_only_accel_mac_muladd_8ns_15ns_15ns_22_4_1.vhd",
+      "sha256": "04cde34a647579dd456601645868b9c3c74abab9e084cce2c10701acedd8cd92"
+    },
+    {
+      "source": "build/ip_repo/prep_only_accel/hdl/vhdl/prep_only_accel_make_detection.vhd",
+      "destination": "vivado/ip_repo/prep_only_accel/hdl/vhdl/prep_only_accel_make_detection.vhd",
+      "sha256": "807a85fcf590b46da2dee17654fcb24a8bdbf937488b2bbd8a75548ab91be03f"
+    },
+    {
+      "source": "build/ip_repo/prep_only_accel/hdl/vhdl/prep_only_accel_make_detection_packed_row.vhd",
+      "destination": "vivado/ip_repo/prep_only_accel/hdl/vhdl/prep_only_accel_make_detection_packed_row.vhd",
+      "sha256": "9e6d1d787e8496609e6f8ed37ec89064afa78867947b3a029cb6e3c0542abf86"
+    },
+    {
+      "source": "build/ip_repo/prep_only_accel/hdl/vhdl/prep_only_accel_make_detection_rows_0_0.vhd",
+      "destination": "vivado/ip_repo/prep_only_accel/hdl/vhdl/prep_only_accel_make_detection_rows_0_0.vhd",
+      "sha256": "9c52a87170fddf7a1484965806ee05817397af64c39055dae8dc01a5cffcf547"
+    },
+    {
+      "source": "build/ip_repo/prep_only_accel/hdl/vhdl/prep_only_accel_make_gray.vhd",
+      "destination": "vivado/ip_repo/prep_only_accel/hdl/vhdl/prep_only_accel_make_gray.vhd",
+      "sha256": "4f7d75985d9644528582d820049117508ffc0a66adc5782af8a53b460afc58cb"
+    },
+    {
+      "source": "build/ip_repo/prep_only_accel/hdl/vhdl/prep_only_accel_make_gray_rows_0_0.vhd",
+      "destination": "vivado/ip_repo/prep_only_accel/hdl/vhdl/prep_only_accel_make_gray_rows_0_0.vhd",
+      "sha256": "7873ef99379256655190db30c76880bc9ebbeb4405ac6ba26d1e3198cb754173"
+    },
+    {
+      "source": "build/ip_repo/prep_only_accel/hdl/vhdl/prep_only_accel_make_horizontal.vhd",
+      "destination": "vivado/ip_repo/prep_only_accel/hdl/vhdl/prep_only_accel_make_horizontal.vhd",
+      "sha256": "18836ffce233a9cd0a0399440f3cefd83ea0d82280cb7ed609363d470300ab56"
+    },
+    {
+      "source": "build/ip_repo/prep_only_accel/hdl/vhdl/prep_only_accel_make_horizontal_row_0.vhd",
+      "destination": "vivado/ip_repo/prep_only_accel/hdl/vhdl/prep_only_accel_make_horizontal_row_0.vhd",
+      "sha256": "f46d6e1a9c7d7babf13fc048f322f7045d991a4ec12939791b50fb5944e3111a"
+    },
+    {
+      "source": "build/ip_repo/prep_only_accel/hdl/vhdl/prep_only_accel_make_ink.vhd",
+      "destination": "vivado/ip_repo/prep_only_accel/hdl/vhdl/prep_only_accel_make_ink.vhd",
+      "sha256": "d07072a5572bcf1c5499a3ea107c6905015364b0815605be353275411ef33bcd"
+    },
+    {
+      "source": "build/ip_repo/prep_only_accel/hdl/vhdl/prep_only_accel_make_ink_kernel.vhd",
+      "destination": "vivado/ip_repo/prep_only_accel/hdl/vhdl/prep_only_accel_make_ink_kernel.vhd",
+      "sha256": "0233d5c1d954799d609e3735e000ed74449f6be0cf1dc4aa2b3b161e53ea148a"
+    },
+    {
+      "source": "build/ip_repo/prep_only_accel/hdl/vhdl/prep_only_accel_make_ink_ring_0.vhd",
+      "destination": "vivado/ip_repo/prep_only_accel/hdl/vhdl/prep_only_accel_make_ink_ring_0.vhd",
+      "sha256": "d418270e7b8a915369a003039f9fd0abac4f14883bae3ab37702cdd4cb0b2c68"
+    },
+    {
+      "source": "build/ip_repo/prep_only_accel/hdl/vhdl/prep_only_accel_make_ink_rowgray.vhd",
+      "destination": "vivado/ip_repo/prep_only_accel/hdl/vhdl/prep_only_accel_make_ink_rowgray.vhd",
+      "sha256": "42b452b4a9e414ce34a20e87553ec24f81e05f7b38cd8355959f073c81a2c0b6"
+    },
+    {
+      "source": "build/ip_repo/prep_only_accel/hdl/vhdl/prep_only_accel_mul_10ns_32s_32_1_1.vhd",
+      "destination": "vivado/ip_repo/prep_only_accel/hdl/vhdl/prep_only_accel_mul_10ns_32s_32_1_1.vhd",
+      "sha256": "6b79ca66ecd2bce4f32aa75ed24d5b39ae03b90a21520a44a75a437ef661583f"
+    },
+    {
+      "source": "build/ip_repo/prep_only_accel/hdl/vhdl/prep_only_accel_mul_32ns_34ns_65_1_1.vhd",
+      "destination": "vivado/ip_repo/prep_only_accel/hdl/vhdl/prep_only_accel_mul_32ns_34ns_65_1_1.vhd",
+      "sha256": "9b4176146f553a8dce485121a4a95ba86c5f3df48dbdab9474e50d30c25d9647"
+    },
+    {
+      "source": "build/ip_repo/prep_only_accel/hdl/vhdl/prep_only_accel_mul_32s_18s_32_1_1.vhd",
+      "destination": "vivado/ip_repo/prep_only_accel/hdl/vhdl/prep_only_accel_mul_32s_18s_32_1_1.vhd",
+      "sha256": "245ed621edac90e6c0e1b4d9985da65f68461843c6be780df5cdff926d925606"
+    },
+    {
+      "source": "build/ip_repo/prep_only_accel/hdl/vhdl/prep_only_accel_mul_32s_8ns_32_1_1.vhd",
+      "destination": "vivado/ip_repo/prep_only_accel/hdl/vhdl/prep_only_accel_mul_32s_8ns_32_1_1.vhd",
+      "sha256": "cfc5545e505594fe94f08b28b9dc4121a3c8f9ae0f8c7b63860879a572a44450"
+    },
+    {
+      "source": "build/ip_repo/prep_only_accel/hdl/vhdl/prep_only_accel_mul_64s_12ns_64_5_1.vhd",
+      "destination": "vivado/ip_repo/prep_only_accel/hdl/vhdl/prep_only_accel_mul_64s_12ns_64_5_1.vhd",
+      "sha256": "be78ed41d2dee35ad4d983fd834dbeb303b7dc9e311f5cc8a8281eea52a1246a"
+    },
+    {
+      "source": "build/ip_repo/prep_only_accel/hdl/vhdl/prep_only_accel_mul_9ns_10ns_17_1_1.vhd",
+      "destination": "vivado/ip_repo/prep_only_accel/hdl/vhdl/prep_only_accel_mul_9ns_10ns_17_1_1.vhd",
+      "sha256": "1c40d7d2f5bb590784a63b640edac34849a00d172e60301f221c9fa34effe47d"
+    },
+    {
+      "source": "build/ip_repo/prep_only_accel/hdl/vhdl/prep_only_accel_mul_9ns_10ns_18_1_1.vhd",
+      "destination": "vivado/ip_repo/prep_only_accel/hdl/vhdl/prep_only_accel_mul_9ns_10ns_18_1_1.vhd",
+      "sha256": "798384fef7fae7e6fb4402345a0f823332b6407e1da7b3189321ce8da7a1a445"
+    },
+    {
+      "source": "build/ip_repo/prep_only_accel/hdl/vhdl/prep_only_accel_mul_mul_16ns_5ns_21_4_1.vhd",
+      "destination": "vivado/ip_repo/prep_only_accel/hdl/vhdl/prep_only_accel_mul_mul_16ns_5ns_21_4_1.vhd",
+      "sha256": "117c90f8df84f32580593e8bbdae7e49e485966b6878f868aa1979dd68c66013"
+    },
+    {
+      "source": "build/ip_repo/prep_only_accel/hdl/vhdl/prep_only_accel_mul_mul_17ns_19ns_35_4_1.vhd",
+      "destination": "vivado/ip_repo/prep_only_accel/hdl/vhdl/prep_only_accel_mul_mul_17ns_19ns_35_4_1.vhd",
+      "sha256": "18f4ba27d2deae13297ca2578560911df806c8b4a502448bc98400e54c28c040"
+    },
+    {
+      "source": "build/ip_repo/prep_only_accel/hdl/vhdl/prep_only_accel_mul_mul_8ns_14ns_21_4_1.vhd",
+      "destination": "vivado/ip_repo/prep_only_accel/hdl/vhdl/prep_only_accel_mul_mul_8ns_14ns_21_4_1.vhd",
+      "sha256": "5afd40dea6fd415389a061b460c225b838ec237de95b06aa9f10eba4c44eb780"
+    },
+    {
+      "source": "build/ip_repo/prep_only_accel/hdl/vhdl/prep_only_accel_mux_124_8_1_1.vhd",
+      "destination": "vivado/ip_repo/prep_only_accel/hdl/vhdl/prep_only_accel_mux_124_8_1_1.vhd",
+      "sha256": "ec8c75e623ef5bb65707ed50d30ff24758b9156bb3bde9e3e638a3bd6ad56bac"
+    },
+    {
+      "source": "build/ip_repo/prep_only_accel/hdl/vhdl/prep_only_accel_mux_32_32_1_1.vhd",
+      "destination": "vivado/ip_repo/prep_only_accel/hdl/vhdl/prep_only_accel_mux_32_32_1_1.vhd",
+      "sha256": "ce5ba9633815e1f53416bfe7600caea1c1d9d958b546523aa7206485d341095b"
+    },
+    {
+      "source": "build/ip_repo/prep_only_accel/hdl/vhdl/prep_only_accel_mux_432_8_1_1.vhd",
+      "destination": "vivado/ip_repo/prep_only_accel/hdl/vhdl/prep_only_accel_mux_432_8_1_1.vhd",
+      "sha256": "822e404075ad59e4eb686bd95d7351159312e11a10e227dbf7699469a517aca0"
+    },
+    {
+      "source": "build/ip_repo/prep_only_accel/hdl/vhdl/prep_only_accel_mux_63_8_1_1.vhd",
+      "destination": "vivado/ip_repo/prep_only_accel/hdl/vhdl/prep_only_accel_mux_63_8_1_1.vhd",
+      "sha256": "d98dc6c9803098e521a6b405d2370ed7a937e568f4c060a0d5dfef42d566a65f"
+    },
+    {
+      "source": "build/ip_repo/prep_only_accel/hdl/vhdl/prep_only_accel_mux_677_8_1_1.vhd",
+      "destination": "vivado/ip_repo/prep_only_accel/hdl/vhdl/prep_only_accel_mux_677_8_1_1.vhd",
+      "sha256": "88bd1d6bd575a7851c8fb6f902f0a821be6cdee8d19c9501ba40001807b60c50"
+    },
+    {
+      "source": "build/ip_repo/prep_only_accel/hdl/vhdl/prep_only_accel_srem_9ns_3ns_2_13_seq_1.vhd",
+      "destination": "vivado/ip_repo/prep_only_accel/hdl/vhdl/prep_only_accel_srem_9ns_3ns_2_13_seq_1.vhd",
+      "sha256": "bdb6e63bf4efc19b0925226b073f46a2579a9b3f6b28ff2411480e074871977e"
+    },
+    {
+      "source": "build/ip_repo/prep_only_accel/hdl/vhdl/prep_only_accel_urem_32s_3ns_2_36_seq_1.vhd",
+      "destination": "vivado/ip_repo/prep_only_accel/hdl/vhdl/prep_only_accel_urem_32s_3ns_2_36_seq_1.vhd",
+      "sha256": "877a84b8affcbc771114964fbab3f8ea25eba19073c4ec26d98bf9548ce5493d"
+    },
+    {
+      "source": "build/ip_repo/prep_only_accel/hdl/vhdl/prep_only_accel_urem_8ns_3ns_2_12_seq_1.vhd",
+      "destination": "vivado/ip_repo/prep_only_accel/hdl/vhdl/prep_only_accel_urem_8ns_3ns_2_12_seq_1.vhd",
+      "sha256": "031cf3814956d0731178871f952e6858d67adb4eb2a155e07a89682babf516a4"
+    },
+    {
+      "source": "build/ip_repo/prep_only_accel/hdl/vhdl/prep_only_accel_urem_9ns_3ns_2_13_seq_1.vhd",
+      "destination": "vivado/ip_repo/prep_only_accel/hdl/vhdl/prep_only_accel_urem_9ns_3ns_2_13_seq_1.vhd",
+      "sha256": "bde123396fdb80c95c4e61422f45ef7ab1f3c723bbf9d3ebf82f98584370db8d"
+    },
+    {
+      "source": "build/ip_repo/prep_only_accel/misc/logo.png",
+      "destination": "vivado/ip_repo/prep_only_accel/misc/logo.png",
+      "sha256": "4d978370b877dccf3f3bfaf7a8fdb3554e936ee2d2d3356bdaa64c0c4e30c9af"
+    },
+    {
+      "source": "build/ip_repo/prep_only_accel/prep_only_accel_info.xml",
+      "destination": "vivado/ip_repo/prep_only_accel/prep_only_accel_info.xml",
+      "sha256": "325d1ca9314e287da4159556a203fa9e5cd72c15ef0b4096801b615028cf31f0"
+    },
+    {
+      "source": "build/ip_repo/prep_only_accel/sysgen_info.xml",
+      "destination": "vivado/ip_repo/prep_only_accel/sysgen_info.xml",
+      "sha256": "8cc854c22f7babbe94c66b21d12dd948d580eec2b910d22c1485c0e8c275e68f"
+    },
+    {
+      "source": "build/ip_repo/prep_only_accel/xgui/prep_only_accel_v1_0.tcl",
+      "destination": "vivado/ip_repo/prep_only_accel/xgui/prep_only_accel_v1_0.tcl",
+      "sha256": "4885b97723e8f89bd187c006e73c2a839313858738ec25d95037c13558a82f32"
+    },
+    {
+      "source": "build/vivado/build_repro.tcl",
+      "destination": "vivado/build_repro.tcl",
+      "sha256": "7ae4e5fe805d6464756660f9967b7eb08d0a288f5165b7d3e394f321cab5b899"
+    }
+  ]
+}

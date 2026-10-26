@@ -1,0 +1,3 @@
+session,ps_c_mean_ms,rtl_full_api_mean_ms,ps_to_rtl_ratio,paired_measurements,all_22_logits_exact,scope
+baseline,49.39380985606442,66.55841301514184,0.74211219316223,132,True,fixed_input_excludes_camera_preprocess_display
+current,48.93262604545612,26.680458128784796,1.8340249559906951,132,True,fixed_input_excludes_camera_preprocess_display

@@ -1,0 +1,181 @@
+{
+  "passed": true,
+  "package": "D:\\qiansai\\stage6\\42754\\data\\model\\final_parameters",
+  "hashed_files": 292,
+  "golden_samples_recomputed": 59,
+  "golden_layer_arrays_compared": 767,
+  "golden_kinds": {
+    "validation": 44,
+    "synthetic": 10,
+    "known_ethanol_diagnostic": 5
+  },
+  "validation_class_coverage": 22,
+  "fc_asset_matches_bins": true,
+  "int32_acc_and_int64_product_bounds_safe": true,
+  "full_910_validation_recomputed_in_this_verifier": false,
+  "hardware_accessed": false,
+  "independent_field_tested": false,
+  "accuracy_is_recorded_software_validation": {
+    "correct": 826,
+    "total": 910,
+    "accuracy": 0.9076923076923077,
+    "per_class": [
+      {
+        "id": 0,
+        "name": "yixi",
+        "correct": 40,
+        "total": 44,
+        "recall": 0.9090909090909091
+      },
+      {
+        "id": 1,
+        "name": "bingxi",
+        "correct": 35,
+        "total": 37,
+        "recall": 0.9459459459459459
+      },
+      {
+        "id": 2,
+        "name": "yique",
+        "correct": 45,
+        "total": 46,
+        "recall": 0.9782608695652174
+      },
+      {
+        "id": 3,
+        "name": "bingque",
+        "correct": 39,
+        "total": 47,
+        "recall": 0.8297872340425532
+      },
+      {
+        "id": 4,
+        "name": "yichun",
+        "correct": 44,
+        "total": 50,
+        "recall": 0.88
+      },
+      {
+        "id": 5,
+        "name": "yierchun",
+        "correct": 33,
+        "total": 35,
+        "recall": 0.9428571428571428
+      },
+      {
+        "id": 6,
+        "name": "bingsanchun",
+        "correct": 43,
+        "total": 49,
+        "recall": 0.8775510204081632
+      },
+      {
+        "id": 7,
+        "name": "benfen",
+        "correct": 38,
+        "total": 44,
+        "recall": 0.8636363636363636
+      },
+      {
+        "id": 8,
+        "name": "yisuan",
+        "correct": 33,
+        "total": 34,
+        "recall": 0.9705882352941176
+      },
+      {
+        "id": 9,
+        "name": "jiaquan",
+        "correct": 36,
+        "total": 48,
+        "recall": 0.75
+      },
+      {
+        "id": 10,
+        "name": "yiquan",
+        "correct": 37,
+        "total": 44,
+        "recall": 0.8409090909090909
+      },
+      {
+        "id": 11,
+        "name": "bingtong",
+        "correct": 25,
+        "total": 34,
+        "recall": 0.7352941176470589
+      },
+      {
+        "id": 12,
+        "name": "ysyz",
+        "correct": 21,
+        "total": 22,
+        "recall": 0.9545454545454546
+      },
+      {
+        "id": 13,
+        "name": "slht",
+        "correct": 30,
+        "total": 33,
+        "recall": 0.9090909090909091
+      },
+      {
+        "id": 14,
+        "name": "xyw",
+        "correct": 36,
+        "total": 36,
+        "recall": 1.0
+      },
+      {
+        "id": 15,
+        "name": "djw",
+        "correct": 44,
+        "total": 46,
+        "recall": 0.9565217391304348
+      },
+      {
+        "id": 16,
+        "name": "sljw",
+        "correct": 29,
+        "total": 35,
+        "recall": 0.8285714285714286
+      },
+      {
+        "id": 17,
+        "name": "yljw",
+        "correct": 49,
+        "total": 50,
+        "recall": 0.98
+      },
+      {
+        "id": 18,
+        "name": "yimi",
+        "correct": 47,
+        "total": 48,
+        "recall": 0.9791666666666666
+      },
+      {
+        "id": 19,
+        "name": "jyimi",
+        "correct": 35,
+        "total": 37,
+        "recall": 0.9459459459459459
+      },
+      {
+        "id": 20,
+        "name": "yian",
+        "correct": 44,
+        "total": 46,
+        "recall": 0.9565217391304348
+      },
+      {
+        "id": 21,
+        "name": "ben",
+        "correct": 43,
+        "total": 45,
+        "recall": 0.9555555555555556
+      }
+    ],
+    "ethanol_to_acid": 0,
+    "acid_to_ethanol": 0
+  }
+}

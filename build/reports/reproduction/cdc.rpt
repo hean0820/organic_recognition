@@ -1,0 +1,32 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Thu Oct 22 23:23:57 2026
+| Host         : LAPTOP-R6A4SUDB running 64-bit major release  (build 9200)
+| Command      : report_cdc -file D:/qiansai/stage6_guide/rebuild_42754_20261022_02/run/output/cdc.rpt
+| Design       : system_wrapper
+| Device       : 7z020-clg400
+| Speed File   : -2  PRODUCTION 1.12 2019-11-22
+-------------------------------------------------------------------------------------------------------
+
+CDC Report
+
+Severity  Source Clock                                                                                Destination Clock                                                                           CDC Type                 Exceptions               Endpoints  Safe  Unsafe  Unknown  No ASYNC_REG  
+--------  ------------------------------------------------------------------------------------------  ------------------------------------------------------------------------------------------  -----------------------  -----------------------  ---------  ----  ------  -------  ------------  
+Critical  clk_fpga_0                                                                                  cam_pclk                                                                                    No Common Primary Clock  Max Delay Datapath Only          3     2       1        0             0  
+Critical  cam_pclk                                                                                    clk_fpga_0                                                                                  No Common Primary Clock  Max Delay Datapath Only         10     3       7        0             0  
+Warning   aud_bclk                                                                                    clk_fpga_0                                                                                  No Common Primary Clock  Asynch Clock Groups             17    17       0        0             0  
+Warning   clk_out1_system_clk_wiz_0_0                                                                 clk_fpga_0                                                                                  No Common Primary Clock  Max Delay Datapath Only         34    34       0        0             0  
+Info      clk_fpga_0                                                                                  aud_bclk                                                                                    No Common Primary Clock  Asynch Clock Groups              1     1       0        0             0  
+Info      codec_i2c                                                                                   aud_bclk                                                                                    No Common Primary Clock  None                             1     1       0        0             0  
+Info      clk_fpga_1                                                                                  clk_fpga_0                                                                                  No Common Primary Clock  Max Delay Datapath Only          9     9       0        0             0  
+Info      codec_i2c                                                                                   clk_fpga_0                                                                                  Safely Timed             None                             3     3       0        0             0  
+Info      dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_inst/SERIES7_BSCAN.bscan_inst/TCK  clk_fpga_0                                                                                  No Common Primary Clock  Max Delay Datapath Only          9     9       0        0             0  
+Info      input port clock                                                                            clk_fpga_0                                                                                  No Common Primary Clock  False Path                       3     3       0        0             0  
+Info      clk_fpga_0                                                                                  clk_fpga_1                                                                                  No Common Primary Clock  Max Delay Datapath Only          9     9       0        0             0  
+Info      clk_out1_system_clk_wiz_0_0                                                                 clk_fpga_1                                                                                  No Common Primary Clock  Max Delay Datapath Only          1     1       0        0             0  
+Info      clk_fpga_0                                                                                  clk_out1_system_clk_wiz_0_0                                                                 No Common Primary Clock  Max Delay Datapath Only         42    42       0        0             0  
+Info      clk_fpga_1                                                                                  clk_out1_system_clk_wiz_0_0                                                                 No Common Primary Clock  Max Delay Datapath Only          1     1       0        0             0  
+Info      clk_fpga_0                                                                                  codec_i2c                                                                                   Safely Timed             None                            55    55       0        0             0  
+Info      clk_fpga_0                                                                                  dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_inst/SERIES7_BSCAN.bscan_inst/TCK  No Common Primary Clock  Max Delay Datapath Only          2     2       0        0             0  
+

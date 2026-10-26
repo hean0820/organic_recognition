@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "audit_date": "2026-10-26",
+  "passed": true,
+  "scope": "Offline audit of user-downloaded board benchmark and separate stop report; not whole-system acceptance.",
+  "hardware_accessed_by_auditor": false,
+  "new_board_test_executed_by_auditor": false,
+  "source_archive_name": "chem_run_01_evidence.zip",
+  "source_archive_sha256": "2bb3276256135ba17804284bf77d3805f4f45726da0c7fb14a6dce758ce3fd0b",
+  "source_board_benchmark_directory": "/home/xilinx/jupyter_notebooks/chem_run_01/ps_vs_rtl/results/20211119_084328_656701",
+  "source_board_stop_file": "/home/xilinx/jupyter_notebooks/chem_run_01/psv7_pynq/reports/board/psv7_app_20211119_003616_190763/normal_stop.json",
+  "files_sha256": {
+    "board_result.json": "f30523070cc118f3d98ce063ec67e36d33712f5001c5b275f43a309988d56e45",
+    "normal_stop.json": "71cb8a0f16ce31d3864c0a27c43bc9198c01c780bda374ab9297ab2f187c3646",
+    "project.json": "6f5f10383f768365defaabeaa2f482ff2b8c48891651059412c973bfd3f773bc",
+    "release_manifest.json": "9819079a2060dc2e4efd73b7e7685aaae28895f04c1d23302be2569dd69820fe"
+  },
+  "version_metadata_matches_submission": true,
+  "actual_runtime_files_rehashed_by_auditor_on_board": false,
+  "benchmark_manifest_matches_submission": true,
+  "cpu_source_matches_submission": true,
+  "model_matches_submission": true,
+  "all_132_records_match_frozen_22_logits": true,
+  "timing_summary_recomputed": {
+    "ps_software": {
+      "count": 132,
+      "mean_ms": 49.282427590910494,
+      "median_ms": 48.816726000040944,
+      "p95_ms": 49.717891999898704,
+      "min_ms": 48.67734599997675,
+      "max_ms": 66.1281139998664
+    },
+    "rtl_call": {
+      "count": 132,
+      "mean_ms": 26.695849053029715,
+      "median_ms": 26.652754499991715,
+      "p95_ms": 26.945267850021537,
+      "min_ms": 26.450624000062817,
+      "max_ms": 29.579815000033705
+    },
+    "speedup_ratio_of_means": 1.8460708064768379,
+    "latency_reduction_percent": 45.83089681654924,
+    "measured_pairs": 132,
+    "all_22_logits_exact": true
+  },
+  "stop_report_clean": true,
+  "benchmark_and_stop_same_session_proven": false,
+  "board_realtime_clock_verified": false,
+  "board_timestamps_policy": "Preserved as recorded; board calendar date is not a trusted real-world test date.",
+  "functional_screenshots_included": false,
+  "camera_voice_web_hdmi_functional_acceptance_proven_by_this_archive": false,
+  "notes": [
+    "Benchmark and stop files were downloaded from the same chem_run_01 deployment directory, but their report paths differ and no shared session identifier proves that this stop followed this benchmark.",
+    "Matching project/release metadata supports version association; it is not a new measurement of the loaded FPGA configuration or a rehash of live board source files.",
+    "Keep this repeat measurement separate from board/results/current and the original 1.83x report figures.",
+    "No application startup, inference, audio capture, or FPGA register access was performed during this offline audit."
+  ]
+}

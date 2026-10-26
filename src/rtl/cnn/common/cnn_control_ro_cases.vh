@@ -1,0 +1,26 @@
+// 来自S1冻结机器寄存器表的只读常量。
+16'h0000:s_axi_rdata<=32'h4352544c;
+16'h0070:s_axi_rdata<=32'h00010000;
+16'h0074:s_axi_rdata<=32'h0000000f;
+16'h0080:s_axi_rdata<=32'h80b51cb9;
+16'h0084:s_axi_rdata<=32'h796d02e6;
+16'h0088:s_axi_rdata<=32'h6cf600eb;
+16'h008c:s_axi_rdata<=32'h0abd4443;
+16'h0090:s_axi_rdata<=32'h0b69b29b;
+16'h0094:s_axi_rdata<=32'h352bf9bb;
+16'h0098:s_axi_rdata<=32'h8582cf25;
+16'h009c:s_axi_rdata<=32'h0373bf5a;
+16'h00b0:s_axi_rdata<=32'h003658ef;
+16'h00b4:s_axi_rdata<=32'h0035cf72;
+16'h00b8:s_axi_rdata<=32'h00633c08;
+16'h00bc:s_axi_rdata<=32'h00353941;
+16'h00c0:s_axi_rdata<=32'h00001000;
+16'h00c4:s_axi_rdata<=32'h00000016;
+16'h00e0:s_axi_rdata<=32'ha276810e;
+16'h00e4:s_axi_rdata<=32'hba4189d9;
+16'h00e8:s_axi_rdata<=32'hec5a4a95;
+16'h00ec:s_axi_rdata<=32'h135913d8;
+16'h00f0:s_axi_rdata<=32'hca506a02;
+16'h00f4:s_axi_rdata<=32'h14c1554d;
+16'h00f8:s_axi_rdata<=32'hc2c3d87c;
+16'h00fc:s_axi_rdata<=32'h01af3ae5;

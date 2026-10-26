@@ -1,0 +1,55 @@
+{
+  "passed": true,
+  "date": "2026-10-23",
+  "scope": "Current layout checks and rerun reusable skill positive/negative checks",
+  "hardware_accessed": false,
+  "new_vivado_run": false,
+  "layout_verification": "sim/results/layout_verification.json",
+  "complete_current_verification": "sim/results/latest_verification.json",
+  "skill_profile_positive": {
+    "passed": true,
+    "kind": "files_and_hwh_only",
+    "profile": "current_1_1_3_c3p4_camera_audio",
+    "sha256": {
+      "bit": "1e1c25d70cae092f743aa75ffb59483c4af93ba78adc2135cba398417e9420f4",
+      "hwh": "2676b8594071ee9da33fbbc47fe17dcae95009de9eb8120378cf0814c980971e"
+    },
+    "ip_count": 6,
+    "hardware_accessed": false
+  },
+  "skill_bad_hash": {
+    "rejected": true,
+    "error": "File hash differs: bit"
+  },
+  "skill_bad_address": {
+    "rejected": true,
+    "error": "Missing or ambiguous HWH address: cnn_ps_if_0"
+  },
+  "skill_equal_arrays": {
+    "passed": true,
+    "kind": "exact_saved_array_comparison",
+    "differences": {
+      "array": 0
+    },
+    "source_sha256": {
+      "expected": "99aa9536fd94125a4780162f0ef69c72b1c3cd6b34d98065cf15e441768c733d",
+      "actual": "99aa9536fd94125a4780162f0ef69c72b1c3cd6b34d98065cf15e441768c733d"
+    }
+  },
+  "skill_changed_element": {
+    "passed": false,
+    "kind": "exact_saved_array_comparison",
+    "differences": {
+      "array": 1
+    },
+    "source_sha256": {
+      "expected": "99aa9536fd94125a4780162f0ef69c72b1c3cd6b34d98065cf15e441768c733d",
+      "actual": "08ca97615bd5bb0fd894fd653f6bb798f331d6874c1486d232a27ba40a07aae9"
+    }
+  },
+  "skill_wrong_dtype": {
+    "rejected": true,
+    "error": "Shape or dtype differs: array"
+  },
+  "python38_ast_files_checked": 58
+}

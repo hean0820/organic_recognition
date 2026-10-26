@@ -1,0 +1,52 @@
+{
+  "correct": 5,
+  "total": 5,
+  "independent_test": false,
+  "captures": [
+    {
+      "sample": "known_capture_0002",
+      "kind": "known_ethanol_diagnostic",
+      "validation_index": null,
+      "true_class": 4,
+      "predicted_class": 4,
+      "all_13_layers_match": true,
+      "layer_file": "known_capture_0002_layers.npz"
+    },
+    {
+      "sample": "known_capture_0003",
+      "kind": "known_ethanol_diagnostic",
+      "validation_index": null,
+      "true_class": 4,
+      "predicted_class": 4,
+      "all_13_layers_match": true,
+      "layer_file": "known_capture_0003_layers.npz"
+    },
+    {
+      "sample": "known_capture_0004",
+      "kind": "known_ethanol_diagnostic",
+      "validation_index": null,
+      "true_class": 4,
+      "predicted_class": 4,
+      "all_13_layers_match": true,
+      "layer_file": "known_capture_0004_layers.npz"
+    },
+    {
+      "sample": "known_capture_0005",
+      "kind": "known_ethanol_diagnostic",
+      "validation_index": null,
+      "true_class": 4,
+      "predicted_class": 4,
+      "all_13_layers_match": true,
+      "layer_file": "known_capture_0005_layers.npz"
+    },
+    {
+      "sample": "known_capture_0006",
+      "kind": "known_ethanol_diagnostic",
+      "validation_index": null,
+      "true_class": 4,
+      "predicted_class": 4,
+      "all_13_layers_match": true,
+      "layer_file": "known_capture_0006_layers.npz"
+    }
+  ]
+}

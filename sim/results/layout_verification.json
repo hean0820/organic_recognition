@@ -1,0 +1,30 @@
+{
+  "passed": true,
+  "date": "2026-10-23",
+  "restored_files_compared_to_successful_vivado_build": 424,
+  "restored_file_bytes_identical": true,
+  "ip_file_references_checked": 586,
+  "inactive_workspace_files_removed": [
+    "build.tcl",
+    "build_s7.tcl",
+    "resume.tcl",
+    "source_manifest.json"
+  ],
+  "unchanged_content_counts": {
+    "src/ps": 115,
+    "src/rtl": 52,
+    "src/hls": 2,
+    "data": 293,
+    "board": 10,
+    "sim/ps_vs_rtl": 6,
+    "build/reports/reproduction": 21
+  },
+  "canonical_source_directories": [
+    "src/rtl/cnn",
+    "src/rtl/platform"
+  ],
+  "current_ip_repository": "build/ip_repo",
+  "new_synthesis_executed": false,
+  "hardware_accessed": false,
+  "scope": "Current path layout, canonical sources and dependencies verified against the successful 2026-10-22 build; not a new Vivado or board test"
+}

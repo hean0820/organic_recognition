@@ -1,0 +1,5 @@
+{
+  "threshold": 0.25,
+  "margin": 0.025,
+  "status": "PROVISIONAL_MEDIAN_OF_INNER_VALIDATION; new-session deployment calibration required"
+}

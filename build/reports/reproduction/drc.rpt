@@ -1,0 +1,1366 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Thu Oct 22 23:24:12 2026
+| Host         : LAPTOP-R6A4SUDB running 64-bit major release  (build 9200)
+| Command      : report_drc -file D:/qiansai/stage6_guide/rebuild_42754_20261022_02/run/output/drc.rpt
+| Design       : system_wrapper
+| Device       : xc7z020clg400-2
+| Speed File   : -2
+| Design State : Fully Routed
+-------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: impl_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 259
++-----------+----------+----------------------------+------------+
+| Rule      | Severity | Description                | Violations |
++-----------+----------+----------------------------+------------+
+| DPIP-1    | Warning  | Input pipelining           | 77         |
+| DPOP-1    | Warning  | PREG Output pipelining     | 26         |
+| DPOP-2    | Warning  | MREG Output pipelining     | 48         |
+| DPOR-1    | Warning  | Asynchronous load check    | 31         |
+| PLCK-12   | Warning  | Clock Placer Checks        | 2          |
+| REQP-1839 | Warning  | RAMB36 async control check | 5          |
+| RTSTAT-10 | Warning  | No routable loads          | 1          |
+| REQP-165  | Advisory | writefirst                 | 66         |
+| REQP-181  | Advisory | writefirst                 | 3          |
++-----------+----------+----------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+DPIP-1#1 Warning
+Input pipelining  
+DSP system_i/audio_axi_0/inst/core/fir/sum input system_i/audio_axi_0/inst/core/fir/sum/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#2 Warning
+Input pipelining  
+DSP system_i/audio_axi_0/inst/core/fir/sum input system_i/audio_axi_0/inst/core/fir/sum/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#3 Warning
+Input pipelining  
+DSP system_i/audio_axi_0/inst/core/fir/sum input system_i/audio_axi_0/inst/core/fir/sum/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#4 Warning
+Input pipelining  
+DSP system_i/cnn_ps_if_0/inst/core/quant/product_s640 input system_i/cnn_ps_if_0/inst/core/quant/product_s640/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#5 Warning
+Input pipelining  
+DSP system_i/cnn_ps_if_0/inst/core/quant/product_s640 input system_i/cnn_ps_if_0/inst/core/quant/product_s640/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#6 Warning
+Input pipelining  
+DSP system_i/cnn_ps_if_0/inst/core/quant/product_s640__0 input system_i/cnn_ps_if_0/inst/core/quant/product_s640__0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#7 Warning
+Input pipelining  
+DSP system_i/cnn_ps_if_0/inst/core/quant/product_s640__0 input system_i/cnn_ps_if_0/inst/core/quant/product_s640__0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#8 Warning
+Input pipelining  
+DSP system_i/cnn_ps_if_0/inst/core/quant/product_s64_reg input system_i/cnn_ps_if_0/inst/core/quant/product_s64_reg/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#9 Warning
+Input pipelining  
+DSP system_i/cnn_ps_if_0/inst/core/quant/product_s64_reg input system_i/cnn_ps_if_0/inst/core/quant/product_s64_reg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#10 Warning
+Input pipelining  
+DSP system_i/cnn_ps_if_0/inst/core/quant/product_s64_reg__0 input system_i/cnn_ps_if_0/inst/core/quant/product_s64_reg__0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#11 Warning
+Input pipelining  
+DSP system_i/prep_accel_0/inst/grp_make_detection_fu_173/mul_mul_17ns_19ns_35_4_1_U30/prep_only_accel_mul_mul_17ns_19ns_35_4_1_DSP48_0_U/p_reg_reg input system_i/prep_accel_0/inst/grp_make_detection_fu_173/mul_mul_17ns_19ns_35_4_1_U30/prep_only_accel_mul_mul_17ns_19ns_35_4_1_DSP48_0_U/p_reg_reg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#12 Warning
+Input pipelining  
+DSP system_i/prep_accel_0/inst/grp_make_ink_fu_154/mac_muladd_16ns_5ns_21ns_22_4_1_U88/prep_only_accel_mac_muladd_16ns_5ns_21ns_22_4_1_DSP48_5_U/p_reg_reg input system_i/prep_accel_0/inst/grp_make_ink_fu_154/mac_muladd_16ns_5ns_21ns_22_4_1_U88/prep_only_accel_mac_muladd_16ns_5ns_21ns_22_4_1_DSP48_5_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#13 Warning
+Input pipelining  
+DSP system_i/prep_accel_0/inst/grp_make_ink_fu_154/mac_muladd_16ns_5ns_22ns_23_4_1_U89/prep_only_accel_mac_muladd_16ns_5ns_22ns_23_4_1_DSP48_6_U/p_reg_reg input system_i/prep_accel_0/inst/grp_make_ink_fu_154/mac_muladd_16ns_5ns_22ns_23_4_1_U89/prep_only_accel_mac_muladd_16ns_5ns_22ns_23_4_1_DSP48_6_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#14 Warning
+Input pipelining  
+DSP system_i/prep_accel_0/inst/grp_make_ink_fu_154/mac_muladd_16ns_5ns_23ns_23_4_1_U90/prep_only_accel_mac_muladd_16ns_5ns_23ns_23_4_1_DSP48_7_U/p_reg_reg input system_i/prep_accel_0/inst/grp_make_ink_fu_154/mac_muladd_16ns_5ns_23ns_23_4_1_U90/prep_only_accel_mac_muladd_16ns_5ns_23ns_23_4_1_DSP48_7_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#15 Warning
+Input pipelining  
+DSP system_i/prep_accel_0/inst/grp_make_ink_fu_154/mac_muladd_16ns_5ns_23ns_24_4_1_U91/prep_only_accel_mac_muladd_16ns_5ns_23ns_24_4_1_DSP48_8_U/p_reg_reg input system_i/prep_accel_0/inst/grp_make_ink_fu_154/mac_muladd_16ns_5ns_23ns_24_4_1_U91/prep_only_accel_mac_muladd_16ns_5ns_23ns_24_4_1_DSP48_8_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#16 Warning
+Input pipelining  
+DSP system_i/prep_accel_0/inst/grp_make_ink_fu_154/mac_muladd_16ns_5ns_24ns_24_4_1_U92/prep_only_accel_mac_muladd_16ns_5ns_24ns_24_4_1_DSP48_9_U/p_reg_reg input system_i/prep_accel_0/inst/grp_make_ink_fu_154/mac_muladd_16ns_5ns_24ns_24_4_1_U92/prep_only_accel_mac_muladd_16ns_5ns_24ns_24_4_1_DSP48_9_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#17 Warning
+Input pipelining  
+DSP system_i/prep_accel_0/inst/grp_make_ink_fu_154/mac_muladd_16ns_5ns_24ns_24_4_1_U93/prep_only_accel_mac_muladd_16ns_5ns_24ns_24_4_1_DSP48_9_U/p_reg_reg input system_i/prep_accel_0/inst/grp_make_ink_fu_154/mac_muladd_16ns_5ns_24ns_24_4_1_U93/prep_only_accel_mac_muladd_16ns_5ns_24ns_24_4_1_DSP48_9_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#18 Warning
+Input pipelining  
+DSP system_i/prep_accel_0/inst/grp_make_ink_fu_154/mac_muladd_16ns_5ns_24ns_24_4_1_U94/prep_only_accel_mac_muladd_16ns_5ns_24ns_24_4_1_DSP48_9_U/p_reg_reg input system_i/prep_accel_0/inst/grp_make_ink_fu_154/mac_muladd_16ns_5ns_24ns_24_4_1_U94/prep_only_accel_mac_muladd_16ns_5ns_24ns_24_4_1_DSP48_9_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#19 Warning
+Input pipelining  
+DSP system_i/prep_accel_0/inst/grp_make_ink_fu_154/mac_muladd_16ns_5ns_24ns_25_4_1_U95/prep_only_accel_mac_muladd_16ns_5ns_24ns_25_4_1_DSP48_10_U/p_reg_reg input system_i/prep_accel_0/inst/grp_make_ink_fu_154/mac_muladd_16ns_5ns_24ns_25_4_1_U95/prep_only_accel_mac_muladd_16ns_5ns_24ns_25_4_1_DSP48_10_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#20 Warning
+Input pipelining  
+DSP system_i/prep_accel_0/inst/grp_make_ink_fu_154/mac_muladd_16ns_5ns_25ns_25_4_1_U100/prep_only_accel_mac_muladd_16ns_5ns_25ns_25_4_1_DSP48_11_U/p_reg_reg input system_i/prep_accel_0/inst/grp_make_ink_fu_154/mac_muladd_16ns_5ns_25ns_25_4_1_U100/prep_only_accel_mac_muladd_16ns_5ns_25ns_25_4_1_DSP48_11_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#21 Warning
+Input pipelining  
+DSP system_i/prep_accel_0/inst/grp_make_ink_fu_154/mac_muladd_16ns_5ns_25ns_25_4_1_U101/prep_only_accel_mac_muladd_16ns_5ns_25ns_25_4_1_DSP48_11_U/p_reg_reg input system_i/prep_accel_0/inst/grp_make_ink_fu_154/mac_muladd_16ns_5ns_25ns_25_4_1_U101/prep_only_accel_mac_muladd_16ns_5ns_25ns_25_4_1_DSP48_11_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#22 Warning
+Input pipelining  
+DSP system_i/prep_accel_0/inst/grp_make_ink_fu_154/mac_muladd_16ns_5ns_25ns_25_4_1_U102/prep_only_accel_mac_muladd_16ns_5ns_25ns_25_4_1_DSP48_11_U/p_reg_reg input system_i/prep_accel_0/inst/grp_make_ink_fu_154/mac_muladd_16ns_5ns_25ns_25_4_1_U102/prep_only_accel_mac_muladd_16ns_5ns_25ns_25_4_1_DSP48_11_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#23 Warning
+Input pipelining  
+DSP system_i/prep_accel_0/inst/grp_make_ink_fu_154/mac_muladd_16ns_5ns_25ns_25_4_1_U96/prep_only_accel_mac_muladd_16ns_5ns_25ns_25_4_1_DSP48_11_U/p_reg_reg input system_i/prep_accel_0/inst/grp_make_ink_fu_154/mac_muladd_16ns_5ns_25ns_25_4_1_U96/prep_only_accel_mac_muladd_16ns_5ns_25ns_25_4_1_DSP48_11_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#24 Warning
+Input pipelining  
+DSP system_i/prep_accel_0/inst/grp_make_ink_fu_154/mac_muladd_16ns_5ns_25ns_25_4_1_U97/prep_only_accel_mac_muladd_16ns_5ns_25ns_25_4_1_DSP48_11_U/p_reg_reg input system_i/prep_accel_0/inst/grp_make_ink_fu_154/mac_muladd_16ns_5ns_25ns_25_4_1_U97/prep_only_accel_mac_muladd_16ns_5ns_25ns_25_4_1_DSP48_11_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#25 Warning
+Input pipelining  
+DSP system_i/prep_accel_0/inst/grp_make_ink_fu_154/mac_muladd_16ns_5ns_25ns_25_4_1_U98/prep_only_accel_mac_muladd_16ns_5ns_25ns_25_4_1_DSP48_11_U/p_reg_reg input system_i/prep_accel_0/inst/grp_make_ink_fu_154/mac_muladd_16ns_5ns_25ns_25_4_1_U98/prep_only_accel_mac_muladd_16ns_5ns_25ns_25_4_1_DSP48_11_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#26 Warning
+Input pipelining  
+DSP system_i/prep_accel_0/inst/grp_make_ink_fu_154/mac_muladd_16ns_5ns_25ns_25_4_1_U99/prep_only_accel_mac_muladd_16ns_5ns_25ns_25_4_1_DSP48_11_U/p_reg_reg input system_i/prep_accel_0/inst/grp_make_ink_fu_154/mac_muladd_16ns_5ns_25ns_25_4_1_U99/prep_only_accel_mac_muladd_16ns_5ns_25ns_25_4_1_DSP48_11_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#27 Warning
+Input pipelining  
+DSP system_i/prep_accel_0/inst/grp_make_ink_fu_154/mac_muladd_16ns_5ns_25ns_26_4_1_U103/prep_only_accel_mac_muladd_16ns_5ns_25ns_26_4_1_DSP48_12_U/p_reg_reg input system_i/prep_accel_0/inst/grp_make_ink_fu_154/mac_muladd_16ns_5ns_25ns_26_4_1_U103/prep_only_accel_mac_muladd_16ns_5ns_25ns_26_4_1_DSP48_12_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#28 Warning
+Input pipelining  
+DSP system_i/prep_accel_0/inst/grp_make_ink_fu_154/mac_muladd_16ns_5ns_26ns_26_4_1_U104/prep_only_accel_mac_muladd_16ns_5ns_26ns_26_4_1_DSP48_13_U/p_reg_reg input system_i/prep_accel_0/inst/grp_make_ink_fu_154/mac_muladd_16ns_5ns_26ns_26_4_1_U104/prep_only_accel_mac_muladd_16ns_5ns_26ns_26_4_1_DSP48_13_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#29 Warning
+Input pipelining  
+DSP system_i/prep_accel_0/inst/grp_make_ink_fu_154/mac_muladd_16ns_5ns_26ns_26_4_1_U105/prep_only_accel_mac_muladd_16ns_5ns_26ns_26_4_1_DSP48_13_U/p_reg_reg input system_i/prep_accel_0/inst/grp_make_ink_fu_154/mac_muladd_16ns_5ns_26ns_26_4_1_U105/prep_only_accel_mac_muladd_16ns_5ns_26ns_26_4_1_DSP48_13_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#30 Warning
+Input pipelining  
+DSP system_i/prep_accel_0/inst/grp_make_ink_fu_154/mac_muladd_16ns_5ns_26ns_26_4_1_U106/prep_only_accel_mac_muladd_16ns_5ns_26ns_26_4_1_DSP48_13_U/p_reg_reg input system_i/prep_accel_0/inst/grp_make_ink_fu_154/mac_muladd_16ns_5ns_26ns_26_4_1_U106/prep_only_accel_mac_muladd_16ns_5ns_26ns_26_4_1_DSP48_13_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#31 Warning
+Input pipelining  
+DSP system_i/prep_accel_0/inst/grp_make_ink_fu_154/mac_muladd_16ns_5ns_26ns_26_4_1_U107/prep_only_accel_mac_muladd_16ns_5ns_26ns_26_4_1_DSP48_13_U/p_reg_reg input system_i/prep_accel_0/inst/grp_make_ink_fu_154/mac_muladd_16ns_5ns_26ns_26_4_1_U107/prep_only_accel_mac_muladd_16ns_5ns_26ns_26_4_1_DSP48_13_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#32 Warning
+Input pipelining  
+DSP system_i/prep_accel_0/inst/grp_make_ink_fu_154/mac_muladd_16ns_5ns_26ns_26_4_1_U108/prep_only_accel_mac_muladd_16ns_5ns_26ns_26_4_1_DSP48_13_U/p_reg_reg input system_i/prep_accel_0/inst/grp_make_ink_fu_154/mac_muladd_16ns_5ns_26ns_26_4_1_U108/prep_only_accel_mac_muladd_16ns_5ns_26ns_26_4_1_DSP48_13_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#33 Warning
+Input pipelining  
+DSP system_i/prep_accel_0/inst/grp_make_ink_fu_154/mac_muladd_16ns_5ns_26ns_26_4_1_U109/prep_only_accel_mac_muladd_16ns_5ns_26ns_26_4_1_DSP48_13_U/p_reg_reg input system_i/prep_accel_0/inst/grp_make_ink_fu_154/mac_muladd_16ns_5ns_26ns_26_4_1_U109/prep_only_accel_mac_muladd_16ns_5ns_26ns_26_4_1_DSP48_13_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#34 Warning
+Input pipelining  
+DSP system_i/prep_accel_0/inst/grp_make_ink_fu_154/mac_muladd_16ns_5ns_26ns_26_4_1_U110/prep_only_accel_mac_muladd_16ns_5ns_26ns_26_4_1_DSP48_13_U/p_reg_reg input system_i/prep_accel_0/inst/grp_make_ink_fu_154/mac_muladd_16ns_5ns_26ns_26_4_1_U110/prep_only_accel_mac_muladd_16ns_5ns_26ns_26_4_1_DSP48_13_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#35 Warning
+Input pipelining  
+DSP system_i/prep_accel_0/inst/grp_make_ink_fu_154/mac_muladd_16ns_5ns_26ns_26_4_1_U111/prep_only_accel_mac_muladd_16ns_5ns_26ns_26_4_1_DSP48_13_U/p_reg_reg input system_i/prep_accel_0/inst/grp_make_ink_fu_154/mac_muladd_16ns_5ns_26ns_26_4_1_U111/prep_only_accel_mac_muladd_16ns_5ns_26ns_26_4_1_DSP48_13_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#36 Warning
+Input pipelining  
+DSP system_i/prep_accel_0/inst/grp_make_ink_fu_154/mac_muladd_16ns_5ns_26ns_26_4_1_U112/prep_only_accel_mac_muladd_16ns_5ns_26ns_26_4_1_DSP48_13_U/p_reg_reg input system_i/prep_accel_0/inst/grp_make_ink_fu_154/mac_muladd_16ns_5ns_26ns_26_4_1_U112/prep_only_accel_mac_muladd_16ns_5ns_26ns_26_4_1_DSP48_13_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#37 Warning
+Input pipelining  
+DSP system_i/prep_accel_0/inst/grp_make_ink_fu_154/mac_muladd_16ns_5ns_26ns_26_4_1_U113/prep_only_accel_mac_muladd_16ns_5ns_26ns_26_4_1_DSP48_13_U/p_reg_reg input system_i/prep_accel_0/inst/grp_make_ink_fu_154/mac_muladd_16ns_5ns_26ns_26_4_1_U113/prep_only_accel_mac_muladd_16ns_5ns_26ns_26_4_1_DSP48_13_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#38 Warning
+Input pipelining  
+DSP system_i/prep_accel_0/inst/grp_make_ink_fu_154/mac_muladd_16ns_5ns_26ns_26_4_1_U114/prep_only_accel_mac_muladd_16ns_5ns_26ns_26_4_1_DSP48_13_U/p_reg_reg input system_i/prep_accel_0/inst/grp_make_ink_fu_154/mac_muladd_16ns_5ns_26ns_26_4_1_U114/prep_only_accel_mac_muladd_16ns_5ns_26ns_26_4_1_DSP48_13_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#39 Warning
+Input pipelining  
+DSP system_i/prep_accel_0/inst/grp_make_ink_fu_154/mac_muladd_16ns_5ns_26ns_26_4_1_U115/prep_only_accel_mac_muladd_16ns_5ns_26ns_26_4_1_DSP48_13_U/p_reg_reg input system_i/prep_accel_0/inst/grp_make_ink_fu_154/mac_muladd_16ns_5ns_26ns_26_4_1_U115/prep_only_accel_mac_muladd_16ns_5ns_26ns_26_4_1_DSP48_13_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#40 Warning
+Input pipelining  
+DSP system_i/prep_accel_0/inst/grp_make_ink_fu_154/mac_muladd_16ns_5ns_26ns_26_4_1_U116/prep_only_accel_mac_muladd_16ns_5ns_26ns_26_4_1_DSP48_13_U/p_reg_reg input system_i/prep_accel_0/inst/grp_make_ink_fu_154/mac_muladd_16ns_5ns_26ns_26_4_1_U116/prep_only_accel_mac_muladd_16ns_5ns_26ns_26_4_1_DSP48_13_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#41 Warning
+Input pipelining  
+DSP system_i/prep_accel_0/inst/grp_make_ink_fu_154/mac_muladd_16ns_5ns_26ns_26_4_1_U117/prep_only_accel_mac_muladd_16ns_5ns_26ns_26_4_1_DSP48_13_U/p_reg_reg input system_i/prep_accel_0/inst/grp_make_ink_fu_154/mac_muladd_16ns_5ns_26ns_26_4_1_U117/prep_only_accel_mac_muladd_16ns_5ns_26ns_26_4_1_DSP48_13_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#42 Warning
+Input pipelining  
+DSP system_i/prep_accel_0/inst/grp_make_ink_fu_154/mac_muladd_16ns_5ns_26ns_26_4_1_U118/prep_only_accel_mac_muladd_16ns_5ns_26ns_26_4_1_DSP48_13_U/p_reg_reg input system_i/prep_accel_0/inst/grp_make_ink_fu_154/mac_muladd_16ns_5ns_26ns_26_4_1_U118/prep_only_accel_mac_muladd_16ns_5ns_26ns_26_4_1_DSP48_13_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#43 Warning
+Input pipelining  
+DSP system_i/prep_accel_0/inst/grp_make_ink_fu_154/mac_muladd_16ns_5ns_26ns_26_4_1_U119/prep_only_accel_mac_muladd_16ns_5ns_26ns_26_4_1_DSP48_13_U/p_reg_reg input system_i/prep_accel_0/inst/grp_make_ink_fu_154/mac_muladd_16ns_5ns_26ns_26_4_1_U119/prep_only_accel_mac_muladd_16ns_5ns_26ns_26_4_1_DSP48_13_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#44 Warning
+Input pipelining  
+DSP system_i/prep_accel_0/inst/grp_make_ink_fu_154/mac_muladd_16ns_5ns_26ns_27_4_1_U120/prep_only_accel_mac_muladd_16ns_5ns_26ns_27_4_1_DSP48_14_U/p_reg_reg input system_i/prep_accel_0/inst/grp_make_ink_fu_154/mac_muladd_16ns_5ns_26ns_27_4_1_U120/prep_only_accel_mac_muladd_16ns_5ns_26ns_27_4_1_DSP48_14_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#45 Warning
+Input pipelining  
+DSP system_i/prep_accel_0/inst/grp_make_ink_fu_154/mac_muladd_16ns_5ns_27ns_27_4_1_U121/prep_only_accel_mac_muladd_16ns_5ns_27ns_27_4_1_DSP48_15_U/p_reg_reg input system_i/prep_accel_0/inst/grp_make_ink_fu_154/mac_muladd_16ns_5ns_27ns_27_4_1_U121/prep_only_accel_mac_muladd_16ns_5ns_27ns_27_4_1_DSP48_15_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#46 Warning
+Input pipelining  
+DSP system_i/prep_accel_0/inst/grp_make_ink_fu_154/mac_muladd_16ns_5ns_27ns_27_4_1_U122/prep_only_accel_mac_muladd_16ns_5ns_27ns_27_4_1_DSP48_15_U/p_reg_reg input system_i/prep_accel_0/inst/grp_make_ink_fu_154/mac_muladd_16ns_5ns_27ns_27_4_1_U122/prep_only_accel_mac_muladd_16ns_5ns_27ns_27_4_1_DSP48_15_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#47 Warning
+Input pipelining  
+DSP system_i/prep_accel_0/inst/grp_make_ink_fu_154/mac_muladd_16ns_5ns_27ns_27_4_1_U123/prep_only_accel_mac_muladd_16ns_5ns_27ns_27_4_1_DSP48_15_U/p_reg_reg input system_i/prep_accel_0/inst/grp_make_ink_fu_154/mac_muladd_16ns_5ns_27ns_27_4_1_U123/prep_only_accel_mac_muladd_16ns_5ns_27ns_27_4_1_DSP48_15_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#48 Warning
+Input pipelining  
+DSP system_i/prep_accel_0/inst/grp_make_ink_fu_154/mac_muladd_16ns_5ns_27ns_27_4_1_U124/prep_only_accel_mac_muladd_16ns_5ns_27ns_27_4_1_DSP48_15_U/p_reg_reg input system_i/prep_accel_0/inst/grp_make_ink_fu_154/mac_muladd_16ns_5ns_27ns_27_4_1_U124/prep_only_accel_mac_muladd_16ns_5ns_27ns_27_4_1_DSP48_15_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#49 Warning
+Input pipelining  
+DSP system_i/prep_accel_0/inst/grp_make_ink_fu_154/mac_muladd_16ns_5ns_27ns_27_4_1_U125/prep_only_accel_mac_muladd_16ns_5ns_27ns_27_4_1_DSP48_15_U/p_reg_reg input system_i/prep_accel_0/inst/grp_make_ink_fu_154/mac_muladd_16ns_5ns_27ns_27_4_1_U125/prep_only_accel_mac_muladd_16ns_5ns_27ns_27_4_1_DSP48_15_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#50 Warning
+Input pipelining  
+DSP system_i/prep_accel_0/inst/grp_make_ink_fu_154/mac_muladd_16ns_5ns_27ns_27_4_1_U126/prep_only_accel_mac_muladd_16ns_5ns_27ns_27_4_1_DSP48_15_U/p_reg_reg input system_i/prep_accel_0/inst/grp_make_ink_fu_154/mac_muladd_16ns_5ns_27ns_27_4_1_U126/prep_only_accel_mac_muladd_16ns_5ns_27ns_27_4_1_DSP48_15_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#51 Warning
+Input pipelining  
+DSP system_i/prep_accel_0/inst/grp_make_ink_fu_154/mac_muladd_16ns_5ns_27ns_27_4_1_U127/prep_only_accel_mac_muladd_16ns_5ns_27ns_27_4_1_DSP48_15_U/p_reg_reg input system_i/prep_accel_0/inst/grp_make_ink_fu_154/mac_muladd_16ns_5ns_27ns_27_4_1_U127/prep_only_accel_mac_muladd_16ns_5ns_27ns_27_4_1_DSP48_15_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#52 Warning
+Input pipelining  
+DSP system_i/prep_accel_0/inst/grp_make_ink_fu_154/mac_muladd_16ns_5ns_27ns_27_4_1_U128/prep_only_accel_mac_muladd_16ns_5ns_27ns_27_4_1_DSP48_15_U/p_reg_reg input system_i/prep_accel_0/inst/grp_make_ink_fu_154/mac_muladd_16ns_5ns_27ns_27_4_1_U128/prep_only_accel_mac_muladd_16ns_5ns_27ns_27_4_1_DSP48_15_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#53 Warning
+Input pipelining  
+DSP system_i/prep_accel_0/inst/grp_make_ink_fu_154/mac_muladd_16ns_5ns_27ns_27_4_1_U129/prep_only_accel_mac_muladd_16ns_5ns_27ns_27_4_1_DSP48_15_U/p_reg_reg input system_i/prep_accel_0/inst/grp_make_ink_fu_154/mac_muladd_16ns_5ns_27ns_27_4_1_U129/prep_only_accel_mac_muladd_16ns_5ns_27ns_27_4_1_DSP48_15_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#54 Warning
+Input pipelining  
+DSP system_i/prep_accel_0/inst/grp_make_ink_fu_154/mac_muladd_16ns_5ns_27ns_27_4_1_U130/prep_only_accel_mac_muladd_16ns_5ns_27ns_27_4_1_DSP48_15_U/p_reg_reg input system_i/prep_accel_0/inst/grp_make_ink_fu_154/mac_muladd_16ns_5ns_27ns_27_4_1_U130/prep_only_accel_mac_muladd_16ns_5ns_27ns_27_4_1_DSP48_15_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#55 Warning
+Input pipelining  
+DSP system_i/prep_accel_0/inst/grp_make_ink_fu_154/mac_muladd_16ns_5ns_27ns_27_4_1_U131/prep_only_accel_mac_muladd_16ns_5ns_27ns_27_4_1_DSP48_15_U/p_reg_reg input system_i/prep_accel_0/inst/grp_make_ink_fu_154/mac_muladd_16ns_5ns_27ns_27_4_1_U131/prep_only_accel_mac_muladd_16ns_5ns_27ns_27_4_1_DSP48_15_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#56 Warning
+Input pipelining  
+DSP system_i/prep_accel_0/inst/grp_make_ink_fu_154/mac_muladd_16ns_5ns_27ns_27_4_1_U132/prep_only_accel_mac_muladd_16ns_5ns_27ns_27_4_1_DSP48_15_U/p_reg_reg input system_i/prep_accel_0/inst/grp_make_ink_fu_154/mac_muladd_16ns_5ns_27ns_27_4_1_U132/prep_only_accel_mac_muladd_16ns_5ns_27ns_27_4_1_DSP48_15_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#57 Warning
+Input pipelining  
+DSP system_i/prep_accel_0/inst/grp_make_ink_fu_154/mac_muladd_16ns_5ns_27ns_27_4_1_U133/prep_only_accel_mac_muladd_16ns_5ns_27ns_27_4_1_DSP48_15_U/p_reg_reg input system_i/prep_accel_0/inst/grp_make_ink_fu_154/mac_muladd_16ns_5ns_27ns_27_4_1_U133/prep_only_accel_mac_muladd_16ns_5ns_27ns_27_4_1_DSP48_15_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#58 Warning
+Input pipelining  
+DSP system_i/prep_accel_0/inst/grp_make_ink_fu_154/mac_muladd_16ns_5ns_27ns_27_4_1_U134/prep_only_accel_mac_muladd_16ns_5ns_27ns_27_4_1_DSP48_15_U/p_reg_reg input system_i/prep_accel_0/inst/grp_make_ink_fu_154/mac_muladd_16ns_5ns_27ns_27_4_1_U134/prep_only_accel_mac_muladd_16ns_5ns_27ns_27_4_1_DSP48_15_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#59 Warning
+Input pipelining  
+DSP system_i/prep_accel_0/inst/grp_make_ink_fu_154/mac_muladd_16ns_5ns_27ns_27_4_1_U135/prep_only_accel_mac_muladd_16ns_5ns_27ns_27_4_1_DSP48_15_U/p_reg_reg input system_i/prep_accel_0/inst/grp_make_ink_fu_154/mac_muladd_16ns_5ns_27ns_27_4_1_U135/prep_only_accel_mac_muladd_16ns_5ns_27ns_27_4_1_DSP48_15_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#60 Warning
+Input pipelining  
+DSP system_i/prep_accel_0/inst/grp_make_ink_fu_154/mac_muladd_16ns_5ns_27ns_27_4_1_U136/prep_only_accel_mac_muladd_16ns_5ns_27ns_27_4_1_DSP48_15_U/p_reg_reg input system_i/prep_accel_0/inst/grp_make_ink_fu_154/mac_muladd_16ns_5ns_27ns_27_4_1_U136/prep_only_accel_mac_muladd_16ns_5ns_27ns_27_4_1_DSP48_15_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#61 Warning
+Input pipelining  
+DSP system_i/prep_accel_0/inst/grp_make_ink_fu_154/mac_muladd_16ns_5ns_27ns_27_4_1_U137/prep_only_accel_mac_muladd_16ns_5ns_27ns_27_4_1_DSP48_15_U/p_reg_reg input system_i/prep_accel_0/inst/grp_make_ink_fu_154/mac_muladd_16ns_5ns_27ns_27_4_1_U137/prep_only_accel_mac_muladd_16ns_5ns_27ns_27_4_1_DSP48_15_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#62 Warning
+Input pipelining  
+DSP system_i/prep_accel_0/inst/grp_make_ink_fu_154/mac_muladd_16ns_5ns_27ns_27_4_1_U138/prep_only_accel_mac_muladd_16ns_5ns_27ns_27_4_1_DSP48_15_U/p_reg_reg input system_i/prep_accel_0/inst/grp_make_ink_fu_154/mac_muladd_16ns_5ns_27ns_27_4_1_U138/prep_only_accel_mac_muladd_16ns_5ns_27ns_27_4_1_DSP48_15_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#63 Warning
+Input pipelining  
+DSP system_i/prep_accel_0/inst/grp_make_ink_fu_154/mac_muladd_16ns_5ns_27ns_27_4_1_U139/prep_only_accel_mac_muladd_16ns_5ns_27ns_27_4_1_DSP48_15_U/p_reg_reg input system_i/prep_accel_0/inst/grp_make_ink_fu_154/mac_muladd_16ns_5ns_27ns_27_4_1_U139/prep_only_accel_mac_muladd_16ns_5ns_27ns_27_4_1_DSP48_15_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#64 Warning
+Input pipelining  
+DSP system_i/prep_accel_0/inst/grp_make_ink_fu_154/mac_muladd_16ns_5ns_27ns_27_4_1_U140/prep_only_accel_mac_muladd_16ns_5ns_27ns_27_4_1_DSP48_15_U/p_reg_reg input system_i/prep_accel_0/inst/grp_make_ink_fu_154/mac_muladd_16ns_5ns_27ns_27_4_1_U140/prep_only_accel_mac_muladd_16ns_5ns_27ns_27_4_1_DSP48_15_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#65 Warning
+Input pipelining  
+DSP system_i/prep_accel_0/inst/grp_make_ink_fu_154/mac_muladd_16ns_5ns_27ns_27_4_1_U141/prep_only_accel_mac_muladd_16ns_5ns_27ns_27_4_1_DSP48_15_U/p_reg_reg input system_i/prep_accel_0/inst/grp_make_ink_fu_154/mac_muladd_16ns_5ns_27ns_27_4_1_U141/prep_only_accel_mac_muladd_16ns_5ns_27ns_27_4_1_DSP48_15_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#66 Warning
+Input pipelining  
+DSP system_i/prep_accel_0/inst/grp_make_ink_fu_154/mac_muladd_16ns_5ns_27ns_27_4_1_U142/prep_only_accel_mac_muladd_16ns_5ns_27ns_27_4_1_DSP48_15_U/p_reg_reg input system_i/prep_accel_0/inst/grp_make_ink_fu_154/mac_muladd_16ns_5ns_27ns_27_4_1_U142/prep_only_accel_mac_muladd_16ns_5ns_27ns_27_4_1_DSP48_15_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#67 Warning
+Input pipelining  
+DSP system_i/prep_accel_0/inst/grp_make_ink_fu_154/mac_muladd_16ns_5ns_27ns_27_4_1_U143/prep_only_accel_mac_muladd_16ns_5ns_27ns_27_4_1_DSP48_15_U/p_reg_reg input system_i/prep_accel_0/inst/grp_make_ink_fu_154/mac_muladd_16ns_5ns_27ns_27_4_1_U143/prep_only_accel_mac_muladd_16ns_5ns_27ns_27_4_1_DSP48_15_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#68 Warning
+Input pipelining  
+DSP system_i/prep_accel_0/inst/grp_make_ink_fu_154/mac_muladd_16ns_5ns_27ns_27_4_1_U144/prep_only_accel_mac_muladd_16ns_5ns_27ns_27_4_1_DSP48_15_U/p_reg_reg input system_i/prep_accel_0/inst/grp_make_ink_fu_154/mac_muladd_16ns_5ns_27ns_27_4_1_U144/prep_only_accel_mac_muladd_16ns_5ns_27ns_27_4_1_DSP48_15_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#69 Warning
+Input pipelining  
+DSP system_i/prep_accel_0/inst/grp_make_ink_fu_154/mac_muladd_16ns_5ns_27ns_27_4_1_U145/prep_only_accel_mac_muladd_16ns_5ns_27ns_27_4_1_DSP48_15_U/p_reg_reg input system_i/prep_accel_0/inst/grp_make_ink_fu_154/mac_muladd_16ns_5ns_27ns_27_4_1_U145/prep_only_accel_mac_muladd_16ns_5ns_27ns_27_4_1_DSP48_15_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#70 Warning
+Input pipelining  
+DSP system_i/prep_accel_0/inst/grp_make_ink_fu_154/mac_muladd_16ns_5ns_27ns_27_4_1_U146/prep_only_accel_mac_muladd_16ns_5ns_27ns_27_4_1_DSP48_15_U/p_reg_reg input system_i/prep_accel_0/inst/grp_make_ink_fu_154/mac_muladd_16ns_5ns_27ns_27_4_1_U146/prep_only_accel_mac_muladd_16ns_5ns_27ns_27_4_1_DSP48_15_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#71 Warning
+Input pipelining  
+DSP system_i/prep_accel_0/inst/grp_make_ink_fu_154/mac_muladd_16ns_5ns_27ns_27_4_1_U147/prep_only_accel_mac_muladd_16ns_5ns_27ns_27_4_1_DSP48_15_U/p_reg_reg input system_i/prep_accel_0/inst/grp_make_ink_fu_154/mac_muladd_16ns_5ns_27ns_27_4_1_U147/prep_only_accel_mac_muladd_16ns_5ns_27ns_27_4_1_DSP48_15_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#72 Warning
+Input pipelining  
+DSP system_i/prep_accel_0/inst/grp_make_ink_fu_154/mac_muladd_16ns_5ns_27ns_27_4_1_U148/prep_only_accel_mac_muladd_16ns_5ns_27ns_27_4_1_DSP48_15_U/p_reg_reg input system_i/prep_accel_0/inst/grp_make_ink_fu_154/mac_muladd_16ns_5ns_27ns_27_4_1_U148/prep_only_accel_mac_muladd_16ns_5ns_27ns_27_4_1_DSP48_15_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#73 Warning
+Input pipelining  
+DSP system_i/prep_accel_0/inst/grp_make_ink_fu_154/mac_muladd_16ns_5ns_27ns_27_4_1_U149/prep_only_accel_mac_muladd_16ns_5ns_27ns_27_4_1_DSP48_15_U/p_reg_reg input system_i/prep_accel_0/inst/grp_make_ink_fu_154/mac_muladd_16ns_5ns_27ns_27_4_1_U149/prep_only_accel_mac_muladd_16ns_5ns_27ns_27_4_1_DSP48_15_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#74 Warning
+Input pipelining  
+DSP system_i/prep_accel_0/inst/grp_make_ink_fu_154/mac_muladd_16ns_5ns_27ns_27_4_1_U150/prep_only_accel_mac_muladd_16ns_5ns_27ns_27_4_1_DSP48_15_U/p_reg_reg input system_i/prep_accel_0/inst/grp_make_ink_fu_154/mac_muladd_16ns_5ns_27ns_27_4_1_U150/prep_only_accel_mac_muladd_16ns_5ns_27ns_27_4_1_DSP48_15_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#75 Warning
+Input pipelining  
+DSP system_i/prep_accel_0/inst/grp_make_ink_fu_154/mac_muladd_16ns_5ns_27ns_27_4_1_U151/prep_only_accel_mac_muladd_16ns_5ns_27ns_27_4_1_DSP48_15_U/p_reg_reg input system_i/prep_accel_0/inst/grp_make_ink_fu_154/mac_muladd_16ns_5ns_27ns_27_4_1_U151/prep_only_accel_mac_muladd_16ns_5ns_27ns_27_4_1_DSP48_15_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#76 Warning
+Input pipelining  
+DSP system_i/prep_accel_0/inst/grp_make_ink_fu_154/mac_muladd_16ns_5ns_27ns_27_4_1_U152/prep_only_accel_mac_muladd_16ns_5ns_27ns_27_4_1_DSP48_15_U/p_reg_reg input system_i/prep_accel_0/inst/grp_make_ink_fu_154/mac_muladd_16ns_5ns_27ns_27_4_1_U152/prep_only_accel_mac_muladd_16ns_5ns_27ns_27_4_1_DSP48_15_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#77 Warning
+Input pipelining  
+DSP system_i/prep_accel_0/inst/grp_make_ink_fu_154/mac_muladd_16ns_5ns_27ns_28_4_1_U153/prep_only_accel_mac_muladd_16ns_5ns_27ns_28_4_1_DSP48_16_U/p_reg_reg input system_i/prep_accel_0/inst/grp_make_ink_fu_154/mac_muladd_16ns_5ns_27ns_28_4_1_U153/prep_only_accel_mac_muladd_16ns_5ns_27ns_28_4_1_DSP48_16_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPOP-1#1 Warning
+PREG Output pipelining  
+DSP system_i/audio_axi_0/inst/core/fir/sum output system_i/audio_axi_0/inst/core/fir/sum/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#2 Warning
+PREG Output pipelining  
+DSP system_i/cnn_ps_if_0/inst/core/frontend/g_conv2_post[0].requant_relu_layer2_inst/product_r0 output system_i/cnn_ps_if_0/inst/core/frontend/g_conv2_post[0].requant_relu_layer2_inst/product_r0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#3 Warning
+PREG Output pipelining  
+DSP system_i/cnn_ps_if_0/inst/core/frontend/g_conv2_post[1].requant_relu_layer2_inst/product_r0 output system_i/cnn_ps_if_0/inst/core/frontend/g_conv2_post[1].requant_relu_layer2_inst/product_r0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#4 Warning
+PREG Output pipelining  
+DSP system_i/cnn_ps_if_0/inst/core/frontend/requant_relu_layer1_inst/product_r0 output system_i/cnn_ps_if_0/inst/core/frontend/requant_relu_layer1_inst/product_r0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#5 Warning
+PREG Output pipelining  
+DSP system_i/cnn_ps_if_0/inst/core/quant/product_s640 output system_i/cnn_ps_if_0/inst/core/quant/product_s640/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#6 Warning
+PREG Output pipelining  
+DSP system_i/cnn_ps_if_0/inst/core/quant/product_s640__0 output system_i/cnn_ps_if_0/inst/core/quant/product_s640__0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#7 Warning
+PREG Output pipelining  
+DSP system_i/prep_accel_0/inst/grp_make_detection_fu_173/mul_10ns_32s_32_1_1_U6/prep_only_accel_mul_10ns_32s_32_1_1_Multiplier_1_U/p output system_i/prep_accel_0/inst/grp_make_detection_fu_173/mul_10ns_32s_32_1_1_U6/prep_only_accel_mul_10ns_32s_32_1_1_Multiplier_1_U/p/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#8 Warning
+PREG Output pipelining  
+DSP system_i/prep_accel_0/inst/grp_make_detection_fu_173/mul_32ns_34ns_65_1_1_U12/prep_only_accel_mul_32ns_34ns_65_1_1_Multiplier_3_U/p output system_i/prep_accel_0/inst/grp_make_detection_fu_173/mul_32ns_34ns_65_1_1_U12/prep_only_accel_mul_32ns_34ns_65_1_1_Multiplier_3_U/p/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#9 Warning
+PREG Output pipelining  
+DSP system_i/prep_accel_0/inst/grp_make_detection_fu_173/mul_32ns_34ns_65_1_1_U12/prep_only_accel_mul_32ns_34ns_65_1_1_Multiplier_3_U/p__0 output system_i/prep_accel_0/inst/grp_make_detection_fu_173/mul_32ns_34ns_65_1_1_U12/prep_only_accel_mul_32ns_34ns_65_1_1_Multiplier_3_U/p__0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#10 Warning
+PREG Output pipelining  
+DSP system_i/prep_accel_0/inst/grp_make_detection_fu_173/mul_32ns_34ns_65_1_1_U12/prep_only_accel_mul_32ns_34ns_65_1_1_Multiplier_3_U/p__1 output system_i/prep_accel_0/inst/grp_make_detection_fu_173/mul_32ns_34ns_65_1_1_U12/prep_only_accel_mul_32ns_34ns_65_1_1_Multiplier_3_U/p__1/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#11 Warning
+PREG Output pipelining  
+DSP system_i/prep_accel_0/inst/grp_make_detection_fu_173/mul_32ns_34ns_65_1_1_U12/prep_only_accel_mul_32ns_34ns_65_1_1_Multiplier_3_U/p__2 output system_i/prep_accel_0/inst/grp_make_detection_fu_173/mul_32ns_34ns_65_1_1_U12/prep_only_accel_mul_32ns_34ns_65_1_1_Multiplier_3_U/p__2/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#12 Warning
+PREG Output pipelining  
+DSP system_i/prep_accel_0/inst/grp_make_detection_fu_173/mul_32ns_34ns_65_1_1_U28/prep_only_accel_mul_32ns_34ns_65_1_1_Multiplier_3_U/p output system_i/prep_accel_0/inst/grp_make_detection_fu_173/mul_32ns_34ns_65_1_1_U28/prep_only_accel_mul_32ns_34ns_65_1_1_Multiplier_3_U/p/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#13 Warning
+PREG Output pipelining  
+DSP system_i/prep_accel_0/inst/grp_make_detection_fu_173/mul_32ns_34ns_65_1_1_U28/prep_only_accel_mul_32ns_34ns_65_1_1_Multiplier_3_U/p__0 output system_i/prep_accel_0/inst/grp_make_detection_fu_173/mul_32ns_34ns_65_1_1_U28/prep_only_accel_mul_32ns_34ns_65_1_1_Multiplier_3_U/p__0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#14 Warning
+PREG Output pipelining  
+DSP system_i/prep_accel_0/inst/grp_make_detection_fu_173/mul_32s_18s_32_1_1_U25/prep_only_accel_mul_32s_18s_32_1_1_Multiplier_5_U/p output system_i/prep_accel_0/inst/grp_make_detection_fu_173/mul_32s_18s_32_1_1_U25/prep_only_accel_mul_32s_18s_32_1_1_Multiplier_5_U/p/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#15 Warning
+PREG Output pipelining  
+DSP system_i/prep_accel_0/inst/grp_make_detection_fu_173/mul_32s_18s_32_1_1_U26/prep_only_accel_mul_32s_18s_32_1_1_Multiplier_5_U/p output system_i/prep_accel_0/inst/grp_make_detection_fu_173/mul_32s_18s_32_1_1_U26/prep_only_accel_mul_32s_18s_32_1_1_Multiplier_5_U/p/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#16 Warning
+PREG Output pipelining  
+DSP system_i/prep_accel_0/inst/grp_make_detection_fu_173/mul_32s_18s_32_1_1_U27/prep_only_accel_mul_32s_18s_32_1_1_Multiplier_5_U/p output system_i/prep_accel_0/inst/grp_make_detection_fu_173/mul_32s_18s_32_1_1_U27/prep_only_accel_mul_32s_18s_32_1_1_Multiplier_5_U/p/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#17 Warning
+PREG Output pipelining  
+DSP system_i/prep_accel_0/inst/grp_make_detection_fu_173/mul_32s_8ns_32_1_1_U19/prep_only_accel_mul_32s_8ns_32_1_1_Multiplier_4_U/p output system_i/prep_accel_0/inst/grp_make_detection_fu_173/mul_32s_8ns_32_1_1_U19/prep_only_accel_mul_32s_8ns_32_1_1_Multiplier_4_U/p/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#18 Warning
+PREG Output pipelining  
+DSP system_i/prep_accel_0/inst/grp_make_detection_fu_173/mul_32s_8ns_32_1_1_U20/prep_only_accel_mul_32s_8ns_32_1_1_Multiplier_4_U/p output system_i/prep_accel_0/inst/grp_make_detection_fu_173/mul_32s_8ns_32_1_1_U20/prep_only_accel_mul_32s_8ns_32_1_1_Multiplier_4_U/p/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#19 Warning
+PREG Output pipelining  
+DSP system_i/prep_accel_0/inst/grp_make_detection_fu_173/mul_32s_8ns_32_1_1_U21/prep_only_accel_mul_32s_8ns_32_1_1_Multiplier_4_U/p output system_i/prep_accel_0/inst/grp_make_detection_fu_173/mul_32s_8ns_32_1_1_U21/prep_only_accel_mul_32s_8ns_32_1_1_Multiplier_4_U/p/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#20 Warning
+PREG Output pipelining  
+DSP system_i/prep_accel_0/inst/grp_make_detection_fu_173/mul_32s_8ns_32_1_1_U22/prep_only_accel_mul_32s_8ns_32_1_1_Multiplier_4_U/p output system_i/prep_accel_0/inst/grp_make_detection_fu_173/mul_32s_8ns_32_1_1_U22/prep_only_accel_mul_32s_8ns_32_1_1_Multiplier_4_U/p/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#21 Warning
+PREG Output pipelining  
+DSP system_i/prep_accel_0/inst/grp_make_detection_fu_173/mul_32s_8ns_32_1_1_U23/prep_only_accel_mul_32s_8ns_32_1_1_Multiplier_4_U/p output system_i/prep_accel_0/inst/grp_make_detection_fu_173/mul_32s_8ns_32_1_1_U23/prep_only_accel_mul_32s_8ns_32_1_1_Multiplier_4_U/p/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#22 Warning
+PREG Output pipelining  
+DSP system_i/prep_accel_0/inst/grp_make_detection_fu_173/mul_32s_8ns_32_1_1_U24/prep_only_accel_mul_32s_8ns_32_1_1_Multiplier_4_U/p output system_i/prep_accel_0/inst/grp_make_detection_fu_173/mul_32s_8ns_32_1_1_U24/prep_only_accel_mul_32s_8ns_32_1_1_Multiplier_4_U/p/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#23 Warning
+PREG Output pipelining  
+DSP system_i/prep_accel_0/inst/grp_make_detection_fu_173/mul_9ns_10ns_18_1_1_U10/prep_only_accel_mul_9ns_10ns_18_1_1_Multiplier_2_U/p output system_i/prep_accel_0/inst/grp_make_detection_fu_173/mul_9ns_10ns_18_1_1_U10/prep_only_accel_mul_9ns_10ns_18_1_1_Multiplier_2_U/p/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#24 Warning
+PREG Output pipelining  
+DSP system_i/prep_accel_0/inst/grp_make_detection_fu_173/mul_9ns_10ns_18_1_1_U11/prep_only_accel_mul_9ns_10ns_18_1_1_Multiplier_2_U/p output system_i/prep_accel_0/inst/grp_make_detection_fu_173/mul_9ns_10ns_18_1_1_U11/prep_only_accel_mul_9ns_10ns_18_1_1_Multiplier_2_U/p/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#25 Warning
+PREG Output pipelining  
+DSP system_i/prep_accel_0/inst/grp_make_detection_fu_173/mul_9ns_10ns_18_1_1_U9/prep_only_accel_mul_9ns_10ns_18_1_1_Multiplier_2_U/p output system_i/prep_accel_0/inst/grp_make_detection_fu_173/mul_9ns_10ns_18_1_1_U9/prep_only_accel_mul_9ns_10ns_18_1_1_Multiplier_2_U/p/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#26 Warning
+PREG Output pipelining  
+DSP system_i/prep_accel_0/inst/mul_64s_12ns_64_5_1_U176/prep_only_accel_mul_64s_12ns_64_5_1_Multiplier_6_U/tmp_product output system_i/prep_accel_0/inst/mul_64s_12ns_64_5_1_U176/prep_only_accel_mul_64s_12ns_64_5_1_Multiplier_6_U/tmp_product/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-2#1 Warning
+MREG Output pipelining  
+DSP system_i/audio_axi_0/inst/core/fir/sum multiplier stage system_i/audio_axi_0/inst/core/fir/sum/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#2 Warning
+MREG Output pipelining  
+DSP system_i/cnn_ps_if_0/inst/core/frontend/g_conv2_post[0].requant_relu_layer2_inst/product_r0 multiplier stage system_i/cnn_ps_if_0/inst/core/frontend/g_conv2_post[0].requant_relu_layer2_inst/product_r0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#3 Warning
+MREG Output pipelining  
+DSP system_i/cnn_ps_if_0/inst/core/frontend/g_conv2_post[0].requant_relu_layer2_inst/product_r_reg multiplier stage system_i/cnn_ps_if_0/inst/core/frontend/g_conv2_post[0].requant_relu_layer2_inst/product_r_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#4 Warning
+MREG Output pipelining  
+DSP system_i/cnn_ps_if_0/inst/core/frontend/g_conv2_post[1].requant_relu_layer2_inst/product_r0 multiplier stage system_i/cnn_ps_if_0/inst/core/frontend/g_conv2_post[1].requant_relu_layer2_inst/product_r0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#5 Warning
+MREG Output pipelining  
+DSP system_i/cnn_ps_if_0/inst/core/frontend/g_conv2_post[1].requant_relu_layer2_inst/product_r_reg multiplier stage system_i/cnn_ps_if_0/inst/core/frontend/g_conv2_post[1].requant_relu_layer2_inst/product_r_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#6 Warning
+MREG Output pipelining  
+DSP system_i/cnn_ps_if_0/inst/core/frontend/requant_relu_layer1_inst/product_r0 multiplier stage system_i/cnn_ps_if_0/inst/core/frontend/requant_relu_layer1_inst/product_r0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#7 Warning
+MREG Output pipelining  
+DSP system_i/cnn_ps_if_0/inst/core/frontend/requant_relu_layer1_inst/product_r_reg multiplier stage system_i/cnn_ps_if_0/inst/core/frontend/requant_relu_layer1_inst/product_r_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#8 Warning
+MREG Output pipelining  
+DSP system_i/cnn_ps_if_0/inst/core/quant/product_s640 multiplier stage system_i/cnn_ps_if_0/inst/core/quant/product_s640/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#9 Warning
+MREG Output pipelining  
+DSP system_i/cnn_ps_if_0/inst/core/quant/product_s640__0 multiplier stage system_i/cnn_ps_if_0/inst/core/quant/product_s640__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#10 Warning
+MREG Output pipelining  
+DSP system_i/cnn_ps_if_0/inst/core/quant/product_s64_reg multiplier stage system_i/cnn_ps_if_0/inst/core/quant/product_s64_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#11 Warning
+MREG Output pipelining  
+DSP system_i/cnn_ps_if_0/inst/core/quant/product_s64_reg__0 multiplier stage system_i/cnn_ps_if_0/inst/core/quant/product_s64_reg__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#12 Warning
+MREG Output pipelining  
+DSP system_i/prep_accel_0/inst/grp_make_detection_fu_173/add_ln48_1_fu_1416_p2 multiplier stage system_i/prep_accel_0/inst/grp_make_detection_fu_173/add_ln48_1_fu_1416_p2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#13 Warning
+MREG Output pipelining  
+DSP system_i/prep_accel_0/inst/grp_make_detection_fu_173/add_ln48_2_fu_1453_p2 multiplier stage system_i/prep_accel_0/inst/grp_make_detection_fu_173/add_ln48_2_fu_1453_p2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#14 Warning
+MREG Output pipelining  
+DSP system_i/prep_accel_0/inst/grp_make_detection_fu_173/add_ln48_fu_1379_p2 multiplier stage system_i/prep_accel_0/inst/grp_make_detection_fu_173/add_ln48_fu_1379_p2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#15 Warning
+MREG Output pipelining  
+DSP system_i/prep_accel_0/inst/grp_make_detection_fu_173/mul_10ns_32s_32_1_1_U6/prep_only_accel_mul_10ns_32s_32_1_1_Multiplier_1_U/p multiplier stage system_i/prep_accel_0/inst/grp_make_detection_fu_173/mul_10ns_32s_32_1_1_U6/prep_only_accel_mul_10ns_32s_32_1_1_Multiplier_1_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#16 Warning
+MREG Output pipelining  
+DSP system_i/prep_accel_0/inst/grp_make_detection_fu_173/mul_32ns_34ns_65_1_1_U12/prep_only_accel_mul_32ns_34ns_65_1_1_Multiplier_3_U/p multiplier stage system_i/prep_accel_0/inst/grp_make_detection_fu_173/mul_32ns_34ns_65_1_1_U12/prep_only_accel_mul_32ns_34ns_65_1_1_Multiplier_3_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#17 Warning
+MREG Output pipelining  
+DSP system_i/prep_accel_0/inst/grp_make_detection_fu_173/mul_32ns_34ns_65_1_1_U12/prep_only_accel_mul_32ns_34ns_65_1_1_Multiplier_3_U/p__0 multiplier stage system_i/prep_accel_0/inst/grp_make_detection_fu_173/mul_32ns_34ns_65_1_1_U12/prep_only_accel_mul_32ns_34ns_65_1_1_Multiplier_3_U/p__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#18 Warning
+MREG Output pipelining  
+DSP system_i/prep_accel_0/inst/grp_make_detection_fu_173/mul_32ns_34ns_65_1_1_U12/prep_only_accel_mul_32ns_34ns_65_1_1_Multiplier_3_U/p__1 multiplier stage system_i/prep_accel_0/inst/grp_make_detection_fu_173/mul_32ns_34ns_65_1_1_U12/prep_only_accel_mul_32ns_34ns_65_1_1_Multiplier_3_U/p__1/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#19 Warning
+MREG Output pipelining  
+DSP system_i/prep_accel_0/inst/grp_make_detection_fu_173/mul_32ns_34ns_65_1_1_U12/prep_only_accel_mul_32ns_34ns_65_1_1_Multiplier_3_U/p__2 multiplier stage system_i/prep_accel_0/inst/grp_make_detection_fu_173/mul_32ns_34ns_65_1_1_U12/prep_only_accel_mul_32ns_34ns_65_1_1_Multiplier_3_U/p__2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#20 Warning
+MREG Output pipelining  
+DSP system_i/prep_accel_0/inst/grp_make_detection_fu_173/mul_32ns_34ns_65_1_1_U28/prep_only_accel_mul_32ns_34ns_65_1_1_Multiplier_3_U/p multiplier stage system_i/prep_accel_0/inst/grp_make_detection_fu_173/mul_32ns_34ns_65_1_1_U28/prep_only_accel_mul_32ns_34ns_65_1_1_Multiplier_3_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#21 Warning
+MREG Output pipelining  
+DSP system_i/prep_accel_0/inst/grp_make_detection_fu_173/mul_32ns_34ns_65_1_1_U28/prep_only_accel_mul_32ns_34ns_65_1_1_Multiplier_3_U/p__0 multiplier stage system_i/prep_accel_0/inst/grp_make_detection_fu_173/mul_32ns_34ns_65_1_1_U28/prep_only_accel_mul_32ns_34ns_65_1_1_Multiplier_3_U/p__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#22 Warning
+MREG Output pipelining  
+DSP system_i/prep_accel_0/inst/grp_make_detection_fu_173/mul_32s_18s_32_1_1_U25/prep_only_accel_mul_32s_18s_32_1_1_Multiplier_5_U/p multiplier stage system_i/prep_accel_0/inst/grp_make_detection_fu_173/mul_32s_18s_32_1_1_U25/prep_only_accel_mul_32s_18s_32_1_1_Multiplier_5_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#23 Warning
+MREG Output pipelining  
+DSP system_i/prep_accel_0/inst/grp_make_detection_fu_173/mul_32s_18s_32_1_1_U26/prep_only_accel_mul_32s_18s_32_1_1_Multiplier_5_U/p multiplier stage system_i/prep_accel_0/inst/grp_make_detection_fu_173/mul_32s_18s_32_1_1_U26/prep_only_accel_mul_32s_18s_32_1_1_Multiplier_5_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#24 Warning
+MREG Output pipelining  
+DSP system_i/prep_accel_0/inst/grp_make_detection_fu_173/mul_32s_18s_32_1_1_U27/prep_only_accel_mul_32s_18s_32_1_1_Multiplier_5_U/p multiplier stage system_i/prep_accel_0/inst/grp_make_detection_fu_173/mul_32s_18s_32_1_1_U27/prep_only_accel_mul_32s_18s_32_1_1_Multiplier_5_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#25 Warning
+MREG Output pipelining  
+DSP system_i/prep_accel_0/inst/grp_make_detection_fu_173/mul_32s_8ns_32_1_1_U19/prep_only_accel_mul_32s_8ns_32_1_1_Multiplier_4_U/p multiplier stage system_i/prep_accel_0/inst/grp_make_detection_fu_173/mul_32s_8ns_32_1_1_U19/prep_only_accel_mul_32s_8ns_32_1_1_Multiplier_4_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#26 Warning
+MREG Output pipelining  
+DSP system_i/prep_accel_0/inst/grp_make_detection_fu_173/mul_32s_8ns_32_1_1_U20/prep_only_accel_mul_32s_8ns_32_1_1_Multiplier_4_U/p multiplier stage system_i/prep_accel_0/inst/grp_make_detection_fu_173/mul_32s_8ns_32_1_1_U20/prep_only_accel_mul_32s_8ns_32_1_1_Multiplier_4_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#27 Warning
+MREG Output pipelining  
+DSP system_i/prep_accel_0/inst/grp_make_detection_fu_173/mul_32s_8ns_32_1_1_U21/prep_only_accel_mul_32s_8ns_32_1_1_Multiplier_4_U/p multiplier stage system_i/prep_accel_0/inst/grp_make_detection_fu_173/mul_32s_8ns_32_1_1_U21/prep_only_accel_mul_32s_8ns_32_1_1_Multiplier_4_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#28 Warning
+MREG Output pipelining  
+DSP system_i/prep_accel_0/inst/grp_make_detection_fu_173/mul_32s_8ns_32_1_1_U22/prep_only_accel_mul_32s_8ns_32_1_1_Multiplier_4_U/p multiplier stage system_i/prep_accel_0/inst/grp_make_detection_fu_173/mul_32s_8ns_32_1_1_U22/prep_only_accel_mul_32s_8ns_32_1_1_Multiplier_4_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#29 Warning
+MREG Output pipelining  
+DSP system_i/prep_accel_0/inst/grp_make_detection_fu_173/mul_32s_8ns_32_1_1_U23/prep_only_accel_mul_32s_8ns_32_1_1_Multiplier_4_U/p multiplier stage system_i/prep_accel_0/inst/grp_make_detection_fu_173/mul_32s_8ns_32_1_1_U23/prep_only_accel_mul_32s_8ns_32_1_1_Multiplier_4_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#30 Warning
+MREG Output pipelining  
+DSP system_i/prep_accel_0/inst/grp_make_detection_fu_173/mul_32s_8ns_32_1_1_U24/prep_only_accel_mul_32s_8ns_32_1_1_Multiplier_4_U/p multiplier stage system_i/prep_accel_0/inst/grp_make_detection_fu_173/mul_32s_8ns_32_1_1_U24/prep_only_accel_mul_32s_8ns_32_1_1_Multiplier_4_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#31 Warning
+MREG Output pipelining  
+DSP system_i/prep_accel_0/inst/grp_make_detection_fu_173/mul_9ns_10ns_18_1_1_U10/prep_only_accel_mul_9ns_10ns_18_1_1_Multiplier_2_U/p multiplier stage system_i/prep_accel_0/inst/grp_make_detection_fu_173/mul_9ns_10ns_18_1_1_U10/prep_only_accel_mul_9ns_10ns_18_1_1_Multiplier_2_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#32 Warning
+MREG Output pipelining  
+DSP system_i/prep_accel_0/inst/grp_make_detection_fu_173/mul_9ns_10ns_18_1_1_U11/prep_only_accel_mul_9ns_10ns_18_1_1_Multiplier_2_U/p multiplier stage system_i/prep_accel_0/inst/grp_make_detection_fu_173/mul_9ns_10ns_18_1_1_U11/prep_only_accel_mul_9ns_10ns_18_1_1_Multiplier_2_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#33 Warning
+MREG Output pipelining  
+DSP system_i/prep_accel_0/inst/grp_make_detection_fu_173/mul_9ns_10ns_18_1_1_U9/prep_only_accel_mul_9ns_10ns_18_1_1_Multiplier_2_U/p multiplier stage system_i/prep_accel_0/inst/grp_make_detection_fu_173/mul_9ns_10ns_18_1_1_U9/prep_only_accel_mul_9ns_10ns_18_1_1_Multiplier_2_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#34 Warning
+MREG Output pipelining  
+DSP system_i/prep_accel_0/inst/grp_make_detection_fu_173/mul_ln19_1_reg_2210_reg multiplier stage system_i/prep_accel_0/inst/grp_make_detection_fu_173/mul_ln19_1_reg_2210_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#35 Warning
+MREG Output pipelining  
+DSP system_i/prep_accel_0/inst/grp_make_detection_fu_173/mul_ln54_1_reg_2689_reg multiplier stage system_i/prep_accel_0/inst/grp_make_detection_fu_173/mul_ln54_1_reg_2689_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#36 Warning
+MREG Output pipelining  
+DSP system_i/prep_accel_0/inst/grp_make_detection_fu_173/mul_ln54_2_reg_2704_reg multiplier stage system_i/prep_accel_0/inst/grp_make_detection_fu_173/mul_ln54_2_reg_2704_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#37 Warning
+MREG Output pipelining  
+DSP system_i/prep_accel_0/inst/grp_make_detection_fu_173/mul_ln54_3_reg_2694_reg multiplier stage system_i/prep_accel_0/inst/grp_make_detection_fu_173/mul_ln54_3_reg_2694_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#38 Warning
+MREG Output pipelining  
+DSP system_i/prep_accel_0/inst/grp_make_detection_fu_173/mul_ln54_4_reg_2699_reg multiplier stage system_i/prep_accel_0/inst/grp_make_detection_fu_173/mul_ln54_4_reg_2699_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#39 Warning
+MREG Output pipelining  
+DSP system_i/prep_accel_0/inst/grp_make_detection_fu_173/mul_ln54_5_reg_2709_reg multiplier stage system_i/prep_accel_0/inst/grp_make_detection_fu_173/mul_ln54_5_reg_2709_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#40 Warning
+MREG Output pipelining  
+DSP system_i/prep_accel_0/inst/grp_make_detection_fu_173/mul_ln54_reg_2684_reg multiplier stage system_i/prep_accel_0/inst/grp_make_detection_fu_173/mul_ln54_reg_2684_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#41 Warning
+MREG Output pipelining  
+DSP system_i/prep_accel_0/inst/grp_make_detection_fu_173/mul_ln58_reg_2749_reg multiplier stage system_i/prep_accel_0/inst/grp_make_detection_fu_173/mul_ln58_reg_2749_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#42 Warning
+MREG Output pipelining  
+DSP system_i/prep_accel_0/inst/grp_make_detection_fu_173/mul_ln58_reg_2749_reg__0 multiplier stage system_i/prep_accel_0/inst/grp_make_detection_fu_173/mul_ln58_reg_2749_reg__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#43 Warning
+MREG Output pipelining  
+DSP system_i/prep_accel_0/inst/grp_make_detection_fu_173/mul_mul_17ns_19ns_35_4_1_U30/prep_only_accel_mul_mul_17ns_19ns_35_4_1_DSP48_0_U/a_reg_reg multiplier stage system_i/prep_accel_0/inst/grp_make_detection_fu_173/mul_mul_17ns_19ns_35_4_1_U30/prep_only_accel_mul_mul_17ns_19ns_35_4_1_DSP48_0_U/a_reg_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#44 Warning
+MREG Output pipelining  
+DSP system_i/prep_accel_0/inst/grp_make_detection_fu_173/tmp7_reg_2308_reg multiplier stage system_i/prep_accel_0/inst/grp_make_detection_fu_173/tmp7_reg_2308_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#45 Warning
+MREG Output pipelining  
+DSP system_i/prep_accel_0/inst/grp_make_detection_fu_173/tmp9_0_reg_2729_reg multiplier stage system_i/prep_accel_0/inst/grp_make_detection_fu_173/tmp9_0_reg_2729_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#46 Warning
+MREG Output pipelining  
+DSP system_i/prep_accel_0/inst/grp_make_detection_fu_173/tmp9_1_reg_2734_reg multiplier stage system_i/prep_accel_0/inst/grp_make_detection_fu_173/tmp9_1_reg_2734_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#47 Warning
+MREG Output pipelining  
+DSP system_i/prep_accel_0/inst/grp_make_detection_fu_173/tmp9_2_reg_2739_reg multiplier stage system_i/prep_accel_0/inst/grp_make_detection_fu_173/tmp9_2_reg_2739_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#48 Warning
+MREG Output pipelining  
+DSP system_i/prep_accel_0/inst/mul_64s_12ns_64_5_1_U176/prep_only_accel_mul_64s_12ns_64_5_1_Multiplier_6_U/buff0_reg multiplier stage system_i/prep_accel_0/inst/mul_64s_12ns_64_5_1_U176/prep_only_accel_mul_64s_12ns_64_5_1_Multiplier_6_U/buff0_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOR-1#1 Warning
+Asynchronous load check  
+DSP system_i/audio_axi_0/inst/core/fir/sum output is connected to registers with an asynchronous reset (system_i/audio_axi_0/inst/core/fir/final_sum_reg[17]). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPOR-1#2 Warning
+Asynchronous load check  
+DSP system_i/audio_axi_0/inst/core/fir/sum output is connected to registers with an asynchronous reset (system_i/audio_axi_0/inst/core/fir/final_sum_reg[18]). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPOR-1#3 Warning
+Asynchronous load check  
+DSP system_i/audio_axi_0/inst/core/fir/sum output is connected to registers with an asynchronous reset (system_i/audio_axi_0/inst/core/fir/final_sum_reg[19]). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPOR-1#4 Warning
+Asynchronous load check  
+DSP system_i/audio_axi_0/inst/core/fir/sum output is connected to registers with an asynchronous reset (system_i/audio_axi_0/inst/core/fir/final_sum_reg[20]). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPOR-1#5 Warning
+Asynchronous load check  
+DSP system_i/audio_axi_0/inst/core/fir/sum output is connected to registers with an asynchronous reset (system_i/audio_axi_0/inst/core/fir/final_sum_reg[21]). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPOR-1#6 Warning
+Asynchronous load check  
+DSP system_i/audio_axi_0/inst/core/fir/sum output is connected to registers with an asynchronous reset (system_i/audio_axi_0/inst/core/fir/final_sum_reg[22]). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPOR-1#7 Warning
+Asynchronous load check  
+DSP system_i/audio_axi_0/inst/core/fir/sum output is connected to registers with an asynchronous reset (system_i/audio_axi_0/inst/core/fir/final_sum_reg[23]). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPOR-1#8 Warning
+Asynchronous load check  
+DSP system_i/audio_axi_0/inst/core/fir/sum output is connected to registers with an asynchronous reset (system_i/audio_axi_0/inst/core/fir/final_sum_reg[24]). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPOR-1#9 Warning
+Asynchronous load check  
+DSP system_i/audio_axi_0/inst/core/fir/sum output is connected to registers with an asynchronous reset (system_i/audio_axi_0/inst/core/fir/final_sum_reg[25]). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPOR-1#10 Warning
+Asynchronous load check  
+DSP system_i/audio_axi_0/inst/core/fir/sum output is connected to registers with an asynchronous reset (system_i/audio_axi_0/inst/core/fir/final_sum_reg[26]). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPOR-1#11 Warning
+Asynchronous load check  
+DSP system_i/audio_axi_0/inst/core/fir/sum output is connected to registers with an asynchronous reset (system_i/audio_axi_0/inst/core/fir/final_sum_reg[27]). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPOR-1#12 Warning
+Asynchronous load check  
+DSP system_i/audio_axi_0/inst/core/fir/sum output is connected to registers with an asynchronous reset (system_i/audio_axi_0/inst/core/fir/final_sum_reg[28]). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPOR-1#13 Warning
+Asynchronous load check  
+DSP system_i/audio_axi_0/inst/core/fir/sum output is connected to registers with an asynchronous reset (system_i/audio_axi_0/inst/core/fir/final_sum_reg[29]). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPOR-1#14 Warning
+Asynchronous load check  
+DSP system_i/audio_axi_0/inst/core/fir/sum output is connected to registers with an asynchronous reset (system_i/audio_axi_0/inst/core/fir/final_sum_reg[30]). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPOR-1#15 Warning
+Asynchronous load check  
+DSP system_i/audio_axi_0/inst/core/fir/sum output is connected to registers with an asynchronous reset (system_i/audio_axi_0/inst/core/fir/final_sum_reg[31]). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPOR-1#16 Warning
+Asynchronous load check  
+DSP system_i/audio_axi_0/inst/core/fir/sum output is connected to registers with an asynchronous reset (system_i/audio_axi_0/inst/core/fir/final_sum_reg[32]). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPOR-1#17 Warning
+Asynchronous load check  
+DSP system_i/audio_axi_0/inst/core/fir/sum output is connected to registers with an asynchronous reset (system_i/audio_axi_0/inst/core/fir/final_sum_reg[33]). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPOR-1#18 Warning
+Asynchronous load check  
+DSP system_i/audio_axi_0/inst/core/fir/sum output is connected to registers with an asynchronous reset (system_i/audio_axi_0/inst/core/fir/final_sum_reg[34]). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPOR-1#19 Warning
+Asynchronous load check  
+DSP system_i/audio_axi_0/inst/core/fir/sum output is connected to registers with an asynchronous reset (system_i/audio_axi_0/inst/core/fir/final_sum_reg[35]). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPOR-1#20 Warning
+Asynchronous load check  
+DSP system_i/audio_axi_0/inst/core/fir/sum output is connected to registers with an asynchronous reset (system_i/audio_axi_0/inst/core/fir/final_sum_reg[36]). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPOR-1#21 Warning
+Asynchronous load check  
+DSP system_i/audio_axi_0/inst/core/fir/sum output is connected to registers with an asynchronous reset (system_i/audio_axi_0/inst/core/fir/final_sum_reg[37]). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPOR-1#22 Warning
+Asynchronous load check  
+DSP system_i/audio_axi_0/inst/core/fir/sum output is connected to registers with an asynchronous reset (system_i/audio_axi_0/inst/core/fir/final_sum_reg[38]). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPOR-1#23 Warning
+Asynchronous load check  
+DSP system_i/audio_axi_0/inst/core/fir/sum output is connected to registers with an asynchronous reset (system_i/audio_axi_0/inst/core/fir/final_sum_reg[39]). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPOR-1#24 Warning
+Asynchronous load check  
+DSP system_i/audio_axi_0/inst/core/fir/sum output is connected to registers with an asynchronous reset (system_i/audio_axi_0/inst/core/fir/final_sum_reg[40]). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPOR-1#25 Warning
+Asynchronous load check  
+DSP system_i/audio_axi_0/inst/core/fir/sum output is connected to registers with an asynchronous reset (system_i/audio_axi_0/inst/core/fir/final_sum_reg[41]). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPOR-1#26 Warning
+Asynchronous load check  
+DSP system_i/audio_axi_0/inst/core/fir/sum output is connected to registers with an asynchronous reset (system_i/audio_axi_0/inst/core/fir/final_sum_reg[42]). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPOR-1#27 Warning
+Asynchronous load check  
+DSP system_i/audio_axi_0/inst/core/fir/sum output is connected to registers with an asynchronous reset (system_i/audio_axi_0/inst/core/fir/final_sum_reg[43]). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPOR-1#28 Warning
+Asynchronous load check  
+DSP system_i/audio_axi_0/inst/core/fir/sum output is connected to registers with an asynchronous reset (system_i/audio_axi_0/inst/core/fir/final_sum_reg[44]). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPOR-1#29 Warning
+Asynchronous load check  
+DSP system_i/audio_axi_0/inst/core/fir/sum output is connected to registers with an asynchronous reset (system_i/audio_axi_0/inst/core/fir/final_sum_reg[45]). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPOR-1#30 Warning
+Asynchronous load check  
+DSP system_i/audio_axi_0/inst/core/fir/sum output is connected to registers with an asynchronous reset (system_i/audio_axi_0/inst/core/fir/final_sum_reg[46]). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPOR-1#31 Warning
+Asynchronous load check  
+DSP system_i/audio_axi_0/inst/core/fir/sum output is connected to registers with an asynchronous reset (system_i/audio_axi_0/inst/core/fir/final_sum_reg[47]). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+PLCK-12#1 Warning
+Clock Placer Checks  
+Poor placement for routing between an IO pin and BUFG. 
+Resolution: Poor placement of an IO pin and a BUFG has resulted in the router using a non-dedicated path between the two.  There are several things that could trigger this DRC, each of which can cause unpredictable clock insertion delays that result in poor timing.  This DRC could be caused by any of the following: (a) a clock port was placed on a pin that is not a CCIO-pin (b)the BUFG has not been placed in the same half of the device or SLR as the CCIO-pin (c) a single ended clock has been placed on the N-Side of a differential pair CCIO-pin.
+ This is normally an ERROR but the CLOCK_DEDICATED_ROUTE constraint is set to FALSE allowing your design to continue. The use of this override is highly discouraged as it may lead to very poor timing results. It is recommended that this error condition be corrected in the design.
+
+	aud_bclk_IBUF_inst (IBUF.O) is locked to M18
+	aud_bclk_IBUF_BUFG_inst (BUFG.I) is provisionally placed by clockplacer on BUFGCTRL_X0Y6
+
+Related violations: <none>
+
+PLCK-12#2 Warning
+Clock Placer Checks  
+Poor placement for routing between an IO pin and BUFG. 
+Resolution: Poor placement of an IO pin and a BUFG has resulted in the router using a non-dedicated path between the two.  There are several things that could trigger this DRC, each of which can cause unpredictable clock insertion delays that result in poor timing.  This DRC could be caused by any of the following: (a) a clock port was placed on a pin that is not a CCIO-pin (b)the BUFG has not been placed in the same half of the device or SLR as the CCIO-pin (c) a single ended clock has been placed on the N-Side of a differential pair CCIO-pin.
+ This is normally an ERROR but the CLOCK_DEDICATED_ROUTE constraint is set to FALSE allowing your design to continue. The use of this override is highly discouraged as it may lead to very poor timing results. It is recommended that this error condition be corrected in the design.
+
+	cam_pclk_IBUF_inst (IBUF.O) is locked to W14
+	cam_pclk_IBUF_BUFG_inst (BUFG.I) is provisionally placed by clockplacer on BUFGCTRL_X0Y4
+
+Related violations: <none>
+
+REQP-1839#1 Warning
+RAMB36 async control check  
+The RAMB36E1 system_i/audio_axi_0/inst/memory_reg_0 has an input control pin system_i/audio_axi_0/inst/memory_reg_0/ENARDEN (net: system_i/audio_axi_0/inst/memory_reg_0_ENARDEN_cooolgate_en_sig_26) which is driven by a register (system_i/audio_axi_0/inst/core/fir/valid_out_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#2 Warning
+RAMB36 async control check  
+The RAMB36E1 system_i/audio_axi_0/inst/memory_reg_1 has an input control pin system_i/audio_axi_0/inst/memory_reg_1/ENARDEN (net: system_i/audio_axi_0/inst/memory_reg_1_ENARDEN_cooolgate_en_sig_27) which is driven by a register (system_i/audio_axi_0/inst/core/fir/valid_out_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#3 Warning
+RAMB36 async control check  
+The RAMB36E1 system_i/v_vid_in_axi4s_0/inst/COUPLER_INST/generate_async_fifo.FIFO_INST/XPM_FIFO_ASYNC_INST/gnuram_async_fifo.xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg has an input control pin system_i/v_vid_in_axi4s_0/inst/COUPLER_INST/generate_async_fifo.FIFO_INST/XPM_FIFO_ASYNC_INST/gnuram_async_fifo.xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg/ENARDEN (net: system_i/v_vid_in_axi4s_0/inst/COUPLER_INST/generate_async_fifo.FIFO_INST/XPM_FIFO_ASYNC_INST/gnuram_async_fifo.xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/wea[0]) which is driven by a register (system_i/ov5640_capture_data_0/inst/byte_flag_d0_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#4 Warning
+RAMB36 async control check  
+The RAMB36E1 system_i/v_vid_in_axi4s_0/inst/COUPLER_INST/generate_async_fifo.FIFO_INST/XPM_FIFO_ASYNC_INST/gnuram_async_fifo.xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg has an input control pin system_i/v_vid_in_axi4s_0/inst/COUPLER_INST/generate_async_fifo.FIFO_INST/XPM_FIFO_ASYNC_INST/gnuram_async_fifo.xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg/ENARDEN (net: system_i/v_vid_in_axi4s_0/inst/COUPLER_INST/generate_async_fifo.FIFO_INST/XPM_FIFO_ASYNC_INST/gnuram_async_fifo.xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/wea[0]) which is driven by a register (system_i/ov5640_capture_data_0/inst/cam_href_d1_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#5 Warning
+RAMB36 async control check  
+The RAMB36E1 system_i/v_vid_in_axi4s_0/inst/COUPLER_INST/generate_async_fifo.FIFO_INST/XPM_FIFO_ASYNC_INST/gnuram_async_fifo.xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg has an input control pin system_i/v_vid_in_axi4s_0/inst/COUPLER_INST/generate_async_fifo.FIFO_INST/XPM_FIFO_ASYNC_INST/gnuram_async_fifo.xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg/ENARDEN (net: system_i/v_vid_in_axi4s_0/inst/COUPLER_INST/generate_async_fifo.FIFO_INST/XPM_FIFO_ASYNC_INST/gnuram_async_fifo.xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/wea[0]) which is driven by a register (system_i/ov5640_capture_data_0/inst/wait_done_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+RTSTAT-10#1 Warning
+No routable loads  
+139 net(s) have no routable loads. The problem bus(es) and/or net(s) are dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i,
+dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_CTL/ctl_reg[2:0],
+dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_CTL/ctl_reg_en_2[1],
+system_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i,
+system_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i,
+system_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i,
+system_i/axi_mem_intercon/s01_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i,
+system_i/axi_mem_intercon/s01_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i,
+system_i/axi_mem_intercon/s01_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i,
+system_i/cnn_ps_if_0/inst/core/frontend/g_conv2_post[0].pool_layer_layer2_inst/fifo_generator_0_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i,
+system_i/cnn_ps_if_0/inst/core/frontend/g_conv2_post[1].pool_layer_layer2_inst/fifo_generator_0_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i,
+system_i/cnn_ps_if_0/inst/core/frontend/pool_layer_layer1_inst/fifo_generator_0_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i,
+system_i/prep_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i,
+system_i/prep_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i,
+system_i/prep_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i
+ (the first 15 of 101 listed).
+Related violations: <none>
+
+REQP-165#1 Advisory
+writefirst  
+Synchronous clocking is detected for BRAM (system_i/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_1) in SDP mode with WRITE_FIRST write-mode. This is the preferred mode for best power characteristics, however it may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-165#2 Advisory
+writefirst  
+Synchronous clocking is detected for BRAM (system_i/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_1) in SDP mode with WRITE_FIRST write-mode. This is the preferred mode for best power characteristics, however it may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-165#3 Advisory
+writefirst  
+Synchronous clocking is detected for BRAM (system_i/cnn_ps_if_0/inst/core/frontend/data_ram_layer1_inst/genblk1[0].image_data_ram_inst/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram) in SDP mode with WRITE_FIRST write-mode. This is the preferred mode for best power characteristics, however it may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-165#4 Advisory
+writefirst  
+Synchronous clocking is detected for BRAM (system_i/cnn_ps_if_0/inst/core/frontend/data_ram_layer1_inst/genblk1[10].image_data_ram_inst/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram) in SDP mode with WRITE_FIRST write-mode. This is the preferred mode for best power characteristics, however it may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-165#5 Advisory
+writefirst  
+Synchronous clocking is detected for BRAM (system_i/cnn_ps_if_0/inst/core/frontend/data_ram_layer1_inst/genblk1[11].image_data_ram_inst/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram) in SDP mode with WRITE_FIRST write-mode. This is the preferred mode for best power characteristics, however it may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-165#6 Advisory
+writefirst  
+Synchronous clocking is detected for BRAM (system_i/cnn_ps_if_0/inst/core/frontend/data_ram_layer1_inst/genblk1[12].image_data_ram_inst/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram) in SDP mode with WRITE_FIRST write-mode. This is the preferred mode for best power characteristics, however it may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-165#7 Advisory
+writefirst  
+Synchronous clocking is detected for BRAM (system_i/cnn_ps_if_0/inst/core/frontend/data_ram_layer1_inst/genblk1[13].image_data_ram_inst/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram) in SDP mode with WRITE_FIRST write-mode. This is the preferred mode for best power characteristics, however it may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-165#8 Advisory
+writefirst  
+Synchronous clocking is detected for BRAM (system_i/cnn_ps_if_0/inst/core/frontend/data_ram_layer1_inst/genblk1[14].image_data_ram_inst/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram) in SDP mode with WRITE_FIRST write-mode. This is the preferred mode for best power characteristics, however it may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-165#9 Advisory
+writefirst  
+Synchronous clocking is detected for BRAM (system_i/cnn_ps_if_0/inst/core/frontend/data_ram_layer1_inst/genblk1[15].image_data_ram_inst/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram) in SDP mode with WRITE_FIRST write-mode. This is the preferred mode for best power characteristics, however it may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-165#10 Advisory
+writefirst  
+Synchronous clocking is detected for BRAM (system_i/cnn_ps_if_0/inst/core/frontend/data_ram_layer1_inst/genblk1[16].image_data_ram_inst/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram) in SDP mode with WRITE_FIRST write-mode. This is the preferred mode for best power characteristics, however it may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-165#11 Advisory
+writefirst  
+Synchronous clocking is detected for BRAM (system_i/cnn_ps_if_0/inst/core/frontend/data_ram_layer1_inst/genblk1[17].image_data_ram_inst/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram) in SDP mode with WRITE_FIRST write-mode. This is the preferred mode for best power characteristics, however it may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-165#12 Advisory
+writefirst  
+Synchronous clocking is detected for BRAM (system_i/cnn_ps_if_0/inst/core/frontend/data_ram_layer1_inst/genblk1[18].image_data_ram_inst/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram) in SDP mode with WRITE_FIRST write-mode. This is the preferred mode for best power characteristics, however it may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-165#13 Advisory
+writefirst  
+Synchronous clocking is detected for BRAM (system_i/cnn_ps_if_0/inst/core/frontend/data_ram_layer1_inst/genblk1[19].image_data_ram_inst/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram) in SDP mode with WRITE_FIRST write-mode. This is the preferred mode for best power characteristics, however it may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-165#14 Advisory
+writefirst  
+Synchronous clocking is detected for BRAM (system_i/cnn_ps_if_0/inst/core/frontend/data_ram_layer1_inst/genblk1[1].image_data_ram_inst/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram) in SDP mode with WRITE_FIRST write-mode. This is the preferred mode for best power characteristics, however it may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-165#15 Advisory
+writefirst  
+Synchronous clocking is detected for BRAM (system_i/cnn_ps_if_0/inst/core/frontend/data_ram_layer1_inst/genblk1[20].image_data_ram_inst/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram) in SDP mode with WRITE_FIRST write-mode. This is the preferred mode for best power characteristics, however it may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-165#16 Advisory
+writefirst  
+Synchronous clocking is detected for BRAM (system_i/cnn_ps_if_0/inst/core/frontend/data_ram_layer1_inst/genblk1[21].image_data_ram_inst/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram) in SDP mode with WRITE_FIRST write-mode. This is the preferred mode for best power characteristics, however it may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-165#17 Advisory
+writefirst  
+Synchronous clocking is detected for BRAM (system_i/cnn_ps_if_0/inst/core/frontend/data_ram_layer1_inst/genblk1[22].image_data_ram_inst/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram) in SDP mode with WRITE_FIRST write-mode. This is the preferred mode for best power characteristics, however it may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-165#18 Advisory
+writefirst  
+Synchronous clocking is detected for BRAM (system_i/cnn_ps_if_0/inst/core/frontend/data_ram_layer1_inst/genblk1[23].image_data_ram_inst/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram) in SDP mode with WRITE_FIRST write-mode. This is the preferred mode for best power characteristics, however it may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-165#19 Advisory
+writefirst  
+Synchronous clocking is detected for BRAM (system_i/cnn_ps_if_0/inst/core/frontend/data_ram_layer1_inst/genblk1[24].image_data_ram_inst/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram) in SDP mode with WRITE_FIRST write-mode. This is the preferred mode for best power characteristics, however it may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-165#20 Advisory
+writefirst  
+Synchronous clocking is detected for BRAM (system_i/cnn_ps_if_0/inst/core/frontend/data_ram_layer1_inst/genblk1[25].image_data_ram_inst/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram) in SDP mode with WRITE_FIRST write-mode. This is the preferred mode for best power characteristics, however it may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-165#21 Advisory
+writefirst  
+Synchronous clocking is detected for BRAM (system_i/cnn_ps_if_0/inst/core/frontend/data_ram_layer1_inst/genblk1[26].image_data_ram_inst/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram) in SDP mode with WRITE_FIRST write-mode. This is the preferred mode for best power characteristics, however it may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-165#22 Advisory
+writefirst  
+Synchronous clocking is detected for BRAM (system_i/cnn_ps_if_0/inst/core/frontend/data_ram_layer1_inst/genblk1[27].image_data_ram_inst/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram) in SDP mode with WRITE_FIRST write-mode. This is the preferred mode for best power characteristics, however it may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-165#23 Advisory
+writefirst  
+Synchronous clocking is detected for BRAM (system_i/cnn_ps_if_0/inst/core/frontend/data_ram_layer1_inst/genblk1[28].image_data_ram_inst/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram) in SDP mode with WRITE_FIRST write-mode. This is the preferred mode for best power characteristics, however it may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-165#24 Advisory
+writefirst  
+Synchronous clocking is detected for BRAM (system_i/cnn_ps_if_0/inst/core/frontend/data_ram_layer1_inst/genblk1[29].image_data_ram_inst/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram) in SDP mode with WRITE_FIRST write-mode. This is the preferred mode for best power characteristics, however it may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-165#25 Advisory
+writefirst  
+Synchronous clocking is detected for BRAM (system_i/cnn_ps_if_0/inst/core/frontend/data_ram_layer1_inst/genblk1[2].image_data_ram_inst/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram) in SDP mode with WRITE_FIRST write-mode. This is the preferred mode for best power characteristics, however it may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-165#26 Advisory
+writefirst  
+Synchronous clocking is detected for BRAM (system_i/cnn_ps_if_0/inst/core/frontend/data_ram_layer1_inst/genblk1[30].image_data_ram_inst/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram) in SDP mode with WRITE_FIRST write-mode. This is the preferred mode for best power characteristics, however it may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-165#27 Advisory
+writefirst  
+Synchronous clocking is detected for BRAM (system_i/cnn_ps_if_0/inst/core/frontend/data_ram_layer1_inst/genblk1[31].image_data_ram_inst/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram) in SDP mode with WRITE_FIRST write-mode. This is the preferred mode for best power characteristics, however it may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-165#28 Advisory
+writefirst  
+Synchronous clocking is detected for BRAM (system_i/cnn_ps_if_0/inst/core/frontend/data_ram_layer1_inst/genblk1[32].image_data_ram_inst/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram) in SDP mode with WRITE_FIRST write-mode. This is the preferred mode for best power characteristics, however it may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-165#29 Advisory
+writefirst  
+Synchronous clocking is detected for BRAM (system_i/cnn_ps_if_0/inst/core/frontend/data_ram_layer1_inst/genblk1[33].image_data_ram_inst/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram) in SDP mode with WRITE_FIRST write-mode. This is the preferred mode for best power characteristics, however it may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-165#30 Advisory
+writefirst  
+Synchronous clocking is detected for BRAM (system_i/cnn_ps_if_0/inst/core/frontend/data_ram_layer1_inst/genblk1[34].image_data_ram_inst/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram) in SDP mode with WRITE_FIRST write-mode. This is the preferred mode for best power characteristics, however it may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-165#31 Advisory
+writefirst  
+Synchronous clocking is detected for BRAM (system_i/cnn_ps_if_0/inst/core/frontend/data_ram_layer1_inst/genblk1[35].image_data_ram_inst/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram) in SDP mode with WRITE_FIRST write-mode. This is the preferred mode for best power characteristics, however it may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-165#32 Advisory
+writefirst  
+Synchronous clocking is detected for BRAM (system_i/cnn_ps_if_0/inst/core/frontend/data_ram_layer1_inst/genblk1[36].image_data_ram_inst/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram) in SDP mode with WRITE_FIRST write-mode. This is the preferred mode for best power characteristics, however it may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-165#33 Advisory
+writefirst  
+Synchronous clocking is detected for BRAM (system_i/cnn_ps_if_0/inst/core/frontend/data_ram_layer1_inst/genblk1[37].image_data_ram_inst/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram) in SDP mode with WRITE_FIRST write-mode. This is the preferred mode for best power characteristics, however it may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-165#34 Advisory
+writefirst  
+Synchronous clocking is detected for BRAM (system_i/cnn_ps_if_0/inst/core/frontend/data_ram_layer1_inst/genblk1[38].image_data_ram_inst/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram) in SDP mode with WRITE_FIRST write-mode. This is the preferred mode for best power characteristics, however it may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-165#35 Advisory
+writefirst  
+Synchronous clocking is detected for BRAM (system_i/cnn_ps_if_0/inst/core/frontend/data_ram_layer1_inst/genblk1[39].image_data_ram_inst/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram) in SDP mode with WRITE_FIRST write-mode. This is the preferred mode for best power characteristics, however it may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-165#36 Advisory
+writefirst  
+Synchronous clocking is detected for BRAM (system_i/cnn_ps_if_0/inst/core/frontend/data_ram_layer1_inst/genblk1[3].image_data_ram_inst/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram) in SDP mode with WRITE_FIRST write-mode. This is the preferred mode for best power characteristics, however it may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-165#37 Advisory
+writefirst  
+Synchronous clocking is detected for BRAM (system_i/cnn_ps_if_0/inst/core/frontend/data_ram_layer1_inst/genblk1[40].image_data_ram_inst/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram) in SDP mode with WRITE_FIRST write-mode. This is the preferred mode for best power characteristics, however it may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-165#38 Advisory
+writefirst  
+Synchronous clocking is detected for BRAM (system_i/cnn_ps_if_0/inst/core/frontend/data_ram_layer1_inst/genblk1[41].image_data_ram_inst/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram) in SDP mode with WRITE_FIRST write-mode. This is the preferred mode for best power characteristics, however it may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-165#39 Advisory
+writefirst  
+Synchronous clocking is detected for BRAM (system_i/cnn_ps_if_0/inst/core/frontend/data_ram_layer1_inst/genblk1[42].image_data_ram_inst/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram) in SDP mode with WRITE_FIRST write-mode. This is the preferred mode for best power characteristics, however it may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-165#40 Advisory
+writefirst  
+Synchronous clocking is detected for BRAM (system_i/cnn_ps_if_0/inst/core/frontend/data_ram_layer1_inst/genblk1[43].image_data_ram_inst/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram) in SDP mode with WRITE_FIRST write-mode. This is the preferred mode for best power characteristics, however it may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-165#41 Advisory
+writefirst  
+Synchronous clocking is detected for BRAM (system_i/cnn_ps_if_0/inst/core/frontend/data_ram_layer1_inst/genblk1[44].image_data_ram_inst/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram) in SDP mode with WRITE_FIRST write-mode. This is the preferred mode for best power characteristics, however it may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-165#42 Advisory
+writefirst  
+Synchronous clocking is detected for BRAM (system_i/cnn_ps_if_0/inst/core/frontend/data_ram_layer1_inst/genblk1[45].image_data_ram_inst/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram) in SDP mode with WRITE_FIRST write-mode. This is the preferred mode for best power characteristics, however it may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-165#43 Advisory
+writefirst  
+Synchronous clocking is detected for BRAM (system_i/cnn_ps_if_0/inst/core/frontend/data_ram_layer1_inst/genblk1[46].image_data_ram_inst/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram) in SDP mode with WRITE_FIRST write-mode. This is the preferred mode for best power characteristics, however it may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-165#44 Advisory
+writefirst  
+Synchronous clocking is detected for BRAM (system_i/cnn_ps_if_0/inst/core/frontend/data_ram_layer1_inst/genblk1[47].image_data_ram_inst/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram) in SDP mode with WRITE_FIRST write-mode. This is the preferred mode for best power characteristics, however it may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-165#45 Advisory
+writefirst  
+Synchronous clocking is detected for BRAM (system_i/cnn_ps_if_0/inst/core/frontend/data_ram_layer1_inst/genblk1[48].image_data_ram_inst/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram) in SDP mode with WRITE_FIRST write-mode. This is the preferred mode for best power characteristics, however it may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-165#46 Advisory
+writefirst  
+Synchronous clocking is detected for BRAM (system_i/cnn_ps_if_0/inst/core/frontend/data_ram_layer1_inst/genblk1[49].image_data_ram_inst/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram) in SDP mode with WRITE_FIRST write-mode. This is the preferred mode for best power characteristics, however it may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-165#47 Advisory
+writefirst  
+Synchronous clocking is detected for BRAM (system_i/cnn_ps_if_0/inst/core/frontend/data_ram_layer1_inst/genblk1[4].image_data_ram_inst/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram) in SDP mode with WRITE_FIRST write-mode. This is the preferred mode for best power characteristics, however it may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-165#48 Advisory
+writefirst  
+Synchronous clocking is detected for BRAM (system_i/cnn_ps_if_0/inst/core/frontend/data_ram_layer1_inst/genblk1[50].image_data_ram_inst/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram) in SDP mode with WRITE_FIRST write-mode. This is the preferred mode for best power characteristics, however it may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-165#49 Advisory
+writefirst  
+Synchronous clocking is detected for BRAM (system_i/cnn_ps_if_0/inst/core/frontend/data_ram_layer1_inst/genblk1[51].image_data_ram_inst/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram) in SDP mode with WRITE_FIRST write-mode. This is the preferred mode for best power characteristics, however it may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-165#50 Advisory
+writefirst  
+Synchronous clocking is detected for BRAM (system_i/cnn_ps_if_0/inst/core/frontend/data_ram_layer1_inst/genblk1[52].image_data_ram_inst/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram) in SDP mode with WRITE_FIRST write-mode. This is the preferred mode for best power characteristics, however it may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-165#51 Advisory
+writefirst  
+Synchronous clocking is detected for BRAM (system_i/cnn_ps_if_0/inst/core/frontend/data_ram_layer1_inst/genblk1[53].image_data_ram_inst/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram) in SDP mode with WRITE_FIRST write-mode. This is the preferred mode for best power characteristics, however it may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-165#52 Advisory
+writefirst  
+Synchronous clocking is detected for BRAM (system_i/cnn_ps_if_0/inst/core/frontend/data_ram_layer1_inst/genblk1[54].image_data_ram_inst/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram) in SDP mode with WRITE_FIRST write-mode. This is the preferred mode for best power characteristics, however it may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-165#53 Advisory
+writefirst  
+Synchronous clocking is detected for BRAM (system_i/cnn_ps_if_0/inst/core/frontend/data_ram_layer1_inst/genblk1[55].image_data_ram_inst/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram) in SDP mode with WRITE_FIRST write-mode. This is the preferred mode for best power characteristics, however it may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-165#54 Advisory
+writefirst  
+Synchronous clocking is detected for BRAM (system_i/cnn_ps_if_0/inst/core/frontend/data_ram_layer1_inst/genblk1[56].image_data_ram_inst/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram) in SDP mode with WRITE_FIRST write-mode. This is the preferred mode for best power characteristics, however it may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-165#55 Advisory
+writefirst  
+Synchronous clocking is detected for BRAM (system_i/cnn_ps_if_0/inst/core/frontend/data_ram_layer1_inst/genblk1[57].image_data_ram_inst/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram) in SDP mode with WRITE_FIRST write-mode. This is the preferred mode for best power characteristics, however it may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-165#56 Advisory
+writefirst  
+Synchronous clocking is detected for BRAM (system_i/cnn_ps_if_0/inst/core/frontend/data_ram_layer1_inst/genblk1[58].image_data_ram_inst/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram) in SDP mode with WRITE_FIRST write-mode. This is the preferred mode for best power characteristics, however it may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-165#57 Advisory
+writefirst  
+Synchronous clocking is detected for BRAM (system_i/cnn_ps_if_0/inst/core/frontend/data_ram_layer1_inst/genblk1[59].image_data_ram_inst/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram) in SDP mode with WRITE_FIRST write-mode. This is the preferred mode for best power characteristics, however it may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-165#58 Advisory
+writefirst  
+Synchronous clocking is detected for BRAM (system_i/cnn_ps_if_0/inst/core/frontend/data_ram_layer1_inst/genblk1[5].image_data_ram_inst/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram) in SDP mode with WRITE_FIRST write-mode. This is the preferred mode for best power characteristics, however it may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-165#59 Advisory
+writefirst  
+Synchronous clocking is detected for BRAM (system_i/cnn_ps_if_0/inst/core/frontend/data_ram_layer1_inst/genblk1[60].image_data_ram_inst/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram) in SDP mode with WRITE_FIRST write-mode. This is the preferred mode for best power characteristics, however it may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-165#60 Advisory
+writefirst  
+Synchronous clocking is detected for BRAM (system_i/cnn_ps_if_0/inst/core/frontend/data_ram_layer1_inst/genblk1[61].image_data_ram_inst/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram) in SDP mode with WRITE_FIRST write-mode. This is the preferred mode for best power characteristics, however it may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-165#61 Advisory
+writefirst  
+Synchronous clocking is detected for BRAM (system_i/cnn_ps_if_0/inst/core/frontend/data_ram_layer1_inst/genblk1[62].image_data_ram_inst/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram) in SDP mode with WRITE_FIRST write-mode. This is the preferred mode for best power characteristics, however it may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-165#62 Advisory
+writefirst  
+Synchronous clocking is detected for BRAM (system_i/cnn_ps_if_0/inst/core/frontend/data_ram_layer1_inst/genblk1[63].image_data_ram_inst/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram) in SDP mode with WRITE_FIRST write-mode. This is the preferred mode for best power characteristics, however it may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-165#63 Advisory
+writefirst  
+Synchronous clocking is detected for BRAM (system_i/cnn_ps_if_0/inst/core/frontend/data_ram_layer1_inst/genblk1[6].image_data_ram_inst/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram) in SDP mode with WRITE_FIRST write-mode. This is the preferred mode for best power characteristics, however it may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-165#64 Advisory
+writefirst  
+Synchronous clocking is detected for BRAM (system_i/cnn_ps_if_0/inst/core/frontend/data_ram_layer1_inst/genblk1[7].image_data_ram_inst/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram) in SDP mode with WRITE_FIRST write-mode. This is the preferred mode for best power characteristics, however it may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-165#65 Advisory
+writefirst  
+Synchronous clocking is detected for BRAM (system_i/cnn_ps_if_0/inst/core/frontend/data_ram_layer1_inst/genblk1[8].image_data_ram_inst/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram) in SDP mode with WRITE_FIRST write-mode. This is the preferred mode for best power characteristics, however it may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-165#66 Advisory
+writefirst  
+Synchronous clocking is detected for BRAM (system_i/cnn_ps_if_0/inst/core/frontend/data_ram_layer1_inst/genblk1[9].image_data_ram_inst/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram) in SDP mode with WRITE_FIRST write-mode. This is the preferred mode for best power characteristics, however it may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-181#1 Advisory
+writefirst  
+Synchronous clocking is detected for BRAM (system_i/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0) in SDP mode with WRITE_FIRST write-mode. This is the preferred mode for best power characteristics, however it may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-181#2 Advisory
+writefirst  
+Synchronous clocking is detected for BRAM (system_i/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0) in SDP mode with WRITE_FIRST write-mode. This is the preferred mode for best power characteristics, however it may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-181#3 Advisory
+writefirst  
+Synchronous clocking is detected for BRAM (system_i/cnn_ps_if_0/inst/core/loader/cache/memory/xpm_memory_base_inst/gen_wr_a.gen_word_wide.mem_reg_bram_0) in SDP mode with WRITE_FIRST write-mode. This is the preferred mode for best power characteristics, however it may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+

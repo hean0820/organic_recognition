@@ -1,0 +1,7 @@
+{
+  "expected_arrays_generated_offline": true,
+  "hardware_tested": false,
+  "reference_manifest_sha256": "d2eb77fe445dfcfa9b01346000085c0840a6e109c9fd0583724574d129ddf176",
+  "source_frame_sha256": "bba8da643745d828913d57ffa94762f42d216e97afc6910b7a7e2175fa6b3d39",
+  "source_input_sha256": "47a9a896fcaf993fe66c164a00f2072075c6fad2309166e2bb1c7faff945196a"
+}

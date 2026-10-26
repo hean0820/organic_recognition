@@ -1,0 +1,102 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Thu Oct 22 23:24:13 2026
+| Host         : LAPTOP-R6A4SUDB running 64-bit major release  (build 9200)
+| Command      : report_clocks -file D:/qiansai/stage6_guide/rebuild_42754_20261022_02/run/output/routed_clocks.rpt
+| Design       : system_wrapper
+| Device       : 7z020-clg400
+| Speed File   : -2  PRODUCTION 1.12 2019-11-22
+--------------------------------------------------------------------------------------------------------------------
+
+Clock Report
+
+
+Attributes
+  P: Propagated
+  G: Generated
+  A: Auto-derived
+  R: Renamed
+  V: Virtual
+  I: Inverted
+  S: Pin phase-shifted with Latency mode
+
+Clock                                                                                       Period(ns)  Waveform(ns)     Attributes  Sources
+aud_bclk                                                                                    80.000      {0.000 40.000}   P           {aud_bclk}
+cam_pclk                                                                                    13.888      {0.000 6.944}    P           {cam_pclk}
+clk_fpga_0                                                                                  10.000      {0.000 5.000}    P           {system_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]}
+clk_fpga_1                                                                                  6.666       {0.000 3.333}    P           {system_i/processing_system7_0/inst/PS7_i/FCLKCLK[1]}
+dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_inst/SERIES7_BSCAN.bscan_inst/TCK  33.000      {0.000 16.500}   P           {dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_inst/SERIES7_BSCAN.bscan_inst/TCK}
+system_i/audio_clock/inst/clk_in1                                                           10.000      {0.000 5.000}    P           {system_i/audio_clock/inst/clk_in1}
+system_i/clk_wiz_0/inst/clk_in1                                                             10.000      {0.000 5.000}    P           {system_i/clk_wiz_0/inst/clk_in1}
+codec_i2c                                                                                   1000.000    {0.000 500.000}  P,G         {system_i/audio_axi_0/inst/core/codec/u_i2c_dri/dri_clk_reg/Q}
+clk_out1_system_audio_clock_0                                                               83.333      {0.000 41.667}   P,G,A       {system_i/audio_clock/inst/mmcm_adv_inst/CLKOUT0}
+clk_out1_system_clk_wiz_0_0                                                                 13.468      {0.000 6.734}    P,G,A       {system_i/clk_wiz_0/inst/mmcm_adv_inst/CLKOUT0}
+clk_out2_system_clk_wiz_0_0                                                                 2.694       {0.000 1.347}    P,G,A       {system_i/clk_wiz_0/inst/mmcm_adv_inst/CLKOUT1}
+clkfbout_system_audio_clock_0                                                               50.000      {0.000 25.000}   P,G,A       {system_i/audio_clock/inst/mmcm_adv_inst/CLKFBOUT}
+clkfbout_system_clk_wiz_0_0                                                                 50.000      {0.000 25.000}   P,G,A       {system_i/clk_wiz_0/inst/mmcm_adv_inst/CLKFBOUT}
+
+
+====================================================
+Generated Clocks
+====================================================
+
+Generated Clock     : codec_i2c
+Master Source       : system_i/audio_axi_0/inst/s_axi_aclk
+Master Clock        : clk_fpga_0
+Divide By           : 100
+Generated Sources   : {system_i/audio_axi_0/inst/core/codec/u_i2c_dri/dri_clk_reg/Q}
+
+Generated Clock     : clk_out1_system_audio_clock_0
+Master Source       : system_i/audio_clock/inst/mmcm_adv_inst/CLKIN1
+Master Clock        : system_i/audio_clock/inst/clk_in1
+Edges               : {1 2 3}
+Edge Shifts(ns)     : {0.000 36.667 73.333}
+Generated Sources   : {system_i/audio_clock/inst/mmcm_adv_inst/CLKOUT0}
+
+Generated Clock     : clk_out1_system_clk_wiz_0_0
+Master Source       : system_i/clk_wiz_0/inst/mmcm_adv_inst/CLKIN1
+Master Clock        : system_i/clk_wiz_0/inst/clk_in1
+Edges               : {1 2 3}
+Edge Shifts(ns)     : {0.000 1.734 3.468}
+Generated Sources   : {system_i/clk_wiz_0/inst/mmcm_adv_inst/CLKOUT0}
+
+Generated Clock     : clk_out2_system_clk_wiz_0_0
+Master Source       : system_i/clk_wiz_0/inst/mmcm_adv_inst/CLKIN1
+Master Clock        : system_i/clk_wiz_0/inst/clk_in1
+Edges               : {1 2 3}
+Edge Shifts(ns)     : {0.000 -3.653 -7.306}
+Generated Sources   : {system_i/clk_wiz_0/inst/mmcm_adv_inst/CLKOUT1}
+
+Generated Clock     : clkfbout_system_audio_clock_0
+Master Source       : system_i/audio_clock/inst/mmcm_adv_inst/CLKIN1
+Master Clock        : system_i/audio_clock/inst/clk_in1
+Edges               : {1 2 3}
+Edge Shifts(ns)     : {0.000 20.000 40.000}
+Generated Sources   : {system_i/audio_clock/inst/mmcm_adv_inst/CLKFBOUT}
+
+Generated Clock     : clkfbout_system_clk_wiz_0_0
+Master Source       : system_i/clk_wiz_0/inst/mmcm_adv_inst/CLKIN1
+Master Clock        : system_i/clk_wiz_0/inst/clk_in1
+Edges               : {1 2 3}
+Edge Shifts(ns)     : {0.000 20.000 40.000}
+Generated Sources   : {system_i/clk_wiz_0/inst/mmcm_adv_inst/CLKFBOUT}
+
+
+
+====================================================
+User Uncertainty
+====================================================
+
+
+
+====================================================
+User Jitter
+====================================================
+
+Clock                              Jitter(ns)
+clk_fpga_0                         0.300
+clk_fpga_1                         0.200
+system_i/audio_clock/inst/clk_in1  0.100
+system_i/clk_wiz_0/inst/clk_in1    0.100
+

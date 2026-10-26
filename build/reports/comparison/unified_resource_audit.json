@@ -1,0 +1,443 @@
+{
+  "passed": true,
+  "hardware_accessed": false,
+  "scope": "Actual complete routed camera/audio/PREP/unified-CNN system",
+  "build": "b7",
+  "resources": {
+    "lut": 27563,
+    "ff": 36329,
+    "bram_tiles": 128.0,
+    "dsp": 123,
+    "slices": 11506
+  },
+  "old_resources": {
+    "lut": 26986,
+    "ff": 37324,
+    "bram_tiles": 131.0,
+    "dsp": 133,
+    "slices": 11692
+  },
+  "deltas": {
+    "lut": 577,
+    "ff": -995,
+    "bram_tiles": -3.0,
+    "dsp": -10,
+    "slices": -186
+  },
+  "device": {
+    "bram_tiles": 140,
+    "lut": 53200,
+    "ff": 106400,
+    "dsp": 220,
+    "slices": 13300
+  },
+  "bram_early_target": 135,
+  "bram_early_target_met": true,
+  "timing": {
+    "timing_passed": true,
+    "wns_ns": 0.18,
+    "whs_ns": 0.012,
+    "drc_error_or_critical_count": 0,
+    "internal_clock_and_constraint_checks": "passed",
+    "board_verified": false
+  },
+  "check_timing": {
+    "no_clock": 0,
+    "constant_clock": 0,
+    "pulse_width_clock": 0,
+    "unconstrained_internal_endpoints": 0,
+    "no_input_delay": 12,
+    "no_output_delay": 8,
+    "multiple_clock": 0,
+    "generated_clocks": 0,
+    "loops": 0,
+    "partial_input_delay": 0,
+    "partial_output_delay": 0,
+    "latch_loops": 0
+  },
+  "external_IO_scope": "Inherited asynchronous camera/audio IO; existing no_input_delay/no_output_delay scope unchanged; internal clock/constraint gates all zero",
+  "CDC_summary_matches_old_system": true,
+  "inherited_CDC_critical_groups": 2,
+  "inherited_CDC_unsafe_endpoints": 8,
+  "CDC_summary": [
+    [
+      "Critical",
+      "clk_fpga_0",
+      "cam_pclk",
+      "No Common Primary Clock",
+      "Max Delay Datapath Only",
+      "3",
+      "2",
+      "1",
+      "0",
+      "0"
+    ],
+    [
+      "Critical",
+      "cam_pclk",
+      "clk_fpga_0",
+      "No Common Primary Clock",
+      "Max Delay Datapath Only",
+      "10",
+      "3",
+      "7",
+      "0",
+      "0"
+    ],
+    [
+      "Warning",
+      "aud_bclk",
+      "clk_fpga_0",
+      "No Common Primary Clock",
+      "Asynch Clock Groups",
+      "17",
+      "17",
+      "0",
+      "0",
+      "0"
+    ],
+    [
+      "Warning",
+      "clk_out1_system_clk_wiz_0_0",
+      "clk_fpga_0",
+      "No Common Primary Clock",
+      "Max Delay Datapath Only",
+      "34",
+      "34",
+      "0",
+      "0",
+      "0"
+    ],
+    [
+      "Info",
+      "clk_fpga_0",
+      "aud_bclk",
+      "No Common Primary Clock",
+      "Asynch Clock Groups",
+      "1",
+      "1",
+      "0",
+      "0",
+      "0"
+    ],
+    [
+      "Info",
+      "codec_i2c",
+      "aud_bclk",
+      "No Common Primary Clock",
+      "None",
+      "1",
+      "1",
+      "0",
+      "0",
+      "0"
+    ],
+    [
+      "Info",
+      "clk_fpga_1",
+      "clk_fpga_0",
+      "No Common Primary Clock",
+      "Max Delay Datapath Only",
+      "9",
+      "9",
+      "0",
+      "0",
+      "0"
+    ],
+    [
+      "Info",
+      "codec_i2c",
+      "clk_fpga_0",
+      "Safely Timed",
+      "None",
+      "3",
+      "3",
+      "0",
+      "0",
+      "0"
+    ],
+    [
+      "Info",
+      "dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_inst/SERIES7_BSCAN.bscan_inst/TCK",
+      "clk_fpga_0",
+      "No Common Primary Clock",
+      "Max Delay Datapath Only",
+      "9",
+      "9",
+      "0",
+      "0",
+      "0"
+    ],
+    [
+      "Info",
+      "input port clock",
+      "clk_fpga_0",
+      "No Common Primary Clock",
+      "False Path",
+      "3",
+      "3",
+      "0",
+      "0",
+      "0"
+    ],
+    [
+      "Info",
+      "clk_fpga_0",
+      "clk_fpga_1",
+      "No Common Primary Clock",
+      "Max Delay Datapath Only",
+      "9",
+      "9",
+      "0",
+      "0",
+      "0"
+    ],
+    [
+      "Info",
+      "clk_out1_system_clk_wiz_0_0",
+      "clk_fpga_1",
+      "No Common Primary Clock",
+      "Max Delay Datapath Only",
+      "1",
+      "1",
+      "0",
+      "0",
+      "0"
+    ],
+    [
+      "Info",
+      "clk_fpga_0",
+      "clk_out1_system_clk_wiz_0_0",
+      "No Common Primary Clock",
+      "Max Delay Datapath Only",
+      "42",
+      "42",
+      "0",
+      "0",
+      "0"
+    ],
+    [
+      "Info",
+      "clk_fpga_1",
+      "clk_out1_system_clk_wiz_0_0",
+      "No Common Primary Clock",
+      "Max Delay Datapath Only",
+      "1",
+      "1",
+      "0",
+      "0",
+      "0"
+    ],
+    [
+      "Info",
+      "clk_fpga_0",
+      "codec_i2c",
+      "Safely Timed",
+      "None",
+      "55",
+      "55",
+      "0",
+      "0",
+      "0"
+    ],
+    [
+      "Info",
+      "clk_fpga_0",
+      "dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_inst/SERIES7_BSCAN.bscan_inst/TCK",
+      "No Common Primary Clock",
+      "Max Delay Datapath Only",
+      "2",
+      "2",
+      "0",
+      "0",
+      "0"
+    ]
+  ],
+  "resource_parent_ledger": {
+    "cnn_ps_if_0": {
+      "old": {
+        "path": "system_wrapper/system_i/cnn_ps_if_0",
+        "name": "cnn_ps_if_0",
+        "module": "system_cnn_ps_if_0_0",
+        "lut": 7573,
+        "ff": 3329,
+        "bram_tiles": 51.5,
+        "dsp": 6
+      },
+      "new": {
+        "path": "system_wrapper/system_i/cnn_ps_if_0",
+        "name": "cnn_ps_if_0",
+        "module": "system_cnn_ps_if_0_1",
+        "lut": 9617,
+        "ff": 5219,
+        "bram_tiles": 53.5,
+        "dsp": 10
+      }
+    },
+    "prep_accel_0": {
+      "old": {
+        "path": "system_wrapper/system_i/prep_accel_0",
+        "name": "prep_accel_0",
+        "module": "system_prep_accel_0_0",
+        "lut": 10440,
+        "ff": 17304,
+        "bram_tiles": 59.5,
+        "dsp": 126
+      },
+      "new": {
+        "path": "system_wrapper/system_i/prep_accel_0",
+        "name": "prep_accel_0",
+        "module": "system_prep_accel_0_1",
+        "lut": 8526,
+        "ff": 13841,
+        "bram_tiles": 54.5,
+        "dsp": 112
+      }
+    },
+    "ila_camera_path": {
+      "old": {
+        "path": "system_wrapper/system_i/ila_camera_path",
+        "name": "ila_camera_path",
+        "module": "system_ila_camera_path_0",
+        "lut": 1122,
+        "ff": 2306,
+        "bram_tiles": 7.0,
+        "dsp": 0
+      },
+      "new": {
+        "path": "system_wrapper/system_i/ila_camera_path",
+        "name": "ila_camera_path",
+        "module": "system_ila_camera_path_0",
+        "lut": 1122,
+        "ff": 2306,
+        "bram_tiles": 7.0,
+        "dsp": 0
+      }
+    },
+    "prep_mem_intercon": {
+      "old": {
+        "path": "system_wrapper/system_i/prep_mem_intercon",
+        "name": "prep_mem_intercon",
+        "module": "system_prep_mem_intercon_0",
+        "lut": 610,
+        "ff": 729,
+        "bram_tiles": 0.0,
+        "dsp": 0
+      },
+      "new": {
+        "path": "system_wrapper/system_i/prep_mem_intercon",
+        "name": "prep_mem_intercon",
+        "module": "system_prep_mem_intercon_0",
+        "lut": 1033,
+        "ff": 1177,
+        "bram_tiles": 0.0,
+        "dsp": 0
+      }
+    },
+    "axi_vdma_0": {
+      "old": {
+        "path": "system_wrapper/system_i/axi_vdma_0",
+        "name": "axi_vdma_0",
+        "module": "system_axi_vdma_0_0",
+        "lut": 2606,
+        "ff": 4278,
+        "bram_tiles": 9.0,
+        "dsp": 0
+      },
+      "new": {
+        "path": "system_wrapper/system_i/axi_vdma_0",
+        "name": "axi_vdma_0",
+        "module": "system_axi_vdma_0_0",
+        "lut": 2607,
+        "ff": 4278,
+        "bram_tiles": 9.0,
+        "dsp": 0
+      }
+    }
+  },
+  "old_HLS_tail_parent": {
+    "path": "system_wrapper/system_i/prep_accel_0/inst/grp_speed_fc_kernel_fu_180",
+    "name": "grp_speed_fc_kernel_fu_180",
+    "module": "system_prep_accel_0_0_prep_accel_speed_fc_kernel",
+    "lut": 2155,
+    "ff": 2221,
+    "bram_tiles": 5.0,
+    "dsp": 11
+  },
+  "actual_synthesis_ROMs": [
+    {
+      "name": "rom_b_ip",
+      "valid_bytes": 96,
+      "mif_sha256": "ea66b1e8fe88377edd517b4cf012d8bdc70f269f4f69c13b09c913da814ddd8e"
+    },
+    {
+      "name": "rom_b_layer2_ip",
+      "valid_bytes": 192,
+      "mif_sha256": "3700a91028100b62e7837e7ed8a79fa062150ef5a78e8579d89c81182e656c70"
+    },
+    {
+      "name": "rom_w0_ip",
+      "valid_bytes": 72,
+      "mif_sha256": "f21ba00f26fbd809f9b48b55941f2581efbf1505a7e203f9d3e319f2acb773be"
+    },
+    {
+      "name": "rom_w0_layer2_ip",
+      "valid_bytes": 3456,
+      "mif_sha256": "b517bf3e7ab337f5b458e603c5f05bf9f093c08d915a4fb887e209a8248e0b7c"
+    },
+    {
+      "name": "rom_w1_ip",
+      "valid_bytes": 72,
+      "mif_sha256": "078fe5afd65a2841cd2ef992a54bffefcd1d1e859d09fbc3638050ab8763ccbd"
+    },
+    {
+      "name": "rom_w1_layer2_ip",
+      "valid_bytes": 3456,
+      "mif_sha256": "8bdf05b4b5368cd2f92ce06fc0d7a6352f5f22618741fd6796e0051492db133a"
+    },
+    {
+      "name": "rom_w2_ip",
+      "valid_bytes": 72,
+      "mif_sha256": "6a277f4678529eeb3f68577aa71117a0ee1daf15ee08ae3f97b1b7b3ac792a26"
+    },
+    {
+      "name": "rom_w2_layer2_ip",
+      "valid_bytes": 3456,
+      "mif_sha256": "7fd773b2818800e3ed0151dfc6f1435eac6b12f3f6da52050fb99ab9f196bd88"
+    }
+  ],
+  "source_snapshot_files_verified": 430,
+  "hardware_files": {
+    "psv7_camera_audio.bit": {
+      "sha256": "6108aefb1efa1a0951652a5d2904e9092ceb4e9d981cfe5dc0449151ef353faf",
+      "bytes": 4045674
+    },
+    "psv7_camera_audio.hwh": {
+      "sha256": "81f3c2add166af5c0501277fb7f1cbbabcdc54566e0f1da3afb00de66de8a26d",
+      "bytes": 900300
+    },
+    "camera_audio.xsa": {
+      "sha256": "4e0faf7c02cfed90b026e51a78043e6411ce4a52d2d7b48358b36e15e512a87d",
+      "bytes": 1415965
+    },
+    "psv7_camera_audio.ltx": {
+      "sha256": "832c67aa3c0614c150c4b583d4f68bab5f3ab9ea26dac39ba905c0820fb4591f",
+      "bytes": 54800
+    },
+    "system_routed.dcp": {
+      "sha256": "a295a920eadcca7176186c9b3f6e46f9269c3941a1fabd5a232fe57d34278415",
+      "bytes": 33211898
+    }
+  },
+  "implementation_mhz": {
+    "0": 100.0,
+    "1": 150.0
+  },
+  "preserved_runtime_mhz": {
+    "0": 100.0,
+    "1": 100.0
+  },
+  "XSA_bit_matches_exported_bit": true,
+  "S5_compute_sources_unchanged": true,
+  "board_tested": false
+}
