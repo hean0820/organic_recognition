@@ -2796,8 +2796,8 @@
       "sha256": "91d6c1144a079a39cd314091cf02a3d47542253d5fae56d63b0e2f0a68323fda"
     },
     "README.md": {
-      "bytes": 30916,
-      "sha256": "41106f5dad804fde80b6f31b6986b72fffdc02f603f87e0e1ef7b21bbec78ed6"
+      "bytes": 25449,
+      "sha256": "5066a277d6566fa189a6f7a620601aa826683935a56464d758cc32d25b95a228"
     },
     "sim/audit_board_results.py": {
       "bytes": 1999,
@@ -3560,8 +3560,8 @@
       "sha256": "7dcd58963035e87bbe415d1fa5d42baf4f0b0167c5956e4102d46f88cd022c68"
     },
     "report/design_report.pdf": {
-      "bytes": 2534514,
-      "sha256": "4a0502398c1c9c9f0265375c653654774d2e3c9b93a7c51758c93e7822d595a2"
+      "bytes": 2641963,
+      "sha256": "6cba1d81cc94ea082c96200166cc195c94c824e2b5b7e2e877b0ba49351f70ba"
     },
     "build/reports/comparison/baseline_resources.json": {
       "bytes": 26295,
