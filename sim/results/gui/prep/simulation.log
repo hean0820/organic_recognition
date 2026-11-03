@@ -1,0 +1,5 @@
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+S6_PREP_IDENTITY_RTL_PASS 4 calls, no AR/AW/W
+PREP_PIXEL_PASS red_bgr_to_gray=76 detection_pixels=640 first_row_only
+$finish called at time : 43025 ns : File "D:/qiansai/tmp/prep_check_1103/vivado/testbench/tb_prep_identity.sv" Line 88

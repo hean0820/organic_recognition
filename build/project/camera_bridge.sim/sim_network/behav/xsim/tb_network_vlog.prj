@@ -1,0 +1,40 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  -i "../../../../../../sim/testbench/network" -i "../../../../deps/vivado/ip_repo/cnn_rtl_unified/rtl/common" -i "../../../../deps/vivado/ip_repo/cnn_rtl_unified/rtl/interfaces" --include "../../../../deps/vivado/hardware/audio" \
+"../../../../deps/vivado/ip_repo/cnn_rtl_unified/rtl/frontend/cnn_top.v" \
+"../../../../deps/vivado/ip_repo/cnn_rtl_unified/rtl/frontend/conv_cal.v" \
+"../../../../deps/vivado/hardware/baseline/cnn_accel.gen/sources_1/ip/conv_rslt_reg/sim/conv_rslt_reg.v" \
+"../../../../deps/vivado/ip_repo/cnn_rtl_unified/rtl/frontend/data_ram.v" \
+"../../../../deps/vivado/hardware/baseline/cnn_accel.gen/sources_1/ip/fifo_generator_0/sim/fifo_generator_0.v" \
+"../../../../deps/vivado/hardware/baseline/cnn_accel.gen/sources_1/ip/image_data_ram/sim/image_data_ram.v" \
+"../../../../deps/vivado/ip_repo/cnn_rtl_unified/rtl/frontend/pool_layer.v" \
+"../../../../deps/vivado/ip_repo/cnn_rtl_unified/rtl/frontend/requant_relu.v" \
+"../../../../deps/vivado/hardware/baseline/cnn_accel.gen/sources_1/ip/rom_b_ip/sim/rom_b_ip.v" \
+"../../../../deps/vivado/hardware/baseline/cnn_accel.gen/sources_1/ip/rom_b_layer2_ip/sim/rom_b_layer2_ip.v" \
+"../../../../deps/vivado/hardware/baseline/cnn_accel.gen/sources_1/ip/rom_w0_ip/sim/rom_w0_ip.v" \
+"../../../../deps/vivado/hardware/baseline/cnn_accel.gen/sources_1/ip/rom_w0_layer2_ip/sim/rom_w0_layer2_ip.v" \
+"../../../../deps/vivado/hardware/baseline/cnn_accel.gen/sources_1/ip/rom_w1_ip/sim/rom_w1_ip.v" \
+"../../../../deps/vivado/hardware/baseline/cnn_accel.gen/sources_1/ip/rom_w1_layer2_ip/sim/rom_w1_layer2_ip.v" \
+"../../../../deps/vivado/hardware/baseline/cnn_accel.gen/sources_1/ip/rom_w2_ip/sim/rom_w2_ip.v" \
+"../../../../deps/vivado/hardware/baseline/cnn_accel.gen/sources_1/ip/rom_w2_layer2_ip/sim/rom_w2_layer2_ip.v" \
+
+sv xil_defaultlib  -i "../../../../../../sim/testbench/network" -i "../../../../deps/vivado/ip_repo/cnn_rtl_unified/rtl/common" -i "../../../../deps/vivado/ip_repo/cnn_rtl_unified/rtl/interfaces" --include "../../../../deps/vivado/hardware/audio" \
+"../../../../../../sim/testbench/network/axi_read_memory_model.sv" \
+"../../../../deps/vivado/ip_repo/cnn_rtl_unified/rtl/common/cnn_axi_ro_reader.sv" \
+"../../../../deps/vivado/ip_repo/cnn_rtl_unified/rtl/common/cnn_axil_control.sv" \
+"../../../../deps/vivado/ip_repo/cnn_rtl_unified/rtl/conv3/cnn_conv3_pool3.sv" \
+"../../../../deps/vivado/ip_repo/cnn_rtl_unified/rtl/fc/cnn_fc.sv" \
+"../../../../deps/vivado/ip_repo/cnn_rtl_unified/rtl/conv3/cnn_feature_store.sv" \
+"../../../../deps/vivado/ip_repo/cnn_rtl_unified/rtl/common/cnn_input_store.sv" \
+"../../../../deps/vivado/ip_repo/cnn_rtl_unified/rtl/common/cnn_mac.sv" \
+"../../../../deps/vivado/ip_repo/cnn_rtl_unified/rtl/common/cnn_model_cache.sv" \
+"../../../../deps/vivado/ip_repo/cnn_rtl_unified/rtl/common/cnn_model_loader.sv" \
+"../../../../deps/vivado/ip_repo/cnn_rtl_unified/rtl/common/cnn_quantize.sv" \
+"../../../../deps/vivado/ip_repo/cnn_rtl_unified/rtl/unified/cnn_rtl_unified.sv" \
+"../../../../deps/vivado/ip_repo/cnn_rtl_unified/rtl/unified/cnn_unified_core.sv" \
+"../../../../../../sim/testbench/network/tb_network.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

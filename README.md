@@ -1,6 +1,6 @@
 # 结构简式视听识别与 3D 展示系统
 
-基于 AMD Zynq-7020 的有机物识别与分子可视化作品。本 README 提供项目概览、提交目录说明及完整运行包的上板复现步骤。
+基于 AMD Zynq-7020 的有机物识别与分子可视化作品。本 README 提供项目概览、提交目录说明及从最终模型参数构建硬件、制作运行包和上板验证的步骤。
 
 ## 项目简介
 
@@ -50,14 +50,7 @@
 
 ## 本说明的复现范围
 
-本说明介绍 **使用本文件夹提供的完整运行包，把整个作品在开发板上运行起来**。无需重新训练、执行 Vivado 综合或重新制作运行包。
-
-直接使用这两个文件：
-
-1. `board/deliveries/psv7_runtime.zip`：完整应用、模型参数、配套 bit/HWH、网页与分子资源，以及固定输入验证工具。
-2. `board/unpack_runtime.py`：运行包检查与解压脚本。
-
-按顺序执行：**准备环境 → 上传 → 解压 → Notebook 启动 → 摄像/语音/三维操作 → 按需固定输入验证 → 正常停止并保存结果**。所有路径和 IP 示例应按实际环境修改。
+按下文完成“打开工程 → 仿真 → 生成硬件 → 制作 ZIP → 上板验证”。复现从提供的最终模型参数开始。直接使用已有运行包时，从步骤 4 开始。
 
 ## 使用工具及版本
 
@@ -65,7 +58,7 @@
 - **Vitis HLS 2020.2**：用于将 PREP 图像预处理 C++ 生成为硬件 IP；随包导出的硬件代码标注该版本。
 - **PYNQ 2.7.0**：开发板端运行框架，用于加载配套硬件、访问硬件接口并运行 PS 应用。板端架构为 `armv7l`。
 
-Vivado 和 Vitis HLS 是工程开发、生成硬件时使用的工具。本指南使用已提供的完整运行包，使用者无需先安装或执行这两个工具；开发板端需要准备匹配的 PYNQ 2.7.0 系统。其他板端依赖见“步骤 1：准备开发板和环境”。
+电脑端硬件重建需要 Vivado 2020.2（含 Zynq-7000 器件支持）、Python 3.8 或以上及 NumPy。标准构建直接使用随附的 PREP 导出 IP，因此本流程无需再次执行 Vitis HLS。板端依赖见步骤 1。
 
 ## 提交目录结构
 
@@ -81,6 +74,11 @@ Vivado 和 Vitis HLS 是工程开发、生成硬件时使用的工具。本指�
 │   ├── hls/prep_only/                 前段预处理 C++ 与头文件
 │   └── ps/psv7_pynq/                  ARM 端完整应用
 ├── sim/                               当前版本验证脚本和验证结果
+│   ├── testbench/                     按功能分类的测试平台
+│   │   ├── network/                  整网 TB、存储器模型、头文件和 network.wcfg
+│   │   │   └── vectors/              整网的固定输入、标准输出、权重和偏置
+│   │   ├── prep/                     PREP 测试平台和 prep.wcfg
+│   │   └── audio/                    音频测试平台和 audio.wcfg
 │   ├── run_checks.py                  离线验证统一入口
 │   ├── check_parameters.py            模型参数与构建映射一致性检查
 │   ├── integer_reference.py           软件整数 CNN 参考实现
@@ -89,11 +87,12 @@ Vivado 和 Vitis HLS 是工程开发、生成硬件时使用的工具。本指�
 │   ├── audit_board_results.py          当前四路版本板测记录审核
 │   ├── ps_vs_rtl/                     CPU/FPGA 固定输入对照工具
 │   └── results/
-│       ├── model_verification.json    模型参数包与参考结果检查记录
+│       ├── gui/                       整网、PREP、音频的仿真结果及功能自检
 │       ├── latest_verification.json   离线验证汇总记录
 │       ├── layout_verification.json   构建布局及文件引用核对记录
 │       └── organization_verification.json 技能工具正反例验证等记录
 ├── build/                             构建脚本、IP 配置、工程依赖及报告
+│   ├── project/camera_bridge.xpr      双击打开整机工程，引用 sim/testbench/
 │   ├── build_hardware.py              硬件构建入口
 │   ├── prepare_workspace.py           构建文件布局恢复与组装
 │   ├── verify_submission.py           整个提交包的完整性检查
@@ -103,7 +102,8 @@ Vivado 和 Vitis HLS 是工程开发、生成硬件时使用的工具。本指�
 │   ├── ip_repo/                      CNN 封装信息与 PREP 导出 IP
 │   ├── vivado/                       Vivado 脚本及基础平台依赖
 │   └── reports/
-│       ├── reproduction/             最新实际重建的综合、实现报告
+│       ├── gui_rebuild/              本次 GUI 工程重建的资源、时序和导出记录
+│       ├── reproduction/             脚本重建的综合、实现报告
 │       ├── comparison/                优化前后资源对比及来源依据
 │       │   ├── resource_comparison.csv 资源对比表
 │       │   ├── comparison_sources.json 性能与资源对比来源索引
@@ -115,7 +115,7 @@ Vivado 和 Vitis HLS 是工程开发、生成硬件时使用的工具。本指�
 │   ├── prepare_runtime.py             制作运行包的工具
 │   ├── unpack_runtime.py              本次使用的解压检查工具
 │   ├── deliveries/
-│   │   ├── psv7_runtime.zip           本次使用的完整运行包
+│   │   ├── psv7_runtime.zip           带板测记录的参考运行包
 │   │   └── psv7_rebuilt_runtime.zip   源码复现产生的对照包
 │   └── results/
 │       ├── baseline/                  优化前板测对照证据
@@ -144,170 +144,148 @@ Vivado 和 Vitis HLS 是工程开发、生成硬件时使用的工具。本指�
     └── design_report.pdf             正式技术报告
 ```
 
-## 复现操作步骤
+## 复现步骤
 
-### 步骤 1： 准备开发板和环境
+### 1. 打开工程并运行仿真
 
-准备与原作品匹配的 Zynq-7020 开发板（工程器件为 `xc7z020clg400-2`）、OV5640 摄像头、HDMI 显示设备，以及配套的 WM8960 音频电路和板载麦克风。本作品实际使用板载麦克风采音，复现时无需外接 LINE_IN 音频源。断电连接外设，按板卡说明确认连接方向与供电，再上电。
+本步在电脑上检查硬件的计算和接口。
 
-使用原来已能运行作品的 PYNQ 系统即可。板端要求：
+1. 将完整提交包解压到短英文路径，在 Vivado **2020.2** 打开 `build/project/camera_bridge.xpr`。
+2. 打开 `system.bd` 可查看整机连接。
+3. 在 **Simulation Sources** 中右键目标仿真集，选择 **Make Active**。
+4. 点击 **Run Behavioral Simulation → Run All**，等待以下通过标志，再点击 **Zoom Fit** 查看波形。切换测试前先关闭当前仿真。
 
-- PYNQ **2.7.0**，架构 **armv7l**。
-- Python **3.8 或以上**，已有板测使用 **3.8.2**。
-- NumPy 可导入，GCC 可执行，已有板测 GCC 为 **9.3.0**。
-- Jupyter 可以访问，电脑与开发板处于可互通的局域网。
+- `sim_network`：测试完整 CNN，含 Conv1、Conv2、四路 Conv3 和全连接。通过标志为 `S5_PASS_NETWORK`。
+- `sim_prep`：测试预处理接口及红色图案首行输出。通过标志为 `S6_PREP_IDENTITY_RTL_PASS` 和 `PREP_PIXEL_PASS`。
+- `sim_audio`：测试 I²S 接收和 FIR 滤波抽取。通过标志为 `AUDIO_PASS`。
 
-本文件夹不包含 SD 卡系统镜像。使用空白 SD 卡时，先取得适配该板卡的 PYNQ 镜像；不能直接假定任意 Zynq-7020 镜像都兼容。镜像获取地址和实物接线照片未随包提供。管脚依据在 `build/vivado/hardware/platform_base/design/ov5640_lcd.xdc`、`src/rtl/platform/audio/audio.xdc` 和工程 BD 中。
+工程初始只运行 **1 μs**。继续执行 `run all`，完整 CNN 样例约在 **24.2423 ms 仿真时刻**结束，电脑实际需等待数分钟。`.wcfg` 会自动加载，日志和已有波形在 `sim/results/gui/`。
 
-### 步骤 2： 上传两个文件
+### 2. 生成 bit/HWH
 
-通过开发板的 Jupyter 文件页面，将电脑上的以下两个文件上传到开发板的 `/home/xilinx/jupyter_notebooks/` 目录。下面列的是电脑提交包中的位置，上传后两个文件应直接位于上述板端目录，不需要创建 `board/` 子目录：
+本步生成配套的 bit/HWH。**方式一和方式二任选一种，完成后都执行步骤 3 的同一个打包命令。**
 
-```text
-board/deliveries/psv7_runtime.zip
-board/unpack_runtime.py
+#### 方式一：打开提供的工程，在 Vivado 界面生成硬件
+
+1. 在已打开的工程中点击 **Generate Bitstream**，等待生成成功。
+2. 在**提交根目录**打开 Windows PowerShell，执行下列命令，把同一轮生成的 bit/HWH 复制成打包工具需要的名称。输出目录须尚不存在。
+
+```powershell
+$out = Join-Path (Split-Path (Get-Location).Path -Parent) 'chem_gui_build_01'
+if (Test-Path -LiteralPath $out) { throw 'Choose a new output directory' }
+$bit = 'build/project/camera_bridge.runs/impl_1/system_wrapper.bit'
+$hwh = 'build/project/camera_bridge.gen/sources_1/bd/system/hw_handoff/system.hwh'
+Get-Item -LiteralPath $bit, $hwh
+$hardwareOutput = Join-Path $out 'hardware'
+New-Item -ItemType Directory -Path $hardwareOutput | Out-Null
+Copy-Item -LiteralPath $bit -Destination "$hardwareOutput/psv7_camera_audio.bit"
+Copy-Item -LiteralPath $hwh -Destination "$hardwareOutput/psv7_camera_audio.hwh"
 ```
 
-ZIP 已包含应用、模型参数、配套 bit/HWH、网页与分子资源和测试工具。不需要上传整个提交目录，也不需要先安装电脑端 Vivado。
+完成方式一后，跳过方式二，在同一个 PowerShell 窗口执行步骤 3。
 
-**请使用本提交目录提供的完整运行包和解压脚本。**上传后，保持文件名分别为 `psv7_runtime.zip` 和 `unpack_runtime.py`，并将两个文件放在同一目录下。随后按步骤 3 完成校验与解压，再打开解压目录中的 Notebook 启动项目。
+#### 方式二：运行脚本，从源码自动构建硬件
 
-在 Jupyter 打开 **Terminal**。终端可能从根目录 `/` 开始，因此先明确切换到上传目录，再检查：
+选择方式二时，在提交根目录打开 PowerShell，修改 Vivado 安装路径。脚本调用 Vivado 创建工程、综合、布局布线并生成 bit/HWH。完成后继续执行步骤 3。
+
+```powershell
+$vivado = 'C:/Xilinx/Vivado/2020.2/bin/vivado.bat'
+$out = Join-Path (Split-Path (Get-Location).Path -Parent) 'chem_script_build_01'
+python -B build/build_hardware.py --vivado "$vivado" --output "$out"
+if ($LASTEXITCODE -ne 0) { throw 'Hardware build failed' }
+$hardwareOutput = Join-Path $out 'run/output'
+```
+
+
+### 3. 制作上板运行 ZIP
+
+两种方式到这里汇合。本步使用同一个 prepare_runtime.py，把刚生成的 bit/HWH、PS 应用、模型和网页资源合成运行 ZIP。使用能导入 NumPy 的 Python，在步骤 2 的同一个 PowerShell 窗口执行：
+
+```powershell
+python -B sim/check_parameters.py
+if ($LASTEXITCODE -ne 0) { throw 'Parameter check failed' }
+$runtimeZip = Join-Path $out 'chem_runtime.zip'
+python -B board/prepare_runtime.py --hardware-output "$hardwareOutput" --output "$runtimeZip"
+if ($LASTEXITCODE -ne 0) { throw 'Runtime packaging failed' }
+```
+
+确认 `passed` 和 `rebuilt_pair_used` 均为 `true`。记下 ZIP 位置 `$runtimeZip` 和打印的 **SHA-256**。
+
+### 4. 上传、校验并解压
+
+本步把运行包部署到真板。准备匹配的 Zynq-7020 板（`xc7z020clg400-2`）、OV5640、HDMI 显示器及 WM8960 板载麦克风，断电接线后上电。板端使用适配本板的 **PYNQ 2.7.0 / armv7l** 系统，并具备 Python、NumPy、GCC 和 Jupyter。提交包提供应用，不含 SD 卡系统镜像。
+
+1. 让电脑和开发板接入可互通的局域网，打开 Jupyter。
+2. 上传步骤 3 的 `chem_runtime.zip` 和 `board/unpack_runtime.py` 到 `/home/xilinx/jupyter_notebooks/`。
+3. 打开 Jupyter **Terminal**，执行下列命令。把校验值替换为步骤 3 打印的完整值；输出目录已存在时换成新的目录名。
 
 ```bash
 cd /home/xilinx/jupyter_notebooks
-pwd
-ls -lh psv7_runtime.zip unpack_runtime.py
-sha256sum psv7_runtime.zip
-uname -m
-python3 --version
-python3 -c "import pynq, numpy; print(pynq.__version__, numpy.__version__)"
-gcc --version
+runtime_zip='chem_runtime.zip'
+expected_sha='填入步骤3打印的64位sha256'
+ls -lh "$runtime_zip" unpack_runtime.py
+sha256sum "$runtime_zip"
+python3 unpack_runtime.py "$runtime_zip" --output chem_run_01 --sha256 "$expected_sha"
 hostname -I
 ```
 
-`pwd` 应输出 `/home/xilinx/jupyter_notebooks`，`ls` 应列出两个文件。如果提示 `No such file or directory`，先确认文件已经上传到这个目录；文件未找到时不要继续解压。若你的 Jupyter 根目录经过自定义，请将本节及下一节中的目录改为实际上传位置。确认环境符合步骤 1，并记下开发板的实际局域网 IP。
+确认哈希一致，解压显示 `host_assets_checked: 7` 和 `passed: true`，记下开发板 IP。
 
-`sha256sum` 输出的校验值应为：
+#### 直接使用已有运行包时
 
-```text
-3afa8487ca95f5ffebbac951c3009b630e038215533ef57625fa5f5ce6714168
-```
-
-校验值不一致时，先重新上传本提交目录里的完整 ZIP，不要跳过校验或把命令中的校验值改成旧包的值。文件名和文件大小相近不能证明是同一个包。
-
-### 步骤 3： 解压并检查运行包
-
-仍在**开发板 Terminal** 执行：
+上传 `board/deliveries/psv7_runtime.zip` 和 `board/unpack_runtime.py` 后，在 Jupyter Terminal 执行：
 
 ```bash
-python3 /home/xilinx/jupyter_notebooks/unpack_runtime.py /home/xilinx/jupyter_notebooks/psv7_runtime.zip --output /home/xilinx/jupyter_notebooks/chem_run_01 --sha256 3afa8487ca95f5ffebbac951c3009b630e038215533ef57625fa5f5ce6714168
+cd /home/xilinx/jupyter_notebooks
+runtime_zip='psv7_runtime.zip'
+expected_sha='3afa8487ca95f5ffebbac951c3009b630e038215533ef57625fa5f5ce6714168'
+sha256sum "$runtime_zip"
+python3 unpack_runtime.py "$runtime_zip" --output chem_run_01 --sha256 "$expected_sha"
+hostname -I
 ```
 
-输出目录必须不存在。如果已有 `chem_run_01`，使用下面这条命令解压到 `chem_run_02`，不覆盖旧目录：
+确认校验和解压通过后，继续步骤 5。
 
-```bash
-python3 /home/xilinx/jupyter_notebooks/unpack_runtime.py /home/xilinx/jupyter_notebooks/psv7_runtime.zip --output /home/xilinx/jupyter_notebooks/chem_run_02 --sha256 3afa8487ca95f5ffebbac951c3009b630e038215533ef57625fa5f5ce6714168
-```
 
-以上两条命令按目录情况选择一条执行；如果 `chem_run_02` 也存在，继续选用未使用的目录名。若 Jupyter 根目录不同，改为实际可访问的目录。
+### 5. 启动作品
 
-解压检查应正常结束，没有 Traceback；工程检查输出应包含 `"host_assets_checked": 7`，最后的解压结果应包含 `"passed": true` 和实际输出目录 `directory`。前者检查网页文件及引用路径，后者表示本次文件检查与解压完成。使用 `chem_run_01` 时得到：
+本步加载硬件并启动应用。
 
-```text
-chem_run_01/
-├── psv7_pynq/                  完整应用与硬件、参数、网页资源
-│   └── notebooks/
-│       └── 01_application.ipynb
-└── ps_vs_rtl/                  固定输入验证工具
-```
+1. 在 Jupyter 中打开本次解压目录下的 `psv7_pynq/notebooks/01_application.ipynb`。如有旧应用，先在其 Notebook 正常停止并关闭旧内核。
+2. 逐个执行代码单元。第一个单元完成文件检查。
+3. 在第二个单元填写实际 IP，并根据开发板状态设置启动参数。
 
-使用 `chem_run_02` 时目录结构相同，只是最外层目录名不同。记住最终输出的 `directory`，下一步从这个目录打开 Notebook。
-
-这一步只检查和解压文件，下一步才启动硬件。文件校验通过不等于摄像头、语音、HDMI 和网页已在板上运行成功。
-
-### 步骤 4： 在 Notebook 中启动
-
-如果板上有旧应用，先在其原 Notebook 正常停止。停止成功后关闭旧 Notebook 的内核，在 Jupyter 文件页面进入步骤 3 打印的输出目录，打开其中的 `psv7_pynq/notebooks/01_application.ipynb`。例如解压到 `chem_run_02`，应打开：
-
-```text
-/home/xilinx/jupyter_notebooks/chem_run_02/psv7_pynq/notebooks/01_application.ipynb
-```
-
-使用新的 Python 内核，**逐个执行代码单元，不要 Run All**。不要继续使用浏览器里已经打开的 `chem_run_01` Notebook，也不要让两个目录的应用同时运行。
-
-1. 执行第一个代码单元，完成工程检查并创建 `session`。确认没有异常再继续。
-2. 在第二个代码单元中，将 `BOARD_IP` 改成 步骤 2 查到的实际 IP。
-3. 根据开发板状态设置启动方式：
-
-真实断电重新上电、尚未运行本应用时：
+真实断电上电后首次启动：
 
 ```python
 STARTUP_MODE = 'cold_start'
 CLEAN_BOARD_POWER_UP = True
-BOARD_IP = '192.168.2.99'  # 示例，换成实际 IP
+BOARD_IP = '192.168.2.99'  # 改为实际 IP
 ```
 
-旧应用已正常停止、开发板没有断电时：
+旧应用已正常停止、此后未断电：
 
 ```python
 STARTUP_MODE = 'reuse'
 CLEAN_BOARD_POWER_UP = False
-BOARD_IP = '192.168.2.99'  # 示例，换成实际 IP
+BOARD_IP = '192.168.2.99'  # 改为实际 IP
 ```
 
-重启 Notebook 内核、上传 ZIP 和解压到新目录都不等于断电重新上电。设置后执行第二个代码单元；首次运行可能在板端编译 C 库。
+执行第二个单元，等待无异常结束并返回 `host_running: True`、端口 `8765`。第三个单元留到使用结束时执行。
 
-**第二个代码单元执行完毕、没有 Traceback，且最终返回的 `host` 中 `host_running` 为 `True`，才继续步骤 5。**返回内容应包含以下关键字段（其他字段省略，IP 以实际值为准）：
+### 6. 检查摄像、语音和三维展示
 
-```python
-{'host': {'host_running': True,
-          'port': 8765,
-          'urls': ['http://192.168.2.99:8765/']}}
-```
+本步确认真实输入能驱动分子展示。
 
-日志中的 `PSV7_FORMAL_APP_RUNNING` 在启动网页服务之前打印，单独出现这行不能说明第二个单元全部成功。若之后出现异常并打印 `PSV7_APP_STOP`，说明启动流程进入了停止处理，不应继续访问网页或进行识别。先核对停止报告；确认错误列表为空、活动缓冲区为 0、DMA 已释放、后台线程已停止，再处理报错。
+1. 在电脑浏览器打开 `http://开发板实际IP:8765`，点击“连接开发板”。
+2. 手动选择一种分子，核对名称、化学式和网页/HDMI 模型；用鼠标旋转、缩放。
+3. 切到摄像模式，将支持类别的结构简式放入摄像头框内，点击“开始识别”，核对结果。
+4. 切到语音模式，选择“板载麦克风”，点击“开始识别”并说出支持的有机物名称，核对结果。
+5. 保存实际功能截图。
 
-如果失败后的停止报告确认清理成功，且开发板此后没有断电，再次启动应使用 `reuse` 和 `False`；只有真实断电重新上电才按上面的冷启动条件设置。
+### 7. 运行板端固定输入验证
 
-启动成功后先继续步骤 5，不要马上执行第三个停止单元；它用于使用结束后停止应用。
-
-### 步骤 5： 操作网页、摄像头和语音
-
-在**电脑浏览器**访问：
-
-```text
-http://实际开发板IP:8765
-```
-
-例如 IP 为 `192.168.2.99`，则访问 `http://192.168.2.99:8765`。浏览器需支持 JavaScript 和 WebGL，从开发板服务打开网页，不直接双击电脑上的 HTML 文件。
-
-**网页与三维展示：**
-
-1. 页面应出现“分子观察台”和 22 种分子列表。
-2. 点击“连接开发板”，等待状态显示已连接或已同步。
-3. 选择一种分子，核对名称、化学式及网页/HDMI 展示。
-4. 左键拖动旋转、滚轮缩放，也可以使用“暂停旋转”和“复位视角”。网页与 HDMI 视角独立。
-
-**手写识别：**
-
-1. 确认 HDMI 有摄像头预览画面，网页处于摄像头模式。
-2. 将支持类别的手写结构简式放入识别区域，保持画面清晰、稳定。
-3. 点击“开始识别”，等待结果，核对名称、化学式和分子模型。
-4. 换一份样例重复，确认结果会更新。
-
-**语音选择：**
-
-1. 点击“切换识别模式”，确认处于语音模式并已就绪。
-2. 将“音频输入”选择为“板载麦克风”；本作品使用该输入方式。
-3. 点击“开始识别”，说出一个支持的有机物名称，等待一次结果。
-4. 核对识别文字、分子选择及网页/HDMI 展示。
-
-分别保存上述功能的实际结果或截图。网页未连接时可以显示本地模型，但这不能代替开发板交互验证。
-
-### 步骤 6： 固定输入验证（验收时执行，日常使用可跳过）
-
-保持应用运行，在**同一个 Notebook 内核**新增代码单元：
+本步检查 PS 与 PL 完整 CNN 输出是否一致。保持应用运行，在**同一个 Notebook 内核**新增单元，执行下面代码。测试期间暂停网页识别、录音和模式切换。
 
 ```python
 import sys
@@ -318,56 +296,16 @@ print(benchmark_result['passed'])
 print(benchmark_result['report_directory'])
 ```
 
-测试期间不要从网页发起识别、录音或切换模型。工具使用 44 份固定输入、3 轮共 132 对 CPU/FPGA 测试，比对每次的 22 个整数输出。
+通过标准为 `passed=True`，44 份输入重复 3 轮，共 132 条记录的 22 个分值逐项一致。结果文件为打印目录中的 `board_result.json`，计时范围是 CNN 完整调用。
 
-通过标准：`passed` 为 `True`，132 条正式记录的 `exact_logits_match` 均为 `true`。结果目录由程序打印，原始文件名为 `board_result.json`。测试耗时是 CNN 完整调用耗时，不是摄像头到显示的整机耗时。
+### 8. 正常停止并下载结果
 
-### 步骤 7： 正常停止并保存结果
+本步关闭任务和硬件，保存复现记录。
 
-完成使用或测试后，执行 `01_application.ipynb` 的第三个代码单元。它会正常停止应用，显示报告并提供下载链接。
+1. 执行原 Notebook 的第三个代码单元。
+2. 确认错误列表为空、活动缓冲区为 0、分配与释放数量相等、DMA 和后台线程已停止。
+3. 使用单元提供的链接下载停止报告。再从步骤 7 的结果目录下载 `board_result.json`，一并保留功能截图和实际运行 ZIP 的 SHA-256。
+4. 摄像、语音、网页/HDMI、固定输入对拍和正常停止均通过后，本次整机复现完成。
 
-检查：错误列表为空、分配和释放的缓冲区数量相等、活动缓冲区为 0、DMA 和后台线程已停止、网页服务已关闭。不要仅关闭浏览器或重启内核代替停止。
+停止失败时保留原内核，依据停止报告和 `skill/README.md` 排查。
 
-需要集中保存时，在停止成功后新增单元：
-
-```python
-import json
-import shutil
-from pathlib import Path
-
-evidence_dir = PROJECT_ROOT.parent / 'board_evidence'
-evidence_dir.mkdir(exist_ok=True)
-(evidence_dir / 'normal_stop.json').write_text(
-    json.dumps(stop_report, ensure_ascii=False, indent=2), encoding='utf-8')
-if 'benchmark_result' in globals():
-    source = Path(benchmark_result['report_directory']) / 'board_result.json'
-    shutil.copyfile(source, evidence_dir / 'board_result.json')
-print(evidence_dir)
-```
-
-通过 Jupyter 下载该目录中的结果和功能截图，保留运行 ZIP 的校验值。停止失败时保留当前内核和资源所有者，查看停止报告及 `skill/README.md`，不要强制释放或另外加载第二套 Overlay。
-
-## 复现完成的判断
-
-完成本次运行后，应确认以下项目：
-
-1. 完整运行包解压和文件检查通过，Notebook 工程检查、应用启动无异常。
-2. 摄像头有画面，手写识别能返回结果并更新对应分子展示。
-3. 语音输入能返回识别结果并更新选择。
-4. HDMI 与网页展示可用，网页连接、手动分子选择及视角操作正常。
-5. 验收时执行 步骤 6，保存固定输入与参考结果一致的板测记录。
-6. 正常停止检查通过，实测与停止记录已下载保存。
-
-以本次实际运行结果为准。包内已有板测记录用于参考，不代替复现者自己的操作结果；单独看到网页中的分子模型也不等于摄像、语音和硬件交互全部通过。
-
-## 遇到错误时
-
-- **输出目录已存在：**换新的目录名，例如 `chem_run_02`，不要覆盖或混用旧应用。
-- **文件哈希或 ZIP 校验失败：**核对上传的是否是 `psv7_runtime.zip`、文件是否完整，以及校验值是否与 步骤 3 一致。
-- **启动时报 `host/vendor/3Dmol-min.js` 不存在：**旧包中曾有网页文件名引用与实际小写文件名不一致的问题。重新上传与本 README 校验值一致的完整 ZIP，解压到新目录，并从新目录启动；仅替换上传的 ZIP 或重启旧 Notebook 不会更新旧目录的代码。当前完整包在解压时检查网页资源路径，无需手动改名或安装补丁。
-- **板端环境不匹配：**使用匹配的 PYNQ 2.7.0 系统、ARM 环境和板端 GCC，不修改检查代码强行通过。
-- **网页连不上：**先确认 Notebook 第二个单元启动成功，再核对 `BOARD_IP`、实际网络地址和 8765 端口。
-- **网页能显示模型但识别无效：**确认已连接开发板、模式已就绪，再检查摄像头或实际音频输入。
-- **硬件超时或停止失败：**保留当前会话和日志，不另开第二套应用；按 `skill/README.md` 定位。
-
-原作品已经可用的开发板系统可以继续使用，不需要重复刷卡。对于空白 SD 卡，仍需先准备匹配系统镜像；本运行包提供的是完整应用及硬件文件，不包含操作系统镜像。

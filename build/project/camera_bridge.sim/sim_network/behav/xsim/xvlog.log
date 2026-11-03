@@ -1,0 +1,67 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/qiansai/stage6/42754/build/project/deps/vivado/ip_repo/cnn_rtl_unified/rtl/frontend/cnn_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cnn_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/qiansai/stage6/42754/build/project/deps/vivado/ip_repo/cnn_rtl_unified/rtl/frontend/conv_cal.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module conv_cal
+INFO: [VRFC 10-311] analyzing module conv2_parallel
+INFO: [VRFC 10-311] analyzing module conv2_mac_lane
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/qiansai/stage6/42754/build/project/deps/vivado/hardware/baseline/cnn_accel.gen/sources_1/ip/conv_rslt_reg/sim/conv_rslt_reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module conv_rslt_reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/qiansai/stage6/42754/build/project/deps/vivado/ip_repo/cnn_rtl_unified/rtl/frontend/data_ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_ram
+INFO: [VRFC 10-311] analyzing module pool1_feature_cache
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/qiansai/stage6/42754/build/project/deps/vivado/hardware/baseline/cnn_accel.gen/sources_1/ip/fifo_generator_0/sim/fifo_generator_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo_generator_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/qiansai/stage6/42754/build/project/deps/vivado/hardware/baseline/cnn_accel.gen/sources_1/ip/image_data_ram/sim/image_data_ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module image_data_ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/qiansai/stage6/42754/build/project/deps/vivado/ip_repo/cnn_rtl_unified/rtl/frontend/pool_layer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pool_layer
+INFO: [VRFC 10-311] analyzing module pool2_channel_serializer
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/qiansai/stage6/42754/build/project/deps/vivado/ip_repo/cnn_rtl_unified/rtl/frontend/requant_relu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module requant_relu
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/qiansai/stage6/42754/build/project/deps/vivado/hardware/baseline/cnn_accel.gen/sources_1/ip/rom_b_ip/sim/rom_b_ip.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rom_b_ip
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/qiansai/stage6/42754/build/project/deps/vivado/hardware/baseline/cnn_accel.gen/sources_1/ip/rom_b_layer2_ip/sim/rom_b_layer2_ip.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rom_b_layer2_ip
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/qiansai/stage6/42754/build/project/deps/vivado/hardware/baseline/cnn_accel.gen/sources_1/ip/rom_w0_ip/sim/rom_w0_ip.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rom_w0_ip
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/qiansai/stage6/42754/build/project/deps/vivado/hardware/baseline/cnn_accel.gen/sources_1/ip/rom_w0_layer2_ip/sim/rom_w0_layer2_ip.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rom_w0_layer2_ip
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/qiansai/stage6/42754/build/project/deps/vivado/hardware/baseline/cnn_accel.gen/sources_1/ip/rom_w1_ip/sim/rom_w1_ip.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rom_w1_ip
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/qiansai/stage6/42754/build/project/deps/vivado/hardware/baseline/cnn_accel.gen/sources_1/ip/rom_w1_layer2_ip/sim/rom_w1_layer2_ip.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rom_w1_layer2_ip
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/qiansai/stage6/42754/build/project/deps/vivado/hardware/baseline/cnn_accel.gen/sources_1/ip/rom_w2_ip/sim/rom_w2_ip.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rom_w2_ip
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/qiansai/stage6/42754/build/project/deps/vivado/hardware/baseline/cnn_accel.gen/sources_1/ip/rom_w2_layer2_ip/sim/rom_w2_layer2_ip.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rom_w2_layer2_ip
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/qiansai/stage6/42754/sim/testbench/network/axi_read_memory_model.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_read_memory_model
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/qiansai/stage6/42754/build/project/deps/vivado/ip_repo/cnn_rtl_unified/rtl/common/cnn_axi_ro_reader.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cnn_axi_ro_reader
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/qiansai/stage6/42754/build/project/deps/vivado/ip_repo/cnn_rtl_unified/rtl/common/cnn_axil_control.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cnn_axil_control
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/qiansai/stage6/42754/build/project/deps/vivado/ip_repo/cnn_rtl_unified/rtl/conv3/cnn_conv3_pool3.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cnn_conv3_pool3
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/qiansai/stage6/42754/build/project/deps/vivado/ip_repo/cnn_rtl_unified/rtl/fc/cnn_fc.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cnn_fc
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/qiansai/stage6/42754/build/project/deps/vivado/ip_repo/cnn_rtl_unified/rtl/conv3/cnn_feature_store.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cnn_pool2_store
+INFO: [VRFC 10-311] analyzing module cnn_pool3_store
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/qiansai/stage6/42754/build/project/deps/vivado/ip_repo/cnn_rtl_unified/rtl/common/cnn_input_store.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cnn_input_store
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/qiansai/stage6/42754/build/project/deps/vivado/ip_repo/cnn_rtl_unified/rtl/common/cnn_mac.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cnn_mac
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/qiansai/stage6/42754/build/project/deps/vivado/ip_repo/cnn_rtl_unified/rtl/common/cnn_model_cache.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cnn_model_cache
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/qiansai/stage6/42754/build/project/deps/vivado/ip_repo/cnn_rtl_unified/rtl/common/cnn_model_loader.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cnn_model_loader
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/qiansai/stage6/42754/build/project/deps/vivado/ip_repo/cnn_rtl_unified/rtl/common/cnn_quantize.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cnn_quantize
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/qiansai/stage6/42754/build/project/deps/vivado/ip_repo/cnn_rtl_unified/rtl/unified/cnn_rtl_unified.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cnn_rtl_unified
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/qiansai/stage6/42754/build/project/deps/vivado/ip_repo/cnn_rtl_unified/rtl/unified/cnn_unified_core.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cnn_unified_core
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/qiansai/stage6/42754/sim/testbench/network/tb_network.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_network
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/qiansai/stage6/42754/build/project/camera_bridge.sim/sim_network/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

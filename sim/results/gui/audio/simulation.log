@@ -1,0 +1,4 @@
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+AUDIO_PASS i2s_samples=4 width=24 fir_inputs=6 pcm16_outputs=2
+$finish called at time : 10270 ns : File "D:/qiansai/tmp/gui_check_1103/vivado/testbench/tb_audio.sv" Line 27

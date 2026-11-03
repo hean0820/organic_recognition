@@ -1,0 +1,12 @@
+
+{ 
+    crc :  1107907035071582966  , 
+    ccp_crc :  0  , 
+    cmdline : " -wto ae85affde05546b881480b83e631e07f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_network_behav xil_defaultlib.tb_network xil_defaultlib.glbl -L blk_mem_gen_v8_4_4 -L fifo_generator_v13_2_5 -L mult_gen_v12_0_16 -L xbip_utils_v3_0_10 -L xbip_pipe_v3_0_6 -L xbip_bram18k_v3_0_6" , 
+    buildDate : "Nov 18 2020" , 
+    buildTime : "09:47:47" , 
+    linkCmd : "D:\\amd\\software\\vitis\\Vivado\\2020.2\\data\\..\\tps\\mingw\\6.2.0\\win64.o\\nt\\bin\\gcc.exe -Wa,-W  -O -Wl,--stack,104857600 -o \"xsim.dir/tb_network_behav/xsimk.exe\"   \"xsim.dir/tb_network_behav/obj/xsim_0.win64.obj\" \"xsim.dir/tb_network_behav/obj/xsim_1.win64.obj\" \"xsim.dir/tb_network_behav/obj/xsim_2.win64.obj\" \"xsim.dir/tb_network_behav/obj/xsim_3.win64.obj\" \"xsim.dir/tb_network_behav/obj/xsim_4.win64.obj\" -L\"D:\\amd\\software\\vitis\\Vivado\\2020.2\\lib\\win64.o\" -lrdi_simulator_kernel   -lrdi_simbridge_kernel" , 
+    aggregate_nets : 
+    [ 
+    ] 
+} 

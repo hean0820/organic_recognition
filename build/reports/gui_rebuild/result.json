@@ -1,0 +1,17 @@
+{
+  "tool": "Vivado 2020.2",
+  "part": "xc7z020clg400-2",
+  "project": "build/project/camera_bridge.xpr",
+  "synthesis_implementation_and_export_passed": true,
+  "audio_fifo_bits_integer": 12,
+  "wns_ns": 0.064,
+  "whs_ns": 0.012,
+  "setup_failing_endpoints": 0,
+  "hold_failing_endpoints": 0,
+  "sha256": {
+    "system_wrapper.bit": "804f8a5940499b16948d1d1261cf9698347f971395850d93d5cb6860a2cdb255",
+    "system.hwh": "253e92e63b2f38a7ed4ea4ed2bef634e233c7fda2f78fa93cdfc7ea73edaf7a4",
+    "camera_audio.xsa": "13ca6f70087136cc2fbed04ed2f5142ff3bc0d5d326f594281b5b5d2aefd14ef"
+  },
+  "board_tested_for_this_build": false
+}

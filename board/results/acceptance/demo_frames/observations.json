@@ -1,0 +1,21 @@
+{
+  "source_video_sha256": "40e13774384ec80e1aed8cd546966b7974d9c4dc79c85c650e8c0f4410e9cad5",
+  "source": "existing team demonstration video",
+  "new_board_run": false,
+  "observations": [
+    {
+      "time_seconds": 114.0,
+      "image": "camera_ethanol.jpg",
+      "input_visible": "CH3CH2OH",
+      "expected": "ethanol",
+      "hdmi_observed": "ethanol result, C2H6O and molecular model",
+      "web_observed": "molecular model on adjacent browser display"
+    },
+    {
+      "time_seconds": 52.3,
+      "image": "voice_ethanol.jpg",
+      "observed": "onboard microphone mode, RESULT / OK, ethanol name, formula and molecular model",
+      "limit": "screen evidence; spoken input not independently identified from this still"
+    }
+  ]
+}

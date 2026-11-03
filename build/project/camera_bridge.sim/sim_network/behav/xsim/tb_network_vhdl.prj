@@ -1,0 +1,6 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../deps/vivado/hardware/baseline/cnn_accel.gen/sources_1/ip/mult_gen/sim/mult_gen.vhd" \
+
+# Do not sort compile order
+nosort

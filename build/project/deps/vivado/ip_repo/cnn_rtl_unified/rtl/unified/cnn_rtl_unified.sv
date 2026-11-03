@@ -1,0 +1,65 @@
+`timescale 1ns/1ps
+module cnn_rtl_unified(
+    input wire clk,
+    input wire resetn,
+    input wire [15:0] s_axi_awaddr,
+    input wire [2:0] s_axi_awprot,
+    input wire s_axi_awvalid,
+    output wire s_axi_awready,
+    input wire [31:0] s_axi_wdata,
+    input wire [3:0] s_axi_wstrb,
+    input wire s_axi_wvalid,
+    output wire s_axi_wready,
+    output wire [1:0] s_axi_bresp,
+    output wire s_axi_bvalid,
+    input wire s_axi_bready,
+    input wire [15:0] s_axi_araddr,
+    input wire [2:0] s_axi_arprot,
+    input wire s_axi_arvalid,
+    output wire s_axi_arready,
+    output wire [31:0] s_axi_rdata,
+    output wire [1:0] s_axi_rresp,
+    output wire s_axi_rvalid,
+    input wire s_axi_rready,
+    output wire m_axi_arid,
+    output wire [31:0] m_axi_araddr,
+    output wire [7:0] m_axi_arlen,
+    output wire [2:0] m_axi_arsize,
+    output wire [1:0] m_axi_arburst,
+    output wire m_axi_arlock,
+    output wire [3:0] m_axi_arcache,
+    output wire [2:0] m_axi_arprot,
+    output wire [3:0] m_axi_arqos,
+    output wire m_axi_arvalid,
+    input wire m_axi_arready,
+    input wire m_axi_rid,
+    input wire [63:0] m_axi_rdata,
+    input wire [1:0] m_axi_rresp,
+    input wire m_axi_rlast,
+    input wire m_axi_rvalid,
+    output wire m_axi_rready
+);
+    wire start,abort,clear,core_quiet,core_done,core_error,recovery,poison,pending,outstanding;
+    wire[3:0]code,control_state,rmeta;wire[7:0]stage;
+    wire[31:0]wb,bb,compute_limit,ddr_limit,p2_count,p3_count,ar_count,r_count,last_araddr,flags;
+    wire logit_valid,input_read,input_valid,dbg_req,dbg_valid;wire[4:0]logit_index;wire signed[31:0]logit;
+    wire[11:0]input_address;wire[7:0]input_data,dbg_data;wire[1:0]dbg_select;wire[13:0]dbg_index;
+    cnn_axil_control control(.clk(clk),.resetn(resetn),
+        .s_axi_awaddr(s_axi_awaddr),.s_axi_awvalid(s_axi_awvalid),.s_axi_awready(s_axi_awready),.s_axi_wdata(s_axi_wdata),.s_axi_wstrb(s_axi_wstrb),
+        .s_axi_wvalid(s_axi_wvalid),.s_axi_wready(s_axi_wready),.s_axi_bresp(s_axi_bresp),.s_axi_bvalid(s_axi_bvalid),.s_axi_bready(s_axi_bready),
+        .s_axi_araddr(s_axi_araddr),.s_axi_arvalid(s_axi_arvalid),.s_axi_arready(s_axi_arready),.s_axi_rdata(s_axi_rdata),.s_axi_rresp(s_axi_rresp),.s_axi_rvalid(s_axi_rvalid),.s_axi_rready(s_axi_rready),
+        .core_start(start),.core_abort(abort),.core_clear(clear),.model_weight_base(wb),.model_bias_base(bb),.compute_limit_cycles(compute_limit),.ddr_stall_limit_cycles(ddr_limit),
+        .core_quiescent(core_quiet),.core_done(core_done),.core_error(core_error),.core_error_code(code),.core_recovery_required(recovery),.core_protocol_poisoned(poison),.core_stage(stage),
+        .core_ar_pending(pending),.core_outstanding(outstanding),.core_pool2_bytes(p2_count),.core_pool3_bytes(p3_count),.core_ar_count(ar_count),.core_r_count(r_count),
+        .core_last_araddr(last_araddr),.core_last_r_meta(rmeta),.core_fault_flags(flags),.core_logit_valid(logit_valid),.core_logit_index(logit_index),.core_logit(logit),
+        .core_input_read(input_read),.core_input_address(input_address),.core_input_data(input_data),.core_input_valid(input_valid),
+        .debug_request(dbg_req),.debug_select(dbg_select),.debug_index(dbg_index),.debug_valid(dbg_valid),.debug_data(dbg_data),.quiescent(),.control_state(control_state));
+    cnn_unified_core core(.clk(clk),.resetn(resetn),.start(start),.clear(clear),.abort(abort),.weight_base(wb),.bias_base(bb),.ddr_stall_limit_cycles(ddr_limit),
+        .quiescent(core_quiet),.done(core_done),.error(core_error),.error_code(code),.recovery_required(recovery),.protocol_poisoned(poison),.ar_pending(pending),.outstanding(outstanding),
+        .stage(stage),.pool2_bytes(p2_count),.pool3_bytes(p3_count),.ar_count(ar_count),.r_count(r_count),.last_araddr(last_araddr),.last_r_meta(rmeta),.fault_flags(flags),
+        .logit_valid(logit_valid),.logit_index(logit_index),.logit(logit),.input_read(input_read),.input_address(input_address),.input_data(input_data),.input_valid(input_valid),
+        .debug_request(dbg_req),.debug_select(dbg_select),.debug_index(dbg_index),.debug_valid(dbg_valid),.debug_data(dbg_data),
+        .m_axi_araddr(m_axi_araddr),.m_axi_arlen(m_axi_arlen),.m_axi_arid(m_axi_arid),.m_axi_arsize(m_axi_arsize),.m_axi_arburst(m_axi_arburst),.m_axi_arlock(m_axi_arlock),
+        .m_axi_arcache(m_axi_arcache),.m_axi_arprot(m_axi_arprot),.m_axi_arqos(m_axi_arqos),.m_axi_arvalid(m_axi_arvalid),.m_axi_arready(m_axi_arready),
+        .m_axi_rid(m_axi_rid),.m_axi_rdata(m_axi_rdata),.m_axi_rresp(m_axi_rresp),.m_axi_rlast(m_axi_rlast),.m_axi_rvalid(m_axi_rvalid),.m_axi_rready(m_axi_rready));
+endmodule

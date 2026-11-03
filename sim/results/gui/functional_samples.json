@@ -1,0 +1,14 @@
+{
+  "prep_mode": 0,
+  "constant_input": 128,
+  "gray_pixels_checked": 120288,
+  "detection_pixels_checked": 170880,
+  "ink_expected": 0,
+  "wav": "selftest_ethene_training.wav",
+  "expected_class_id": 0,
+  "actual_class_id": 0,
+  "reason": 0,
+  "confidence": 0.9880223274230957,
+  "hardware_accessed": false,
+  "passed": true
+}

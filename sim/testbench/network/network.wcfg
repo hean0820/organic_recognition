@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_network_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb_network" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="9622004153fs"></ZoomEndTime>
+      <Cursor1Time time="24242300000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="252"></NameColumnWidth>
+      <ValueColumnWidth column_width="178"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="17" />
+   <wvobject fp_name="/tb_network/resetn" type="logic">
+      <obj_property name="ObjectShortName">resetn</obj_property>
+      <obj_property name="ElementShortName">resetn</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_network/dut/stage" type="array">
+      <obj_property name="ObjectShortName">stage[7:0]</obj_property>
+      <obj_property name="ElementShortName">stage[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_network/dut/core/front_done" type="logic">
+      <obj_property name="ObjectShortName">front_done</obj_property>
+      <obj_property name="ElementShortName">front_done</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_network/dut/core/pool2_bytes" type="array">
+      <obj_property name="ObjectShortName">pool2_bytes[31:0]</obj_property>
+      <obj_property name="ElementShortName">pool2_bytes[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_network/dut/core/pool3_bytes" type="array">
+      <obj_property name="ObjectShortName">pool3_bytes[31:0]</obj_property>
+      <obj_property name="ElementShortName">pool3_bytes[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_network/dut/logit_valid" type="logic">
+      <obj_property name="ObjectShortName">logit_valid</obj_property>
+      <obj_property name="ElementShortName">logit_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_network/dut/logit_index" type="array">
+      <obj_property name="ObjectShortName">logit_index[4:0]</obj_property>
+      <obj_property name="ElementShortName">logit_index[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_network/dut/logit" type="array">
+      <obj_property name="ObjectShortName">logit[31:0]</obj_property>
+      <obj_property name="ElementShortName">logit[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_network/dut/core_done" type="logic">
+      <obj_property name="ObjectShortName">core_done</obj_property>
+      <obj_property name="ElementShortName">core_done</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_network/dut/core_error" type="logic">
+      <obj_property name="ObjectShortName">core_error</obj_property>
+      <obj_property name="ElementShortName">core_error</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_network/dut/core/c3/mac_valid" type="logic">
+      <obj_property name="ObjectShortName">mac_valid</obj_property>
+      <obj_property name="ElementShortName">mac_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_network/dut/core/c3/mac_done" type="array">
+      <obj_property name="ObjectShortName">mac_done[3:0]</obj_property>
+      <obj_property name="ElementShortName">mac_done[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_network/dut/core/c3/quant_lane" type="array">
+      <obj_property name="ObjectShortName">quant_lane[1:0]</obj_property>
+      <obj_property name="ElementShortName">quant_lane[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_network/conv3_acc0" type="array">
+      <obj_property name="ObjectShortName">conv3_acc0[31:0]</obj_property>
+      <obj_property name="ElementShortName">conv3_acc0[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_network/conv3_acc1" type="array">
+      <obj_property name="ObjectShortName">conv3_acc1[31:0]</obj_property>
+      <obj_property name="ElementShortName">conv3_acc1[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_network/conv3_acc2" type="array">
+      <obj_property name="ObjectShortName">conv3_acc2[31:0]</obj_property>
+      <obj_property name="ElementShortName">conv3_acc2[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_network/conv3_acc3" type="array">
+      <obj_property name="ObjectShortName">conv3_acc3[31:0]</obj_property>
+      <obj_property name="ElementShortName">conv3_acc3[31:0]</obj_property>
+   </wvobject>
+</wave_config>
