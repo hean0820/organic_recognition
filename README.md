@@ -140,8 +140,9 @@
 │   │   └── compare_arrays.py          NPY/NPZ 数组严格逐值比对
 │   └── profiles/
 │       └── current.json               当前工程的文件哈希与 IP 地址配置
-└── report/                            设计报告（含大模型协作记录）
-    └── design_report.pdf             正式技术报告
+└── report/                            设计报告与独立大模型交互记录
+    ├── design_report.pdf              正式技术报告（同时含大模型协作记录）
+    └── llm_interaction_records.md      大模型交互记录
 ```
 
 ## 复现步骤
